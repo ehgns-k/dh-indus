@@ -1892,3 +1892,14 @@ After merging long strokes into short strokes of the same count and `121 121` in
 - **Prediction:** observed mean difference smaller than in the null, p < 0.01, in both corpora.
 
 **Clarification of the H9.6 null (before any result was obtained).** The first implementation re-drew the whole pairing until no pair had equal counts; because count 3 dominates, such a pairing almost never occurs and the program did not finish. The null is therefore implemented as: random re-pairing of the pooled members, then **dropping** same-count pairs and averaging over the remaining pairs. Statistic, number of re-pairings and threshold are unchanged.
+
+### H9.6 result: not supported (passes in ICIT, fails in KP1979)
+
+Script: `scripts/phase9_h96_count_distance.py`; results: `results/phase9_h96_count_distance.json`.
+
+| Corpus | Substitutions (different counts) | Mean count difference | Null mean (SD) | p |
+|---|---:|---:|---:|---:|
+| ICIT | 88 | 1.84 | 2.16 (0.11) | 0.0022 |
+| KP1979 (normalised) | 84 | 2.61 | 2.87 (0.16) | 0.050 |
+
+Distribution of differences: ICIT 1: 42, 2: 26, 3: 13, 4: 6, 5: 1; KP1979 1: 29, 2: 20, 3: 13, 4: 11, 5: 5, 6–9: 6. In both corpora substituted counts are closer together than random re-pairings would give, but only the ICIT result reaches p < 0.01; by the registered rule (both corpora) **H9.6 is not supported**. The evidence that the strokes carry magnitude (and are not merely distinct symbols) is therefore suggestive, not established.
