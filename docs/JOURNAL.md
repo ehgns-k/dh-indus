@@ -2492,3 +2492,26 @@ Common definitions:
 - Null: counts permuted within series; 10,000 draws.
 - Prediction: none on direction; two-sided p < 0.01.
 - Insufficient data: fewer than 30 objects in series with varying counts.
+
+### Results SZ1, SZ2, FACE3
+
+Script: `scripts/batch5e_object_size.py`; results: `results/batch5e_object_size.json`.
+
+- **SZ1: passed (sanity check).** On 1,180 `SEAL:S` objects with size data, log area and text length are correlated (Spearman 0.42, p < 10⁻⁵⁰). The size data behave as expected.
+- **SZ2: not supported.**
+  - Discovery: 880 seals. Of 43 signs scanned, three are candidates: 590 on smaller seals (p = 0.0007), and 692 (p = 0.0059) and 706 (p = 0.0001) on larger seals, beyond text length, site and type.
+  - Confirmation: 166 seals. All three go in the discovered direction (p = 0.038, 0.033, 0.026; 14, 5 and 6 objects), but none reaches the threshold 0.0033.
+  - No sign is shown to predict seal size. The consistent direction is noted, but a combined test was not registered, and none is claimed. Three confirmation objects have a residual of exactly zero (strata of identical sizes). This does not affect the tests.
+- **FACE3: not supported.** Among 64 tablets in 17 series of identical text with varying counts, the within-series correlation of count and log area is 0.009 (p = 0.95). The count on the numeral face does not go with the size of the tablet.
+- The data-use ledger now counts SZ2's confirmation as one more question decided on the strict held-out and fresh data (R7 family: 39; not recomputed, since SZ2 failed and would not change the surviving set).
+
+### Literature notes on the numeral faces of Harappa tablets
+
+The hosts holding the full texts (harappa.com, helda.helsinki.fi, nature.com) could not be reached from the working environment. The excerpts below are search-engine excerpts and have not been checked against the full texts.
+- Kenoyer & Meadow (2010), "Inscribed objects from Harappa excavations 1986–2007" (CISI 3.1), excerpt: "the tablets (or tokens) are common at Harappa, and multiple copies were often produced".
+- Parpola, "Indus writing" (<https://www.harappa.com/sites/default/files/pdf/indus-writing.pdf>), excerpt: one side of most Harappa tablets "usually has nothing but this pot-sign, preceded by one to four vertical strokes". The sign is described as "U-shaped".
+- A paper on helda.helsinki.fi (attribution to Parpola not confirmed), excerpt: the reverse sides "have the signs VII, VIII or VIIII, probably meaning 'two/three/four pots (of offerings)'".
+
+Analysis:
+- The excerpts agree with the data: the numeral face is a count of two to four strokes with one sign (FACE2: in ICIT only 032, 033 and 034 with 700, and one 031).
+- Whether the count is constant within a series of identical texts was not found in the excerpts. FACE2 shows that it is partly tied to the series but varies within it. The reading "pots of offerings" is not tested by any analysis here.

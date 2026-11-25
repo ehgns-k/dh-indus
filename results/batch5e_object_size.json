@@ -1,0 +1,64 @@
+{
+ "SZ1": {
+  "objects": 1180,
+  "spearman": 0.4223170807689068,
+  "p_one_sided": 1.5415339861726158e-52,
+  "verdict": "supported"
+ },
+ "SZ2": {
+  "discovery_objects": 880,
+  "confirmation_objects": 166,
+  "signs_scanned": 43,
+  "candidates": [
+   {
+    "sign": "590",
+    "n_disc": 50,
+    "median_with": -0.25527526512603105,
+    "median_without": 0.029883163730704876,
+    "direction": "smaller",
+    "p_disc": 0.0007351715951206733,
+    "n_conf": 14,
+    "p_conf": 0.037687636562934175,
+    "median_with_conf": -0.15337290830382866,
+    "median_without_conf": 0.012580256075552576,
+    "status": "not confirmed"
+   },
+   {
+    "sign": "692",
+    "n_disc": 23,
+    "median_with": 0.25699578789808974,
+    "median_without": 0.012027619466992157,
+    "direction": "larger",
+    "p_disc": 0.005886261904340624,
+    "n_conf": 5,
+    "p_conf": 0.033057771495741246,
+    "median_with_conf": 0.521939348862082,
+    "median_without_conf": 0.0,
+    "status": "not confirmed"
+   },
+   {
+    "sign": "706",
+    "n_disc": 22,
+    "median_with": 0.378035516472917,
+    "median_without": 0.011327435400088515,
+    "direction": "larger",
+    "p_disc": 0.00010000122883393937,
+    "n_conf": 6,
+    "p_conf": 0.025530576558592824,
+    "median_with_conf": 0.4069154325154316,
+    "median_without_conf": 0.0,
+    "status": "not confirmed"
+   }
+  ],
+  "threshold": 0.0033333333333333335,
+  "verdict": "not supported"
+ },
+ "FACE3": {
+  "objects_with_numeral_face_and_size": 208,
+  "series_with_varying_counts": 17,
+  "objects_in_them": 64,
+  "spearman_within_series": 0.008859254837394664,
+  "p_two_sided": 0.9514048595140486,
+  "verdict": "not supported"
+ }
+}

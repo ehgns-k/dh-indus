@@ -102,6 +102,9 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | F5 | ICIT (formulae from train) | fresh sets 1+2 | supported (9 vs 4.8 matches, p = 0.0008) | rule-preserving controls |
 | FACE1 | ICIT, KP | all two-face objects without numeral face (258; 195) | supported (p = 0.0001 both) | one text per object, closed once |
 | FACE2 | ICIT, KP | all two-face objects with a numeral + 700/310 face (246; 242) | supported (ICIT p = 0.0001; KP p = 0.0093) | count partly tied to the text series; robust without the largest group |
+| SZ1 | ICIT | all SEAL:S objects with size | passed (Spearman 0.42) | sanity check of the size data |
+| SZ2 | ICIT | discovery train, confirmation strict held-out + fresh | not supported (3 candidates, 0 confirmed; all in discovered direction, p = 0.026–0.038) | object size as external variable |
+| FACE3 | ICIT | two-face tablets with size | not supported (p = 0.95) | count not related to tablet size |
 | R7b | as B1, B4, CT17, CT18 | as original | p = 0.0001 with 10,000 draws | review: resolution only |
 | R7 | – | – | review: 15 of 38 fresh/strict tests survive Holm 0.01; CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
 
