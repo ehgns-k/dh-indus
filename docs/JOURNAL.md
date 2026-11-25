@@ -1053,3 +1053,23 @@ On the fresh sets, 3 of 22 rectangular-seal strings end in 407 or 154, against 0
 **Decision rule.** Readability is counted as *discriminating evidence* only if the rate for control (b) is below half the rate for the claimed readings (likelihood ratio > 2) **and** below 0.1. Otherwise it is recorded that, under the proposal's normalisation, readability as Sanskrit does not distinguish the proposed readings from random letter sequences of the same composition.
 
 **Limits.** The proposal also uses an augmented dictionary with inflected forms (`data/aux.txt`, 35 entries, and declined forms not published as a list). Inflected forms are not added here, which lowers the rates for the claimed readings and for the controls alike. The test concerns the evidential value of the readability criterion, not the sign values themselves.
+
+### E2 result: readability is not discriminating evidence
+
+Script: `scripts/phase7_e2_sanskrit_readability.py`; results: `results/phase7_e2_sanskrit_readability.json`.
+
+| Strings | Segmentable into dictionary words |
+|---|---:|
+| Proposed readings (1,757 unique) | 0.84 |
+| Random letters, same length and letter frequencies | 0.29 |
+| Reorderings of each reading's own letters | 0.29 |
+
+Dictionary: 131,655 normalised headwords. The likelihood ratio of "segmentable" for the proposed readings against reordered letters is 0.84 / 0.29 ≈ 2.9.
+
+By the pre-registered rule (control rate below half the claimed rate **and** below 0.1), readability is **not** discriminating evidence: under the proposal's normalisation, more than a quarter of random letter sequences of the same composition can be read as sequences of Sanskrit dictionary words. A ratio of about 3 would be weak evidence even for a single text, and it overstates the evidence here, because each proposed reading was chosen so that it matches the dictionary. A fair comparison would ask how much of the corpus could be made readable by an arbitrary assignment of sound values to signs with the same freedoms (inherent vowel optional, vowel length free, merged consonant classes). This is not computed here and is the natural next test.
+
+Conclusion for claim C33: the published readings are mostly divisible into dictionary words, but under the normalisation used this property is shared by a large fraction of random strings, so it does not by itself support the decipherment. This agrees with the critical reception noted in the bibliography; it is not a demonstration that the proposed sign values are wrong.
+
+### Methodological consequence for WP-E3
+
+Any language-hypothesis test in this project must report the rate at which random or reordered strings pass the same acceptance criterion (as here), and must use a criterion with a control rate below 0.1 before readability can count as evidence.

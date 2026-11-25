@@ -17,6 +17,7 @@ The Indus script is undeciphered. Results in this repository are labelled with t
 | 2026-11-25 | Typology (descriptive) | Among five reference corpora from the CDLI, the Indus corpus is statistically closest to proto-Elamite and proto-cuneiform (proto-administrative systems), not to Sumerian or Akkadian full writing (D1) |
 | 2026-11-25 | Undecided (gate G3) | With the non-linguistic corpora of Sproat (2014) added, the statistics used cannot separate writing from non-linguistic symbol systems, so the linguistic status of the Indus signs remains open (D2) |
 | 2026-11-25 | L2 (narrow, functional) | The sign that closes a line varies with the kind of object: line-final 407 and 154 favour rectangular seals without animal motif, 400 is avoided on motif-bearing seals; discovered with FDR control on training data, confirmed on held-out data, stratified by site (C2). The meaning of these signs is not identified |
+| 2026-11-25 | Test of a published claim | Under the normalisation used by the published Sanskrit reading (claim C33), 29 % of random letter strings of the same composition can also be divided into Sanskrit dictionary words (proposed readings: 84 %), so readability alone is weak evidence for that decipherment (E2) |
 
 The full list of tests, including failed ones, is in `docs/JOURNAL.md`.
 

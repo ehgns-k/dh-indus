@@ -1,0 +1,40 @@
+{
+ "dictionary_words": 131655,
+ "claimed_readings": 1757,
+ "rate_claimed": 0.8394991462720547,
+ "rate_random_letters": 0.29379624359704043,
+ "rate_shuffled_letters": 0.2859134889015367,
+ "likelihood_ratio_claimed_vs_shuffled": 2.936199860654922,
+ "discriminating": false,
+ "claimed_rate_by_length": {
+  "1": 0.0,
+  "2": 0.8823529411764706,
+  "3": 0.9130434782608695,
+  "4": 0.8495575221238938,
+  "5": 0.85,
+  "6": 0.7770700636942676,
+  "7": 0.8410596026490066,
+  "8": 0.8258064516129032,
+  "9": 0.8222222222222222,
+  "10": 0.9017341040462428,
+  "11": 0.8831168831168831,
+  "12": 0.8280254777070064
+ },
+ "examples_claimed": [
+  "a",
+  "aa",
+  "aaanamattadam",
+  "aaba",
+  "aabaam",
+  "aabaamsaraam",
+  "aabaanaH",
+  "aabasa",
+  "aabasaa",
+  "aabayii",
+  "aabiimii",
+  "aaca",
+  "aacan",
+  "aacara",
+  "aadaha"
+ ]
+}
