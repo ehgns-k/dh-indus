@@ -397,3 +397,35 @@ Training-split observations: KP 127 (seven short strokes) is followed by 288 (17
 - Test: one-sided Fisher exact test over all within-line bigrams of held-out strings, as in H3.10.
 - Correction: two sub-hypotheses, so the threshold is p < 0.005 for each.
 - Prediction: each sub-hypothesis passes in both corpora. Each is judged separately.
+
+### H3.12 result: both sub-hypotheses supported in both corpora
+
+Script: `scripts/phase3_h312_count_item_pairs.py`; results: `results/phase3_h312_count_item_pairs.json`.
+
+| Test | Corpus | After the stroke sign: target / other | After other signs: target / other | Odds ratio | p |
+|---|---|---:|---:|---:|---:|
+| H3.12a (7 short → 288/289) | KP1979 | 4 / 4 | 10 / 1,516 | 152 | 3.0 × 10⁻⁷ |
+| H3.12a (7 short → 585/575) | ICIT | 7 / 4 | 4 / 1,431 | 626 | 4.2 × 10⁻¹⁴ |
+| H3.12b (3 long → 217) | KP1979 | 6 / 8 | 31 / 1,489 | 36 | 3.4 × 10⁻⁷ |
+| H3.12b (3 long → 520) | ICIT | 8 / 14 | 20 / 1,404 | 40 | 1.8 × 10⁻⁹ |
+
+All four values are below the corrected threshold 0.005.
+
+### Synthesis: count signs pair with specific following signs
+
+Taken together, H3.10 and H3.12 show that the stroke signs do not combine freely with what follows. Each count, or range of counts, has a preferred following sign:
+
+| Stroke sign (KP / ICIT) | Count read from the glyph | Preferred next sign (KP / ICIT) | Test |
+|---|---|---|---|
+| 124–129 / 004, 034, 005, 016, 017 | 4–9 short | 86 / 390, 405, 406, 407 | H3.10 |
+| 127 / 017 | 7 short | 288, 289 / 585, 575 | H3.12a |
+| 147 / 033 | 3 long | 217 / 520 | H3.12b |
+
+Possible readings, none of which is tested yet:
+1. Numeral + counted item or unit, where some items are usually counted in particular quantities.
+2. Fixed compounds in which a number is part of a name or title, so that a given count recurs with a given sign.
+3. A non-linguistic notation in which count and sign together form a single code.
+
+These readings make different predictions. Reading 1 predicts that a following sign which takes several counts (KP 86) is a general counted item, and that the distribution of counts before it resembles the frequency pattern of quantities. Reading 2 predicts that the pairs recur as whole fixed strings in different texts with the same neighbours. These predictions can be tested and will be pre-registered next.
+
+The L1 status of this result is the same as for H3.3/H3.4: reproduced in two transcriptions and significant on held-out data, with the same limitation about the transcriptions not being independent samples.
