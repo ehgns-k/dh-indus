@@ -1827,3 +1827,13 @@ The ICIT-style `time` field records excavation periods for 3,067 records, mostly
 Script: `scripts/phase10_t1_chronological_variants.py`; results: `results/phase10_t1_chronological_variants.json`. Distinct Harappa texts with an unambiguous period: 129 (Period 3B) and 416 (Period 3C).
 
 Testable pairs (≥ 5 occurrences in each period): 154/156 (p = 0.61), 817/861 (p = 1.0), 390/405 (p = 0.22); threshold 0.0033. The other four pairs have too few Period 3B occurrences. **T1 is not supported**: no evidence that the context-indistinguishable variants are chronological variants, but the Period 3B sample is small.
+
+### Pre-registration of H10.1 (name-like slot fillers are more site-specific; before running)
+
+**Idea.** If seal and tablet formulae consist of a name-like part and conventional parts (numerals, counted items, closing signs), the name-like signs should vary more between sites than the conventional ones, which all cities would share. The formula table shows that the initial slot of `_ 740` is filled mostly by substitution class 0, the numeral slot by class 2 and stroke signs, and the item slot after numerals by class 1.
+
+- **Signs:** ICIT signs with ≥ 15 occurrences in all unique complete strings, in class 0 (name-like group) or in class 1 / class 2 / stroke signs (conventional group).
+- **Site-specificity:** Jensen–Shannon divergence between a sign's distribution over three site strata (Harappa, Mohenjo-daro, other) and the distribution of all sign tokens over the same strata (occurrences in unique strings, each string assigned to its site; strings found at several strata are excluded).
+- **Test:** difference of mean site-specificity (name-like minus conventional); null by 10,000 permutations of the group labels within frequency tertiles (to control for the higher variability of rarer signs).
+- **Prediction:** name-like signs more site-specific, p < 0.01.
+- **Level:** if supported, the result links a text-internal category (slot class) to an external variable (site) and is recorded as an L2 candidate, because the name-like reading of class 0 is an interpretation, not an established result.
