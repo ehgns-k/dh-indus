@@ -1622,3 +1622,9 @@ Script: `scripts/phase8_g2_close_shapes.py`; results: `results/phase8_g2_close_s
 Close-shape pairs with the most similar usage include the initial signs 817 / 861 / 820, the count–item partners 390 / 405 / 407, the fish-shaped signs 231 / 233 / 235 / 236 / 240, and 705 / 706, 690 / 692, 803 / 806, 415 / 416.
 
 **Interpretation.** Shape similarity does not predict usage across the whole sign inventory (G1), but signs that are near-variants of one another (a basic form with added strokes, marks or enclosures) are used in similar contexts, also on data not used to see the pattern. This supports the view that part of the sign inventory consists of families built from a base sign with modifications, and that family membership is functionally meaningful. It is a structural result (L1); it does not say what the modifications mean.
+
+### L-4: survey of unused inscription data
+
+`docs/NEW_DATA_SURVEY.md` lists inscriptions published outside the ICIT-style source and other machine-readable datasets. Main conclusion: no dataset adds more than a handful of objects; the largest accessible group of possibly unused inscriptions is the Surkotada pottery inscriptions (Joshi 1990, ASI Memoir 87), followed by single objects (Binjor, Tell Jokha / Umma, some Dholavira seals in Bisht 2015, and others). In total a few dozen mostly short inscriptions, which would have to be transcribed from published photographs.
+
+**Consequence for the L2 candidate.** The candidate concerns seals and tablets (closing sign vs object class). The accessible unused material consists mostly of pottery inscriptions and single seals, so a confirmatory test of the candidate with adequate power is not possible with data that can be obtained here. This is recorded as a limitation; the candidate stays a candidate.
