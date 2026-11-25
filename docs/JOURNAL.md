@@ -1890,3 +1890,5 @@ After merging long strokes into short strokes of the same count and `121 121` in
 - **Statistic:** mean absolute count difference over the substitutions.
 - **Null:** 10,000 random re-pairings that keep the frequency with which each count takes part in substitutions (the members of all substitution pairs are pooled and randomly re-paired, discarding same-count pairs and re-drawing).
 - **Prediction:** observed mean difference smaller than in the null, p < 0.01, in both corpora.
+
+**Clarification of the H9.6 null (before any result was obtained).** The first implementation re-drew the whole pairing until no pair had equal counts; because count 3 dominates, such a pairing almost never occurs and the program did not finish. The null is therefore implemented as: random re-pairing of the pooled members, then **dropping** same-count pairs and averaging over the remaining pairs. Statistic, number of re-pairings and threshold are unchanged.
