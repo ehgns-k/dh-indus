@@ -23,3 +23,11 @@ A first attempt paired the 60 most frequent signs by frequency and positional di
 
 - Readings of different length (where one source reads one sign more or fewer) were not aligned.
 - Rare signs have little support, so their correspondences are uncertain.
+
+## Allograph test of KP-merged signs (L3a, 2026-11-25)
+
+Of ten pairs of frequent ICIT signs that KP1979 merges into one sign, three differ significantly in context and are treated as distinct signs: 617/741 (KP 325), 151/158 (KP 1), 390/407 (KP 86). The other seven pairs show no detectable difference and are consistent with allographs. See `docs/JOURNAL.md` (L3a) and `results/phase3_l3a_allographs.json`.
+
+## Split strokes (2026-11-25)
+
+KP1979 often writes a pair of single strokes as two signs (121/144 + 121/144) where the ICIT-style source writes one two-stroke sign (032). See `results/phase3_split_merge.json`.

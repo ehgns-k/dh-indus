@@ -1439,3 +1439,32 @@ Script: `scripts/phase3_split_merge_strokes.py`; results: `results/phase3_split_
 **Null (free variation).** For each pair (a, b) with occurrence counts n_a and n_b: the occurrences of both are pooled and randomly relabelled into groups of sizes n_a and n_b (1,000 times); p = share of relabellings with divergence at least as large as observed. Under the null the two signs are interchangeable variants of one sign.
 
 **Decision.** Bonferroni over the number of pairs at 0.01. A pair below the threshold is recorded as **contextually distinct** (the ICIT distinction is supported by usage, and the KP merger loses information); otherwise as **not distinguishable** (consistent with allographs). This is a descriptive classification decided on the training split.
+
+### L3a result: three of ten KP-merged pairs are contextually distinct
+
+Scripts: `scripts/phase3_l3a_allographs.py` (pre-registered, 1,000 relabellings), `scripts/phase3_l3a_allographs_10k.py` (robustness check, 10,000 relabellings); results: `results/phase3_l3a_allographs.json`, `results/phase3_l3a_allographs_10k.json`.
+
+Eight KP signs receive two or more frequent ICIT signs; 10 pairs; threshold 0.01/10 = 0.001.
+
+| KP sign | ICIT pair | n | JS (null mean) | p (1,000) | p (10,000) | Final share | Decision |
+|---|---|---|---|---:|---:|---|---|
+| 1 | 151 / 158 | 44 / 16 | 0.80 (0.60) | 0.0010 | 0.0001 | 0.89 / 0.38 | distinct |
+| 325 | 617 / 741 | 32 / 118 | 0.89 (0.70) | 0.0010 | 0.0001 | 0.56 / 0.03 | distinct |
+| 86 | 390 / 407 | 142 / 43 | 0.57 (0.49) | 0.0010 | 0.0005 | 0.46 / 0.67 | distinct |
+| 364 | 803 / 806 | 75 / 61 | 0.61 (0.50) | 0.0020 | 0.0001 | 0.00 / 0.00 | not distinguishable by the registered test (distinct in the robustness check) |
+| 4 | 154 / 156 | 25 / 31 | 0.60 (0.53) | 0.015 | 0.016 | 0.84 / 0.81 | not distinguishable |
+| 86 | 405 / 407 | 43 / 43 | 0.49 (0.44) | 0.070 | 0.059 | 0.53 / 0.67 | not distinguishable |
+| 383 | 817 / 861 | 99 / 131 | 0.38 (0.37) | 0.11 | 0.11 | 0.04 / 0.05 | not distinguishable |
+| 86 | 390 / 405 | 142 / 43 | 0.50 (0.48) | 0.19 | 0.21 | 0.46 / 0.53 | not distinguishable |
+| 355 | 790 / 850 | 18 / 20 | 0.71 (0.68) | 0.25 | 0.26 | 0.22 / 0.10 | not distinguishable |
+| 316 | 705 / 706 | 83 / 42 | 0.51 (0.52) | 0.68 | 0.70 | 0.01 / 0.02 | not distinguishable |
+
+Note on resolution: with 1,000 relabellings the smallest attainable p is 0.000999, just below the threshold 0.001; the three pairs that pass do so at that floor. The 10,000-relabelling check confirms them (p ≤ 0.0005) and would add 803/806; the registered decision is kept, and 803/806 is reported as distinct only in the robustness check.
+
+**Findings.**
+- **617 / 741 (both KP 325, the most frequent "jar"-type sign).** 741 is almost never line-final (0.03), 617 often is (0.56). KP1979 merges a sign that closes lines with one that never does. In KP-based analyses, sign 325 therefore mixes two distinct usages.
+- **151 / 158 (both KP 1).** 151 is a closing sign (0.89 final), 158 is not (0.38).
+- **390 / 407 (both KP 86).** 407 is more often line-final (0.67 vs 0.46) and differs in context; 405 cannot be distinguished from either.
+- Seven pairs show no detectable difference and are consistent with free variants (allographs) at this sample size, for example 817 / 861 (both line-initial signs, KP 383) and 705 / 706 (KP 316).
+
+**Consequence.** The ICIT distinctions 617/741, 151/158 and 390/407 are supported by usage; analyses that merge them (KP numbering) lose information. This is recorded in `docs/SIGN_CONCORDANCE.md`.
