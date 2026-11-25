@@ -633,3 +633,23 @@ The forward bigram model beats the unigram model on 44 of 63 strings (sign test 
 | Shared sequential structure and reading direction | – | – | yes (F3) |
 
 The count–item pairing is now the best-supported structural result: it holds on held-out data in two transcriptions, against matched controls, and on inscriptions from sites excavated after the training corpus was published.
+
+---
+
+## 2026-11-25 (day 1, fourth working session)
+
+Wrote `docs/WORKPLAN.md` (work packages A–F with decision gates G1–G4 and a schedule) and `docs/DATA_LEDGER.md` (every test with the data it was decided on). After a Bonferroni correction over the 11 tests decided on the held-out split, H3.3, H3.10 and H3.12 remain significant; H4.3 does not.
+
+KP1979 type and icon codes cannot be decoded here: the 1979 introduction (§6.3–6.4) refers to tables in the 1973 concordance, which is not available.
+
+### Pre-registration of C1 (copper tablets: text and motif; before running)
+
+Copper objects in the ICIT-style source are almost all of type `TAB:C` (176 of 182 complete lines). Many carry the same text, so identical strings are already merged; in addition, strings that differ by at most one sign (edit distance ≤ 1) are merged into one group, because such near-copies could share a motif without the signs being informative. Each group keeps one representative (its most frequent string) and must have a single motif code.
+
+**C1.** Among distinct copper-tablet text groups, texts with the same motif share more signs than texts with different motifs.
+- Motif codes used: any code except `Othr`, blank, `-` and `Unknown`.
+- Statistic: mean Jaccard similarity of sign sets for same-motif pairs minus that for different-motif pairs.
+- Control: 10,000 permutations of motif labels among groups.
+- Prediction: difference > 0, p < 0.01.
+- Data: all copper-tablet strings (the set is too small to split). This is a new question, decided on data not used for any earlier motif test, but it is not held-out in the formal sense and is recorded as such in the ledger.
+- If supported, the signs shared within motif groups are listed as candidates for an L2 hypothesis (a sign naming or referring to the depicted animal), to be tested on seals or other objects with the same motif.
