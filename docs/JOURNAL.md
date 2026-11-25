@@ -1612,3 +1612,13 @@ Descriptive: the pairs most similar in both respects are known families: the ini
 - **Usage data not used in G1:** the strict held-out set together with fresh sets 1 and 2; signs with ≥ 5 occurrences there.
 - **Statistic:** context similarity (1 − JS, as in G1) computed on these data only; one-sided Mann–Whitney test, close-shape pairs vs all other pairs among the same signs.
 - **Prediction:** close-shape pairs have higher context similarity, p < 0.01.
+
+### G2 result: supported — very similar shapes share usage on unused data
+
+Script: `scripts/phase8_g2_close_shapes.py`; results: `results/phase8_g2_close_shapes.json`.
+
+82 signs with ≥ 5 occurrences in the strict held-out and fresh data; 3,321 pairs; 167 close-shape pairs (shape similarity ≥ 0.807). Median context similarity: close-shape pairs 0.104, other pairs 0.084; one-sided Mann–Whitney p = 0.0017. **G2 is supported.**
+
+Close-shape pairs with the most similar usage include the initial signs 817 / 861 / 820, the count–item partners 390 / 405 / 407, the fish-shaped signs 231 / 233 / 235 / 236 / 240, and 705 / 706, 690 / 692, 803 / 806, 415 / 416.
+
+**Interpretation.** Shape similarity does not predict usage across the whole sign inventory (G1), but signs that are near-variants of one another (a basic form with added strokes, marks or enclosures) are used in similar contexts, also on data not used to see the pattern. This supports the view that part of the sign inventory consists of families built from a base sign with modifications, and that family membership is functionally meaningful. It is a structural result (L1); it does not say what the modifications mean.
