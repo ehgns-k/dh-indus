@@ -19,7 +19,7 @@ This report summarises the work since interim report 3. Details and pre-registra
 | Test | Result |
 |---|---|
 | NUM1 (descriptive) | The Indus numeral comes before the sign it goes with (71 % of cases). Proto-Elamite entries put the sign before the numeral (99.6 %), and the CDLI transliterations of proto-cuneiform put the numeral first (98 %). |
-| NUM2 | Long and short stroke signs do not combine in a fixed order (22 vs 11, p = 0.080; KP too few cases). A multi-unit notation with ordered units, as in the proto-Elamite metrological systems, is not shown. |
+| NUM2 | Long and short stroke signs do not combine in a fixed order (22 vs 11, p = 0.080; KP too few cases). A multi-unit notation with units in a fixed order is not shown. |
 | CT25b | The drop in frequency after seven strokes remains after removing the fixed pairing 7 + 288/289. The base is undecided. |
 
 ## 3. Review
