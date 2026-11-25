@@ -28,6 +28,7 @@ The Indus script is undeciphered. Results in this repository are labelled with t
 | 2026-11-25 | L1 | Texts that are identical except for the number of strokes in one slot are six to eight times more frequent than chance, in both transcriptions; about half differ by two or more strokes, so they are not misreadings. This fits fixed formulae with a variable quantity (H9.1) |
 | 2026-11-25 | L1 | Signs that replace one another in otherwise identical texts form classes (numerals; closing and counted-item signs; fish-shaped signs with single strokes; others), and these classes agree between the two transcriptions (H9.3) |
 | 2026-11-25 | L2 (narrow, functional) | The jar sign 740 closes seal texts more often than tablet texts, in every site stratum, on data not used for this question (CT15); this confirms in one specific form the earlier candidate that the closing sign depends on the kind of object. What the closing sign means is not established. It passes its registered threshold (p = 0.0022) but not a correction over all questions decided on the same held-out data |
+| 2026-11-25 | L2 support | Tags (objects with seal-type legends, mostly from Lothal) follow the seal pattern of the closing sign 740, not the tablet pattern (CT15t, p = 0.0068) |
 
 The full list of tests, including failed ones, is in `docs/JOURNAL.md`.
 

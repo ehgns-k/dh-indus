@@ -2126,3 +2126,11 @@ Script: `scripts/claims_ct15k_jar_final_kp.py`; results: `results/claims_ct15k_j
 - **Data:** all ICIT unique complete strings with one coarse object type, `TAG*` or `TAB*`, that contain 740.
 - **Test:** one-sided Fisher exact test: share of strings with 740 in final position higher for tags than for tablets, p < 0.01.
 - **Limitation stated in advance:** tags come mostly from Lothal, tablets mostly from Harappa and Mohenjo-daro, so site and object type are confounded; the test cannot be stratified by site.
+
+### CT15t result: supported — tags follow the seal pattern
+
+Script: `scripts/claims_ct15t_tags.py`; results: `results/claims_ct15t_tags.json`.
+
+Strings containing 740, with 740 final / not final: tags 14 / 2 (0.88); tablets 130 / 111 (0.54); seals, for reference, 523 / 140 (0.79). One-sided Fisher exact test tags vs tablets: odds ratio 6.0, p = 0.0068. **CT15t is supported.** Tags, which carry seal-type legends, show the seal pattern of the closing sign, not the tablet pattern, on objects never used as a class before.
+
+Limitation (stated in advance): tags come mostly from Lothal and cannot be compared with tablets of the same site, so a site effect cannot be excluded. With this limitation, CT15t adds independent support to the narrow functional L2 result of CT15.

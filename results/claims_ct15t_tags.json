@@ -1,0 +1,19 @@
+{
+ "table_[[tag_final, tag_not],[tab_final, tab_not]]": [
+  [
+   14,
+   2
+  ],
+  [
+   130,
+   111
+  ]
+ ],
+ "odds_ratio": 5.976923076923077,
+ "p_value": 0.006757463252379939,
+ "pass": true,
+ "seal_for_reference_[final, not]": [
+  523,
+  140
+ ]
+}
