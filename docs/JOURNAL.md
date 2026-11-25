@@ -581,3 +581,27 @@ Dholavira was excavated mainly after 1979, so its strings are plausible new find
 1. Object-level link between KP1979 and the ICIT-style source (inscription numbers ↔ CISI numbers), so that post-1979 finds can be separated as a fresh test set.
 2. Phase 4 (typology) with controls that preserve the rules already established (lesson from H4.3).
 3. Positional "slot" description of the texts (which sign classes occupy which positions), formed on KP1979 training data and tested on ICIT held-out strings for that new question.
+
+---
+
+## 2026-11-25 (day 1, third working session)
+
+### A fresh test set: sites excavated after 1979
+
+KP1979 was published in 1979, so it cannot contain inscriptions from sites first excavated after that year. Two such sites in the ICIT-style source have a sourced start date:
+- Dholavira: excavation initiated in 1989–90 by the Archaeological Survey of India under R. S. Bisht (UNESCO nomination dossier, https://whc.unesco.org/document/184545; Bisht 2015, *Excavations at Dholavira 1989–2005*, listing seen at https://www.scribd.com/document/262316120/Excavations-at-Dholavifra-1989-2005-RS-Bisht-2015). Source seen: search-engine excerpts.
+- Nausharo: field seasons 1985–1988 reported by J.-F. Jarrige (catalogue record, https://ehrafarchaeology.yale.edu/traditions/aq43/documents/011). Source seen: search-engine excerpt.
+
+Other post-1979 sites in the source (Farmana, Kanmer, Bhirrana, Khirsara, Gola Dhoro, Rakhigarhi) are not used, because their excavation dates were not confirmed from a source in this session.
+
+**Fresh set:** complete ICIT lines with recorded direction from Dholavira (78) and Nausharo (17). Protocol: hypotheses are built from **KP1979 training data only**, carried into ICIT numbering through the concordance, and tested on the fresh set. ICIT training data from these two sites were part of earlier ICIT analyses, but no rule tested below was derived from ICIT data.
+
+### Pre-registration of F1–F3 (before looking at the fresh set)
+
+Mapping: an ICIT string is carried into KP numbering using concordance entries with support ≥ 2 and purity ≥ 0.5; strings containing an unmapped sign are excluded from F3.
+
+**F1 (terminal-cluster order, H3.3, on fresh data).** Dominant orders of adjacent KP terminal signs (KP training split, as in H3.3) predict the order of the same pairs in the fresh set. Binomial test (null 0.5). Prediction: agreement ≥ 0.8, p < 0.01. If fewer than 5 qualifying pairs occur, the result is recorded as "insufficient data".
+
+**F2 (count–item pairing, H3.10, on fresh data).** In the fresh set, KP 124–129 images {004, 034, 005, 016, 017} are followed by {390, 405, 406, 407} more often than other signs are. One-sided Fisher exact test, p < 0.01. Fewer than 5 bigrams after the stroke set → "insufficient data".
+
+**F3 (sequential structure and reading direction carry over).** A bigram model with add-0.1 smoothing over the KP vocabulary, trained on KP1979 training lines, is compared with (a) a unigram model trained on the same lines and (b) the same bigram model applied to the fresh strings reversed. Statistic: mean per-sign log-loss on mapped fresh strings of length ≥ 2. Test: one-sided sign test over strings (bigram forward better than unigram; forward better than reversed). Prediction: both comparisons favour the forward bigram, p < 0.01 each.
