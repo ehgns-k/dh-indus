@@ -1,0 +1,33 @@
+{
+ "fresh_strings": 93,
+ "F1": {
+  "agree": 0,
+  "total": 0,
+  "p_value": null,
+  "status": "insufficient data"
+ },
+ "F2": {
+  "table": [
+   [
+    4,
+    4
+   ],
+   [
+    12,
+    274
+   ]
+  ],
+  "status": "tested",
+  "p_value": 0.0003649917485154357
+ },
+ "F3": {
+  "mapped_strings": 63,
+  "mean_logloss_bigram_forward": 3.4883629941682694,
+  "mean_logloss_unigram": 3.932614578766715,
+  "mean_logloss_bigram_reversed": 5.57558637217226,
+  "bigram_beats_unigram": 44,
+  "p_bigram_vs_unigram": 0.0011137657554940172,
+  "forward_beats_reversed": 57,
+  "p_forward_vs_reversed": 8.197843554165474e-12
+ }
+}

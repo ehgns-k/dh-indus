@@ -605,3 +605,31 @@ Mapping: an ICIT string is carried into KP numbering using concordance entries w
 **F2 (count–item pairing, H3.10, on fresh data).** In the fresh set, KP 124–129 images {004, 034, 005, 016, 017} are followed by {390, 405, 406, 407} more often than other signs are. One-sided Fisher exact test, p < 0.01. Fewer than 5 bigrams after the stroke set → "insufficient data".
 
 **F3 (sequential structure and reading direction carry over).** A bigram model with add-0.1 smoothing over the KP vocabulary, trained on KP1979 training lines, is compared with (a) a unigram model trained on the same lines and (b) the same bigram model applied to the fresh strings reversed. Statistic: mean per-sign log-loss on mapped fresh strings of length ≥ 2. Test: one-sided sign test over strings (bigram forward better than unigram; forward better than reversed). Prediction: both comparisons favour the forward bigram, p < 0.01 each.
+
+### F1–F3 results (fresh set: Dholavira and Nausharo, 93 unique strings)
+
+Script: `scripts/phase5_fresh_tests.py`; results: `results/phase5_fresh_tests.json`.
+
+**F1: insufficient data.** No adjacent pair of KP terminal-set signs occurs in the fresh strings (after mapping). The terminal-cluster order cannot be tested here.
+
+**F2: supported.** After a 4–9 stroke sign, the next sign is in {390, 405, 406, 407} in 4 of 8 cases; after any other sign, in 12 of 286 cases. One-sided Fisher exact test p = 0.00036. The count–item pairing found in the pre-1979 corpus holds at two sites excavated later, one of them (Dholavira) far from the sites that dominate KP1979. The count is small (8 bigrams).
+
+**F3: supported.** 63 fresh strings could be mapped completely into KP numbering.
+
+| Model (trained on KP1979 training lines) | Mean log-loss per sign (nats) |
+|---|---:|
+| Bigram, strings in reading order | 3.49 |
+| Unigram | 3.93 |
+| Bigram, strings reversed | 5.58 |
+
+The forward bigram model beats the unigram model on 44 of 63 strings (sign test p = 0.0011) and beats the reversed strings on 57 of 63 (p = 8 × 10⁻¹²). Sequential regularities learned from the pre-1979 corpus carry over to later finds from other regions, and they do so only in the established reading direction. Note that F3 shows shared order and direction, not that the system is linguistic: an ordered non-linguistic notation would also pass it.
+
+### Status of the L1 results after the fresh-data tests
+
+| Result | Held-out (same corpora) | Other site within corpus | Fresh post-1979 sites |
+|---|---|---|---|
+| Terminal-cluster order (H3.3) | yes | yes (H3.4) | not testable (F1) |
+| Count–item pairing, 4–9 strokes (H3.10) | yes | – | yes (F2) |
+| Shared sequential structure and reading direction | – | – | yes (F3) |
+
+The count–item pairing is now the best-supported structural result: it holds on held-out data in two transcriptions, against matched controls, and on inscriptions from sites excavated after the training corpus was published.
