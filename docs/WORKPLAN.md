@@ -90,3 +90,17 @@ Gate G4 (L3 claim): only if the pre-registered held-out fit beats every control 
 | 24–30 | F2–F3 |
 
 Each scheduled working session takes the earliest unfinished task whose inputs are ready, records a pre-registration before every test, and ends with a commit.
+
+## 4. Priority list (revised 2026-11-25, after gates G1–G3)
+
+G1 passed, G2 not met, G3 undecided. The remaining time is ordered by expected value for the success criteria:
+
+| Priority | Task | Package | Why now | Decision data |
+|---|---|---|---|---|
+| P1 | Systematic sign × metadata association scan (object subtype, material, motif, site region): discovery with false-discovery-rate control on the training split, confirmation of the top associations on the held-out split | C2–C4 | The only route to L2 with the metadata available | train → held-out |
+| P2 | False-positive test of the published Sanskrit reading (claim C33): with the proposal's own sign values, normalisation rules and dictionary, how often do random sign-value mappings also give "readable" texts? | E2 | A public decipherment claim that can be tested directly; result informs G4 methodology | all strings (the claim covers the whole corpus) |
+| P3 | Structural analogy with proto-Elamite entries ("item , number"): does the Indus count–item construction occupy the same place in the line as proto-Elamite numerals, and do lines with counts have the proto-Elamite entry shape? | C/D | D1 placed the Indus corpus next to proto-Elamite | ICIT training; confirmation on fresh sets |
+| P4 | Conditional constrained mapping (WP-E3) under candidate languages, with control lexicons | E3 | Required by the plan; expected to be negative | held-out/fresh |
+| P5 | Phase reports and final report | F | Days 26–30 | – |
+
+Each scheduled session takes the highest unfinished priority.
