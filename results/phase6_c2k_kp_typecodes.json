@@ -1,0 +1,128 @@
+{
+ "codes_tested": [
+  "11",
+  "23",
+  "51",
+  "62",
+  "67",
+  "72",
+  "75",
+  "91"
+ ],
+ "code_counts_train": {
+  "11": 866,
+  "23": 151,
+  "51": 35,
+  "62": 70,
+  "67": 54,
+  "72": 31,
+  "75": 56,
+  "91": 33
+ },
+ "n_tests": 72,
+ "n_discovered": 10,
+ "threshold": 0.001,
+ "n_confirmed": 1,
+ "discovered": [
+  {
+   "code": "11",
+   "final": "98",
+   "odds_train": 0.23769507803121248,
+   "p_train": 1.5053807182902918e-13,
+   "direction": "less",
+   "odds_heldout": 0.23035787741670094,
+   "p_heldout": 0.0002431872527783759,
+   "confirmed": true
+  },
+  {
+   "code": "75",
+   "final": "98",
+   "odds_train": 6.931931931931932,
+   "p_train": 4.849136365061632e-09,
+   "direction": "greater",
+   "odds_heldout": 10.114285714285714,
+   "p_heldout": 0.0010305300712507132,
+   "confirmed": false
+  },
+  {
+   "code": "62",
+   "final": "98",
+   "odds_train": 4.940540540540541,
+   "p_train": 3.603434347104444e-07,
+   "direction": "greater",
+   "odds_heldout": 5.816666666666666,
+   "p_heldout": 0.0060940474886442015,
+   "confirmed": false
+  },
+  {
+   "code": "11",
+   "final": "1",
+   "odds_train": 4.123020706455542,
+   "p_train": 1.9038459291403886e-05,
+   "direction": "greater",
+   "odds_heldout": 3.65296803652968,
+   "p_heldout": 0.0662425572720296,
+   "confirmed": false
+  },
+  {
+   "code": "11",
+   "final": "217",
+   "odds_train": 2.512690355329949,
+   "p_train": 3.644842938359893e-05,
+   "direction": "greater",
+   "odds_heldout": 2.472260748959778,
+   "p_heldout": 0.026110493804065434,
+   "confirmed": false
+  },
+  {
+   "code": "51",
+   "final": "326",
+   "odds_train": 6.070833333333334,
+   "p_train": 0.000523402685594701,
+   "direction": "greater",
+   "odds_heldout": 3.5294117647058822,
+   "p_heldout": 0.14370296972351976,
+   "confirmed": false
+  },
+  {
+   "code": "67",
+   "final": "98",
+   "odds_train": 3.310924369747899,
+   "p_train": 0.0012396736089389784,
+   "direction": "greater",
+   "odds_heldout": 4.345679012345679,
+   "p_heldout": 0.055970871565072994,
+   "confirmed": false
+  },
+  {
+   "code": "11",
+   "final": "324",
+   "odds_train": 1.6275584795321638,
+   "p_train": 0.001291965101646456,
+   "direction": "greater",
+   "odds_heldout": 2.1777777777777776,
+   "p_heldout": 0.005159095124229991,
+   "confirmed": false
+  },
+  {
+   "code": "75",
+   "final": "324",
+   "odds_train": 0.1048951048951049,
+   "p_train": 0.002894379247641808,
+   "direction": "less",
+   "odds_heldout": 0.43112947658402206,
+   "p_heldout": 0.3609377558297582,
+   "confirmed": false
+  },
+  {
+   "code": "11",
+   "final": "325",
+   "odds_train": 1.4823807933954534,
+   "p_train": 0.004967968058458291,
+   "direction": "greater",
+   "odds_heldout": 1.0175244010647737,
+   "p_heldout": 0.5371275710942307,
+   "confirmed": false
+  }
+ ]
+}

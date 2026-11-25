@@ -1121,3 +1121,22 @@ KP1979 records an object-type code (`type_code`) for each inscription, taken fro
 - Test: Fisher exact test (two-sided) on the training split for each (final sign, code) pair; Benjamini–Hochberg q = 0.05; confirmation one-sided in the discovered direction on the KP held-out split, Bonferroni 0.01 / (number discovered). KP has no site field in decoded form, so no site stratification is possible; this is a limitation.
 - Prediction: at least one association is confirmed.
 - Interpretation: confirmed codes are then described by cross-tabulating, in the aligned line pairs of the concordance, KP type codes against ICIT subtypes (descriptive).
+
+### C2k result: replicated in KP1979 (one association confirmed)
+
+Scripts: `scripts/phase6_c2k_kp_typecodes.py` (pre-registered), `scripts/phase6_c2k_code_meaning.py` (descriptive); results: `results/phase6_c2k_kp_typecodes.json`, `results/phase6_c2k_code_meaning.json`.
+
+72 tests (8 type codes × 9 final signs); 10 discovered (FDR 0.05); confirmation threshold 0.001.
+
+| KP code | Final sign | OR (train) | OR (held-out) | p (held-out) | Confirmed |
+|---|---|---:|---:|---:|---|
+| 11 | 98 | 0.24 | 0.23 | 2.4 × 10⁻⁴ | yes |
+| 75 | 98 | 6.9 | 10.1 | 1.0 × 10⁻³ | no (at threshold) |
+| 62 | 98 | 4.9 | 5.8 | 6.1 × 10⁻³ | no |
+| 11 | 324 | 1.6 | 2.2 | 5.2 × 10⁻³ | no |
+
+**What the KP codes denote (identical texts in both corpora, descriptive).** Code 11 ↔ ICIT `SEAL:S` (346 of 371 matched texts); code 23 ↔ `SEAL:R` (43 of 48); codes 62 and 67 ↔ `TAB:B`; code 75 ↔ `TAB:I`; code 72 ↔ `TAB:C`.
+
+**Interpretation.** The confirmed KP association says that motif-bearing seals (code 11) avoid ending a line with KP 98, which is the same sign as ICIT 400 (concordance purity 0.99). This is the C2 association "400 avoided on `SEAL:S`" reproduced in an independent transcription with an independent object classification (the 1973 codes). The tablet codes 75 (`TAB:I`) and 62 (`TAB:B`) favour line-final 98 on held-out data at p = 0.001 and 0.006, the same direction as `TAB:B` × 400 in C2, but below the strict threshold. KP has no decoded site field, so C2k is not stratified by site.
+
+**Status of the functional L2 result.** The finding that line-final signs vary with the class of object, in particular that 400/98 closes tablet texts and is avoided on motif-bearing seals, is now confirmed on held-out data in two transcriptions with two independent object classifications. It remains a functional result: it says that the closing sign depends on the kind of document, not what the closing sign means.
