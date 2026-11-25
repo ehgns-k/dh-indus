@@ -1983,3 +1983,16 @@ Script: `scripts/claims_descriptive.py`; results: `results/claims_descriptive.js
 - C21a: restoring one masked sign per strict held-out line with a bigram model: correct first guess 29 %, within the top five 52 % (227 lines).
 - C27: among the 50 most frequent signs, the share of possible ordered pairs that occur (9,000-token samples): Indus 0.29, proto-Elamite 0.27, Ur III administrative 0.24, Akkadian OB letters (syllabic graphemes) 0.41.
 - C28: 1,585 seal lines carry 1,453 distinct texts; 78 texts occur on more than one seal record and 44 at more than one site.
+
+---
+
+## 2026-11-25 (day 1, twenty-first working session): extended batch
+
+The scheduled task was revised so that each run completes a batch of at least four pre-registered analyses (the user asked for longer, more substantial runs). A background survey identifies the signs of claims C26 and C3 in the project's numbering.
+
+### Pre-registration of G3 (claim C3: mirror-image signs; before running)
+
+- **Mirror pairs (shape only):** for signs with an image and ≥ 10 occurrences in the training split, the structural shape descriptor of the G2 robustness check (edge-orientation histogram, `scripts/phase8_g2_hog_robustness.py`) is computed for each image and for its left–right mirror image. A pair (a, b) is a mirror pair if the similarity of a with mirrored b is ≥ 0.90 and exceeds the similarity of a with unmirrored b by at least 0.05 (so that symmetric signs, which match their own mirror image, are not counted).
+- **Usage:** context similarity (1 − Jensen–Shannon divergence of previous/next-sign distributions) on the strict held-out set plus fresh sets 1 and 2, as in G2.
+- **Test:** one-sided Mann–Whitney, mirror pairs vs all other pairs among the same signs, p < 0.01. Fewer than 5 mirror pairs → "insufficient data".
+- **Claim C3** predicts that mirror pairs are allographs, i.e. used alike.
