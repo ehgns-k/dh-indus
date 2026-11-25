@@ -40,7 +40,7 @@ The estimated total number of sign types (Chao1) is about 830 in the ICIT transc
 
 ### 2.7 Formulae with a variable count and substitution classes (added later the same day)
 
-- Texts that are identical except for the number of strokes in one slot are six to eight times more frequent than chance in both transcriptions (ICIT 94 vs 15.2 expected; KP1979 183 vs 23.0); about half differ by two or more strokes (H9.1).
+- Texts that are identical except for the number of strokes in one slot are six to eight times more frequent than chance in both transcriptions (ICIT 94 vs 15.2 expected; KP1979 183 vs 23.0); about half differ by two or more strokes (H9.1). The KP1979 result holds after short/long variants and split strokes are normalised (R4: 84 vs 12.4 expected).
 - Signs that replace one another in otherwise identical texts form classes (numerals; closing and counted-item signs; fish-shaped signs with single strokes; others) that agree between the transcriptions (ARI 0.169, p = 0.0001; H9.3).
 
 ## 3. Results that were not supported

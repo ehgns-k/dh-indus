@@ -1875,3 +1875,9 @@ In KP1979 the most frequent stroke–stroke substitutions of H9.1 were short vs 
 1. long-stroke signs are replaced by the short-stroke sign of the same count (144→121, 145→122, 147→123, 150→124, 151→125);
 2. after step 1, two adjacent single strokes `121 121` are merged into the two-stroke sign `122` (the split/merge finding of the fourteenth session), applied from left to right.
 Unique complete strings are recomputed after normalisation. Stroke set {121–130}; null, number of null sets (10,000) and threshold (p < 0.01) as in H9.1.
+
+### R4 result: H9.1 holds for KP1979 after normalisation
+
+Script: `scripts/review_r4_h91_normalised_kp.py`; results: `results/review_r4_h91_normalised_kp.json`.
+
+After merging long strokes into short strokes of the same count and `121 121` into `122`: 2,069 unique strings, 5,944 minimal pairs, 84 stroke–stroke substitutions against a null mean of 12.4 (SD 7.6, maximum 54); p = 0.0001. **H9.1 passes again.** The most frequent substitutions are now between different counts (3↔4: 9; 2↔3: 8; 1↔3, 3↔5: 5 each; 2↔4, 3↔6, 3↔7, 4↔5: 4 each). The KP1979 result therefore does not depend on short/long writing variants or on split strokes.
