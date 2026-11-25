@@ -45,7 +45,7 @@ Further candidates:
 
 ### Typology
 
-The Indus corpus is statistically closest to proto-Elamite in both transcriptions (D1, D1-KP); proto-cuneiform is second for the ICIT transcription but farthest for KP1979; its estimated inventory of 510–830 signs is comparable to proto-Elamite (D3). The statistics used cannot separate writing from non-linguistic symbol systems (D2), so whether the signs record a language remains open. One descriptive difference from proto-Elamite is clear: Indus numerals precede the sign they go with (71 % of cases), whereas proto-Elamite entries put the sign before the numeral (NUM1).
+The Indus corpus is statistically closest to proto-Elamite in both transcriptions (D1, D1-KP); proto-cuneiform is second for the ICIT transcription but farthest for KP1979; its estimated inventory of 510–830 signs is comparable to proto-Elamite (D3). The statistics used cannot separate writing from non-linguistic symbol systems (D2), so whether the signs record a language remains open. One descriptive difference from proto-Elamite is clear: Indus numerals precede the sign they go with (71 % of cases), whereas proto-Elamite entries put the sign before the numeral (NUM1). Frequent Indus signs combine less freely than syllabic graphemes (CT27); in the ICIT transcription the degree of sparsity matches proto-Elamite and proto-cuneiform, but in KP1979 it lies nearer literary Sumerian (D7), so this measure, like repetition, depends on the transcription.
 
 ### Published claims
 
