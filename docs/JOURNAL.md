@@ -2115,3 +2115,14 @@ KP1979 strict held-out strings have not been used for this question (R1 used the
 ### CT15k result: not supported (underpowered; same direction)
 
 Script: `scripts/claims_ct15k_jar_final_kp.py`; results: `results/claims_ct15k_jar_final_kp.json`. KP strict held-out strings with the jar sign: seals 67 final / 27 not final; tablets 1 / 2. Odds ratio 5.0, one-sided p = 0.21. The direction agrees with CT15, but only three tablet texts with the jar sign remain in the KP strict held-out set, so the replication has almost no power. **CT15k is not supported**; the narrow functional L2 result rests on CT15 alone, with the family-wise caveat noted there.
+
+### Review R5: all non-phonetic analyses reproduce exactly
+
+`scripts/run_all.py --skip-heavy` with `PYTHONHASHSEED=5` (74 analyses): no failures, and no committed result file changed.
+
+### Pre-registration of CT15t (tags as independent evidence for CT15; before running)
+
+**Idea.** If 740 is the characteristic closing sign of seal legends (CT15), objects that carry seal impressions or seal-like legends, the tags (`TAG*`, mostly from Lothal), should show the seal pattern rather than the tablet pattern. Tags were never used as a class in any earlier test (no tag subtype reached the 30-string minimum of C2).
+- **Data:** all ICIT unique complete strings with one coarse object type, `TAG*` or `TAB*`, that contain 740.
+- **Test:** one-sided Fisher exact test: share of strings with 740 in final position higher for tags than for tablets, p < 0.01.
+- **Limitation stated in advance:** tags come mostly from Lothal, tablets mostly from Harappa and Mohenjo-daro, so site and object type are confounded; the test cannot be stratified by site.
