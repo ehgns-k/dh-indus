@@ -2663,3 +2663,12 @@ Results:
 In neither reading and at neither site do seals sharing a rare sign come from the same area significantly more often. At Mohenjo-daro the direction is positive but weak, and it is open to the recording confound stated in advance.
 
 From now on, a registered rule takes precedence over its examples. The examples are checked against the rule before registration.
+
+### End of the twenty-fifth session
+
+- Pre-registered analyses:
+  - Supported: CT15r (robustness), FACE4.
+  - Not supported: MO2a, MO2b, MO1k, AR1, AR1h.
+- R7 was recomputed with 45 tests. `scripts/run_all.py` now runs R7 last, because it reads the results of later scripts.
+- No new external variable (iconographic detail, object size, chronological level, excavation area) is predicted by the signs on unused data.
+- The functional L2 result (CT15) holds and is not a length effect.
