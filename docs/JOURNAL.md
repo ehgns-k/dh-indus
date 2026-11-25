@@ -1429,3 +1429,13 @@ Script: `scripts/phase3_split_merge_strokes.py`; results: `results/phase3_split_
 - The KP count distribution over-counts "1" and under-counts "2" (KP 122 is rare because two strokes are mostly written 121 121 or 144 144).
 - Tests that used counts 3–9 (H3.10, H3.12, F2) and the ICIT sets of H6.1 are not affected. The KP part of H3.8/H3.9 included 121 (count 1) and is affected: part of the "count 1" occurrences are halves of a two-stroke sign. Those tests were not supported in any case; their conclusion does not change.
 - For future numeral work, KP sequences 121/144 + 121/144 should be treated as one two-stroke sign, and ICIT 032 as "two strokes". This normalisation is added to the work plan (L-3) and is applied in the next tests.
+
+### Pre-registration of L3a (are KP-merged ICIT signs contextually distinct? before running)
+
+**Groups.** From the concordance (support ≥ 3, purity ≥ 0.8): KP signs that receive two or more ICIT signs, keeping ICIT members with ≥ 15 occurrences in the ICIT training split. All pairs within such groups are tested.
+
+**Statistic.** Jensen–Shannon divergence between the context distributions of the two ICIT signs (previous sign or line start, and next sign or line end, pooled), training split.
+
+**Null (free variation).** For each pair (a, b) with occurrence counts n_a and n_b: the occurrences of both are pooled and randomly relabelled into groups of sizes n_a and n_b (1,000 times); p = share of relabellings with divergence at least as large as observed. Under the null the two signs are interchangeable variants of one sign.
+
+**Decision.** Bonferroni over the number of pairs at 0.01. A pair below the threshold is recorded as **contextually distinct** (the ICIT distinction is supported by usage, and the KP merger loses information); otherwise as **not distinguishable** (consistent with allographs). This is a descriptive classification decided on the training split.
