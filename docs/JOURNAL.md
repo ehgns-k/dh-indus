@@ -1530,3 +1530,24 @@ Observations:
 **Statistic.** Per-line mean log-probability per token (including the end symbol) under each model; one-sided sign test over lines (HMM better than bigram).
 
 **Prediction.** HMM better on more lines than the bigram, p < 0.01. The state composition (most probable signs per state) is reported descriptively and compared with the positional zones (Q2).
+
+### H7.1 result: not supported; the learned states reproduce the established structure
+
+Script: `scripts/phase3_h71_hmm.py`; results: `results/phase3_h71_hmm.json`.
+
+On the 117 fresh lines the 8-state HMM is better than the bigram model on 43 lines (sign test p = 0.9985); mean log-probability per token −3.73 (HMM) vs −3.58 (bigram). **H7.1 is not supported**: eight classes are too coarse to predict new texts as well as sign-to-sign transitions.
+
+The learned states, however, recover without supervision the structure established by the tests (descriptive):
+
+| State | Start prob. | End prob. | Most probable signs | Corresponds to |
+|---|---:|---:|---|---|
+| 4 | 0.32 | 0.00 | 861, 820, 817, 920, 692 | initial zone (Q2) |
+| 1 | 0.25 | 0.04 | 003, 590, 004, 032, 840, 005 | stroke signs (numerals) and others |
+| 0 | 0.18 | 0.01 | 031, 001, 741, 032, 140, 900 | single and double strokes, 741 |
+| 5 | 0.22 | 0.00 | 240, 235, 220, 233, 032, 415 | fish-shaped family |
+| 2 | 0.00 | 0.48 | 390, 220, 368, 407, 405, 700 | count–item partners (390–407) |
+| 3 | 0.00 | 0.03 | 002, 060, 741, 001 | medial signs, 002 |
+| 6 | 0.03 | 0.01 | 740, 100, 760, 033, 176 | medial |
+| 7 | 0.00 | 0.86 | 740, 400, 520, 090, 151, 527 | terminal cluster |
+
+The states that end lines (7, and 2 with end probability 0.48) contain the terminal set and the partners of the numerals, the states that start lines contain the initial-zone signs and the numerals, and the fish-shaped signs form their own state. An unsupervised model trained only on the training split thus arrives at the same functional grouping (initial signs, numerals, counted items, fish-shaped signs, closing signs) as the hypothesis tests, which is a useful consistency check, although the model does not predict better than the bigram.
