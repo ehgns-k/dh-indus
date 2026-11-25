@@ -16,10 +16,10 @@
  "by_corpus": {
   "cipher_akkadian_ob_letters": {
    "mean_gain_per_sign": {
-    "sanskrit": 3.6386767688980455,
-    "tamil": 4.584592534235733,
-    "sumerian": 4.728801163757532,
-    "akkadian": 5.211516750310288,
+    "sanskrit": 3.6483081653266694,
+    "tamil": 4.577523715804525,
+    "sumerian": 4.722964820279225,
+    "akkadian": 5.169946962787054,
     "pseudo": 4.3918116930081315
    },
    "ranking": [
@@ -40,10 +40,10 @@
   },
   "cipher_sumerian_ur3_admin": {
    "mean_gain_per_sign": {
-    "sanskrit": 3.6060216229829294,
-    "tamil": 4.31210267757427,
-    "sumerian": 4.38488023732683,
-    "akkadian": 5.0822560219023645,
+    "sanskrit": 3.6016967317057356,
+    "tamil": 4.286481065838012,
+    "sumerian": 4.368536619539223,
+    "akkadian": 5.146719697355989,
     "pseudo": 4.205536696122728
    },
    "ranking": [
@@ -64,10 +64,10 @@
   },
   "indus": {
    "mean_gain_per_sign": {
-    "sanskrit": 3.6656143877474077,
-    "tamil": 4.525710374752616,
-    "sumerian": 4.669435704819697,
-    "akkadian": 5.232135139693187,
+    "sanskrit": 3.591668899593199,
+    "tamil": 4.491777303628825,
+    "sumerian": 4.6508004006773245,
+    "akkadian": 5.154681176969185,
     "pseudo": 4.304776205712483
    },
    "ranking": [

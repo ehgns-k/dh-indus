@@ -63,6 +63,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | H9.4 | ICIT | discovery train, confirmation strict held-out | 1 of 6 confirmed (class 4 avoids TAB:C) | L2 candidate |
 | T1 | ICIT (Harappa, periods 3B/3C) | all records with period | not supported (mostly insufficient data) | |
 | H10.1 | ICIT | all unique strings | not supported (p = 0.67) | name-like slot fillers not more site-specific |
+| R3 | all | – | review: all analyses re-run; phonetic searches made deterministic; conclusions unchanged | |
 
 Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 

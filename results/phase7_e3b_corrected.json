@@ -1,60 +1,60 @@
 {
  "raw_means": {
   "cipher_akkadian_ob_letters|sanskrit": {
-   "gain_real": 3.717117338869968,
-   "gain_reordered": 3.431814894704088
+   "gain_real": 3.700947943511166,
+   "gain_reordered": 3.4054534039029374
   },
   "cipher_akkadian_ob_letters|tamil": {
-   "gain_real": 4.7587368656462745,
-   "gain_reordered": 4.597490682209456
+   "gain_real": 4.754168851804375,
+   "gain_reordered": 4.56128107266341
   },
   "cipher_akkadian_ob_letters|sumerian": {
-   "gain_real": 4.928425207476133,
-   "gain_reordered": 4.8177478451653375
+   "gain_real": 4.9347251968473405,
+   "gain_reordered": 4.811191081751174
   },
   "cipher_akkadian_ob_letters|akkadian": {
-   "gain_real": 5.248892740898073,
-   "gain_reordered": 5.090861019153693
+   "gain_real": 5.199665100544271,
+   "gain_reordered": 5.141729324059687
   },
   "cipher_akkadian_ob_letters|pseudo": {
    "gain_real": 4.526729454855077,
    "gain_reordered": 4.533244422676864
   },
   "cipher_sumerian_ur3_admin|sanskrit": {
-   "gain_real": 3.633508545834538,
-   "gain_reordered": 3.4040770620740597
+   "gain_real": 3.666624276239177,
+   "gain_reordered": 3.3864791851272074
   },
   "cipher_sumerian_ur3_admin|tamil": {
-   "gain_real": 4.526941248093902,
-   "gain_reordered": 4.361135565958843
+   "gain_real": 4.468866652485831,
+   "gain_reordered": 4.384434090645076
   },
   "cipher_sumerian_ur3_admin|sumerian": {
-   "gain_real": 4.613369984448948,
-   "gain_reordered": 4.514676199175338
+   "gain_real": 4.594393741183326,
+   "gain_reordered": 4.482573021394972
   },
   "cipher_sumerian_ur3_admin|akkadian": {
-   "gain_real": 5.17740563129888,
-   "gain_reordered": 5.028022910345135
+   "gain_real": 5.2181466617796,
+   "gain_reordered": 5.04952184688104
   },
   "cipher_sumerian_ur3_admin|pseudo": {
    "gain_real": 4.357607988402061,
    "gain_reordered": 4.351529039001723
   },
   "indus|sanskrit": {
-   "gain_real": 3.7407750908531643,
-   "gain_reordered": 3.447229014073708
+   "gain_real": 3.684286238367826,
+   "gain_reordered": 3.4356783723712105
   },
   "indus|tamil": {
-   "gain_real": 4.618651740090172,
-   "gain_reordered": 4.464212499580708
+   "gain_real": 4.626540718342462,
+   "gain_reordered": 4.492183509030013
   },
   "indus|sumerian": {
-   "gain_real": 4.779827802353491,
-   "gain_reordered": 4.6628257803989674
+   "gain_real": 4.819537232414317,
+   "gain_reordered": 4.671986193612734
   },
   "indus|akkadian": {
-   "gain_real": 5.241754932079748,
-   "gain_reordered": 5.15585215733088
+   "gain_real": 5.235491402215263,
+   "gain_reordered": 5.147558169218529
   },
   "indus|pseudo": {
    "gain_real": 4.407888706678775,
@@ -64,75 +64,75 @@
  "by_corpus": {
   "cipher_akkadian_ob_letters": {
    "mean_delta_prime": {
-    "sanskrit": 0.28530244416588013,
-    "tamil": 0.1612461834368186,
-    "sumerian": 0.11067736231079593,
-    "akkadian": 0.1580317217443794,
+    "sanskrit": 0.2954945396082285,
+    "tamil": 0.192887779140966,
+    "sumerian": 0.12353411509616585,
+    "akkadian": 0.057935776484584436,
     "pseudo": -0.006514967821787293
    },
    "ranking": [
     "sanskrit",
     "tamil",
+    "sumerian",
+    "akkadian",
+    "pseudo"
+   ],
+   "best": "sanskrit",
+   "bootstrap_p_best_vs_other": {
+    "tamil": 0.014985014985014986,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "best_clearly_ahead": false
+  },
+  "cipher_sumerian_ur3_admin": {
+   "mean_delta_prime": {
+    "sanskrit": 0.2801450911119695,
+    "tamil": 0.08443256184075495,
+    "sumerian": 0.1118207197883544,
+    "akkadian": 0.16862481489855963,
+    "pseudo": 0.006078949400338404
+   },
+   "ranking": [
+    "sanskrit",
     "akkadian",
     "sumerian",
+    "tamil",
     "pseudo"
    ],
    "best": "sanskrit",
    "bootstrap_p_best_vs_other": {
     "tamil": 0.000999000999000999,
     "sumerian": 0.000999000999000999,
-    "akkadian": 0.000999000999000999,
+    "akkadian": 0.007992007992007992,
     "pseudo": 0.000999000999000999
    },
    "best_clearly_ahead": true
   },
-  "cipher_sumerian_ur3_admin": {
-   "mean_delta_prime": {
-    "sanskrit": 0.2294314837604782,
-    "tamil": 0.16580568213505853,
-    "sumerian": 0.0986937852736093,
-    "akkadian": 0.1493827209537458,
-    "pseudo": 0.006078949400338404
-   },
-   "ranking": [
-    "sanskrit",
-    "tamil",
-    "akkadian",
-    "sumerian",
-    "pseudo"
-   ],
-   "best": "sanskrit",
-   "bootstrap_p_best_vs_other": {
-    "tamil": 0.06493506493506493,
-    "sumerian": 0.000999000999000999,
-    "akkadian": 0.03996003996003996,
-    "pseudo": 0.000999000999000999
-   },
-   "best_clearly_ahead": false
-  },
   "indus": {
    "mean_delta_prime": {
-    "sanskrit": 0.29354607677945616,
-    "tamil": 0.15443924050946328,
-    "sumerian": 0.11700202195452337,
-    "akkadian": 0.08590277474886762,
+    "sanskrit": 0.24860786599661588,
+    "tamil": 0.1343572093124502,
+    "sumerian": 0.14755103880158155,
+    "akkadian": 0.0879332329967336,
     "pseudo": 0.0055820724387479655
    },
    "ranking": [
     "sanskrit",
-    "tamil",
     "sumerian",
+    "tamil",
     "akkadian",
     "pseudo"
    ],
    "best": "sanskrit",
    "bootstrap_p_best_vs_other": {
-    "tamil": 0.002997002997002997,
-    "sumerian": 0.000999000999000999,
+    "tamil": 0.006993006993006993,
+    "sumerian": 0.02197802197802198,
     "akkadian": 0.000999000999000999,
     "pseudo": 0.000999000999000999
    },
-   "best_clearly_ahead": true
+   "best_clearly_ahead": false
   }
  },
  "method_has_power": false,

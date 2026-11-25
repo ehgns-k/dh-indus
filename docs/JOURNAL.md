@@ -1845,3 +1845,22 @@ Script: `scripts/phase10_h101_site_specificity.py`; results: `results/phase10_h1
 25 name-like (class 0) and 36 conventional signs. Mean site-specificity 0.123 vs 0.115; difference 0.008; permutation mean 0.018 (SD 0.022); p = 0.67. **H10.1 is not supported.**
 
 The most site-specific signs are in fact conventional ones: 700 and 400 (concentrated at Harappa), which close many Harappa tablet texts (C2). Site differences in sign use are dominated by the different mixes of object types at the sites, not by a name-like slot.
+
+### Review R3: full re-run of all analyses; non-determinism in the phonetic searches
+
+Script: `scripts/run_all.py` (66 analyses in dependency order); procedure in `docs/REPRODUCIBILITY.md`.
+
+All 66 analyses ran without error. Ten result files differed from the committed versions:
+- **Order only (six files):** `phase10_t1`, `phase3_split_merge`, `phase6_c1`, `phase9_formulae` and `docs/FORMULAE.md` differed only in the order of tied or dictionary items (and, for C1, which tied signs fell within a top-8 list). No number or conclusion changed (for example C1 p = 0.235 in both runs). The outputs are now sorted explicitly and are identical under different `PYTHONHASHSEED` values.
+- **Phonetic searches (E3, E3b, E3c, E3d).** Their random seeds were derived from Python's `hash()` of strings, which is randomised per process, so every run fitted different assignments. The seeds now use CRC32; two runs with different hash seeds give byte-identical files.
+
+Comparison of the three runs (first, re-run, deterministic version) for the decision variables:
+
+| Analysis | Method has power | Indus language favoured |
+|---|---|---|
+| E3 | no / no / no | none / none / none |
+| E3b | no / no / no | none / none / none |
+| E3c | no / no / no (power at 8,000 lines) | – |
+| E3d | no / no / no | none / none / none |
+
+The registered conclusions do not change. The detailed rankings do: for example the first-ranked language for the Indus corpus in E3d was Old Tamil in the first run, Akkadian in the re-run, and Old Tamil (not clearly ahead) in the deterministic version; for the Akkadian cipher in E3b the true language Akkadian ranked last in the deterministic version. Run-to-run variation of this size is further evidence that the rankings carry no information about the language of the corpus. The journal tables for E3–E3d above report the first runs; the committed result files now hold the deterministic version.

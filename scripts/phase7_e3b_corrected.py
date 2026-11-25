@@ -1,7 +1,7 @@
 """E3b: phonetic-assignment search with the corrected measure
 Delta'_L = gain_L(real) - gain_L(within-line reordered), per held-out line.
 Pre-registered in docs/JOURNAL.md (eleventh working session)."""
-import collections, importlib.util, json, pathlib, random
+import collections, importlib.util, json, pathlib, random, zlib
 from multiprocessing import Pool
 import numpy as np
 from indus import phonetic as ph
@@ -50,7 +50,7 @@ def init(W, C):
 def job(args):
     cname, lang = args
     tr, te = _C[cname]
-    seed = abs(hash((cname, lang))) % 10**6
+    seed = zlib.crc32(f"{cname}|{lang}".encode()) % 10**6
     real = line_gains(tr, te, lang, seed)
     ctrl = line_gains(reorder(tr, 1), reorder(te, 2), lang, seed)
     return cname, lang, (real - ctrl).tolist(), float(np.nanmean(real)), float(np.nanmean(ctrl))

@@ -2,7 +2,7 @@
 Pre-registered (with one amendment) in docs/JOURNAL.md.
 Run: PYTHONPATH=src python scripts/phase7_e3_phonetic_search.py
 """
-import collections, json, random
+import collections, json, random, zlib
 from multiprocessing import Pool
 import numpy as np
 from indus import phonetic as ph
@@ -36,7 +36,7 @@ def job(args):
     top = {s: i for i, (s, _) in enumerate(collections.Counter(x for l in tr for x in l).most_common(100))}
     trs, tes = ph.segments(tr, top), ph.segments(te, top)
     lm = ph.TrigramLM(_W[lang])
-    rng = random.Random(hash((cname, lang)) % 10**6)
+    rng = random.Random(zlib.crc32(f"{cname}|{lang}".encode()) % 10**6)
     assign = ph.fit(trs, len(top), lm, rng, sweeps=4, restarts=2)
     gain = ph.evaluate(tes, assign, len(top), lm, random.Random(11))
     inv = {i: s for s, i in top.items()}

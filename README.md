@@ -60,6 +60,10 @@ PYTHONPATH=src python scripts/phase3_h33_heldout.py
 PYTHONPATH=src python scripts/phase3_h34_sites.py
 ```
 
+## Reproducibility
+
+See `docs/REPRODUCIBILITY.md`. `scripts/run_all.py` re-runs every analysis and lists result files that differ from the committed versions.
+
 ## Data sources
 
 The raw data are not included in this repository. `scripts/fetch_data.py` downloads the pinned versions listed in `data/sources.tsv` and checks their checksums.
