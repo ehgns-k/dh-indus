@@ -1,0 +1,92 @@
+{
+ "corpus_sizes": {
+  "cipher_akkadian_ob_letters": [
+   1600,
+   400
+  ],
+  "cipher_sumerian_ur3_admin": [
+   1600,
+   400
+  ],
+  "indus": [
+   1663,
+   396
+  ]
+ },
+ "by_corpus": {
+  "cipher_akkadian_ob_letters": {
+   "mean_gain_per_sign": {
+    "sanskrit": 3.6386767688980455,
+    "tamil": 4.584592534235733,
+    "sumerian": 4.728801163757532,
+    "akkadian": 5.211516750310288,
+    "pseudo": 4.3918116930081315
+   },
+   "ranking": [
+    "akkadian",
+    "sumerian",
+    "tamil",
+    "pseudo",
+    "sanskrit"
+   ],
+   "best": "akkadian",
+   "bootstrap_p_best_vs_other": {
+    "sanskrit": 0.000999000999000999,
+    "tamil": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "best_clearly_ahead": true
+  },
+  "cipher_sumerian_ur3_admin": {
+   "mean_gain_per_sign": {
+    "sanskrit": 3.6060216229829294,
+    "tamil": 4.31210267757427,
+    "sumerian": 4.38488023732683,
+    "akkadian": 5.0822560219023645,
+    "pseudo": 4.205536696122728
+   },
+   "ranking": [
+    "akkadian",
+    "sumerian",
+    "tamil",
+    "pseudo",
+    "sanskrit"
+   ],
+   "best": "akkadian",
+   "bootstrap_p_best_vs_other": {
+    "sanskrit": 0.000999000999000999,
+    "tamil": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "best_clearly_ahead": true
+  },
+  "indus": {
+   "mean_gain_per_sign": {
+    "sanskrit": 3.6656143877474077,
+    "tamil": 4.525710374752616,
+    "sumerian": 4.669435704819697,
+    "akkadian": 5.232135139693187,
+    "pseudo": 4.304776205712483
+   },
+   "ranking": [
+    "akkadian",
+    "sumerian",
+    "tamil",
+    "pseudo",
+    "sanskrit"
+   ],
+   "best": "akkadian",
+   "bootstrap_p_best_vs_other": {
+    "sanskrit": 0.000999000999000999,
+    "tamil": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "best_clearly_ahead": true
+  }
+ },
+ "method_has_power": false,
+ "indus_language_favoured": null
+}

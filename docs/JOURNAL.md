@@ -1177,3 +1177,31 @@ Each corpus is limited to 2,000 unique lines and split 80/20 at random (Indus: t
 **Untested hypothesis.** No usable Munda text corpus was found, so a Munda hypothesis is not tested.
 
 **Amendment to E3 (before any result was computed).** The Neo-Assyrian letters in the CDLI dump yield only 643 Akkadian words after filtering, too few for a language model. The Akkadian model is instead trained on **Old Assyrian letters** (23,032 words): a different dialect and period from the Old Babylonian letters used as positive control 1, so the control remains a related-language decipherment, not an identity match. Word counts of the other models: Sanskrit 175,177 headwords; Old Tamil 79,353 word tokens; Sumerian (OB literary) 174,781 word tokens.
+
+### E3 result: the method has no power (positive control 2 fails); no language preference is claimed
+
+Script: `scripts/phase7_e3_phonetic_search.py`; results: `results/phase7_e3_phonetic_search.json`, fitted assignments in `results/phase7_e3_assignments.json`.
+
+Mean held-out gain per sign over random assignments (nats):
+
+| Corpus | Sanskrit | Old Tamil | Sumerian | Akkadian | Pseudo |
+|---|---:|---:|---:|---:|---:|
+| Cipher: Akkadian OB letters (true: Akkadian) | 3.64 | 4.59 | 4.73 | **5.21** | 4.39 |
+| Cipher: Sumerian Ur III administrative (true: Sumerian) | 3.61 | 4.31 | 4.39 | **5.08** | 4.21 |
+| Indus | 3.67 | 4.53 | 4.67 | **5.23** | 4.31 |
+
+All bootstrap differences between the first and the other languages have p = 0.001.
+
+By decision rule 1 the method has **no power**: positive control 2 picks Akkadian instead of Sumerian. The table shows why. The ranking is the same for all three corpora (Akkadian > Sumerian > Tamil > pseudo-language > Sanskrit), including the Indus corpus. The gain therefore measures a property of each language model, most likely how concentrated its letter distribution is (the Akkadian model is trained on the smallest corpus and is the most peaked; the Sanskrit model, on a large and varied headword list, the least), not how well a language fits the corpus. The "success" of positive control 1 is an artefact of the same effect.
+
+Conclusion: E3 provides no evidence for any language. The Indus result "Akkadian first" is the artefact and must not be read as a finding. This is recorded as a failed method, which is itself useful: it shows that a held-out gain over random assignments is not comparable across languages.
+
+### Pre-registration of E3b (corrected measure; before running)
+
+To remove the language-model effect, each language's gain on a corpus is compared with its gain on a **control version of the same corpus** in which the signs of every line are randomly reordered (same signs, same line lengths; sequential structure destroyed; the same reordering for all languages):
+
+Δ′_L = gain_L(real corpus) − gain_L(reordered corpus).
+
+The language-model effect affects both terms alike and cancels; what remains is how much the sequential structure of the corpus agrees with the sound sequences of language L. Everything else (models, search, held-out split, 4 sweeps, 2 restarts, bootstrap) is as in E3; the bootstrap is over held-out lines, pairing each real line with its reordered version.
+
+Decision rules as in E3, applied to Δ′: the method has power only if both positive controls rank their true language first with p < 0.01 against every other language; only then is an Indus preference considered.
