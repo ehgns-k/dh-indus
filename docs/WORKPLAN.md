@@ -155,3 +155,14 @@ The short tests that the current data allow have largely been run. The remaining
 - New items:
   - **L-2b Modifiers.** Using the mayig feature coding (Parpola signs with feature vectors) or shape differences, identify recurring modifications (added strokes above, enclosure, crossing) and test whether a modification shifts usage in the same direction across different base signs (diacritic-like behaviour). Discovery on training data, confirmation on strict held-out and fresh data.
   - **L-3b Combined inventory.** A sign list that keeps every distinction supported by usage in either transcription (L3a, L3b), with a mapping from both numberings; rerun key L1 tests on it.
+
+### Progress and additions (twenty-fourth session)
+
+- L-1: numeral order compared with proto-Elamite and proto-cuneiform (NUM1); no fixed order of long and short strokes (NUM2); numeral faces of two-face Harappa tablets (FACE2, FACE3).
+- L-3b: combined inventory done (`docs/COMBINED_INVENTORY.md`).
+- Review: family-wise review of all tests on unused data (R7, R7b); all analyses re-run (`scripts/run_all.py`).
+- New external variable: object size (SZ1–SZ4). No sign predicts seal size on unused data.
+- New items:
+  - **L-6 Chronology at Mohenjo-daro.** The source gives Early / Intermediate / Late levels for about 800 Mohenjo-daro records (`period`) and depths. Use them as an external variable (discovery on training strings, confirmation on strict held-out), after checking how the levels were assigned.
+  - **L-7 `cult` codes.** The `cult` column (SAN, Trough, SAF, RAN …; 1,457 records) is undocumented. Survey its meaning before any use.
+  - **L-8 Numeral faces.** Check against the CISI 3.1 photographs whether the counts on the numeral faces were read correctly, if the volumes become accessible.
