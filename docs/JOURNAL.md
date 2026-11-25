@@ -1401,3 +1401,31 @@ Script: `scripts/phase6_h61_numeral_series.py`; results: `results/phase6_h61_num
 χ² = 11.9; permutation p = 0.0012 (< 0.01). **H6.1 is supported.** At sites excavated after 1979, the short and long stroke series take disjoint sets of partner signs: short strokes go with the 390–407 group and 585/575, long strokes with 520, never the reverse.
 
 Interpretation and level. This is the pattern expected if the two series are two numeral notations used for different classes of counted items, as in proto-cuneiform, where the kind of goods determines the numerical system. The result is structural (L1): the prediction concerns signs inside the text, not information outside it, so it does not meet the ROADMAP definition of L2. It is, however, the most specific evidence so far for a **numeral-system reading** of the stroke signs: counts, series and partner signs form a consistent system that is reproduced on independent finds.
+
+---
+
+## 2026-11-25 (day 1, fourteenth working session): long-horizon project L-1 (numeral system)
+
+### Descriptive (training split): stroke signs in sequence
+
+Lines by number of stroke signs (training): KP1979 0: 993, 1: 461, 2: 186, 3: 40, 4: 11, 5: 1; ICIT 0: 985, 1: 568, 2: 98, 3: 12. Adjacent stroke–stroke pairs are frequent in KP1979 (long 1 + long 1: 61; short 1 + short 1: 42; short 1 + long 1 and long 1 + short 1: 37 each) but rare in ICIT (largest: short 1 + short 4: 6; short 1 + short 3: 6; long 3 + long 3: 5).
+
+### Split/merge differences between the transcriptions (descriptive)
+
+Script: `scripts/phase3_split_merge_strokes.py`; results: `results/phase3_split_merge.json`. ICIT strings (mapped to KP numbering) were compared with KP strings that differ only in that one ICIT sign corresponds to two KP signs. The recurring cases include:
+
+| ICIT sign | KP pair | Cases | Example (ICIT / KP) |
+|---|---|---:|---|
+| 032 | 144 144 | 15 | `032 226` / `144 144 57` |
+| 032 | 121 144 | 14 | `032 390 001 004 900 154` / `121 144 86 121 124 154 4` |
+| 032 | 121 121 | 12 | `032` / `121 121` |
+| 032 | 144 121 | 9 | `003 645 032 590` / `123 240 144 121 276` |
+
+(Other entries of the table, for example ICIT 740 ↔ KP `325 98`, are partly coincidental matches between different texts and are not interpreted.)
+
+**Finding.** A pair of single strokes that KP1979 writes as two signs (121/144 in any combination) is written by the ICIT-style source as one sign, 032, which elsewhere corresponds to KP 145 (two long strokes). The frequent single-stroke chains of KP1979 are therefore mostly a transcription convention for a **two-stroke** sign, not sequences of separate "1"s.
+
+**Consequences.**
+- The KP count distribution over-counts "1" and under-counts "2" (KP 122 is rare because two strokes are mostly written 121 121 or 144 144).
+- Tests that used counts 3–9 (H3.10, H3.12, F2) and the ICIT sets of H6.1 are not affected. The KP part of H3.8/H3.9 included 121 (count 1) and is affected: part of the "count 1" occurrences are halves of a two-stroke sign. Those tests were not supported in any case; their conclusion does not change.
+- For future numeral work, KP sequences 121/144 + 121/144 should be treated as one two-stroke sign, and ICIT 032 as "two strokes". This normalisation is added to the work plan (L-3) and is applied in the next tests.
