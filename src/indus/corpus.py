@@ -169,3 +169,30 @@ def is_heldout(tokens: list[str], corpus: str) -> bool:
     import hashlib
     key = (corpus + "|" + " ".join(tokens)).encode()
     return int(hashlib.sha256(key).hexdigest(), 16) % 5 == 0
+
+
+def _ed1(a, b) -> bool:
+    if abs(len(a) - len(b)) > 1:
+        return False
+    if len(a) == len(b):
+        return sum(x != y for x, y in zip(a, b)) <= 1
+    if len(a) > len(b):
+        a, b = b, a
+    return any(b[:i] + b[i + 1:] == a for i in range(len(b)))
+
+
+def strict_heldout(strings, corpus: str) -> set:
+    """Held-out strings (from `strings`) with no training string within edit
+    distance 1. Added in the review pass (journal, thirteenth session)."""
+    import collections
+    strings = [tuple(s) for s in strings]
+    train = collections.defaultdict(list)
+    for s in strings:
+        if not is_heldout(list(s), corpus):
+            train[len(s)].append(s)
+    out = set()
+    for s in strings:
+        if is_heldout(list(s), corpus):
+            if not any(_ed1(s, t) for L in (len(s) - 1, len(s), len(s) + 1) for t in train.get(L, [])):
+                out.add(s)
+    return out

@@ -1306,3 +1306,29 @@ The supported held-out results are re-decided on the **strict held-out set**: he
 - C2 (the six confirmed associations; threshold 0.01/40);
 - C2k (KP code 11 × final 98; threshold 0.001).
 A result keeps its status only if it passes on the strict set; otherwise its status is downgraded in the README and the reports, with the reason. Results decided on fresh data (F2, F3, B1, B4) are unaffected, because the fresh sites are disjoint from the training corpus by date of excavation; they are listed for completeness.
+
+### R1 result: L1 results survive; the L2 result is downgraded to a candidate
+
+Script: `scripts/review_r1_strict_heldout.py`; results: `results/review_r1_strict_heldout.json`. Strict held-out sets: ICIT 230 of 396 strings, KP1979 227 of 431.
+
+| Result | Corpus | Strict held-out | Passes original criterion |
+|---|---|---|---|
+| H3.3 terminal order | ICIT | 21 / 22 agree, p = 5.5 × 10⁻⁶ | yes |
+| H3.3 terminal order | KP1979 | 14 / 15 agree, p = 4.9 × 10⁻⁴ | yes |
+| H3.10 4–9 strokes → target | KP1979 | OR 23.1, p = 3.3 × 10⁻⁶ | yes |
+| H3.10 4–9 strokes → target | ICIT | OR 19.0, p = 2.5 × 10⁻⁴ | yes |
+| H3.12a 7 strokes → 288/289 (585/575) | KP1979 / ICIT | p = 5.1 × 10⁻⁴ / 4.0 × 10⁻⁷ | yes / yes |
+| H3.12b 3 long → 217 (520) | KP1979 / ICIT | p = 1.1 × 10⁻⁷ / 1.5 × 10⁻⁶ | yes / yes |
+| C2 SEAL:R × 806 | ICIT | OR 7.1, p = 3.1 × 10⁻⁴ | no (threshold 2.5 × 10⁻⁴) |
+| C2 SEAL:S × 741 | ICIT | OR 12.7, p = 3.2 × 10⁻⁴ | no |
+| C2 SEAL:R × 407 | ICIT | OR 8.7, p = 9.3 × 10⁻⁴ | no |
+| C2 SEAL:R × 154 | ICIT | OR 13.5, p = 1.7 × 10⁻³ | no |
+| C2 region × 400 | ICIT | OR 3.6, p = 1.9 × 10⁻³ | no |
+| C2 SEAL:S × 400 | ICIT | OR 0.18, p = 4.0 × 10⁻³ | no |
+| C2k code 11 × final 98 | KP1979 | OR 0.22, p = 0.013 | no (threshold 0.001) |
+
+**L1.** All structural held-out results (H3.3, H3.10, H3.12a, H3.12b) pass their original criteria on the strict sets in both corpora. Together with the fresh-data results (F2, F3, B1, B4), the L1 status stands.
+
+**L2.** The effect sizes of the C2 and C2k associations are almost unchanged on the strict sets (for example SEAL:R × 407: OR 10.9 → 8.7; code 11 × 98: OR 0.23 → 0.22), but with about half the data none reaches the strict multiple-comparison thresholds. By the rule registered for R1, the L2 result is **downgraded to an L2 candidate**: the association between closing sign and object class is consistent in two transcriptions and survives the removal of near-duplicates in direction and size, but it is not confirmed at the registered level once near-duplicates are excluded. The strict held-out data have now been looked at for this question, so a confirmatory test needs new data.
+
+**Lesson for later tests.** All future held-out tests use the strict held-out set by default (`strict_heldout` in `src/indus/corpus.py`).

@@ -22,7 +22,7 @@ This report summarises the results of the first working day against the success 
 3. **Count–item pairing.** Signs of 4–9 short strokes are followed by one sign group (KP 86 / ICIT 390–407) far more often than other signs are; the seven-stroke sign by KP 288/289, the three-long-stroke sign by KP 217. Held-out data in two transcriptions, matched controls, and post-1979 sites (H3.10–H3.12, H3.11, F2).
 4. **Positional template and recurring units.** An initial → medial → terminal template and a lexicon of recurring sign units, learned from the 1979 corpus, predict the post-1979 inscriptions against controls that preserve all earlier rules (B1, B4; gate G1).
 
-### L2: semantic or functional categories (met in narrow, functional scope)
+### L2: semantic or functional categories (met in narrow, functional scope; **downgraded to a candidate in the review of the same day, see note below**)
 
 - **The closing sign depends on the kind of object.** Line-final 400 (KP 98) is avoided on motif-bearing seals and favoured on tablets; 407 and 154 are favoured on rectangular seals without motif. Discovered with false-discovery-rate control and confirmed on held-out data in the ICIT corpus with site stratification (C2), and replicated in KP1979 with its independent 1973 object codes (C2k). The meaning of these signs is not identified.
 
@@ -55,3 +55,8 @@ This report summarises the results of the first working day against the success 
 ## 5. Next steps
 
 See `docs/WORKPLAN.md`, section 4 (priority list): structural analogy with proto-Elamite entries (P3), conditional language-hypothesis tests with the calibration of E2b (P4), and the final report (P5).
+
+
+## Note added in the review (same day)
+
+A review found that 42–47 % of held-out strings had a near-identical training string. All held-out results were re-decided without them (R1, `docs/JOURNAL.md`). The L1 results pass again. The C2/C2k association between closing sign and object class keeps its effect size but no longer reaches the strict thresholds, so it is now an **L2 candidate**, not an L2 result.
