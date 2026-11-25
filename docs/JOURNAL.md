@@ -1580,3 +1580,22 @@ Script: `scripts/phase4_d1_kp_robustness.py`; results: `results/phase4_d1_kp_rob
 With KP1979 in place of the ICIT-style source, the nearest reference corpus is still proto-Elamite (mean distance 2.70), followed by Akkadian letters (3.22), Ur III administrative (3.74), OB literary (3.99) and proto-cuneiform (4.74); an administrative corpus is nearer than both non-administrative ones in 19 of 20 resamples. The D1 placement next to proto-Elamite holds for both transcriptions.
 
 **Correction.** The D1 and D2 entries noted that the Indus corpus shares a very low repetition rate with proto-cuneiform and proto-Elamite. With KP1979 the repetition rate is 0.166, higher than in proto-Elamite (0.068) and close to OB literary Sumerian (0.181). That observation depends on the transcription and is withdrawn. The other D1 observations (direction asymmetry, final concentration, closeness to proto-Elamite) are unaffected.
+
+---
+
+## 2026-11-25 (day 1, fourteenth working session, continued): long-horizon project L-2 (glyph shapes)
+
+### Glyph data
+
+`docs/GLYPH_DATA_SURVEY.md` surveys 16 open resources. The most useful for shape work is https://github.com/decipher-indus/font-generation (commit `ad564ff`): binary images of 726 signs keyed to ICIT numbers (`bmps/S###.bmp`). According to its download script the images were taken from the ICIT sign list; the repository states no licence. The images are therefore used for analysis only and are **not** redistributed here; `scripts/fetch_glyphs.py` downloads them at the pinned commit.
+
+### Pre-registration of G1 (shape and usage; before running)
+
+**Question.** Do signs that look alike also behave alike in the texts? If shape carries function (families of related signs), shape similarity and context similarity should be correlated.
+
+- **Signs:** ICIT signs with ≥ 15 occurrences in the training split that have an image.
+- **Shape similarity:** each image cropped to its bounding box, padded to a square, resized to 32 × 32, blurred with a Gaussian filter (σ = 1.5 pixels), flattened; cosine similarity between signs.
+- **Context similarity:** 1 − Jensen–Shannon divergence between the pooled previous-sign / next-sign distributions of two signs (as in L3a), training split.
+- **Test:** Mantel test, Spearman correlation between the two similarity matrices (upper triangles), 10,000 permutations of sign labels (smallest attainable p = 0.0001, one hundredth of the threshold).
+- **Prediction:** positive correlation, p < 0.01.
+- **Descriptive follow-up:** the sign pairs that are most similar in both respects are listed.
