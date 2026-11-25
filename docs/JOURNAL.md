@@ -2840,3 +2840,27 @@ Script: `scripts/batch8_direction_sites.py`; results: `results/batch8_direction_
 - With the CDLI numerals kept with their counts (for example `3(N01)`), U(partner | numeral) is 0.40 (proto-Elamite) and 0.36 (proto-cuneiform), against 0.34 for the Indus texts.
 - The numeral vocabularies differ greatly: 11 Indus stroke signs, 99 and 207 CDLI numeral tokens. With 300 pairs per resample, U rises with the number of categories, so neither version is a fair comparison.
 - The D6 statement that Indus numeral partners are more specific than those of the proto-administrative systems is therefore withdrawn. The comparison is recorded as inconclusive.
+
+### Pre-registration of DIR2 (before running)
+
+**DIR2.** Most analyses exclude the 1,228 ICIT lines whose direction is recorded as unknown. DIR2 asks whether these lines, in the normalised order, follow the same order as the others, so that they could be used in later work.
+- Model: as in DIR1, trained on unique complete `R/L` and `L/R` strings, excluding strings that also occur with unknown direction.
+- Test: unique complete unknown-direction strings of length ≥ 2.
+- Prediction: forward wins, sign test one-sided p < 0.01.
+
+### Result DIR2: supported (weakly)
+
+Script: `scripts/batch8b_dir2_unknown.py`; results: `results/batch8b_dir2_unknown.json`.
+- Only 139 unique complete strings of length ≥ 2 have unknown direction. Most unknown-direction lines are fragments or single signs, and pottery graffiti and seals are the most frequent types.
+- Forward wins in 84 of the 127 strings without a tie (66 %; p = 0.0002).
+- The unknown-direction lines follow the normalised order more often than not. The margin is smaller than for `R/L` or `L/R` lines (DIR1: 86 %, SX1: 91–95 %).
+- They could be included in later analyses in the normalised order, but with less certainty about their direction.
+
+### End of the twenty-seventh session
+
+- Pre-registered analyses:
+  - Supported: DIR1, SX1, DIR2.
+  - Not supported: SX2.
+  - Inconclusive: D6 (descriptive), with the post-hoc check D6b.
+- The new scripts reproduce their results.
+- None of these analyses used the strict held-out or fresh data, so the R7 family is unchanged (47).

@@ -1,0 +1,17 @@
+{
+ "strings": 139,
+ "forward_wins": 84,
+ "ties": 12,
+ "p": 0.000173479358120142,
+ "types": {
+  "POT:T:g": 193,
+  "SEAL:S": 83,
+  "TAB:B": 55,
+  "BNGL": 38,
+  "MISC": 34,
+  "POT:T:s": 30,
+  "TAB:C": 24,
+  "TAB:I": 23
+ },
+ "verdict": "supported"
+}
