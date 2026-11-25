@@ -452,3 +452,34 @@ The claim (C23, secondary sources): sequences "numeral + fish" are names of star
 
 - Two hypotheses, so the threshold is p < 0.005 each; each must pass in both corpora.
 - Disclosure: I have already seen, in the training split, that KP count 3 is often followed by 56 (a fish sign). The held-out set has not been examined for these bigrams.
+
+### H3.13 and H3.14 results: not supported
+
+Script: `scripts/phase3_h313_fish_numerals.py`; results: `results/phase3_h313_fish_numerals.json`.
+
+| Test (held-out) | Corpus | Odds ratio | p |
+|---|---|---:|---:|
+| H3.13 stroke sign before fish | KP1979 | 0.89 | 0.69 |
+| H3.13 stroke sign before fish | ICIT | 1.30 | 0.30 |
+| H3.14 counts 3/6/7 before fish | KP1979 | 0.88 | 0.69 |
+| H3.14 counts 3/6/7 before fish | ICIT | 1.46 | 0.45 |
+
+Neither hypothesis passes in either corpus. On the held-out data, fish signs are not preceded by stroke signs more often than other signs are, and the counts before fish signs are not concentrated on 3, 6 and 7.
+
+Descriptive counts on all data (not a test; the training part had partly been seen):
+
+| Count | KP: before fish / before other | ICIT: before fish / before other |
+|---:|---:|---:|
+| 1 | 40 / 318 | 14 / 106 |
+| 2 | 6 / 25 | – |
+| 3 | 23 / 127 | 17 / 88 |
+| 4 | 6 / 40 | 5 / 60 |
+| 5 | 0 / 32 | 0 / 31 |
+| 6 | 11 / 14 | 9 / 16 |
+| 7 | 1 / 49 | 1 / 49 |
+
+Two features stand out and are recorded as observations only:
+- Six strokes are followed by a fish sign in 11 of 25 cases (KP) and 9 of 25 (ICIT), well above the overall share for stroke signs (about 12 % in KP). This agrees with one part of the published claim (6 + fish).
+- Seven strokes are followed by a fish sign only once in 50 cases in each corpus. In this corpus the seven-stroke sign goes with KP 288/289 (H3.12a), not with fish signs. This does not agree with the reading of 7 + fish as a frequent name.
+
+Both points come from the same data in which the pairing patterns were explored, so a test of "6 + fish" would need inscriptions not in either corpus. The scope of the claim also matters: the source seen was secondary, and the original may define "seven" or "fish" differently (for example including other stroke arrangements). This must be checked against Parpola (1994) before the observation is used in a report.
