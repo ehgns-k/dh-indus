@@ -2167,3 +2167,7 @@ Script: `scripts/claims_ct15s_pottery.py`; results: `results/claims_ct15s_potter
 - **Statistic:** share of tablet stems that occur in the seal stem set.
 - **Control:** the same share for rule-preserving reorderings of the tablet stems (`src/indus/controls.py` applied to the stems), 1,000 control sets.
 - **Prediction:** real share above controls, p < 0.01.
+
+### CT31c result: not supported (p = 0.013)
+
+Script: `scripts/claims_ct31c_shared_stems.py`; results: `results/claims_ct31c_shared_stems.json`. Of 275 distinct Harappa tablet stems (numerals removed, length ≥ 2), 10.2 % also occur among 1,332 seal stems; rule-preserving reorderings reach 8.9 % on average (SD 0.5 %); p = 0.013. The excess is small and does not reach p < 0.01. **CT31c is not supported**: tablet texts do not, beyond chance, repeat the non-numeral parts of seal legends. Shared stems include the C26 sequence `255 435 690`.

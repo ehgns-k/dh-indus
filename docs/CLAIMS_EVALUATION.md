@@ -40,7 +40,7 @@ Test labels refer to entries in `docs/JOURNAL.md`; figures for descriptive check
 | C28 | Seal texts are not owners' names | undecided | Seal legends are individual-specific: their stems (text before the closing cluster) are far more diverse than tablet stems at both main sites (CT28); this fits owners' names, which the claim denies, but equally individual licences or titles |
 | C29 | Tablets as licences | undecided | Seal and tablet texts differ within Harappa (H3.5 exploratory) but the difference does not transfer across sites (H3.5); closing sign by object class is an L2 candidate (C2, C2k) |
 | C30 | Motifs as emblems; text independent of motif | consistent | Text does not predict the motif (H4.2, C1) |
-| C31 | Tablets as ration records | partly supported | Variable numeral slots in fixed formulae exist (H9.1, R4), but numerals are not more frequent on tablets (H4.1) and count-variable formulae are not concentrated on tablets (H9.2) |
+| C31 | Tablets as ration records | partly supported | Variable numeral slots in fixed formulae exist (H9.1, R4), but numerals are not more frequent on tablets (H4.1), count-variable formulae are not concentrated on tablets (H9.2), and tablet stems do not repeat seal stems beyond chance (CT31c, p = 0.013) |
 | C32 | Miniature tablet texts repeat seal endings | weakly supported | H4.3 passed as registered but not under the strict control |
 | C33 | Proto-abugida recording Sanskrit | not supported as evidence | Random sign-value assignments with the same reading freedoms are as readable as the published readings (E2, E2b) |
 | C34 | Indus statistics fit no non-linguistic baseline cleanly | consistent | No clean separation of systems (D2) |
