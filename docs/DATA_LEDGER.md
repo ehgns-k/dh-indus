@@ -1,6 +1,6 @@
 # Data-use ledger
 
-Every hypothesis test is listed with the data it was decided on. "Train" = non-held-out unique strings; "held-out" = the fixed 20 % split (`is_heldout`); "fresh" = post-1979 sites (Dholavira, Nausharo); "all" = both splits.
+Every hypothesis test is listed with the data it was decided on. "Train" = non-held-out unique strings; "held-out" = the fixed 20 % split (`is_heldout`); "fresh" = sites first excavated after 1979 (fresh set 1: Dholavira, Nausharo; fresh set 2: eight further sites, `docs/FRESH_SITES.md`); "all" = both splits.
 
 | Test | Corpus | Decision data | Result | Note |
 |---|---|---|---|---|
@@ -33,11 +33,11 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | H5.1b | ICIT | fresh sets 1+2 | not supported | corrected stroke set |
 | D1 | ICIT + CDLI reference corpora | all ICIT unique complete lines (resampled) | supported | typology, descriptive; no non-linguistic corpus |
 | D2 | ICIT + CDLI + Sproat (2014) corpora | all (resampled to 300 lines) | G3 undecided | leave-one-out 5/7 |
-| C2 | ICIT | discovery train, confirmation held-out | 6 of 40 confirmed | 14th held-out question; Bonferroni 0.01/40 |
+| C2 | ICIT | discovery train, confirmation held-out | 6 of 40 confirmed | 14th held-out question; Bonferroni 0.01/40 ; R1: fails strict thresholds → L2 candidate |
 | F4 | ICIT | fresh sets 1+2 | not supported (p = 0.0104) | direction agrees with C2 |
 | E2 | proposed readings (claim C33) | all readings | readability not discriminating | control rate 0.29 |
 | E2b | ICIT lines, random assignments | all lines ≤ 10 signs | random assignments readable at 0.84 | same as proposed readings |
-| C2k | KP | discovery train, confirmation held-out | 1 of 10 confirmed (11 × final 98) | replicates C2 (400 avoided on motif seals) |
+| C2k | KP | discovery train, confirmation held-out | 1 of 10 confirmed (11 × final 98) | replicates C2 (400 avoided on motif seals) ; R1: fails strict threshold → L2 candidate |
 | E3 | ICIT + two cuneiform ciphers | held-out (ICIT fixed split; ciphers 80/20) | method has no power | positive control 2 failed |
 | E3b | same | same | method has no power | both positive controls failed |
 | E3c | two cuneiform ciphers, 8,000 lines | 80/20 | method has no power | failure not due to corpus size |
@@ -51,7 +51,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | D3 | ICIT, KP, reference corpora | all unique lines (9,000 tokens) | descriptive (Chao1: ICIT 830, KP 511, proto-Elamite 820) | not a test |
 | H7.1 | ICIT | fresh sets 1+2 | not supported (HMM worse than bigram) | states reproduce the functional grouping (descriptive) |
 | R2 | ICIT, KP | strict held-out | H3.10 robust in KP; in ICIT depends on 004 | review |
-| D1-KP | KP + CDLI reference corpora | resampled | proto-Elamite still nearest (19/20) | robustness; low-repetition observation withdrawn |
+| D1-KP | KP + CDLI reference corpora | resampled | proto-Elamite nearest on average (2.70); administrative corpus nearer in 19/20 | robustness; low-repetition observation withdrawn |
 | G1 | ICIT + glyph images | train | not supported (no global shape–usage correlation) | |
 | G2 | ICIT + glyph images | strict held-out + fresh | supported (p = 0.0017) | close-shape pairs share usage |
 | H8.1 | ICIT | abroad lines vs strict held-out home lines | not supported (p = 0.011) | Gulf lines lack the terminal cluster (descriptive) |
@@ -72,7 +72,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | CT10 | ICIT | all unique strings | supported | claim C10 |
 | G3 | ICIT + glyph images | strict held-out + fresh | insufficient data (2 mirror pairs) | claim C3 |
 | CT18 | ICIT, KP | strict held-out | supported (p = 0.001 both) | claim C18 |
-| CT15 | ICIT | strict held-out + fresh | supported (OR 4.3, p = 0.0022) | claim C15; functional L2 in narrow scope |
+| CT15 | ICIT | strict held-out + fresh | supported (OR 4.3, p = 0.0022) | claim C15; functional L2 in narrow scope; fails a family-wise correction over the ≥ 11 questions decided on the strict held-out set |
 | D5 | ICIT, KP, reference corpora | resampled | not supported (13/20 nearest proto-Elamite) | same average ordering as D1 |
 | CT26 | ICIT, KP | all unique strings | not supported (sequence is ABC + D) | claim C26 |
 | CT3 | ICIT | all unique strings | no mirror pair distinct (low power) | claim C3 |
@@ -87,7 +87,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | CT14 | ICIT | all unique strings | supported (740 most diverse left context) | claim C14; corrects earlier descriptive reading |
 | R6 | ICIT, KP | all unique strings | H9.3 robust at resolution ≥ 1.0, weak at 0.6–0.8 | review |
 
-Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
+Count of questions decided on the (full) held-out split before the review R1: 15 (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, the H3.5 secondary set, H5.1, C2, C3; see rows). From R1 on, held-out tests use the strict held-out set; questions decided on it (alone or with the fresh sets) include R1, H8.1, H9.2 (secondary), E3d, G2, H9.4, CT16, CT17, CT18, G3, CT15 and later rows (at least 11 at the time of CT15). Questions decided on fresh data are marked in the table (F2, F3, F2b, F3b, B1, B4, H5.1b, F4, H6.1, H7.1 and the fresh parts of G2, CT16, CT15).
 
 The supported held-out results remain significant after a Bonferroni correction over these 11 tests (0.01/11 ≈ 0.0009) except where noted: H3.3 (p ≤ 3.8 × 10⁻⁷), H3.10 (p ≤ 7.5 × 10⁻⁹), H3.12 (p ≤ 3.4 × 10⁻⁷) pass; H4.3 (p = 0.001) does not.
 

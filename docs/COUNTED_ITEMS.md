@@ -1,6 +1,6 @@
 # Numerals and the signs they pair with (descriptive)
 
-This note collects, for the count–item pairs established by the tests (H3.10, H3.12, F2, H6.1, H9.1), the shapes of the signs involved. The shape descriptions are my own reading of the ICIT-keyed sign images (`scripts/fetch_glyphs.py`) and of the printed KP1979 sign list. **What the shapes depict is not established**; the descriptions are given so that later work can formulate testable hypotheses, and they are not used as evidence anywhere in this project.
+This note collects, for the count–item pairs established by the tests (H3.10, H3.12, F2, H6.1; variable count slot H9.1), the shapes of the signs involved. The shape descriptions are my own reading of the ICIT-keyed sign images (`scripts/fetch_glyphs.py`) and of the printed KP1979 sign list. **What the shapes depict is not established**; the descriptions are given so that later work can formulate testable hypotheses, and they are not used as evidence anywhere in this project.
 
 ## Stroke signs (numerals)
 
@@ -34,7 +34,7 @@ Short and long strokes take disjoint sets of these partners on post-1979 inscrip
 | 740 | 324 / 325 | a U-shaped vessel with two lateral attachments; this is the sign usually called the "jar" sign in the literature (claims register C13–C16) | most frequent sign; first member of the closing cluster |
 | 400 | 98 | a vertical bar with four horizontal bars to one side (comb- or rake-like) | closing sign; avoids motif-bearing seals (L2 candidate) |
 | 090 | 13 | a standing figure with arms and spread legs | closing sign |
-| 002 | 119 | two short strokes placed high | frequent medial sign; distinct in usage from the two-stroke numeral (L3b) |
+| 002 | 119 | two short strokes placed high | frequent medial sign; ICIT 002 covers KP 119 and KP 122 (two strokes), which differ in usage in the L3b robustness check (not by the registered test) |
 
 ## Status
 

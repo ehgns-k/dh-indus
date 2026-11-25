@@ -36,4 +36,4 @@ Sound-sequence models of four natural languages all gain from the real Indus sig
 
 ## 3. Conclusion
 
-Statistically the Indus inscriptions resemble the proto-administrative systems of the late fourth millennium BCE (proto-Elamite most closely) more than Sumerian or Akkadian full writing, in both transcriptions. Whether the signs record a spoken language cannot be decided with these methods.
+Statistically the Indus inscriptions resemble proto-Elamite most closely, in both transcriptions; an administrative corpus is nearer than the full-writing corpora in 20/20 (ICIT) and 19/20 (KP1979) resamples, although proto-cuneiform itself is the farthest corpus for KP1979. Whether the signs record a spoken language cannot be decided with these methods.

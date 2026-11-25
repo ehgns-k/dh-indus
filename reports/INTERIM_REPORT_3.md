@@ -16,12 +16,12 @@ This report summarises the work since interim report 2. Details and pre-registra
 
 | Test | Result |
 |---|---|
-| CT15 | The jar sign 740 closes seal legends more often than tablet texts, in every site stratum, on data not used for the question (OR 4.3, p = 0.0022); not beyond a family-wise correction over the questions decided on the same held-out data |
+| CT15 | The jar sign 740 closes seal legends more often than tablet texts at Harappa and Mohenjo-daro (site-stratified; the 'other sites' stratum has a single tablet text), on data not used for the question (OR 4.3, p = 0.0022); not beyond a family-wise correction over the questions decided on the same held-out data |
 | CT15t | Tags (seal-type legends, mostly Lothal) follow the seal pattern (14 of 16 final; tablets 54 %; p = 0.0068) |
 | CT15k | Replication in KP1979: same direction, no power (three tablet texts) |
 | CT15s | Too few stamped pots; incised pottery also ends in 740 (11 of 12) — tablets are the class that stands apart |
 | CT28 | Seal legends are individual-specific: their stems are far more diverse than tablet stems at both main sites |
-| CT16 | The jar sign does not co-occur with numerals (opposite of the unit-of-measure claim) |
+| CT16 | Texts with the jar sign contain numerals less often than other texts (opposite of the unit-of-measure claim) |
 | H9.2, H9.4, H10.1, T1 | Count-variable formulae are not tied to tablets; one sign class avoids copper tablets (candidate); name-like slot fillers are not more site-specific; no chronological variants detected |
 
 The project's L2 status is therefore "narrow and functional": the closing sign distinguishes seal-type legends from tablet texts, and seal legends are individual-specific. No sign has been assigned a meaning.

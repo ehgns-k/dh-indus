@@ -25,7 +25,7 @@ Line-final signs form a cluster with a fixed internal order: 740 before 400 or 0
 ### 2.4 Numerals and count–item pairs
 
 - Signs consisting of one to ten short strokes, and of one to five long strokes, are identified from the printed sign list; ICIT and KP numbers agree with stroke counts (B2, B3). KP1979 often writes a two-stroke sign as two single strokes (split/merge analysis).
-- Specific counts are followed by specific signs: 4–9 short strokes → 390 / 405 / 406 / 407 (KP 86); 7 short strokes → 585 / 575 (KP 288 / 289); 3 long strokes → 520 (KP 217). Held-out data in both transcriptions (H3.10, H3.12), against matched controls (H3.11), on the strict held-out set (R1) and on post-1979 inscriptions (F2). In KP1979 the result does not depend on any single stroke sign; in the ICIT strict held-out set it depends mostly on four-stroke signs (R2).
+- Specific counts are followed by specific signs: 4–9 short strokes → 390 / 405 / 406 / 407 (KP 86); 7 short strokes → 585 / 575 (KP 288 / 289); 3 long strokes → 520 (KP 217). Held-out data in both transcriptions (H3.10, H3.12), against matched controls (H3.11), on the strict held-out set (R1), and for 4–9 strokes also on post-1979 inscriptions (F2). In KP1979 the result does not depend on any single stroke sign; in the ICIT strict held-out set it depends mostly on four-stroke signs (R2).
 - Short and long strokes take disjoint partner signs on post-1979 inscriptions (H6.1, p = 0.0012); the result rests largely on sign 033, whose identity differs between the transcriptions, so the reading as two numeral notations is only suggested.
 
 ### 2.5 Recurring units and sign families

@@ -2212,3 +2212,12 @@ Script: `scripts/review_r6_h93_robustness.py`; results: `results/review_r6_h93_r
 | 1.5 | 0.102–0.207 | ≤ 0.001 |
 
 The agreement between the transcriptions holds for every seed at the registered resolution and at finer resolutions (1.0–1.5), but is weak and not always significant when the graphs are cut into a few large classes (0.6–0.8). H9.3 stands, with the qualification that the agreement concerns fine-grained substitution classes, not a coarse division of the inventory.
+
+### Consistency review of the summary documents (corrections)
+
+A review compared every number and verdict in the summary documents with this journal and the result files. Corrections made:
+- **CT15 strata.** The sentence above, "with the same direction in each stratum", is wrong against its own table: in the "other sites" stratum the single tablet text ends in 740 (tablet share 1.00 vs seals 0.79). The direction holds at Harappa and Mohenjo-daro; the pooled CMH result (OR 4.3, p = 0.0022) is unchanged. All summaries now say "at Harappa and Mohenjo-daro (site-stratified; the 'other sites' stratum has a single tablet text)".
+- **Family-wise count.** The CT15 caveat listed eight questions on the strict held-out set; H8.1, H9.2 (secondary) and E3d were also decided on it, so the count is at least eleven (0.01/11 ≈ 0.0009). CT15 fails this correction either way.
+- **D1 in KP1979.** Proto-Elamite is nearest in both transcriptions, but proto-cuneiform is second only for ICIT and farthest for KP1979. Summaries that said "then proto-cuneiform, in both transcriptions" were corrected; the README no longer cites D3 and D5 as evidence of closeness.
+- **F2 scope.** F2 tested only 4–9 strokes → 390–407 on later finds; summaries that implied all count–item pairings were confirmed on later finds were corrected.
+- **Other corrections:** CT16 wording (texts with the jar sign contain numerals less often); H9.3 (the short-stroke numerals form one class; 001, 031 and 033 fall in the class with the fish-shaped signs); COUNTED_ITEMS (002 and the L3b status of KP 119/122; H9.1 is the variable-slot test); claims evaluation C4 (consistent for KP1979 only), C15 (caveats added), C29 (H3.6 exception), verdict labels "partly / weakly supported" defined; data ledger (fresh-set definition, D1-KP note, C2/C2k downgrade notes, held-out question counts); phase 5–7 report (narrow functional L2 added, gate G2 restated).

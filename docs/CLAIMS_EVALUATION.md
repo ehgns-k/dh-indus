@@ -5,7 +5,8 @@ Status: 2026-11-25. Each claim of `docs/CLAIMS_REGISTER.md` is set against the t
 - **not supported**: a pre-registered test failed, or the claim's figure is contradicted;
 - **consistent**: descriptive figures agree with the claim, without a decisive test;
 - **undecided**: the available tests cannot decide;
-- **not tested**: no test was possible with the data available here.
+- **not tested**: no test was possible with the data available here;
+- **partly supported** / **weakly supported**: some of the claim's predictions passed and others failed, or a prediction passed only under a lenient control.
 Test labels refer to entries in `docs/JOURNAL.md`; figures for descriptive checks are in `results/claims_descriptive.json`.
 
 | Claim | Short title | Verdict | Evidence |
@@ -13,7 +14,7 @@ Test labels refer to entries in `docs/JOURNAL.md`; figures for descriptive check
 | C1 | Right-to-left direction (crowding of signs) | consistent | Layout not tested; order learned from KP1979 predicts later finds only right to left (F3, F3b) |
 | C2 | Direction from initial/final asymmetry | supported | Final-sign distribution far more concentrated than initial (4.8 vs 7.1 bits, ICIT); direction tests F3, F3b |
 | C3 | Multi-directional writing; mirrored signs as allographs | consistent (low power) | Of the published mirror pairs (Daggumati & Revesz 2021; ICIT numbers reconstructed in `docs/CLAIM_SIGN_IDENTIFICATIONS.md`), four testable pairs show no context difference from their originals (CT3), but the mirror forms are rare (1–9 occurrences); automatic detection on sign images finds the mirror pair 920/921, whose members are used differently (G3) |
-| C4 | Sign inventory 417–694 | consistent | Estimated totals 511 (KP1979) and 830 (ICIT); the figure depends on allograph decisions (D3, L3a, L3b) |
+| C4 | Sign inventory 417–694 | consistent for KP1979 | Estimated totals 511 (KP1979, within the range) and 830 (ICIT, 95 % interval 762–928, above the range); the figure depends on allograph decisions (D3, L3a, L3b) |
 | C5 | About 400 graphemes, a quarter singletons | consistent | KP1979: 100 of 367 types occur once (27 %) |
 | C6 | About five signs per inscription; longest 14 and 26 | consistent | Mean line length 4.5–4.6; longest line 13–14; longest object 17 (ICIT) and 28 (KP1979) signs |
 | C7 | Mean 4.6 signs; longest face 17 | consistent | As C6 |
@@ -24,7 +25,7 @@ Test labels refer to entries in `docs/JOURNAL.md`; figures for descriptive check
 | C12 | Well-defined initial and final signs | supported | Positional zones reproduced across transcriptions (Q2a); template on later finds (B1) |
 | C13 | The jar sign is the most frequent sign | supported | ICIT 740, rank 1; identified with the jar shape from the sign image |
 | C14 | Jar sign as a Dravidian suffix | undecided (reading); distributional prediction supported | With frequency controlled by rarefaction, 740 has the most diverse left context of all frequent signs (CT14), as a freely attaching final element would; an earlier descriptive figure suggesting the opposite was a frequency artefact and is withdrawn; the Dravidian reading itself cannot be tested |
-| C15 | Final sign as a genitive ("of X") | function supported; reading undecided | On data not used before, 740 closes seal texts more often than tablet texts in every site stratum (CT15, OR 4.3, p = 0.0022); tags follow the seal pattern (CT15t); whether the closing function is a genitive cannot be tested |
+| C15 | Final sign as a genitive ("of X") | function supported; reading undecided | On data not used before, 740 closes seal texts more often than tablet texts at Harappa and Mohenjo-daro (site-stratified; the 'other sites' stratum has a single tablet text) (CT15, OR 4.3, p = 0.0022; not beyond a family-wise correction over the strict held-out questions); tags follow the seal pattern (CT15t); a KP1979 replication is underpowered (CT15k, p = 0.21); incised pottery also ends in 740 (CT15s), so the closing function is not confined to seals; whether the closing function is a genitive cannot be tested |
 | C16 | Jar sign as a unit of measure | not supported | Texts with 740 contain numerals less often than other texts, in both transcriptions (CT16) |
 | C17 | Long texts consist of frequent 2–4-sign units | supported (weak form) | Recurring units predict later finds (B4); long texts divisible into short complete texts more often than controls, though only 4–8 % fully (CT17) |
 | C18 | Recursive segmentation structure | supported | Parts from recursive splitting at the weakest link are complete texts about three times as often as for controls, both transcriptions (CT18) |
@@ -38,7 +39,7 @@ Test labels refer to entries in `docs/JOURNAL.md`; figures for descriptive check
 | C26 | Four-sign sequence "trader" + title | not supported (structure) | Identified as ICIT 255–435–690–740 / KP 73–188–255–324/325; in both transcriptions it behaves as a fixed unit ABC + closing jar sign, not as two pairs AB + CD (CT26); the reading is not testable |
 | C27 | Logograms, not phonograms | consistent (descriptive) | Bigram density of frequent signs 0.29, like proto-Elamite (0.27) and below syllabic Akkadian graphemes (0.41) |
 | C28 | Seal texts are not owners' names | undecided | Seal legends are individual-specific: their stems (text before the closing cluster) are far more diverse than tablet stems at both main sites (CT28); this fits owners' names, which the claim denies, but equally individual licences or titles |
-| C29 | Tablets as licences | undecided | Seal and tablet texts differ within Harappa (H3.5 exploratory) but the difference does not transfer across sites (H3.5); closing sign by object class is an L2 candidate (C2, C2k) |
+| C29 | Tablets as licences | undecided | Seal and tablet texts differ within Harappa (H3.5 exploratory) but the difference does not transfer across sites (H3.5), except, narrowly, seal vs TAB:B (H3.6); closing sign by object class is an L2 candidate (C2, C2k) |
 | C30 | Motifs as emblems; text independent of motif | consistent | Text does not predict the motif (H4.2, C1) |
 | C31 | Tablets as ration records | partly supported | Variable numeral slots in fixed formulae exist (H9.1, R4), but numerals are not more frequent on tablets (H4.1), count-variable formulae are not concentrated on tablets (H9.2), and tablet stems do not repeat seal stems beyond chance (CT31c, p = 0.013) |
 | C32 | Miniature tablets repeat texts; tablet texts repeat seal endings | (a) supported; (b) weakly supported | Harappa tablet texts occur on 2.84 objects per text vs 1.05 for seals (CT32a); suffix matches with seal texts only weak (H4.3) |
