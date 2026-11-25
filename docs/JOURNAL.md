@@ -1228,3 +1228,16 @@ One part of the result is consistent across all three corpora: every real-langua
 2. Fitting sign values under a language's sound-sequence model cannot identify the language of a hidden **known** syllabic script of comparable size, by two different measures (E3, E3b).
 
 With a corpus of about 2,000 short lines, unconstrained phonetic fitting does not have the power to choose among candidate languages. Any future L3 attempt in this project therefore needs an additional, independent constraint before it can be calibrated: for example bilingual evidence, proper names known from outside the script (claims register, external names), or pictographic (rebus) constraints fixed in advance from the sign drawings. These are the remaining routes; they are added to the work plan.
+
+---
+
+## 2026-11-25 (day 1, twelfth working session, 09:18 UTC): E3c, how much data would the phonetic search need?
+
+E3 and E3b failed even on known scripts hidden as ciphers of 2,000 lines. Two explanations are possible: the corpus is too small, or the method is unsuitable at any size. The answer matters for the final report, because it says whether a phonetic search of the Indus corpus (about 2,000 lines) can succeed in principle.
+
+### Pre-registration of E3c (power curve; before running)
+
+- Corpora: the two positive-control ciphers of E3 (Akkadian OB letters; Sumerian Ur III administrative), built in the same way but with **8,000** lines each (80/20 split).
+- Languages, models, search, measure Δ′ (E3b), bootstrap and decision rule as in E3b.
+- Outcome: for each cipher, whether its true language ranks first with p < 0.01 against every other language at 8,000 lines (the 2,000-line result is E3b).
+- Interpretation fixed in advance: if both ciphers succeed at 8,000 lines, the method has power only above the size of the Indus corpus, and the Indus corpus is too small for it. If either fails at 8,000 lines, the method is recorded as unsuitable for this task at the sizes tested.
