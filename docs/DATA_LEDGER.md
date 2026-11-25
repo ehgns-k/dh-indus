@@ -81,6 +81,10 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | CT28 | ICIT | all records, Harappa and Mohenjo-daro | supported (difference 0.49, 1,000/1,000 subsamples) | seal stems individual-specific |
 | CT15s | ICIT | all pottery strings | insufficient data (3 stamped strings with 740) | incised pottery also ends in 740 (11/12) |
 | CT31c | ICIT | all Harappa tablet and all seal records | not supported (p = 0.013) | claim C31c |
+| CT32a | ICIT | Harappa records | supported (2.84 vs 1.05 records per text) | claim C32a |
+| CT19 | ICIT, KP, D2 corpora | 300-line samples | not supported (inside both ranges) | claim C19 |
+| CT25 | KP (normalised) | all unique strings | drop after seven (6 observed vs 34.5 predicted) | claim C25; base undecided |
+| CT14 | ICIT | all unique strings | supported (740 most diverse left context) | claim C14; corrects earlier descriptive reading |
 
 Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 
