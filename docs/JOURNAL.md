@@ -387,3 +387,13 @@ Each stroke sign was replaced by a random sign matched for frequency (within a f
 | ICIT | 0.38 | 0.04 (0.04), 0.16 | 0.001 |
 
 No matched set reached the observed share in either corpus. The H3.10 effect therefore cannot be explained by frequency or by a general preference of medial signs for KP 86 / ICIT 390–407. This check used the training split, from which the pattern was first noticed, so it is a robustness check and not an independent confirmation; the independent confirmation is H3.10 on the held-out set.
+
+### Pre-registration of H3.12 (before running; held-out data)
+
+Training-split observations: KP 127 (seven short strokes) is followed by 288 (17 of 45) and 289 (8); ICIT 017, its concordance image, is followed by 585 (12) and 575 (10), which are the concordance images of KP 288 and 289 (purity 1.00). KP 147 (three long strokes) is followed by 217 (24 of 79); its ICIT image is 033 (purity 0.79), and KP 217 corresponds to ICIT 520.
+
+**H3.12a.** The seven-stroke sign (KP 127 / ICIT 017) is followed by KP {288, 289} / ICIT {585, 575} more often than other signs are.
+**H3.12b.** The three-long-stroke sign (KP 147 / ICIT 033) is followed by KP 217 / ICIT 520 more often than other signs are.
+- Test: one-sided Fisher exact test over all within-line bigrams of held-out strings, as in H3.10.
+- Correction: two sub-hypotheses, so the threshold is p < 0.005 for each.
+- Prediction: each sub-hypothesis passes in both corpora. Each is judged separately.
