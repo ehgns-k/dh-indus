@@ -27,7 +27,7 @@ Test labels refer to entries in `docs/JOURNAL.md`; figures for descriptive check
 | C15 | Final sign as a genitive ("of X") | undecided | 740 is line-final on 82 % of its occurrences on motif seals vs 58 % (TAB:B) and 37 % (TAB:I), but 84 % on copper tablets; no decisive test |
 | C16 | Jar sign as a unit of measure | not supported | Texts with 740 contain numerals less often than other texts, in both transcriptions (CT16) |
 | C17 | Long texts consist of frequent 2–4-sign units | supported (weak form) | Recurring units predict later finds (B4); long texts divisible into short complete texts more often than controls, though only 4–8 % fully (CT17) |
-| C18 | Recursive segmentation structure | not tested | |
+| C18 | Recursive segmentation structure | supported | Parts from recursive splitting at the weakest link are complete texts about three times as often as for controls, both transcriptions (CT18) |
 | C19 | Conditional entropy closer to languages | undecided | Statistics do not separate writing from non-linguistic systems (D2) |
 | C20 | Entropy measures classify the system as non-linguistic | undecided | As C19 |
 | C21 | Markov model of sign order; West Asian texts differ | (a) consistent; (b) not supported at the threshold | Bigram restores a masked sign first in 29 % and within five in 52 % of strict held-out lines; abroad texts less predictable, p = 0.011 (H8.1) |

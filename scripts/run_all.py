@@ -25,7 +25,7 @@ ORDER = [
     "phase8_g2_hog_robustness.py", "phase8_m1_hog_robustness.py", "phase9_h91_numeral_slot.py",
     "phase9_h91_count_differences.py", "phase9_h92_formula_objects.py", "phase9_h93_substitution_classes.py",
     "phase9_h94_classes_objects.py", "phase9_formulae.py", "phase10_t1_chronological_variants.py",
-    "phase10_h101_site_specificity.py", "review_r4_h91_normalised_kp.py", "phase9_h96_count_distance.py", "phase4_d4_numeral_variation.py", "claims_tests.py", "claims_descriptive.py", "phase8_g3_mirror_pairs.py",
+    "phase10_h101_site_specificity.py", "review_r4_h91_normalised_kp.py", "phase9_h96_count_distance.py", "phase4_d4_numeral_variation.py", "claims_tests.py", "claims_descriptive.py", "phase8_g3_mirror_pairs.py", "claims_ct18_recursive.py",
     "phase7_e3_phonetic_search.py", "phase7_e3b_corrected.py", "phase7_e3c_power.py", "phase7_e3d_equalised.py",
 ]
 skip_heavy = "--skip-heavy" in sys.argv

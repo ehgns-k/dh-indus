@@ -2012,3 +2012,14 @@ Descriptive (all unique lines): 920 (103 occurrences) is mostly line-initial (0.
 - **Statistic:** share of these parts that occur as complete texts in the training split.
 - **Data:** strict held-out lines of length ≥ 4 in each corpus; controls: rule-preserving reorderings of the same lines (`src/indus/controls.py`), 1,000 control sets, split by the same rule.
 - **Prediction:** the share is higher for real lines than for controls, p < 0.01, in both corpora.
+
+### CT18 result: supported in both corpora
+
+Script: `scripts/claims_ct18_recursive.py`; results: `results/claims_ct18_recursive.json`.
+
+| Corpus | Lines | Parts that are complete texts (real) | Controls mean (SD) | p |
+|---|---:|---:|---:|---:|
+| ICIT | 203 | 0.207 | 0.077 (0.009) | 0.001 |
+| KP1979 | 201 | 0.172 | 0.059 (0.008) | 0.001 |
+
+Splitting held-out lines recursively at their weakest link produces parts that occur as complete texts elsewhere about three times as often as for rule-preserving reorderings. **Claim C18 is supported**: the longer texts have a nested structure in which sub-sequences are themselves complete short texts.
