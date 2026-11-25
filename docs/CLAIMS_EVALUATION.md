@@ -12,7 +12,7 @@ Test labels refer to entries in `docs/JOURNAL.md`; figures for descriptive check
 |---|---|---|---|
 | C1 | Right-to-left direction (crowding of signs) | consistent | Layout not tested; order learned from KP1979 predicts later finds only right to left (F3, F3b) |
 | C2 | Direction from initial/final asymmetry | supported | Final-sign distribution far more concentrated than initial (4.8 vs 7.1 bits, ICIT); direction tests F3, F3b |
-| C3 | Multi-directional writing; mirrored signs as allographs | undecided | Automatic mirror detection on the sign images finds only two pairs among frequent signs (G3); the clearest, 920/921, is not used like an allograph pair (different following signs) |
+| C3 | Multi-directional writing; mirrored signs as allographs | consistent (low power) | Of the published mirror pairs (Daggumati & Revesz 2021; ICIT numbers reconstructed in `docs/CLAIM_SIGN_IDENTIFICATIONS.md`), four testable pairs show no context difference from their originals (CT3), but the mirror forms are rare (1–9 occurrences); automatic detection on sign images finds the mirror pair 920/921, whose members are used differently (G3) |
 | C4 | Sign inventory 417–694 | consistent | Estimated totals 511 (KP1979) and 830 (ICIT); the figure depends on allograph decisions (D3, L3a, L3b) |
 | C5 | About 400 graphemes, a quarter singletons | consistent | KP1979: 100 of 367 types occur once (27 %) |
 | C6 | About five signs per inscription; longest 14 and 26 | consistent | Mean line length 4.5–4.6; longest line 13–14; longest object 17 (ICIT) and 28 (KP1979) signs |
@@ -35,7 +35,7 @@ Test labels refer to entries in `docs/JOURNAL.md`; figures for descriptive check
 | C23 | Numeral + fish as star names (3, 6, 7) | not supported | H3.13, H3.14; seven strokes go with 585/575, almost never with a fish sign |
 | C24 | Stroke numerals up to nine; semicircles as tens | supported for strokes; semicircles not tested | Counts 1–10 attested; count-specific partners (H3.10, H3.12, F2); variable numeral slot (H9.1, R4); arc signs too rare |
 | C25 | Base unknown, possibly 8 or 10 | undecided | Counts 8, 9, 10 attested but rare (B2) |
-| C26 | Four-sign sequence "trader" + title | not tested | Sequence not identified |
+| C26 | Four-sign sequence "trader" + title | not supported (structure) | Identified as ICIT 255–435–690–740 / KP 73–188–255–324/325; in both transcriptions it behaves as a fixed unit ABC + closing jar sign, not as two pairs AB + CD (CT26); the reading is not testable |
 | C27 | Logograms, not phonograms | consistent (descriptive) | Bigram density of frequent signs 0.29, like proto-Elamite (0.27) and below syllabic Akkadian graphemes (0.41) |
 | C28 | Seal texts are not owners' names | undecided | 1,453 distinct texts on 1,585 seal lines; few texts repeat across sites (44); compatible with names and with other readings |
 | C29 | Tablets as licences | undecided | Seal and tablet texts differ within Harappa (H3.5 exploratory) but the difference does not transfer across sites (H3.5); closing sign by object class is an L2 candidate (C2, C2k) |

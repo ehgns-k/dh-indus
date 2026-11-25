@@ -2084,3 +2084,26 @@ Sequence A B C D = ICIT 255 435 690 740 (436 counted as 435) and KP1979 73 188 2
 ### Pre-registration of CT3 (claim C3, six secure mirror pairs; before running)
 
 For each of the six pairs 436/435, 402/400, 551/550, 622/621, 526/527, 126/125: relabelling test of L3a (Jensen–Shannon divergence of pooled previous/next-sign contexts; all unique complete ICIT strings, because the mirror forms are rare), 10,000 relabellings; Bonferroni threshold 0.01/6. Claim C3 predicts that no pair is contextually distinct. Pairs whose mirror form has fewer than 5 occurrences are reported but have almost no power.
+
+### CT26 result: not supported — the sequence divides as ABC + D, not AB + CD
+
+Script: `scripts/claims_ct26_ct3.py`; results: `results/claims_ct26_ct3.json`.
+
+| Corpus | PMI(A,B) | PMI(B,C) | PMI(C,D) | AB without CD | CD without AB | BC alone |
+|---|---:|---:|---:|---:|---:|---:|
+| ICIT | 1.76 | 1.69 | −1.41 | 12 | 6 | 0 |
+| KP1979 | 2.82 | 2.85 | −0.45 | 21 | 7 | 0 |
+
+Condition (a2) holds, but (a1) fails in both corpora: the link between B and C is as strong as that between A and B, and the weakest link is between C and D (690 and the jar sign), whose PMI is negative because the jar sign follows very many signs. By the registered rule **CT26 is not supported**. In both transcriptions the sequence behaves as a fixed three-sign unit ABC followed by the closing jar sign, not as two pairs AB + CD; this does not fit the two-part analysis of claim C26. (The Dravidian reading itself is not testable here.)
+
+### CT3 result: no pair contextually distinct (low power)
+
+| Mirror / original | Occurrences | p (10,000 relabellings) |
+|---|---|---:|
+| 436 / 435 | 4 / 37 | 0.74 |
+| 402 / 400 | 1 / 211 | 0.32 |
+| 526 / 527 | 9 / 44 | 0.98 |
+| 126 / 125 | 2 / 46 | 0.74 |
+| 551 / 550, 622 / 621 | mirror form not in complete lines | – |
+
+None of the four testable pairs is distinct (threshold 0.0017). This is consistent with claim C3 (mirror forms as allographs), but with mirror forms occurring 1–9 times the test has very little power; the result is recorded as "consistent, low power".

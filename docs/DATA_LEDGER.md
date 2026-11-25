@@ -74,6 +74,8 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | CT18 | ICIT, KP | strict held-out | supported (p = 0.001 both) | claim C18 |
 | CT15 | ICIT | strict held-out + fresh | supported (OR 4.3, p = 0.0022) | claim C15; functional L2 in narrow scope |
 | D5 | ICIT, KP, reference corpora | resampled | not supported (13/20 nearest proto-Elamite) | same average ordering as D1 |
+| CT26 | ICIT, KP | all unique strings | not supported (sequence is ABC + D) | claim C26 |
+| CT3 | ICIT | all unique strings | no mirror pair distinct (low power) | claim C3 |
 
 Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 
