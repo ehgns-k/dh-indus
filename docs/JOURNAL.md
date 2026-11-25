@@ -1806,3 +1806,18 @@ Script: `scripts/phase9_formulae.py`; results: `results/phase9_formulae.json`; t
 16 templates take two or more stroke signs in the same slot.
 
 The formula table is the most direct description so far of how the inscriptions are built: short formulae whose slots are filled from particular sign classes, with numerals and counted items in fixed positions relative to each other.
+
+---
+
+## 2026-11-25 (day 1, seventeenth working session): chronology at Harappa
+
+The ICIT-style `time` field records excavation periods for 3,067 records, mostly from Harappa (for example `Period 3B`, `Period 3B/C`, `Period 3C-1` … `3C-4`, `Period 4`). Only the order of the periods is used here; no absolute dates are assumed, because none were checked against a source in this session.
+
+### Pre-registration of T1 (chronological variants; before running)
+
+**Question.** Are some sign variants that are not distinguishable by context (L3a) chronological variants, that is, is the choice between them tied to the period?
+
+- **Pairs:** the seven L3a pairs recorded as "not distinguishable": 154/156, 405/407, 817/861, 390/405, 790/850, 705/706, and 803/806 (not distinguishable by the registered test).
+- **Data:** Harappa records whose `time` is unambiguously Period 3B (`Period 3B`, `3B-1`, `3B-2`) or Period 3C (`Period 3C`, `3C-1` … `3C-4`); each distinct (text, period) combination counted once.
+- **Test:** for each pair, Fisher exact test (two-sided) on (variant a vs b) × (3B vs 3C), counting occurrences in the texts; Bonferroni over the pairs that have at least 5 occurrences in each period (threshold 0.01 / number of such pairs).
+- **Prediction:** at least one pair shows a period dependence. Pairs with too few occurrences are reported as "insufficient data".
