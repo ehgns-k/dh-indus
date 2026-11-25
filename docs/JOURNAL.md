@@ -2464,3 +2464,31 @@ Scripts: `scripts/batch5d_two_face_objects.py`, `scripts/batch5d_face2_robustnes
   - In the ICIT transcription the numeral face takes only three values: two (032), three (033) or four (034) strokes, with 700.
   - The tablets were made in series (CT32a), and the count belongs partly to the series. It varies within a series more than a fixed label would.
   - What the count records is not established. No published discussion of these numeral faces was checked in this session; this is an open item for the literature survey.
+
+### Object size as an external variable: pre-registrations SZ1, SZ2, FACE3 (before running)
+
+The ICIT-style source records object dimensions (`horizontal(mm)`, `vertical(mm)`, `thickness(mm)`; non-zero for 1,488 `SEAL:S`, 683 `TAB:B`, 617 `TAB:I`, 313 `SEAL:R`, 204 `TAB:C` records). No earlier test has used them. Size is information outside the texts. If a sign predicts the size of the object on unused data, beyond text length and site, that would be a functional association of the L2 kind.
+
+Common definitions:
+- Unit: one object (`object_id` without the face suffix). Its text is all its lines joined in reading order, faces in suffix order.
+- Its size is the log of horizontal × vertical (mm²), taken from the first face that has both values > 0.
+- Objects with any incomplete line or a `?` are excluded.
+- Residual size: log area minus the mean log area of objects of the same type, the same site and the same text length (lengths ≥ 8 pooled). Objects that are alone in their stratum are dropped.
+
+**SZ1 (sanity check).** On `SEAL:S` objects, log area and text length are positively correlated (Spearman, one-sided p < 0.01, all objects). This is expected if longer legends need larger seals; a failure would mean that the size data cannot be used.
+
+**SZ2 (discovery and confirmation scan, `SEAL:S`).**
+- Discovery set: objects whose text is a training string (not `is_heldout`), from sites other than the ten fresh sites.
+- Confirmation set: objects whose text is in the strict held-out set, plus objects from the fresh sites.
+- For every sign that occurs in at least 20 discovery objects, compare the residual size of objects containing it with that of the others (Mann–Whitney, two-sided). Signs with discovery p < 0.01 are candidates.
+- Each candidate is tested on the confirmation set in its discovered direction (one-sided Mann–Whitney), with the Bonferroni threshold 0.01/k for k candidates.
+- Prediction: at least one candidate is confirmed. If there are no candidates, the result is "not supported".
+- Insufficient data for a candidate: fewer than 5 confirmation objects contain it.
+
+**FACE3 (numeral faces and tablet size).**
+- Data: the ICIT two-face tablets of FACE2 with size data.
+- Question: within series of identical text faces, is the count on the numeral face (2, 3, 4 strokes: 032, 033, 034; other faces excluded) related to the log area of the object?
+- Statistic: Spearman correlation of count and log area, computed after centring both within each text series of at least 2 objects.
+- Null: counts permuted within series; 10,000 draws.
+- Prediction: none on direction; two-sided p < 0.01.
+- Insufficient data: fewer than 30 objects in series with varying counts.
