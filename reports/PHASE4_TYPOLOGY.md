@@ -44,7 +44,7 @@ Frequent Indus signs combine less freely than the graphemes of OB Akkadian lette
 
 ### 2.7 Specificity of numeral partners (D6, descriptive)
 
-The partner sign of an Indus numeral is more predictable from the numeral (Theil's U 0.34) than the item next to a proto-Elamite (0.20) or proto-cuneiform (0.18) numeral is from its unit sign. The Indus count signs are themselves the units of comparison, so the figures are not strictly equivalent.
+The predictability of the partner sign from the numeral (Theil's U) is 0.34 for the Indus texts. For the proto-administrative texts it is 0.20 and 0.18 when the numerals are reduced to their unit signs, but 0.40 and 0.36 when the counts are kept. The measure depends on the size of the numeral vocabulary (11 Indus stroke signs against 99 and 207 CDLI numeral tokens), so the comparison is inconclusive (D6, D6b).
 
 ## 3. Conclusion
 

@@ -123,7 +123,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | DIR1 | ICIT | L/R lines (122), model from R/L lines | supported (105/122) | direction normalisation confirmed |
 | SX1 | ICIT | leave-one-site-out (Harappa, Mohenjo-daro) | supported (p < 10⁻¹⁰⁰ both) | |
 | SX2 | ICIT | SEAL:S legends, Harappa vs Mohenjo-daro | not supported (p = 0.14) | |
-| D6 | ICIT, proto-Elamite, proto-cuneiform | 300-pair resamples | descriptive: Indus partners more numeral-specific (U 0.34 vs 0.20, 0.18) | not strictly comparable |
+| D6 | ICIT, proto-Elamite, proto-cuneiform | 300-pair resamples | inconclusive (U 0.34 vs 0.20/0.18 by unit, 0.40/0.36 with counts kept; D6b) | measure depends on the numeral vocabulary |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
 

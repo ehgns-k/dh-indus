@@ -2835,3 +2835,8 @@ Script: `scripts/batch8_direction_sites.py`; results: `results/batch8_direction_
   - U(partner | numeral) is 0.34 (SD 0.011) for the Indus texts, against 0.20 (proto-Elamite) and 0.18 (proto-cuneiform).
   - The partner of an Indus numeral depends more on the numeral than in either proto-administrative system.
   - Limitation: the Indus numeral "unit" is the count sign itself (each count is its own sign), whereas the CDLI unit was reduced to the unit sign without its count. The comparison therefore measures count-specific partners in the Indus texts (H3.10, H3.12) against unit-specific partners in the proto-administrative texts. The two are not strictly equivalent.
+
+**D6b (post hoc, descriptive) and correction of D6.**
+- With the CDLI numerals kept with their counts (for example `3(N01)`), U(partner | numeral) is 0.40 (proto-Elamite) and 0.36 (proto-cuneiform), against 0.34 for the Indus texts.
+- The numeral vocabularies differ greatly: 11 Indus stroke signs, 99 and 207 CDLI numeral tokens. With 300 pairs per resample, U rises with the number of categories, so neither version is a fair comparison.
+- The D6 statement that Indus numeral partners are more specific than those of the proto-administrative systems is therefore withdrawn. The comparison is recorded as inconclusive.

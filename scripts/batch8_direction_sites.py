@@ -133,3 +133,33 @@ res["D6"] = {"pairs": {k: len(v) for k, v in P.items()}, "mean_U": mean, "sd_U":
 (ROOT / "results" / "batch8_direction_sites.json").write_text(json.dumps(res, indent=1, default=float))
 for k, v in res.items():
     print(k, json.dumps(v, default=float)[:900])
+
+# D6b (post hoc, descriptive): proto-administrative numerals with their count kept (full token, e.g. 3(N01))
+unit_full = lambda t: t
+def proto_pairs_full(lines, before):
+    out = []
+    for s in lines:
+        i = 0
+        while i < len(s):
+            if isnum(s[i]):
+                j = i
+                while j < len(s) and isnum(s[j]):
+                    j += 1
+                if before and i > 0 and not isnum(s[i - 1]):
+                    out.append((s[i], s[i - 1]))
+                if not before and j < len(s):
+                    out.append((s[i], s[j]))
+                i = j
+            else:
+                i += 1
+    return out
+P2 = {"indus_icit": ipairs, "proto_elamite": proto_pairs_full(R["proto_elamite"], True),
+      "proto_cuneiform": proto_pairs_full(R["proto_cuneiform"], False)}
+rng = random.Random(20261125); vals2 = {k: [] for k in P2}
+for _ in range(20):
+    for k in sorted(P2):
+        vals2[k].append(U(rng.sample(P2[k], min(300, len(P2[k])))))
+res["D6b"] = {"numeral_types": {k: len({a for a, _ in v}) for k, v in P2.items()},
+              "mean_U": {k: float(np.mean(v)) for k, v in vals2.items()}, "sd_U": {k: float(np.std(v)) for k, v in vals2.items()}}
+(ROOT / "results" / "batch8_direction_sites.json").write_text(json.dumps(res, indent=1, default=float))
+print("D6b", res["D6b"])

@@ -146,5 +146,22 @@
    "proto_cuneiform": 0.015171874499490609
   },
   "decision": "outside the proto-administrative range"
+ },
+ "D6b": {
+  "numeral_types": {
+   "indus_icit": 11,
+   "proto_elamite": 99,
+   "proto_cuneiform": 207
+  },
+  "mean_U": {
+   "indus_icit": 0.3415965689582676,
+   "proto_elamite": 0.39703761524557696,
+   "proto_cuneiform": 0.3646308994393483
+  },
+  "sd_U": {
+   "indus_icit": 0.01070711980651795,
+   "proto_elamite": 0.01981182295852349,
+   "proto_cuneiform": 0.0142290636090799
+  }
  }
 }
