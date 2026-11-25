@@ -1021,3 +1021,9 @@ Met in narrow, functional scope (see above). A stronger L2 result would assign a
 ### Pre-registration of F4 (C2 pattern on fresh sets 1 and 2; before running)
 
 Among fresh-set strings (ICIT, sites excavated after 1979) whose records are all `SEAL:S` or all `SEAL:R`: the share of strings whose final sign is 407 or 154 is higher for `SEAL:R` than for `SEAL:S`. One-sided Fisher exact test, p < 0.01. If either class has fewer than 5 strings, the result is "insufficient data".
+
+### F4 result: not supported (p = 0.0104)
+
+Script: `scripts/phase6_f4_final_sign_fresh.py`; results: `results/phase6_f4_final_sign_fresh.json`.
+
+On the fresh sets, 3 of 22 rectangular-seal strings end in 407 or 154, against 0 of 75 motif-seal strings. One-sided Fisher exact p = 0.0104, just above the threshold 0.01. By the pre-registered rule F4 is not supported. The direction agrees with C2, and the result is limited by the small number of rectangular seals in the fresh sets. The C2 result therefore rests on the held-out confirmation alone.

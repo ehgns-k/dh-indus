@@ -1,0 +1,15 @@
+{
+ "table_[[R_final407/154, R_other],[S_final407/154, S_other]]": [
+  [
+   3,
+   19
+  ],
+  [
+   0,
+   75
+  ]
+ ],
+ "status": "tested",
+ "odds_ratio": Infinity,
+ "p_value": 0.010444926749864351
+}
