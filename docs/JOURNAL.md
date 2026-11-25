@@ -284,3 +284,28 @@ Concordance images in the ICIT-style numbering (support ≥ 3, purity ≥ 0.8): 
 - Control: 1,000 random sets of the same size drawn from signs with training frequency between 10 and 700 that are not in the set.
 - Prediction: for right-neighbour distributions, observed mean divergence lower than in the control sets, p < 0.01, in both corpora. The left-neighbour result is reported but is not part of the decision.
 - Refutation condition: p ≥ 0.01 in either corpus for right-neighbour distributions.
+
+### H3.8 result: not supported (decision criterion); left-context result noted
+
+Script: `scripts/phase3_h38_strokes.py`; results: `results/phase3_h38_strokes.json`. Training split.
+
+| Corpus | Side | Observed mean JS | Control mean (SD) | p |
+|---|---|---:|---:|---:|
+| KP1979 | right (decision) | 0.732 | 0.817 (0.037) | 0.025 |
+| ICIT | right (decision) | 0.763 | 0.805 (0.036) | 0.109 |
+| KP1979 | left (reported only) | 0.598 | 0.769 (0.052) | 0.003 |
+| ICIT | left (reported only) | 0.641 | 0.760 (0.046) | 0.005 |
+
+By the pre-registered rule H3.8 is not supported: the signs that follow the stroke signs are not significantly more alike than for random sign sets. In both corpora, however, the signs that precede the stroke signs are more alike than for random sets. The most common preceding context is the start of the line (KP 143 of the counted occurrences, ICIT 83), followed by KP 119 / ICIT 002 (59 and 49), which the concordance maps onto each other (ICIT 002 → KP 119, purity 0.97).
+
+Interpretation (to be tested, not a result): the stroke signs share a position (line-initial, or after the sign KP 119 / ICIT 002), while the sign after them varies. This pattern would be expected if the stroke signs quantify or qualify whatever follows, but other explanations are possible.
+
+The left-context result was not the pre-registered criterion, so it is tested on the held-out set as H3.9.
+
+### Pre-registration of H3.9 (before running)
+
+**H3.9 (stroke signs share their preceding context).** The same sets and statistic as H3.8, but using left-neighbour distributions (including the line start) computed only from the held-out strings.
+- Control: 1,000 random sets of the same size from signs with held-out frequency ≥ 3, not in the set.
+- Prediction: observed mean JS lower than the control, p < 0.01, in both corpora.
+- Refutation condition: p ≥ 0.01 in either corpus.
+- Note: the held-out set is small, so a failure may reflect low power rather than absence of the effect. It is still recorded as a failure.
