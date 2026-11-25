@@ -2672,3 +2672,44 @@ From now on, a registered rule takes precedence over its examples. The examples 
 - R7 was recomputed with 45 tests. `scripts/run_all.py` now runs R7 last, because it reads the results of later scripts.
 - No new external variable (iconographic detail, object size, chronological level, excavation area) is predicted by the signs on unused data.
 - The functional L2 result (CT15) holds and is not a length effect.
+
+---
+
+## 2026-11-25 (day 1, twenty-sixth working session, 18:18 UTC): replications in KP1979 and the numeral faces
+
+### Plan of the run
+
+1. CT22k: replication of CT22 (fish-shaped signs form a usage class) in KP1979.
+2. F5k: formulae learned from KP1979 training data recur in the post-1979 finds (independent discovery transcription).
+3. FACE4k: replication of FACE4 (objects with three or more faces) in KP1979.
+4. FACE5: do the counts on numeral faces differ between moulded (`TAB:B`) and incised (`TAB:I`) tablets?
+5. NUM3 (descriptive): sign 700 inside one-face texts, compared with the numeral faces.
+6. Interim report 5; README, claims, final report; reproducibility.
+
+### Pre-registrations (before running)
+
+**CT22k.**
+- Fish set in KP1979: the best concordance matches of the ICIT fish-shaped signs, {53, 56, 57, 58, 60, 61, 62, 63} (`results/phase1_concordance.tsv`).
+- Data: KP strict held-out strings, normalised as in R4.
+- Members with at least 5 occurrences are used. The statistic, null (10,000 frequency-matched random sets) and decision (one-sided p < 0.01) are as in CT22.
+- Insufficient data: fewer than 3 members with at least 5 occurrences.
+
+**F5k.**
+- Formula templates of length ≥ 3 with at least three fillers are found on KP1979 training strings (normalised as in R4; not `is_heldout`).
+- The fresh ICIT strings of length ≥ 3 are mapped sign by sign to KP through the concordance (best match, then normalised). Strings with an unmappable sign are dropped.
+- Statistic: number of mapped fresh strings that fit a template.
+- Control: rule-preserving ICIT controls of each fresh string (`indus.controls.control`), mapped in the same way; 10,000 draws.
+- Prediction: one-sided p < 0.01. Insufficient data: fewer than 5 real matches.
+
+**FACE4k.**
+- KP objects with three or more records, all complete without `?` (any `lines_code`).
+- The KP terminal set is used. The statistic, null and decision are as in FACE4.
+- Insufficient data: fewer than 20 objects.
+
+**FACE5.**
+- Unit: distinct text faces among the ICIT numeral tablets of FACE2. Each unit takes its type (`TAB:B` or `TAB:I`; units with both are dropped) and the count of its most frequent numeral face (032 = 2, 033 = 3, 034 = 4; ties dropped).
+- Question: does the count distribution differ between moulded and incised tablets? This is an external, physical variable (the technique of manufacture).
+- Statistic: χ² of the 2 × 3 table. Null: 10,000 permutations of the type labels among units.
+- Prediction: p < 0.01. Insufficient data: fewer than 10 units of either type.
+
+**NUM3 (descriptive).** In one-face ICIT texts (objects with a single face), count the signs that precede 700 and the counts of stroke signs before it. Compare with the numeral faces (2–4 strokes only).
