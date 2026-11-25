@@ -1,0 +1,23 @@
+{
+ "objects": 466,
+ "by_level": {
+  "Intermediate": 244,
+  "Late": 222
+ },
+ "discovery": 381,
+ "confirmation": 52,
+ "signs_scanned": 34,
+ "candidates": [],
+ "threshold": null,
+ "final_740_[count,total]": {
+  "Intermediate": [
+   87,
+   244
+  ],
+  "Late": [
+   93,
+   222
+  ]
+ },
+ "verdict": "not supported"
+}

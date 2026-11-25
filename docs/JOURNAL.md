@@ -2535,3 +2535,22 @@ Script: `scripts/batch5f_sz4_identical_seals.py`; results: `results/batch5f_sz4_
 - Seals that share a legend are no more alike in size than other seals. Shared legends are mostly short (for example `910 740`, `061 740`) and found at different sites. They look like common short legends rather than matching sets.
 
 **FACE2, KP with normalised counts (post hoc, descriptive).** When the KP numeral faces are reduced to stroke counts (121/144 = 1, 122/145 = 2, 123/147 = 3, 124/150 = 4, summed), the counts are 2 (76), 3 (116), 4 (48) and 1 (2). Tablets with identical text share the count in 47.7 % of pairs, against 37.5 % under permutation (p = 0.0049). The KP result of FACE2 is therefore not an artefact of KP's several spellings of one count.
+
+### Pre-registration of T2 (before running)
+
+**T2 (chronological change of sign use at Mohenjo-daro).**
+- The source assigns Mohenjo-daro records to Early / Intermediate / Late levels (`period`; for `SEAL:S`, Early 29, Intermediate 291, Late 231). How the levels were assigned (by depth, by excavator's stratum) is not documented in the source, so this is noted as a limitation.
+- Unit: `SEAL:S` and `SEAL:R` objects from Mohenjo-daro with level Intermediate or Late; texts as in SZ2 (complete, without `?`).
+- Discovery: objects whose text is a training string. For every sign in at least 15 discovery objects, compare the share of objects containing it between the two levels (Fisher exact, two-sided). Signs with p < 0.01 are candidates.
+- Confirmation: objects whose text is in the strict held-out set. One-sided Fisher test in the discovered direction, with Bonferroni threshold 0.01/k.
+- Prediction: at least one candidate is confirmed.
+- Insufficient data for a candidate: fewer than 5 confirmation objects contain it.
+- In addition (descriptive): the share of legends ending in 740 in each level, on all objects.
+
+### Result T2: not supported
+
+Script: `scripts/batch5g_t2_mohenjodaro_levels.py`; results: `results/batch5g_t2_mohenjodaro_levels.json`.
+- 466 Mohenjo-daro seals (Intermediate 244, Late 222): 381 discovery and 52 confirmation objects.
+- Of 34 signs scanned, none differs between the levels at p < 0.01 in the discovery set, so there are no candidates.
+- Descriptive: legends ending in 740 make up 36 % of seals in the Intermediate levels and 42 % in the Late levels.
+- No change of sign use between the Intermediate and Late levels of Mohenjo-daro is detected. This agrees with the negative chronological test at Harappa (T1). With these sample sizes, only large changes could have been found.

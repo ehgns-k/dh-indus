@@ -163,6 +163,6 @@ The short tests that the current data allow have largely been run. The remaining
 - Review: family-wise review of all tests on unused data (R7, R7b); all analyses re-run (`scripts/run_all.py`).
 - New external variable: object size (SZ1–SZ4). No sign predicts seal size on unused data.
 - New items:
-  - **L-6 Chronology at Mohenjo-daro.** The source gives Early / Intermediate / Late levels for about 800 Mohenjo-daro records (`period`) and depths. Use them as an external variable (discovery on training strings, confirmation on strict held-out), after checking how the levels were assigned.
+  - **L-6 Chronology at Mohenjo-daro** (first test T2 done in this session: no change detected). The source gives Early / Intermediate / Late levels for about 800 Mohenjo-daro records (`period`) and depths. Use them as an external variable (discovery on training strings, confirmation on strict held-out), after checking how the levels were assigned.
   - **L-7 `cult` codes.** The `cult` column (SAN, Trough, SAF, RAN …; 1,457 records) is undocumented. Survey its meaning before any use.
   - **L-8 Numeral faces.** Check against the CISI 3.1 photographs whether the counts on the numeral faces were read correctly, if the volumes become accessible.
