@@ -666,3 +666,32 @@ Descriptive observations (not tests):
 - Several copper-tablet texts end in 407, a member of the group that follows the 4–9 stroke signs (H3.10), often after 845 (`… 845 407`, `… 845 061 407`). Noted for WP-C3; not tested here.
 
 Ledger: C1 decided on all copper-tablet strings (not held-out).
+
+### WP A2: rule-preserving controls
+
+Added `src/indus/controls.py`. A control text keeps the line length, the line-final terminal cluster and the count–item pairs (H3.10, H3.12) in place, and permutes the remaining units. From now on, tests that use reordering controls use this generator.
+
+### WP B2: semicircle signs (claim C24c) cannot be tested
+
+Claim C24 says that groups of semicircles probably stand for tens. In KP1979 the arc signs 131–135 occur 5, 2, 1, 1 and 1 times, and none has a concordance image in the ICIT-style source. With 10 occurrences in total the "tens before ones" prediction cannot be tested. Recorded as infeasible with current data.
+
+### WP A3: extended fresh set
+
+Excavation start dates found in this session (search-engine excerpts; details and URLs in `docs/FRESH_SITES.md`):
+
+| Site | First excavation | Lines (complete, direction known) |
+|---|---|---:|
+| Farmana | 2006 | 5 |
+| Gola Dhoro (Bagasra) | 1996 | 5 |
+| Lakhanjo-daro | 1992 (salvage), 2006 | 5 |
+| Kanmer | 2005–06 | 4 |
+| Bhirrana | 2003 | 3 |
+| Khirsara | 2009 | 3 |
+| Shikarpur | 1987 | 2 |
+| Ganweriwala | after 2007 | 1 |
+
+Rakhigarhi is excluded: sources disagree on whether excavation began in the 1960s or in 1997. The earlier fresh set (Dholavira, Nausharo) is called fresh set 1; these eight sites are fresh set 2 (about 28 lines). No test has used fresh set 2.
+
+### Pre-registration of F2b and F3b (fresh set 2 only, before running)
+
+Same procedures and criteria as F2 and F3 (rules and models from KP1979 training data), applied to fresh set 2 only. F2b is marked "insufficient data" if fewer than 3 bigrams follow a 4–9 stroke sign. F3b uses the sign test over mapped strings; prediction p < 0.01 for forward vs reversed. Because fresh set 2 is small, a failure of F3b's bigram-vs-unigram comparison is expected to be likely and is reported without a decision.
