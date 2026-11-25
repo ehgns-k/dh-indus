@@ -1017,3 +1017,7 @@ Regional association: 400 is more frequent in the Inter-Riverine region (OR 4.5)
 ### Gate G2
 
 Met in narrow, functional scope (see above). A stronger L2 result would assign a specific meaning to a sign group and predict an external variable from it; this remains open.
+
+### Pre-registration of F4 (C2 pattern on fresh sets 1 and 2; before running)
+
+Among fresh-set strings (ICIT, sites excavated after 1979) whose records are all `SEAL:S` or all `SEAL:R`: the share of strings whose final sign is 407 or 154 is higher for `SEAL:R` than for `SEAL:S`. One-sided Fisher exact test, p < 0.01. If either class has fewer than 5 strings, the result is "insufficient data".
