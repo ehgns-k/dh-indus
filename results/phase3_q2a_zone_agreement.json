@@ -1,0 +1,15 @@
+{
+ "pairs": 58,
+ "agreement": 0.9137931034482759,
+ "null_mean": 0.6384706896551725,
+ "null_sd": 0.03646509052493462,
+ "p_value": 9.999000099990002e-05,
+ "confusion": {
+  "medial|medial": 43,
+  "terminal|terminal": 5,
+  "initial|initial": 5,
+  "terminal|medial": 1,
+  "initial|medial": 2,
+  "medial|initial": 2
+ }
+}

@@ -1351,3 +1351,15 @@ In E3–E3c the language models differed in kind and size: Sanskrit was a list o
   - pseudo-language: random words with the pooled letter frequencies of the four.
 - **Corpora, search, measure.** As in E3b (Δ′, real minus within-line reordered, held-out lines, 2,000-line ciphers), except that the Indus held-out set is the **strict** held-out set.
 - **Decision rules.** As in E3: the method has power only if both positive controls rank their true language first with bootstrap p < 0.01 against every other language; only then is an Indus language preference considered, and even then it is conditional evidence, not L3.
+
+### Pre-registration of Q2a (zone agreement across transcriptions; before running)
+
+Positional zones (initial / medial / terminal, defined as in B1: initial share ≥ 0.5 → initial; final share ≥ 0.5 → terminal; otherwise medial; signs with ≥ 10 training occurrences) are computed **independently** in the ICIT and KP1979 training splits. For concordance pairs with support ≥ 3, purity ≥ 0.8 and a one-to-one link, the share of pairs with the same zone is compared with 10,000 permutations of the KP zone labels among the pairs. Prediction: agreement above the permutation distribution, p < 0.01. (This is a reproducibility check of a descriptive classification; the two transcriptions describe largely the same objects.)
+
+### Q2a result: zones agree across transcriptions (supported); sign-class table written
+
+Script: `scripts/phase3_q2_sign_classes.py`; results: `results/phase3_q2a_zone_agreement.json`, `results/sign_classes.tsv`, `docs/SIGN_CLASSES.md`.
+
+For 58 one-to-one linked signs, the independently computed zones agree in 53 cases (0.91); permutation mean 0.64 (SD 0.04), p = 0.0001. All five terminal-zone and all five initial-zone signs of the linked set agree; the five disagreements are between the medial zone and one of the others. The positional classification is a property of the signs, not of a particular transcription.
+
+`docs/SIGN_CLASSES.md` lists the 80 ICIT signs with at least 20 occurrences, with their KP1979 equivalent, zones in both transcriptions, positional shares and the roles established by the tests of this project (terminal set, stroke counts, count–item targets, fish-shaped family, C2 candidate associations).
