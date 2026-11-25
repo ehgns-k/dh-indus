@@ -1752,3 +1752,19 @@ The tablet share among count-variable texts is the same as among other formulaic
 - **Comparison:** for one-to-one concordance pairs (support ≥ 3, purity ≥ 0.8) present in both graphs, adjusted Rand index between ICIT classes and KP classes.
 - **Null:** 10,000 permutations of the KP class labels over the linked signs.
 - **Prediction:** ARI above the null, p < 0.01.
+
+### H9.3 result: supported — substitution classes agree across transcriptions
+
+Script: `scripts/phase9_h93_substitution_classes.py`; results: `results/phase9_h93_substitution_classes.json`.
+
+Substitution graphs: ICIT 263 signs in 9 classes; KP1979 203 signs in 7 classes. For 69 one-to-one linked signs, ARI = 0.169; permutation mean 0.000 (SD 0.022); p = 0.0001. **H9.3 is supported.**
+
+The ICIT classes (largest ones) group, among others:
+- the short-stroke numerals 003, 004, 005, 016, 017, 034 with 035 (one class);
+- the closing and count-partner signs 151, 154, 156, 390, 400, 405, 407 (one class);
+- the fish-shaped signs 220, 231, 233, 235, 240 together with the single and long strokes 001, 031, 033 (one class);
+- the sign family 467–475 (a class of its own).
+
+Compared with H3.2 (classes from contexts; agreement 0.05–0.24 depending on the number of clusters, not fixed in advance), the substitution classes are defined without a free parameter and agree well beyond chance. As before, the two transcriptions cover largely the same objects, so this is agreement between independent transcriptions, not between independent samples.
+
+**Interpretation.** The formulaic texts have slots that are filled from distinct classes of signs: a numeral class, a class of closing and counted-item signs, a class containing the fish-shaped signs, and others. This is the clearest picture so far of the paradigmatic organisation of the inscriptions (L1).
