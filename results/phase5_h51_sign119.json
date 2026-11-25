@@ -1,0 +1,38 @@
+{
+ "kp1979": {
+  "sign": "119",
+  "table_[[X->stroke, X->other],[pool->stroke, pool->other]]": [
+   [
+    19,
+    70
+   ],
+   [
+    9,
+    171
+   ]
+  ],
+  "share_X": 0.21348314606741572,
+  "share_pool": 0.05,
+  "pool_size": 11,
+  "odds_ratio": 5.1571428571428575,
+  "p_value": 7.437158472771355e-05
+ },
+ "icit": {
+  "sign": "002",
+  "table_[[X->stroke, X->other],[pool->stroke, pool->other]]": [
+   [
+    8,
+    92
+   ],
+   [
+    7,
+    156
+   ]
+  ],
+  "share_X": 0.08,
+  "share_pool": 0.04294478527607362,
+  "pool_size": 7,
+  "odds_ratio": 1.937888198757764,
+  "p_value": 0.16234335884067602
+ }
+}

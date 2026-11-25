@@ -780,3 +780,14 @@ Units found in the fresh strings include `119 121`, `119 123`, `119 124`, `119 1
 - Held-out use: this is the 12th question decided on the held-out split.
 
 **Amendment to H5.1 (before any outcome was computed).** The pre-registered control could not be built: no sign lies within a factor 2 of the training frequency of KP 119 (394) or ICIT 002 (404) with a similar medial share (0.96 / 0.95); with a factor 4 or 8 only 2–8 signs qualify, too few for p < 0.01. Amended control: all other signs with training frequency ≥ 30 and training medial share ≥ 0.8 (stroke signs excluded), pooled. Test: one-sided Fisher exact test on held-out bigrams, (preceding sign is 119/002 vs a pooled medial sign) × (next sign is a stroke sign vs not). Prediction and threshold unchanged (p < 0.01 in both corpora).
+
+### H5.1 result: not supported (passes in KP1979, fails in ICIT)
+
+Script: `scripts/phase5_h51_sign119.py`; results: `results/phase5_h51_sign119.json`.
+
+| Corpus | Sign → stroke / other | Pooled medial signs → stroke / other | Shares | Odds ratio | p |
+|---|---:|---:|---:|---:|---:|
+| KP1979 (119) | 19 / 70 | 9 / 171 | 0.21 vs 0.05 | 5.2 | 7.4 × 10⁻⁵ |
+| ICIT (002) | 8 / 92 | 7 / 156 | 0.08 vs 0.04 | 1.9 | 0.16 |
+
+By the pre-registered rule (both corpora), H5.1 is not supported. The two transcriptions disagree strongly, which points to a transcription question rather than a simple absence of the effect: ICIT 002 is more frequent than KP 119 (855 vs 704 occurrences in all lines), and the concordance link 002 → 119 may merge or split signs differently (as found for 121 → 001). Before the construction "119 + count + item" can be examined further, the correspondence of KP 119, 121, 122 and ICIT 001, 002 must be checked line by line in the aligned pairs (WP B3).
