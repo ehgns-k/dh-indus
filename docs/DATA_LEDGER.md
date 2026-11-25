@@ -115,8 +115,12 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | FACE4 | ICIT | all objects with three faces (38) | supported (p = 0.0001) | one closed text per object |
 | AR1 | ICIT (Mohenjo-daro seals) | all seals with area | not supported (p = 0.019 / 0.032, two area readings) | registration ambiguous; both readings fail |
 | AR1h | ICIT (Harappa seals) | all seals with area | not supported (p = 0.79) | |
+| CT22k | KP | strict held-out | supported (p = 0.0007) | replication of CT22 |
+| F5k | KP formulae → ICIT fresh | fresh sets 1+2 | supported (10 vs 4.7, p = 0.0003) | independent discovery transcription |
+| FACE4k | KP | all objects with ≥ 3 records (28) | not supported (p = 0.33) | mixed lines codes |
+| FACE5 | ICIT | numeral-face tablets (144 text faces) | not supported (p = 0.12) | count vs manufacture technique |
 | R8 | all | – | review: all analyses re-run, no differences | |
-| R7 | – | – | review: 13 of 45 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
+| R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
 
 Count of questions decided on the (full) held-out split before the review R1: 15 (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, the H3.5 secondary set, H5.1, C2, C3; see rows). From R1 on, held-out tests use the strict held-out set; questions decided on it (alone or with the fresh sets) include R1, H8.1, H9.2 (secondary), E3d, G2, H9.4, CT16, CT17, CT18, G3, CT15 and later rows (at least 11 at the time of CT15). Questions decided on fresh data are marked in the table (F2, F3, F2b, F3b, B1, B4, H5.1b, F4, H6.1, H7.1 and the fresh parts of G2, CT16, CT15).
 

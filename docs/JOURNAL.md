@@ -2713,3 +2713,23 @@ From now on, a registered rule takes precedence over its examples. The examples 
 - Prediction: p < 0.01. Insufficient data: fewer than 10 units of either type.
 
 **NUM3 (descriptive).** In one-face ICIT texts (objects with a single face), count the signs that precede 700 and the counts of stroke signs before it. Compare with the numeral faces (2–4 strokes only).
+
+### Results CT22k, F5k, FACE4k, FACE5, NUM3
+
+Script: `scripts/batch7_kp_replications.py`; results: `results/batch7_kp_replications.json`.
+
+- **CT22k: supported (replication).**
+  - In the KP strict held-out strings, four fish-shaped signs have at least 5 occurrences (56, 58, 60, 62).
+  - Their mean pairwise context similarity is 0.265, against 0.104 (SD 0.030) for frequency-matched sets (p = 0.0007).
+  - The fish-shaped signs form one usage class in both transcriptions.
+- **F5k: supported.**
+  - 46 formula templates were found on 1,657 KP1979 training strings. Of 70 fresh ICIT strings that map to KP, 10 fit a KP template, against 4.7 for rule-preserving controls (p = 0.0003).
+  - Formulae found in the 1979 transcription recur in finds made after 1979. The matches largely overlap those of F5 (for example `861 002 016 390`, `920 740 400`).
+- **FACE4k: not supported.**
+  - 28 KP objects have three or more complete records. Exactly one record closes on 14, against 12.4 expected (p = 0.33). The closing counts are 0 on 8 objects, 2 on 4 and 3 on 2.
+  - The KP objects mix several `lines_code` values (7: 15, 6: 5, 3: 3, and others) whose meanings are not known. Some may be separate inscriptions rather than faces of one object.
+  - The ICIT result (FACE4) is therefore not replicated. The disagreement may come from how the two sources group records into objects, but this was not tested.
+- **FACE5: not supported.** 144 distinct text faces (moulded 85, incised 59). Counts 2/3/4: moulded 30/34/21, incised 18/17/24 (χ² = 4.3, p = 0.12). The count on the numeral face does not differ between moulded and incised tablets.
+- **NUM3 (descriptive).** In one-face texts, sign 700 occurs only 17 times. 11 of these follow a stroke sign (033: 4, 004: 4, 034: 2, 003: 1). Sign 700 is therefore almost confined to the numeral faces and to numeral contexts. On the numeral faces themselves it follows only 2–4 strokes (FACE2).
+
+R7 recomputed with CT22k and F5k (47 tests). Holm at α = 0.01 keeps the same 13 tests. CT22k and F5k survive Holm at α = 0.05, as do CT15, F5 and CT22.

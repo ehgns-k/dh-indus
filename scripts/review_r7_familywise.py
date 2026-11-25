@@ -44,6 +44,9 @@ fam += [("CT18|icit", "strict held-out", c18["icit"]["p_value"], 1 / 10001 if R7
 for c in J("batch5e_object_size")["SZ2"]["candidates"]:
     if "p_conf" in c:
         fam.append(("SZ2 " + c["sign"], "strict held-out + fresh", c["p_conf"], None))
+b7 = J("batch7_kp_replications")
+fam += [("CT22k", "strict held-out (KP)", b7["CT22k"]["p_value"], 1 / 10001),
+        ("F5k", "fresh 1+2 (mapped to KP)", b7["F5k"]["p_value"], 1 / 10001)]
 b6 = J("batch6_iconography_faces")
 for key in ("MO2a", "MO2b", "MO1k"):
     for c in b6[key]["candidates"]:
