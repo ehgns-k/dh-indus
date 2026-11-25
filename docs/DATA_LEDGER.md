@@ -100,6 +100,8 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | KF1 | ICIT, KP | all unique strings | supported (75 % vs 7.9 % of control frames) | across transcriptions of the same objects |
 | ML2 | ICIT, KP | objects of ML1, ML1k | not supported (p = 0.43, 0.46) | line breaks not at segment boundaries |
 | F5 | ICIT (formulae from train) | fresh sets 1+2 | supported (9 vs 4.8 matches, p = 0.0008) | rule-preserving controls |
+| FACE1 | ICIT, KP | all two-face objects without numeral face (258; 195) | supported (p = 0.0001 both) | one text per object, closed once |
+| FACE2 | ICIT, KP | all two-face objects with a numeral + 700/310 face (246; 242) | supported (ICIT p = 0.0001; KP p = 0.0093) | count partly tied to the text series; robust without the largest group |
 | R7b | as B1, B4, CT17, CT18 | as original | p = 0.0001 with 10,000 draws | review: resolution only |
 | R7 | – | – | review: 15 of 38 fresh/strict tests survive Holm 0.01; CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
 

@@ -1,0 +1,34 @@
+{
+ "icit_without_largest_group": {
+  "largest_group": "176 740 400",
+  "largest_size": 30,
+  "groups": 36,
+  "observed": 0.6219512195121951,
+  "null_mean": 0.3297317073170732,
+  "p_greater": 9.999000099990002e-05
+ },
+ "icit_groups_weighted_equally": {
+  "largest_group": "176 740 400",
+  "largest_size": 30,
+  "groups": 37,
+  "observed": 0.5658589624106866,
+  "null_mean": 0.32773446722584654,
+  "p_greater": 0.00019998000199980003
+ },
+ "kp_without_largest_group": {
+  "largest_group": "194 325 98",
+  "largest_size": 23,
+  "groups": 37,
+  "observed": 0.29014084507042254,
+  "null_mean": 0.17309154929577464,
+  "p_greater": 0.0028997100289971
+ },
+ "kp_groups_weighted_equally": {
+  "largest_group": "194 325 98",
+  "largest_size": 23,
+  "groups": 38,
+  "observed": 0.33302277432712213,
+  "null_mean": 0.16730763219808414,
+  "p_greater": 0.000999900009999
+ }
+}

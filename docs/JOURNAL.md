@@ -2426,3 +2426,41 @@ Script: `scripts/batch5c_f5_formulae_fresh.py`; results: `results/batch5c_f5_for
 - Of 86 fresh strings of length ≥ 3, 9 fit a template (for example `861 002 016 390`, `817 002 222 740`, `920 740 400`), against 4.8 on average for rule-preserving controls (p = 0.0008).
 - Formulae with a variable slot learned from the older corpus recur in later finds beyond what the established rules (length, closing cluster, count–item pairs) explain. The effect is small in absolute terms: most fresh strings fit no training formula.
 - R7 recomputed with F5 (38 tests): Holm 0.01 keeps the same 15 tests; F5 survives Holm 0.05 and BH 0.01.
+
+### Two-face objects: observation and pre-registrations FACE1, FACE2 (before running)
+
+**Observation (descriptive, made while checking ML1k).**
+- Of the KP objects with `lines_code` 6 and exactly one closing record, 329 have a non-closing record. In 240 of these it contains stroke signs, and it is mostly a stroke numeral followed by KP 310: `147 310` 59, `123 310` 35, `124 310` 25, `145 310` 25.
+- The ICIT-style source records the faces of an object as `object_id` suffixes (`162.1`, `162.2`). In it, 246 two-face objects have one face of the form "stroke numeral(s) + 700" in reading order (ICIT 700 = KP 310), almost all of them Harappa tablets (`TAB:B` 123, `TAB:I` 119).
+- So these tablets carry a numeral face and a text face.
+
+**FACE1 (ICIT; replication KP `lines_code` 6).** On two-face objects with one complete line per face, and where neither face is a numeral + 700 (KP 310) face, the two faces behave as one text closed once.
+- Same statistic, null and decision as ML1 (exactly one face closes; 10,000 re-pairings within object type; one-sided p < 0.01).
+- Insufficient data: fewer than 30 objects.
+
+**FACE2 (ICIT; replication KP).** On the two-face objects with a numeral face, the numeral face is fixed for a given text: objects whose text faces are identical have identical numeral faces more often than chance.
+- Data: ICIT objects as in the observation (246). For KP, objects with `lines_code` 6 and two complete records, one of which consists of stroke signs followed by 310.
+- Statistic: share of pairs of objects with identical text faces that also have identical numeral faces.
+- Null: the numeral faces are permuted among all objects of the same object type; 10,000 draws.
+- Prediction: the share is higher, one-sided p < 0.01.
+- Insufficient data: fewer than 10 groups of identical text faces.
+- The lower tail is reported descriptively. A result in that direction would mean the count varies within a series of identical texts.
+
+### Results FACE1, FACE2
+
+Scripts: `scripts/batch5d_two_face_objects.py`, `scripts/batch5d_face2_robustness.py` (post hoc); results: `results/batch5d_two_face_objects.json`, `results/batch5d_face2_robustness.json`.
+
+- **FACE1: supported (both transcriptions).** On two-face objects without a numeral face, exactly one face closes:
+  - ICIT: 175 of 258 objects, against 126.3 expected (p = 0.0001); both faces close on 27, against 51.3 expected.
+  - KP (`lines_code` 6): 123 of 195, against 92.1 expected (p = 0.0001).
+  - As with two lines on one face (ML1), the faces of one object carry one text, closed once.
+- **FACE2: supported (both transcriptions).**
+  - ICIT: 246 objects, 37 groups of identical text faces, 517 pairs. Identical numeral faces in 52.2 % of the pairs, against 33.9 % under permutation (p = 0.0001).
+  - KP: 242 objects, 38 groups. 24.2 % against 17.5 % (p = 0.0093). The KP figure is lower because KP writes the same count in several ways (`145 310`, `144 121 310`, `121 121 310` for two strokes).
+- Post-hoc robustness (descriptive). The pair statistic is dominated by the largest group (ICIT `176 740 400`, 30 objects, 435 of 517 pairs). Without this group the ICIT share is 62.2 % against 33.0 % (p = 0.0001), and with every group weighted equally it is 56.6 % against 32.8 % (p = 0.0002). KP: 29.0 % against 17.3 % (p = 0.0029), and 33.3 % against 16.7 % (p = 0.0010).
+- Interpretation:
+  - The numeral face of these Harappa tablets is not independent of the text on the other face. Objects with the same text tend to carry the same count.
+  - The count is not fixed, though. The largest series `176 740 400` has three strokes on 20 objects, four on 8 and two on 2.
+  - In the ICIT transcription the numeral face takes only three values: two (032), three (033) or four (034) strokes, with 700.
+  - The tablets were made in series (CT32a), and the count belongs partly to the series. It varies within a series more than a fixed label would.
+  - What the count records is not established. No published discussion of these numeral faces was checked in this session; this is an open item for the literature survey.
