@@ -1864,3 +1864,14 @@ Comparison of the three runs (first, re-run, deterministic version) for the deci
 | E3d | no / no / no | none / none / none |
 
 The registered conclusions do not change. The detailed rankings do: for example the first-ranked language for the Indus corpus in E3d was Old Tamil in the first run, Akkadian in the re-run, and Old Tamil (not clearly ahead) in the deterministic version; for the Akkadian cipher in E3b the true language Akkadian ranked last in the deterministic version. Run-to-run variation of this size is further evidence that the rankings carry no information about the language of the corpus. The journal tables for E3–E3d above report the first runs; the committed result files now hold the deterministic version.
+
+---
+
+## 2026-11-25 (day 1, eighteenth working session, 11:18 UTC): review R4, H9.1 with normalised KP strokes
+
+### Pre-registration of R4 (before running)
+
+In KP1979 the most frequent stroke–stroke substitutions of H9.1 were short vs long strokes of the same count (121↔144: 33; 123↔147: 13), which may be writing variants rather than different numbers. R4 repeats H9.1 for KP1979 on a normalised text in which:
+1. long-stroke signs are replaced by the short-stroke sign of the same count (144→121, 145→122, 147→123, 150→124, 151→125);
+2. after step 1, two adjacent single strokes `121 121` are merged into the two-stroke sign `122` (the split/merge finding of the fourteenth session), applied from left to right.
+Unique complete strings are recomputed after normalisation. Stroke set {121–130}; null, number of null sets (10,000) and threshold (p < 0.01) as in H9.1.
