@@ -1628,3 +1628,18 @@ Close-shape pairs with the most similar usage include the initial signs 817 / 86
 `docs/NEW_DATA_SURVEY.md` lists inscriptions published outside the ICIT-style source and other machine-readable datasets. Main conclusion: no dataset adds more than a handful of objects; the largest accessible group of possibly unused inscriptions is the Surkotada pottery inscriptions (Joshi 1990, ASI Memoir 87), followed by single objects (Binjor, Tell Jokha / Umma, some Dholavira seals in Bisht 2015, and others). In total a few dozen mostly short inscriptions, which would have to be transcribed from published photographs.
 
 **Consequence for the L2 candidate.** The candidate concerns seals and tablets (closing sign vs object class). The accessible unused material consists mostly of pottery inscriptions and single seals, so a confirmatory test of the candidate with adequate power is not possible with data that can be obtained here. This is recorded as a limitation; the candidate stays a candidate.
+
+---
+
+## 2026-11-25 (day 1, fourteenth working session, continued): inscriptions found abroad
+
+### Pre-registration of H8.1 (before running)
+
+**Idea.** Indus seals and inscribed objects found in the Persian Gulf, Mesopotamia and Central Asia may record names, titles or contents that differ from those at home sites (for example foreign names or a different language). If so, their sign sequences should be less predictable under a model of home-site texts.
+
+- **Abroad lines:** ICIT complete lines with recorded direction, length ≥ 2, region `Persian Gulf`, `Mesopotamia` or `Central Asia` (the region `Iranian Plateau` is excluded because it includes sites within the Indus sphere in Balochistan); strings that also occur at a home site are removed.
+- **Home comparison lines:** the strict held-out set, home regions only, length ≥ 2.
+- **Model:** bigram (add-0.1) trained on ICIT training lines from home regions only.
+- **Statistic:** mean log-loss per token (including line end). One-sided Mann–Whitney test, abroad > home.
+- **Prediction:** p < 0.01. Fewer than 8 abroad lines → "insufficient data".
+- **Also reported (descriptive):** the abroad lines, their sites, and the share of their signs that are rare (< 5 training occurrences).
