@@ -1104,3 +1104,20 @@ Remarks:
 ### Consequence for the project (WP-E)
 
 E2 and E2b give a concrete calibration for any phonetic decipherment attempt on this corpus: with short texts, a large dictionary and flexible reading rules, almost any assignment "reads". A phonetic hypothesis can count toward L3 only with a criterion whose rate under random assignments, computed as in E2b, is below 0.1. This requirement is added to gate G4.
+
+---
+
+## 2026-11-25 (day 1, tenth working session): replication of C2 in KP1979
+
+### Pre-registration of C2k (before running)
+
+KP1979 records an object-type code (`type_code`) for each inscription, taken from the 1973 concordance and assigned independently of the ICIT-style source. The codes are not decoded here, but they are categories of objects.
+
+**Question.** Do the KP terminal signs (the KP terminal set of H3.1: 324, 98, 217, 326, 1, 13, 4, 301; plus 325) as line-final signs associate with KP type codes, replicating C2 in an independent transcription and classification?
+
+**Procedure.**
+- Units: KP unique complete lines; a line is used if all its records share one type code.
+- Values: type codes with ≥ 30 training lines. Features: "line ends in sign t" for each t in the terminal set above.
+- Test: Fisher exact test (two-sided) on the training split for each (final sign, code) pair; Benjamini–Hochberg q = 0.05; confirmation one-sided in the discovered direction on the KP held-out split, Bonferroni 0.01 / (number discovered). KP has no site field in decoded form, so no site stratification is possible; this is a limitation.
+- Prediction: at least one association is confirmed.
+- Interpretation: confirmed codes are then described by cross-tabulating, in the aligned line pairs of the concordance, KP type codes against ICIT subtypes (descriptive).
