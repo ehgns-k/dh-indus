@@ -1903,3 +1903,16 @@ Script: `scripts/phase9_h96_count_distance.py`; results: `results/phase9_h96_cou
 | KP1979 (normalised) | 84 | 2.61 | 2.87 (0.16) | 0.050 |
 
 Distribution of differences: ICIT 1: 42, 2: 26, 3: 13, 4: 6, 5: 1; KP1979 1: 29, 2: 20, 3: 13, 4: 11, 5: 5, 6–9: 6. In both corpora substituted counts are closer together than random re-pairings would give, but only the ICIT result reaches p < 0.01; by the registered rule (both corpora) **H9.6 is not supported**. The evidence that the strokes carry magnitude (and are not merely distinct symbols) is therefore suggestive, not established.
+
+---
+
+## 2026-11-25 (day 1, nineteenth working session): numeral variation compared across systems
+
+### Pre-registration of D4 (before running)
+
+**Question.** How does the Indus corpus compare with the reference systems in the share of minimal-pair substitutions that are numeral ↔ numeral (the statistic behind H9.1)?
+
+- **Corpora:** Indus (ICIT; and KP1979 normalised as in R4), proto-Elamite, proto-cuneiform, Sumerian Ur III administrative, Sumerian OB literary, Akkadian OB letters.
+- **Numeral tokens:** Indus stroke signs (ICIT set of H9.1; KP 121–130 after normalisation); cuneiform tokens containing a numeral group, i.e. a parenthesis (for example `3(disz)`, `1(N01)`).
+- **Sampling:** 20 resamples of 2,000 unique lines matched to the ICIT length distribution (as in D1); statistic = numeral↔numeral substitutions / all minimal-pair substitutions; mean over resamples.
+- **Prediction (ordinal, from the administrative reading of claim C31 and the D1 result):** the Indus share is lower than that of each administrative corpus (proto-Elamite, proto-cuneiform, Ur III administrative) and higher than that of each non-administrative corpus (OB literary, OB letters). Decision: the prediction holds if all five comparisons go in the predicted direction in at least 19 of 20 resamples.
