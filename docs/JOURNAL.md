@@ -1388,3 +1388,16 @@ Four variants (raw gain; gain corrected by reordered lines; 8,000-line ciphers; 
 - Follower classes fixed from earlier training-split results: A = {390, 405, 406, 407, 585, 575} (short-stroke partners, H3.10, H3.12a); B = {520} (long-stroke partner, H3.12b); C = all other signs and the line end.
 - Test: chi-square test of independence on the 2 × 3 table (series × follower class); Fisher-type exact p by 10,000 permutations of series labels.
 - Prediction: p < 0.01. If either series has fewer than 10 occurrences in the fresh sets, the result is "insufficient data".
+
+### H6.1 result: supported on fresh data
+
+Script: `scripts/phase6_h61_numeral_series.py`; results: `results/phase6_h61_numeral_series.json`.
+
+| Series (fresh sets 1+2) | Followed by A (390–407, 585, 575) | Followed by B (520) | Other / line end |
+|---|---:|---:|---:|
+| Short strokes (30) | 8 | 0 | 22 |
+| Long strokes (27) | 0 | 4 | 23 |
+
+χ² = 11.9; permutation p = 0.0012 (< 0.01). **H6.1 is supported.** At sites excavated after 1979, the short and long stroke series take disjoint sets of partner signs: short strokes go with the 390–407 group and 585/575, long strokes with 520, never the reverse.
+
+Interpretation and level. This is the pattern expected if the two series are two numeral notations used for different classes of counted items, as in proto-cuneiform, where the kind of goods determines the numerical system. The result is structural (L1): the prediction concerns signs inside the text, not information outside it, so it does not meet the ROADMAP definition of L2. It is, however, the most specific evidence so far for a **numeral-system reading** of the stroke signs: counts, series and partner signs form a consistent system that is reproduced on independent finds.
