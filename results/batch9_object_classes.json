@@ -1,0 +1,61 @@
+{
+ "train_strings": 1984,
+ "zoned_signs": 121,
+ "units": 312,
+ "PT1_primary_known_direction": {
+  "strings": 54,
+  "with_two_zoned_signs": 36,
+  "inversions": 6,
+  "inversions_control_mean": 7.9914,
+  "p_template": 0.25817418258174185,
+  "covered": 16,
+  "covered_control_mean": 9.2448,
+  "p_units": 0.0006999300069993001,
+  "verdict": "partly supported"
+ },
+ "PT1_secondary_with_unknown": {
+  "strings": 93,
+  "with_two_zoned_signs": 56,
+  "inversions": 10,
+  "inversions_control_mean": 12.0087,
+  "p_template": 0.2608739126087391,
+  "covered": 20,
+  "covered_control_mean": 12.2809,
+  "p_units": 0.00039996000399960006,
+  "verdict": "partly supported"
+ },
+ "PT2_primary_known_direction": {
+  "strings": 67,
+  "with_two_zoned_signs": 57,
+  "inversions": 13,
+  "inversions_control_mean": 29.5237,
+  "p_template": 0.0004999500049995,
+  "covered": 67,
+  "covered_control_mean": 32.143,
+  "p_units": 9.999000099990002e-05,
+  "verdict": "supported"
+ },
+ "PT2_secondary_with_unknown": {
+  "strings": 96,
+  "with_two_zoned_signs": 72,
+  "inversions": 19,
+  "inversions_control_mean": 34.9499,
+  "p_template": 0.0013998600139986002,
+  "covered": 70,
+  "covered_control_mean": 33.6834,
+  "p_units": 9.999000099990002e-05,
+  "verdict": "supported"
+ },
+ "PT2_types": {
+  "TAG": 29,
+  "BNGL": 23,
+  "MISC": 20,
+  "ROD": 19,
+  "IMPL": 16,
+  "TAG:L": 15,
+  "TAG:P": 10,
+  "TAG:B": 10,
+  "TAG:O": 3,
+  "TAG:W": 3
+ }
+}

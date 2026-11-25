@@ -24,7 +24,7 @@ Six statistics (direction asymmetry, positional template strength, recurring uni
 
 ### 2.2 Writing or not (gate G3: undecided)
 
-With non-linguistic systems added (D2), a leave-one-out check misclassified two of seven known corpora (totem poles and emoticons as writing). The statistics do not separate writing from non-writing, in line with the caution of Sproat (2014) and Raghavendra (2026). No claim about the linguistic status of the Indus signs is made.
+With non-linguistic systems added (D2), a leave-one-out check misclassified two of seven known corpora (totem poles and emoticons as writing). The statistics do not separate writing from non-writing, in line with the caution of Sproat (2014) and Raghavendra (2026). No claim about the linguistic status of the Indus signs is made. Adding the combinatorial density as a seventh statistic does not change this (D2b: again 5 of 7 known corpora correct).
 
 ### 2.3 Size of the sign inventory (D3)
 

@@ -125,6 +125,9 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | SX2 | ICIT | SEAL:S legends, Harappa vs Mohenjo-daro | not supported (p = 0.14) | |
 | D6 | ICIT, proto-Elamite, proto-cuneiform | 300-pair resamples | inconclusive (U 0.34 vs 0.20/0.18 by unit, 0.40/0.36 with counts kept; D6b) | measure depends on the numeral vocabulary |
 | DIR2 | ICIT | unknown-direction lines (139) | supported (84/127, p = 0.0002) | weaker than DIR1 |
+| PT1 | ICIT | pottery strings (model from seals and tablets) | partly supported (units p = 0.0007; template p = 0.26) | |
+| PT2 | ICIT | other objects (model from seals and tablets) | supported (p = 0.0005, 0.0001) | |
+| D2b | ICIT + CDLI + Sproat | 300-line samples | not supported (5/7 known corpora correct) | G3 still undecided |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
 

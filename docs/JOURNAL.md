@@ -2895,3 +2895,22 @@ Script: `scripts/batch8b_dir2_unknown.py`; results: `results/batch8b_dir2_unknow
 **D2b.**
 - The D2 design (300-line samples, 20 resamples, leave-one-corpus-out over the seven known corpora: three full-writing, four non-linguistic), with a seventh statistic S7: the share of the 20 × 20 ordered pairs of the 20 most frequent signs of the sample that occur adjacent in it.
 - Decision: the statistics separate writing from non-writing if all seven known corpora are classified correctly. Only then is the Indus assignment interpreted.
+
+### Results PT1, PT2, D2b
+
+Scripts: `scripts/batch9_object_classes.py`, `scripts/batch9b_d2b_density.py`; results: `results/batch9_object_classes.json`, `results/batch9b_d2b_density.json`.
+
+- **PT1 (pottery): partly supported.**
+  - Primary set: 54 strings of known direction, 36 with two zoned signs.
+  - Units learned from seals and tablets cover 16 positions, against 9.2 for controls (p = 0.0007).
+  - The positional template is not shown: 6 inversions, against 8.0 for controls (p = 0.26). The test has little power, because pottery inscriptions are short and the controls also produce few inversions.
+  - With the unknown-direction lines (93 strings) the result is the same: units p = 0.0004, template p = 0.26.
+  - The pottery inscriptions share the recurring units of the seals and tablets. Whether they follow the same positional template cannot be decided with these data.
+- **PT2 (other objects: tags, bangles, rods, implements, miscellaneous): supported.**
+  - 67 strings of known direction. 13 inversions, against 29.5 for controls (p = 0.0005); 67 covered positions, against 32.1 (p = 0.0001).
+  - With unknown-direction lines (96 strings): p = 0.0014 and 0.0001.
+  - The template and the units learned from seals and tablets carry over to every other kind of inscribed object.
+- **D2b: not supported.**
+  - With the seventh statistic, leave-one-out again classifies 5 of 7 known corpora correctly; totem poles and Asian emoticons are again classed as writing.
+  - The seven statistics still do not separate writing from non-linguistic systems. Gate G3 remains undecided.
+  - The Indus samples are assigned to "linguistic" in 20 of 20 resamples. As in D2, this is not interpreted, because the method fails on known corpora.
