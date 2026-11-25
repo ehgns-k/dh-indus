@@ -506,3 +506,32 @@ Plan for this session: test two published claims that bear on meaning (claims re
 - Model: logistic regression on sign counts, initial sign, final sign and length (as in H3.5); trained on non-held-out strings, tested on held-out strings.
 - Metric: balanced accuracy. Control: 200 permutations of the training labels.
 - Decision: H4.2 is supported if balanced accuracy ≥ 0.6 and p < 0.01. If not, the result is recorded as consistent with the independence claimed in C30, not as proof of independence.
+
+### H4.1 result: not supported
+
+Script: `scripts/phase4_h41_h42_claims.py`; results: `results/phase4_h41_h42_claims.json`.
+
+| Site (held-out) | Tablets with numeral | Seals with numeral | Odds ratio | p (one-sided) |
+|---|---:|---:|---:|---:|
+| Harappa (primary) | 4 / 73 (0.05) | 4 / 42 (0.10) | 0.55 | 0.88 |
+| Mohenjo-daro (secondary) | 7 / 22 (0.32) | 21 / 173 (0.12) | 3.38 | 0.022 |
+
+At Harappa the direction is opposite to the prediction. At Mohenjo-daro it is in the predicted direction but does not reach p < 0.01, and Mohenjo-daro was not the decision site. The two sites behave differently, which again fits the observation (H3.5) that "tablet" covers different object classes at the two sites: Harappa tablets are mostly `TAB:B` and `TAB:I`, Mohenjo-daro tablets mostly `TAB:C`. A sharper form of C31 would name the tablet subtype; that needs the meaning of the subtype codes to be checked against a primary source first.
+
+### H4.2 result: not supported (consistent with claim C30)
+
+Training seals: 715 `Bull1`, 152 other animals. Held-out: 172 and 47. Balanced accuracy 0.476; permutation mean 0.493 (SD 0.038); p = 0.67.
+
+The text gives no usable information about whether a seal carries the `Bull1` motif or another animal. This is what the independence reading of C30 expects, but a negative result with 47 minority-class test strings does not prove independence; a weak association could be missed.
+
+### Where the numeral line of work stands
+
+| Result | Status |
+|---|---|
+| Stroke signs form a counted series (glyphs; two numbering systems agree) | descriptive |
+| Specific counts pair with specific following signs (H3.10–H3.12) | L1, held-out, both transcriptions |
+| Stroke signs share contexts as one paradigm (H3.8, H3.9) | not supported |
+| Numeral + fish as star names (H3.13, H3.14) | not supported |
+| Tablets carry more numerals than seals (H4.1) | not supported at Harappa |
+
+The count–item pairing is the strongest result so far. An L2 claim requires a semantic category that predicts something outside the text, and the two external variables tested so far (object type, motif) did not respond to the simple numeral and motif categories.
