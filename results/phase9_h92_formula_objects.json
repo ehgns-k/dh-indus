@@ -1,0 +1,77 @@
+{
+ "primary_all": {
+  "strata_[[countvar_tab, countvar_seal],[other_tab, other_seal]]": {
+   "other": [
+    [
+     1,
+     7
+    ],
+    [
+     9,
+     85
+    ]
+   ],
+   "Mohenjo-daro": [
+    [
+     1,
+     14
+    ],
+    [
+     44,
+     266
+    ]
+   ],
+   "Harappa": [
+    [
+     15,
+     4
+    ],
+    [
+     210,
+     63
+    ]
+   ]
+  },
+  "odds_ratio": 0.9069254938563944,
+  "p_value": 0.5845231733708394,
+  "pass": false
+ },
+ "secondary_unused": {
+  "strata_[[countvar_tab, countvar_seal],[other_tab, other_seal]]": {
+   "other": [
+    [
+     1,
+     3
+    ],
+    [
+     2,
+     32
+    ]
+   ],
+   "Mohenjo-daro": [
+    [
+     0,
+     0
+    ],
+    [
+     3,
+     5
+    ]
+   ],
+   "Harappa": [
+    [
+     0,
+     0
+    ],
+    [
+     4,
+     0
+    ]
+   ]
+  },
+  "odds_ratio": 5.333333333333333,
+  "p_value": 0.0928415863097366,
+  "pass": false
+ },
+ "L2": false
+}

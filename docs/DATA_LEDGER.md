@@ -58,6 +58,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | M1 | ICIT + glyph images | train | not supported (both shape measures) | |
 | G2-HOG | ICIT + glyph images | strict held-out + fresh | G2 holds (p = 0.0074) | robustness with a structural shape measure |
 | H9.1 | ICIT, KP | all unique complete strings | supported (p = 0.0001 both) | texts differing only in the stroke count |
+| H9.2 | ICIT | all strings; secondary strict held-out + fresh | not supported (p = 0.58; 0.093) | count-variable formulae not concentrated on tablets |
 
 Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 

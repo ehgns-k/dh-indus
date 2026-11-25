@@ -1728,3 +1728,17 @@ Three explanations were considered in advance of the breakdown: changing quantit
 - **Test:** Cochran–Mantel–Haenszel test (site strata) on (group) × (tablet vs seal), one-sided: tablets over-represented among count-variable strings.
 - **Primary (L2 candidate):** all strings; p < 0.01.
 - **Secondary (decides L2):** only strings from the strict held-out set or the fresh sets (partners may be anywhere); p < 0.01. Only if the secondary test passes is the result counted as L2.
+
+### H9.2 result: not supported — count-variable formulae are not concentrated on tablets
+
+Script: `scripts/phase9_h92_formula_objects.py`; results: `results/phase9_h92_formula_objects.json`.
+
+| Stratum (all strings) | Count-variable: tablet / seal | Other formulaic: tablet / seal |
+|---|---:|---:|
+| Harappa | 15 / 4 | 210 / 63 |
+| Mohenjo-daro | 1 / 14 | 44 / 266 |
+| Other sites | 1 / 7 | 9 / 85 |
+
+Primary (all strings): CMH odds ratio 0.91, p = 0.58. Secondary (strict held-out and fresh strings): odds ratio 5.3, p = 0.093 on very few strings. **H9.2 is not supported**; no L2 result.
+
+The tablet share among count-variable texts is the same as among other formulaic texts at each site: tablets dominate at Harappa and seals at Mohenjo-daro for both groups. Formulae with a variable count occur on seals as much as on tablets. This does not fit a simple division in which seals carry names and tablets carry quantities; it is compatible with seals that themselves state quantities or ranks, or with numerals that are part of names or titles (for example the recurrent "7 + 585/575").
