@@ -93,6 +93,14 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | CT32k | KP | all records with seal/tablet codes | supported (2.61 vs 1.10 records per text) | replication of CT32a |
 | CT22 | ICIT | strict held-out + fresh | supported (p = 0.0009) | claim C22, distributional part |
 
+| ML1 | ICIT | all objects with two complete lines (76) | supported (p = 0.0001) | the two lines form one text closed once |
+| ML1k | KP | objects with lines_code 2 and two complete records (80) | supported (p = 0.0023) | replication; code meaning inferred |
+| NUM2 | ICIT, KP | all unique strings | not supported (ICIT 22 vs 11, p = 0.080); KP insufficient data | no fixed long/short order |
+| NUM1 | ICIT, CDLI proto-Elamite and proto-cuneiform | all lines | descriptive: numeral before sign (0.71), unlike proto-Elamite (0.004) | not a test |
+| KF1 | ICIT, KP | all unique strings | supported (75 % vs 7.9 % of control frames) | across transcriptions of the same objects |
+| R7b | as B1, B4, CT17, CT18 | as original | p = 0.0001 with 10,000 draws | review: resolution only |
+| R7 | – | – | review: 15 of 37 fresh/strict tests survive Holm 0.01; CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
+
 Count of questions decided on the (full) held-out split before the review R1: 15 (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, the H3.5 secondary set, H5.1, C2, C3; see rows). From R1 on, held-out tests use the strict held-out set; questions decided on it (alone or with the fresh sets) include R1, H8.1, H9.2 (secondary), E3d, G2, H9.4, CT16, CT17, CT18, G3, CT15 and later rows (at least 11 at the time of CT15). Questions decided on fresh data are marked in the table (F2, F3, F2b, F3b, B1, B4, H5.1b, F4, H6.1, H7.1 and the fresh parts of G2, CT16, CT15).
 
 The supported held-out results remain significant after a Bonferroni correction over these 11 tests (0.01/11 ≈ 0.0009) except where noted: H3.3 (p ≤ 3.8 × 10⁻⁷), H3.10 (p ≤ 7.5 × 10⁻⁹), H3.12 (p ≤ 3.4 × 10⁻⁷) pass; H4.3 (p = 0.001) does not.

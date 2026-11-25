@@ -2321,3 +2321,61 @@ Script: `scripts/claims_batch4.py`; results: `results/claims_batch4.json`.
 - This is a check across transcriptions of the same objects, not a test on unused data.
 
 **R7 (review).** List the decisive p-value of every supported result decided on held-out, strict held-out or fresh data, and apply Holm and Benjamini–Hochberg corrections over that family (α = 0.01 and 0.05). Report which results survive.
+
+**R7b (added before running R7's corrections, after seeing the R7 table).** The permutation p-values of B1, B4, CT17 and CT18 are bounded below by 1/1001 (1,000 control draws), which is too coarse for a family-wise correction over about 40 tests. They are re-run unchanged except for 10,000 control draws (scripts `review_r7b_*.py`, generated from the original scripts). The verdicts of the original tests are not changed by this; R7 is recomputed with the new p-values.
+
+### Results ML1, ML1k, NUM2, NUM1, KF1
+
+Script: `scripts/batch5_lines_numerals_formulae.py`; results: `results/batch5_lines_numerals_formulae.json`; KP formula table: `docs/FORMULAE_KP.md`.
+
+- **ML1: supported.** 76 ICIT objects have two complete lines.
+  - Exactly one line closes with a terminal sign on 47 objects, against 33.0 under random re-pairing (p = 0.0001).
+  - Both lines close on only 3 objects, against 10.0 expected (p = 0.0001 in the other direction).
+  - The two lines of an object behave as one text that is closed once, not as two separate texts.
+  - When one line closes, it is line 1 of the source in 36 cases and line 0 in 11. This agrees with the description, quoted in the literature notes below, that the final (leftmost) signs of longer inscriptions are moved to the second line.
+- **ML1k: supported (replication).**
+  - KP objects with `lines_code` 2 and two complete records (80 objects): exactly one closes on 47, against 34.8 expected (p = 0.0023); both close on 3, against 9.1 expected.
+  - In KP the closing record is more often record 0 (30 vs 17). KP therefore orders the lines of an object differently from the ICIT-style source. Which line comes first on the object cannot be decided from the codes.
+  - `lines_code` 6 (437 objects; probably different faces, unsourced): exactly one closes on 329, against 213.9 expected (p = 0.0001); the closing record is record 0 in 322 cases. On these objects one record carries the closed text and the other does not. This is reported descriptively, because the meaning of the code is not established.
+- **NUM2: not supported (ICIT); insufficient data (KP).**
+  - ICIT: long-then-short 22, short-then-long 11 (67 %, binomial p = 0.080). A fixed order of long and short strokes, as in a multi-unit notation, is not shown.
+  - KP: after merging the 121/144 pairs, only 9 long–short pairs remain.
+  - Descriptive: adjacent pairs of two different short-stroke signs are not rare (ICIT 20, KP 29). In both transcriptions the most frequent pattern is a single stroke followed by another count: ICIT `001 003` 7, `001 004` 6; KP `121 124` 5, `121 123` 5, `121 125` 4. This pattern was seen after the test and is not tested; no unused data are left on which to test it.
+- **NUM1 (descriptive comparison): "like proto-cuneiform" by the rule stated in advance.**
+  - Share of numerals followed rather than preceded by a non-numeral sign: Indus (ICIT) 0.71 (305 vs 124), proto-Elamite 0.004, proto-cuneiform 0.98.
+  - In the Indus texts the numeral comes before the sign it goes with (as in H3.10), the opposite of the proto-Elamite entries. The proto-cuneiform order is the order of the CDLI transliteration, which for that script is partly an editorial convention (literature notes).
+  - The Indus order therefore separates the Indus texts from proto-Elamite, the system they are otherwise closest to (D1). This is a descriptive difference, not a test.
+- **KF1: supported (check across transcriptions).**
+  - Of 147 ICIT formula frames that can be mapped through the concordance, 110 (75 %) take two or more fillers in KP1979, against 301 of 3,830 (7.9 %) single-filler control frames (odds ratio 34.9, p < 10⁻⁸⁰).
+  - KP1979 has 126 formula templates (`docs/FORMULAE_KP.md`). The formulae are a property of the inscriptions, not of one transcription.
+
+### Literature notes on numeral order and multi-line texts
+
+A literature survey was run in parallel. The sites cdli.ox.ac.uk and arxiv.org could not be reached from the working environment. The quotations below are therefore the excerpts returned by a search engine and have not been checked against the full texts.
+
+- CDLI wiki, "Proto-Elamite writing phases" (<https://cdli.ox.ac.uk/wiki/proto-elamite_writing_phases>), excerpt: tablets from Iran "can be distinguished from Mesopotamian ones only by the order of the numerical signs and non numerical signs; in Iran the numerical signs follow the object they qualify".
+- Encyclopaedia Iranica, "Proto-Elamite" (<https://www.iranicaonline.org/?p=9917>), excerpt: "each entry normally includes an ideogram followed by a numerical notation, a divergence from the strict sequence of numerical sign followed by ideogram in proto-cuneiform texts".
+- CDLB 2021:6 (<https://cdli.earth/articles/cdlb/2021-6>), excerpt: proto-cuneiform signs "are not inscribed on tablets in a strictly linear order".
+- Mahadevan, review of Parpola on harappa.com (<https://www.harappa.com/script/maha6.html>), excerpt: "shorter inscriptions start at the right edge, leaving blank space nearer the left edge, and the left-most signs of the longer inscriptions are displaced to the second line"; internal evidence was "obtained by comparing single-line and two-line sequences of identical inscriptions".
+
+Analysis:
+- The NUM1 figures agree with these excerpts. Proto-Elamite puts the sign before the numeral, and proto-cuneiform puts the numeral first.
+- The ML1 result agrees with the description of the second line as the continuation of one text.
+- No source was found on whether Koskenniemi & Parpola read doubled signs as "two" or as a plural. This is not known.
+
+### Results R7 and R7b (family-wise review)
+
+Scripts: `scripts/review_r7_familywise.py`, `scripts/review_r7b_*.py`; results: `results/review_r7_familywise.json`, `results/review_r7b_*.json`.
+
+- **R7b.** With 10,000 control draws, B1, B4, CT17 (both transcriptions) and CT18 (both) all give p = 0.0001 (the smallest attainable). Their verdicts are unchanged.
+- **R7 family.** 37 tests decided on fresh data or on the strict held-out set: F2, F3, F2b, F3b, B1, B4, H5.1b, F4, H6.1, H7.1, the R1 re-tests of H3.3, H3.10 and H3.12, H8.1, H9.2 (secondary), G2, the six H9.4 confirmations, CT16, CT17, CT18, CT15, CT15k and CT22.
+  - The C2 and C2k associations are not included. They were selected on the full held-out split, and their registered families (0.01/40 and 0.01/10) are failed after R1.
+  - The family includes failed tests, as it should.
+- Tests surviving each correction:
+  - Holm at α = 0.01: 15 tests survive. They are the F3 direction test; H3.3 (ICIT), H3.10 (both) and H3.12a/b (H3.12a ICIT, H3.12b both); B1; B4; CT17 (both); CT18 (both); F2; and H9.4 class 4 × copper tablets.
+  - Holm at α = 0.05: these and F3b, H3.3 (KP), H3.12a (KP), CT22, F3 bigram vs unigram, H6.1, G2 and CT15, 23 in all.
+  - Benjamini–Hochberg at q = 0.01: the same 23; at q = 0.05: 26 (adding F4, H8.1 and H9.4 class 4 × motif seals, which were registered as failed and stay failed).
+- Consequences:
+  - The core L1 results (direction, closing cluster, count–item pairs, template, recurring units, nested structure) survive the strictest correction applied here.
+  - CT15, the functional L2 result, survives Holm at α = 0.05 and false-discovery control at q = 0.01, but not Holm at α = 0.01. Its earlier description ("would not survive a family-wise correction over the strict held-out questions at 0.01") stays true for the family-wise error rate at 0.01. It is now stated with these figures.
+  - H9.4 class 4 × copper tablets survives even Holm at α = 0.01. It remains an L2 candidate only because the class has no interpretation fixed in advance, not because of multiple testing.

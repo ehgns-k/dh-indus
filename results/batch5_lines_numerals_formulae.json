@@ -1,0 +1,170 @@
+{
+ "ML1": {
+  "objects": 76,
+  "exactly_one_closes": 47,
+  "null_mean_exactly_one": 33.0296,
+  "both_close": 3,
+  "null_mean_both": 9.9852,
+  "neither": 26,
+  "p_exactly_one": 9.999000099990002e-05,
+  "p_both_fewer": 9.999000099990002e-05,
+  "p_both_more": 1.0,
+  "closing_line_when_one": {
+   "line1": 36,
+   "line0": 11
+  },
+  "verdict": "supported",
+  "examples": [
+   "032 390 440 / 790 390 368",
+   "002 702 128 390 / 850 480 013 032 226",
+   "003 900 740 621 / 820 002",
+   "599 065 / 928 706 798",
+   "920 861 / 016 220 520",
+   "060 390 / 091 500 740",
+   "165 244 / 861 002 803 416 220 879 740",
+   "220 140 / 530",
+   "717 740 622 / 551 820 861 368",
+   "947 871 / 335 220 785 895 350 543 740 400"
+  ]
+ },
+ "ML1k_code2": {
+  "objects": 80,
+  "exactly_one_closes": 47,
+  "null_mean_exactly_one": 34.8486,
+  "both_close": 3,
+  "null_mean_both": 9.0757,
+  "neither": 30,
+  "p_exactly_one": 0.0022997700229977,
+  "p_both_fewer": 0.0022997700229977,
+  "p_both_more": 0.9996000399960004,
+  "closing_line_when_one": {
+   "line0": 30,
+   "line1": 17
+  },
+  "verdict": "supported",
+  "identical_lines": 0
+ },
+ "ML1k_code6": {
+  "objects": 437,
+  "exactly_one_closes": 329,
+  "null_mean_exactly_one": 213.8732,
+  "both_close": 21,
+  "null_mean_both": 78.5634,
+  "neither": 87,
+  "p_exactly_one": 9.999000099990002e-05,
+  "p_both_fewer": 9.999000099990002e-05,
+  "p_both_more": 1.0,
+  "closing_line_when_one": {
+   "line0": 322,
+   "line1": 7
+  },
+  "verdict": "supported",
+  "identical_lines": 12
+ },
+ "NUM2_icit": {
+  "pairs": {
+   "SL": 11,
+   "SS": 20,
+   "LS": 22,
+   "LL": 12
+  },
+  "LS_share": 0.6666666666666666,
+  "binomial_p": 0.08014331245794892,
+  "verdict": "not supported",
+  "pair_list": {
+   "001 003": 7,
+   "001 004": 6,
+   "031 001": 5,
+   "001 031": 4,
+   "033 032": 4,
+   "032 031": 4,
+   "031 032": 3,
+   "032 001": 3,
+   "033 017": 3,
+   "001 033": 2,
+   "031 003": 2,
+   "001 005": 2,
+   "033 001": 2,
+   "001 032": 2,
+   "032 017": 2,
+   "001 034": 1,
+   "003 001": 1,
+   "003 017": 1,
+   "003 033": 1,
+   "005 031": 1,
+   "032 034": 1,
+   "033 005": 1,
+   "033 031": 1,
+   "033 034": 1,
+   "034 033": 1,
+   "031 016": 1,
+   "004 005": 1,
+   "031 017": 1,
+   "001 016": 1
+  }
+ },
+ "NUM2_kp": {
+  "pairs": {
+   "SS": 29,
+   "LL": 2,
+   "SL": 1,
+   "LS": 8
+  },
+  "verdict": "insufficient data",
+  "pair_list": {
+   "121 124": 5,
+   "121 123": 5,
+   "121 125": 4,
+   "123 121": 3,
+   "147 127": 3,
+   "121 122": 2,
+   "124 125": 2,
+   "147 123": 2,
+   "147 145": 1,
+   "121 145": 1,
+   "122 127": 1,
+   "123 124": 1,
+   "124 123": 1,
+   "127 122": 1,
+   "147 125": 1,
+   "121 126": 1,
+   "144 126": 1,
+   "144 145": 1,
+   "147 121": 1,
+   "122 121": 1,
+   "121 128": 1,
+   "123 127": 1
+  }
+ },
+ "NUM1": {
+  "indus_icit": {
+   "neighbour_follows": 305,
+   "neighbour_precedes": 124,
+   "share_follows": 0.710955710955711
+  },
+  "proto_elamite": {
+   "neighbour_follows": 17,
+   "neighbour_precedes": 4390,
+   "share_follows": 0.0038574994327206717
+  },
+  "proto_cuneiform": {
+   "neighbour_follows": 11570,
+   "neighbour_precedes": 235,
+   "share_follows": 0.9800931808555696
+  },
+  "decision": "like proto-cuneiform"
+ },
+ "KF1": {
+  "icit_formula_frames": 149,
+  "mappable": 147,
+  "reproduced": 110,
+  "control_frames_mappable": 3830,
+  "control_reproduced": 301,
+  "share_formula": 0.7482993197278912,
+  "share_control": 0.07859007832898172,
+  "odds_ratio": 34.85588578611834,
+  "p_value": 7.031445138732484e-82,
+  "verdict": "supported",
+  "kp_formula_templates": 126
+ }
+}
