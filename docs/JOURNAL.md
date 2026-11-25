@@ -1821,3 +1821,9 @@ The ICIT-style `time` field records excavation periods for 3,067 records, mostly
 - **Data:** Harappa records whose `time` is unambiguously Period 3B (`Period 3B`, `3B-1`, `3B-2`) or Period 3C (`Period 3C`, `3C-1` … `3C-4`); each distinct (text, period) combination counted once.
 - **Test:** for each pair, Fisher exact test (two-sided) on (variant a vs b) × (3B vs 3C), counting occurrences in the texts; Bonferroni over the pairs that have at least 5 occurrences in each period (threshold 0.01 / number of such pairs).
 - **Prediction:** at least one pair shows a period dependence. Pairs with too few occurrences are reported as "insufficient data".
+
+### T1 result: not supported (mostly insufficient data)
+
+Script: `scripts/phase10_t1_chronological_variants.py`; results: `results/phase10_t1_chronological_variants.json`. Distinct Harappa texts with an unambiguous period: 129 (Period 3B) and 416 (Period 3C).
+
+Testable pairs (≥ 5 occurrences in each period): 154/156 (p = 0.61), 817/861 (p = 1.0), 390/405 (p = 0.22); threshold 0.0033. The other four pairs have too few Period 3B occurrences. **T1 is not supported**: no evidence that the context-indistinguishable variants are chronological variants, but the Period 3B sample is small.
