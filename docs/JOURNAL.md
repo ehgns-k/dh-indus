@@ -710,3 +710,19 @@ Ledger additions: F2b, F3b on fresh set 2.
 
 - G1 (L1 consolidation): pending B1/B4.
 - G2 (L2): no L2 result yet; tests so far (object type, motif, copper tablets) are negative.
+
+### WP B2: numeral table (descriptive)
+
+`scripts/phase3_numeral_table.py` → `results/phase3_numeral_table.md` (all data, unique lines; not a test).
+
+Main points:
+- **Distribution of counts.** KP1979 short strokes: 1: 386 occurrences, 2: 35, 3: 156, 4: 49, 5: 40, 6: 28, 7: 53, 8: 5, 9: 1, 10: 1. Counts above 7 are rare, but 8, 9 and 10 are attested as single signs. This is relevant to the base question (claim C25) but does not settle it: a base-8 system would not need single signs for 8–10, but their rarity could also reflect how often such numbers were needed.
+- **Count-specific partners recur in both corpora.** 4, 5, 6, 8 and 9 strokes → KP 86 (ICIT 390/405/407); 7 → KP 288/289 (ICIT 585/575); 3 long → KP 217 (ICIT 520); 4 long → KP 310 (3 of 3). Count 3 (short) has no single dominant partner (KP 86, 306, 56, 154, 217 each 11–13 times).
+- **Single strokes behave differently.** KP 121 (one short stroke) and 144 (one long stroke) are most often followed by each other or by themselves (121 → 121 ×51, 121 → 144 ×48, 144 → 144 ×71). This is not how a numeral "1" before a counted item would be expected to behave, and it suggests that single strokes have another function (for example a divider or a separate sign), or that sequences of single strokes write a number.
+- **ICIT 001 does not behave like KP 121.** ICIT 001 is rarely line-initial (8 of 130) whereas KP 121 often is (58 of 386). The concordance link 121 → 001 may be partial (several KP single-stroke variants may map to different ICIT signs). To be checked in WP B3.
+
+### Next working session
+
+1. WP B1 (positional template) and B4 (recurring units), evaluated on fresh sets 1 and 2 with rule-preserving controls; gate G1.
+2. WP B3: the 121/144 single-stroke question and the 121 → 001 link.
+3. WP C3: does the count–item construction favour particular object types or materials (site-stratified, held-out)?
