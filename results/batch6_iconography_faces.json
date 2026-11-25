@@ -1,0 +1,349 @@
+{
+ "MO2a": {
+  "discovery_objects": 623,
+  "discovery_with_variable": 424,
+  "confirmation_objects": 118,
+  "confirmation_with_variable": 88,
+  "signs_scanned": 47,
+  "candidates": [],
+  "threshold": null,
+  "verdict": "not supported",
+  "codes": {
+   "SAN": 552,
+   "SAF": 96,
+   "S": 17,
+   "RAN": 69,
+   "RAF": 51,
+   "RBF": 19
+  }
+ },
+ "MO2b": {
+  "discovery_objects": 597,
+  "discovery_with_variable": 261,
+  "confirmation_objects": 110,
+  "confirmation_with_variable": 45,
+  "signs_scanned": 43,
+  "candidates": [
+   {
+    "sign": "240",
+    "table_disc": [
+     [
+      40,
+      221
+     ],
+     [
+      27,
+      309
+     ]
+    ],
+    "odds_disc": 2.071392659627954,
+    "p_disc": 0.005952407161744917,
+    "direction": "greater",
+    "table_conf": [
+     [
+      9,
+      36
+     ],
+     [
+      8,
+      57
+     ]
+    ],
+    "p_conf": 0.20277180719201168,
+    "status": "not confirmed"
+   },
+   {
+    "sign": "390",
+    "table_disc": [
+     [
+      20,
+      241
+     ],
+     [
+      52,
+      284
+     ]
+    ],
+    "odds_disc": 0.45323970635173955,
+    "p_disc": 0.0035407655652053304,
+    "direction": "less",
+    "table_conf": [
+     [
+      3,
+      42
+     ],
+     [
+      9,
+      56
+     ]
+    ],
+    "p_conf": 0.19194649057442975,
+    "status": "not confirmed"
+   },
+   {
+    "sign": "405",
+    "table_disc": [
+     [
+      18,
+      243
+     ],
+     [
+      0,
+      336
+     ]
+    ],
+    "odds_disc": Infinity,
+    "p_disc": 2.420591429552817e-07,
+    "direction": "greater",
+    "table_conf": [
+     [
+      3,
+      42
+     ],
+     [
+      0,
+      65
+     ]
+    ],
+    "status": "insufficient data"
+   },
+   {
+    "sign": "798",
+    "table_disc": [
+     [
+      22,
+      239
+     ],
+     [
+      9,
+      327
+     ]
+    ],
+    "odds_disc": 3.3444909344490936,
+    "p_disc": 0.0024278484066846276,
+    "direction": "greater",
+    "table_conf": [
+     [
+      2,
+      43
+     ],
+     [
+      4,
+      61
+     ]
+    ],
+    "p_conf": 0.7878966812750314,
+    "status": "not confirmed"
+   }
+  ],
+  "threshold": 0.0025,
+  "verdict": "not supported",
+  "codes": {
+   "Bull1:L": 41,
+   "Bull1:W": 328,
+   "Bull1:I": 84,
+   "Bull1:S": 140,
+   "Bull1:J": 171
+  }
+ },
+ "MO1k": {
+  "discovery_objects": 898,
+  "discovery_with_variable": 652,
+  "confirmation_objects": 154,
+  "confirmation_with_variable": 110,
+  "signs_scanned": 66,
+  "candidates": [
+   {
+    "sign": "154",
+    "table_disc": [
+     [
+      30,
+      622
+     ],
+     [
+      2,
+      244
+     ]
+    ],
+    "odds_disc": 5.884244372990354,
+    "p_disc": 0.004128524359668992,
+    "direction": "greater",
+    "table_conf": [
+     [
+      2,
+      108
+     ],
+     [
+      1,
+      43
+     ]
+    ],
+    "status": "insufficient data"
+   },
+   {
+    "sign": "50",
+    "table_disc": [
+     [
+      46,
+      606
+     ],
+     [
+      6,
+      240
+     ]
+    ],
+    "odds_disc": 3.036303630363036,
+    "p_disc": 0.006319822809614614,
+    "direction": "greater",
+    "table_conf": [
+     [
+      7,
+      103
+     ],
+     [
+      2,
+      42
+     ]
+    ],
+    "p_conf": 0.498814707020122,
+    "status": "not confirmed"
+   }
+  ],
+  "threshold": 0.005,
+  "verdict": "not supported"
+ },
+ "CT15r": {
+  "strata": {
+   "other|5": [
+    [
+     20,
+     1
+    ],
+    [
+     5,
+     0
+    ]
+   ],
+   "Mohenjo-daro|5": [
+    [
+     45,
+     1
+    ],
+    [
+     11,
+     4
+    ]
+   ],
+   "Harappa|4": [
+    [
+     0,
+     2
+    ],
+    [
+     1,
+     3
+    ]
+   ],
+   "other|3": [
+    [
+     6,
+     0
+    ],
+    [
+     2,
+     0
+    ]
+   ],
+   "Harappa|5": [
+    [
+     11,
+     2
+    ],
+    [
+     6,
+     8
+    ]
+   ],
+   "Harappa|3": [
+    [
+     0,
+     2
+    ],
+    [
+     0,
+     0
+    ]
+   ],
+   "other|4": [
+    [
+     5,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ],
+   "Mohenjo-daro|4": [
+    [
+     2,
+     0
+    ],
+    [
+     2,
+     1
+    ]
+   ],
+   "Mohenjo-daro|3": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     0
+    ]
+   ]
+  },
+  "odds_ratio": 5.745829527231391,
+  "p_value": 0.0009898267940898103,
+  "verdict": "supported"
+ },
+ "FACE4": {
+  "objects": 38,
+  "faces": {
+   "3": 38
+  },
+  "types": {
+   "TAB:B": 8,
+   "TAB:I": 30
+  },
+  "sites": {
+   "Harappa": 34,
+   "Lothal": 1,
+   "Mohenjo-daro": 3
+  },
+  "closing_faces_per_object": {
+   "1": 30,
+   "0": 6,
+   "2": 1,
+   "3": 1
+  },
+  "exactly_one": 30,
+  "null_mean": 17.047,
+  "p_value": 9.999000099990002e-05,
+  "examples": [
+   "072 740 590 407 / 706 167 / 001 100 700 032",
+   "176 740 400 / 033 700 / 033 700",
+   "263 741 565 / 034 700 / 892 692",
+   "817 365 690 / 033 700 / 176 740 400",
+   "700 / 703 090 740 / 920 060 741 821 740",
+   "415 578 032 824 / 799 840 714 740 / 034 700",
+   "838 798 176 740 151 697 390 / 255 070 741 150 221 840 032 / 741 904 740 820 032 017 904 415 100 921",
+   "838 798 176 740 151 697 390 / 070 741 150 267 840 032 / 741 904 740 820 032 017 904 415 100 740",
+   "384 740 / 384 740 / 384 740",
+   "742 / 742 / 742"
+  ],
+  "verdict": "supported"
+ }
+}

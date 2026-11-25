@@ -2605,3 +2605,22 @@ Common scan design for MO2a, MO2b and MO1k:
 - Prediction: more objects with exactly one closing face than under the null, one-sided p < 0.01.
 - Insufficient data: fewer than 20 objects.
 - The ICIT objects of this kind are mostly incised tablets from Harappa (to be reported).
+
+### Results MO2a, MO2b, MO1k, CT15r, FACE4
+
+Script: `scripts/batch6_iconography_faces.py`; results: `results/batch6_iconography_faces.json`.
+
+- **MO2a: not supported.** 623 discovery and 118 confirmation unicorn seals; codes SAN 552, SAF 96, RAN 69, RAF 51, RBF 19, S 17. Of 47 signs, none differs between SAN and the other codes at p < 0.01 in the discovery set.
+- **MO2b: not supported.**
+  - 597 discovery and 110 confirmation unicorn seals; suffixes W 328, J 171, S 140, I 84, L 41. The suffixes occur at every main site, so they are not site codes.
+  - Four candidates: 240 more often with W, 390 less often, 798 more often, and 405 more often (18 of 261 W seals against 0 of 336 others).
+  - On the confirmation set, 240, 390 and 798 are not confirmed (p = 0.20, 0.19, 0.79).
+  - 405 goes the same way (3 of 45 against 0 of 65) but has too few cases.
+  - The 405 pattern is noted as a lead. No unused data remain to test it.
+- **MO1k: not supported.** 898 discovery and 154 confirmation KP seals; two candidates (154 and 50 more often with icon 40). 154 has too few confirmation cases; 50 is not confirmed (p = 0.50).
+- **CT15r: supported (robustness).** With CMH strata by site × length band, 740 closes seal texts more often than tablet texts (OR 5.7, p = 0.0010).
+  - The length-2 band is empty: every two-sign text with 740 has a training string within edit distance 1 and is therefore not in the strict held-out set.
+  - CT15 is not a length effect.
+- **FACE4: supported.** 38 ICIT objects with three faces (Harappa 34; `TAB:I` 30, `TAB:B` 8). Exactly one face closes on 30, against 17.0 expected (p = 0.0001). The closing-face counts are 0 on 6 objects, 2 on 1 and 3 on 1.
+  - Several three-face tablets combine a text face with one or two numeral faces (`176 740 400 / 033 700 / 033 700`).
+  - As for two faces (FACE1), the faces of one object carry one closed text.

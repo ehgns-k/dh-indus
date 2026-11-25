@@ -108,6 +108,11 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | SZ4 | ICIT | all SEAL:S objects with size (131 pairs) | not supported (p = 0.33) | seals sharing a legend not alike in size |
 | T2 | ICIT (Mohenjo-daro seals) | discovery train, confirmation strict held-out | not supported (no candidates) | Intermediate vs Late levels |
 | R7b | as B1, B4, CT17, CT18 | as original | p = 0.0001 with 10,000 draws | review: resolution only |
+| MO2a | ICIT (unicorn seals) | discovery train, confirmation strict held-out + fresh | not supported (no candidates) | cult-object code |
+| MO2b | ICIT (unicorn seals) | as MO2a | not supported (4 candidates, 0 confirmed; 405 insufficient data) | Bull1 suffix |
+| MO1k | KP (seals) | discovery train, confirmation strict held-out | not supported | icon code 40 vs others |
+| CT15r | ICIT | strict held-out + fresh (as CT15) | supported (OR 5.7, p = 0.0010) | robustness: strata site × length |
+| FACE4 | ICIT | all objects with three faces (38) | supported (p = 0.0001) | one closed text per object |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 15 of 38 fresh/strict tests survive Holm 0.01; CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
 
