@@ -2023,3 +2023,7 @@ Script: `scripts/claims_ct18_recursive.py`; results: `results/claims_ct18_recurs
 | KP1979 | 201 | 0.172 | 0.059 (0.008) | 0.001 |
 
 Splitting held-out lines recursively at their weakest link produces parts that occur as complete texts elsewhere about three times as often as for rule-preserving reorderings. **Claim C18 is supported**: the longer texts have a nested structure in which sub-sequences are themselves complete short texts.
+
+### Pre-registration of CT15 (claim C15: jar sign as a genitive on seals; before running)
+
+Among ICIT lines that contain 740, the share in which 740 is the final sign is higher on seals (`SEAL*`) than on tablets (`TAB*`). Data: strict held-out strings plus fresh sets (ICIT), single coarse object type, site strata Harappa / Mohenjo-daro / other. Test: one-sided Cochran–Mantel–Haenszel, p < 0.01.
