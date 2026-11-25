@@ -2259,3 +2259,11 @@ Script: `scripts/claims_batch4.py`; results: `results/claims_batch4.json`.
 
 - **CT32k: supported (replication).** KP1979: tablet texts occur on 2.61 records per distinct text, seal texts on 1.10; p = 0.0001. CT32a is reproduced with the independent transcription and object codes.
 - **CT22: supported.** On the strict held-out and fresh data, six fish-shaped signs have at least 5 occurrences (220, 231, 233, 235, 236, 240); their mean pairwise context similarity is 0.211, against 0.104 (SD 0.025) for frequency-matched random sets; p = 0.0009. The plain and modified fish-shaped signs are used in similar contexts, as a single functional class would be (claim C22, distributional part; compare G2 and H9.3). The reading of the fish sign as *mīn* "fish/star" is not tested by this.
+
+### Meaning of the ICIT object and class codes
+
+`docs/OBJECT_CODES.md` collects what could be found about the codes. Findings relevant to earlier tests:
+- `SEAL:S` (square, motif), `SEAL:R` (rectangular, no motif) and `TAB:C` (copper tablet) agree with the meanings inferred from the data in C2 and C1.
+- `TAB:B` (bas-relief tablets) and `TAB:I` (incised tablets) have only a weak source (a search-engine summary).
+- The pottery letters `g` (incised graffito) and `s` (stamped) are likely but unsourced; CT15s relied on this reading, so its descriptive note ("incised pottery also ends in 740") carries this uncertainty.
+- The `class` field is a classification derived from the text itself (for example `NU` numeral-only texts, `VN` sign 700 followed by a numeral). It was never used as an external variable in any test of this project; tests that used it would be circular.
