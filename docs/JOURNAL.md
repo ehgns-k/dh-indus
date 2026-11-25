@@ -807,3 +807,21 @@ The earlier stroke tests H3.8–H3.14 used short strokes only in both corpora (K
 ### Pre-registration of H5.1b (corrected sets; fresh sets 1 and 2)
 
 Same question and test as amended H5.1, on fresh sets 1 + 2 (ICIT only; KP1979 has no fresh data), with the ICIT stroke set {001, 003, 004, 034, 005, 016, 017, 031, 032, 033, 035}. Pool of comparison signs defined from ICIT training data as in H5.1. Prediction: 002 is followed by a stroke sign more often than the pooled medial signs, one-sided Fisher p < 0.01. If fewer than 10 occurrences of 002 have a following sign in the fresh sets, the result is "insufficient data".
+
+### H5.1b result: not supported
+
+Script: `scripts/phase5_h51b_sign002_fresh.py`; results: `results/phase5_h51b_sign002_fresh.json`.
+
+In the fresh sets, 002 is followed by a stroke sign in 7 of 26 cases; the pooled medial signs in 5 of 48. Odds ratio 3.2, one-sided Fisher p = 0.068. The direction agrees with KP1979 (H5.1), but the result does not reach p < 0.01. The relation "119/002 introduces a number" therefore remains supported only in KP1979 held-out data and is not established.
+
+### Summary of this session
+
+| Test | Result |
+|---|---|
+| B1 positional template, fresh data | supported |
+| B4 recurring units, fresh data | supported |
+| Gate G1 | passed |
+| H5.1 sign 119/002 before strokes, held-out | not supported (KP yes, ICIT no; ICIT set defined wrongly) |
+| H5.1b corrected sets, fresh data | not supported (p = 0.068) |
+
+Next: WP C3 (does the count–item construction favour particular object types or materials, site-stratified) and the start of WP D (typology) with rule-preserving synthetic baselines.

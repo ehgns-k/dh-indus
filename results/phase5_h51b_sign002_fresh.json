@@ -1,0 +1,16 @@
+{
+ "table_[[002->stroke, 002->other],[pool->stroke, pool->other]]": [
+  [
+   7,
+   19
+  ],
+  [
+   5,
+   43
+  ]
+ ],
+ "pool_size": 7,
+ "odds_ratio": 3.168421052631579,
+ "p_value": 0.06793432597205892,
+ "status": "tested"
+}
