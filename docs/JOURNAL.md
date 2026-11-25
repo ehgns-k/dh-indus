@@ -2221,3 +2221,19 @@ A review compared every number and verdict in the summary documents with this jo
 - **D1 in KP1979.** Proto-Elamite is nearest in both transcriptions, but proto-cuneiform is second only for ICIT and farthest for KP1979. Summaries that said "then proto-cuneiform, in both transcriptions" were corrected; the README no longer cites D3 and D5 as evidence of closeness.
 - **F2 scope.** F2 tested only 4–9 strokes → 390–407 on later finds; summaries that implied all count–item pairings were confirmed on later finds were corrected.
 - **Other corrections:** CT16 wording (texts with the jar sign contain numerals less often); H9.3 (the short-stroke numerals form one class; 001, 031 and 033 fall in the class with the fish-shaped signs); COUNTED_ITEMS (002 and the L3b status of KP 119/122; H9.1 is the variable-slot test); claims evaluation C4 (consistent for KP1979 only), C15 (caveats added), C29 (H3.6 exception), verdict labels "partly / weakly supported" defined; data ledger (fresh-set definition, D1-KP note, C2/C2k downgrade notes, held-out question counts); phase 5–7 report (narrow functional L2 added, gate G2 restated).
+
+---
+
+## 2026-11-25 (day 1, twenty-third working session, 15:18 UTC): replications and claim C27
+
+Plan: (1) background survey of the meaning of the ICIT object and class codes; (2) CT27; (3) CT28k; (4) CT14k; (5) CT25b; (6) documents.
+
+### Pre-registrations (before running)
+
+**CT27 (claim C27: logograms rather than phonograms).** A syllabic system lets frequent signs combine freely, so the share of possible ordered pairs among its 50 most frequent signs that actually occur (bigram density) is high; a logographic system with semantic restrictions gives a sparser matrix. For 20 resamples of 9,000 tokens (unique lines) the bigram density of the 50 most frequent signs is computed for the Indus corpus (ICIT) and for the Akkadian OB letters (syllabic graphemes). Prediction: Indus density lower than Akkadian in ≥ 19 of 20 resamples. KP1979 (normalised as in R4) is reported in the same way as a second transcription.
+
+**CT28k (replication of CT28 in KP1979).** Stems (text without the final run of KP terminal-set signs of `src/indus/controls.py`) of KP records with seal codes {11, 23} vs tablet codes {62, 67, 72, 75} (codes identified in C2k); share of distinct stems among n records with n equal for both classes (the smaller count), 1,000 subsamples; prediction: seal share higher in ≥ 99 % of subsamples. (KP has no decoded site field, so no stratification.)
+
+**CT14k (replication of CT14 in KP1979).** Rarefied left-neighbour diversity (100 occurrences, 1,000 draws) of the jar sign in KP1979 (324 and 325 pooled as one sign, as ICIT 740 pools them) compared with the other KP signs with ≥ 100 occurrences (normalised as in R4). Prediction: the jar sign above the median of the others.
+
+**CT25b (robustness of CT25).** As CT25, but removing from the counts every occurrence of 7 strokes directly followed by 288 or 289 (the fixed pairing of H3.12a) before fitting counts 3–7 and predicting 8 + 9. Reported as a robustness check: whether the drop after seven remains (observed 8 + 9 below the 1st percentile of the Poisson prediction).
