@@ -535,3 +535,13 @@ The text gives no usable information about whether a seal carries the `Bull1` mo
 | Tablets carry more numerals than seals (H4.1) | not supported at Harappa |
 
 The count–item pairing is the strongest result so far. An L2 claim requires a semantic category that predicts something outside the text, and the two external variables tested so far (object type, motif) did not respond to the simple numeral and motif categories.
+
+### Pre-registration of H4.3 (claim C32b; before running)
+
+**H4.3 (tablet texts repeat the endings of seal texts).** Claim C32 (Harappa excavation report as given on harappa.com) states that a miniature-tablet inscription is identical to the last two signs of a nearby seal. The general form tested here: tablet texts occur as the final part (suffix) of seal texts more often than expected.
+- Tablet strings: unique held-out strings with coarse type `TAB*` (any site), length ≥ 2, with at least two distinct signs.
+- Seal strings: all unique seal strings (training and held-out), excluding any string identical to the tablet string itself.
+- Statistic: share of tablet strings that equal the suffix of at least one seal string.
+- Control: for each tablet string, 1,000 random reorderings of its own signs; the control share is the expected suffix-match share of the reordered strings. p is the probability, under the reordering control, of a share at least as large as observed (computed by drawing one reordering per string, 1,000 times).
+- Prediction: observed share above the control, p < 0.01.
+- Also reported (not part of the decision): the share of tablet strings that equal the prefix (beginning) of a seal string, under the same control.
