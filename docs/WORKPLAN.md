@@ -134,3 +134,15 @@ WP-E is closed: no calibrated route to L3 is available with the accessible data 
 | Q2 | Sign classes: combine positional zones, concordance families and the C2 associations into one documented sign classification (descriptive), with a reproducibility check across the two transcriptions |
 | Q3 | Review pass (WP-F1) over all supported results: leakage, controls, multiple comparisons |
 | Q4 | Phase reports and the final report |
+
+## 5. Long-horizon agenda (added 2026-11-25, thirteenth session)
+
+The short tests that the current data allow have largely been run. The remaining weeks are planned as larger, multi-session projects, each with its own pre-registrations. Scheduled sessions work through them in this order and may run several hours of computation per session.
+
+| Order | Project | Goal | First steps |
+|---|---|---|---|
+| L-1 | **Numeral system** | Describe and test the stroke notation as fully as the data allow: counts per series; partner signs per count; whether counts combine (for example two stroke signs in a row); the base question (claim C25); comparison with the numerical systems of proto-cuneiform and proto-Elamite in the CDLI data under the same tokenisation | descriptive tables on training data; pre-registered tests on strict held-out and fresh data |
+| L-2 | **Glyph-shape data** | Obtain sign images or shape descriptions (sign-list scans, open image datasets of Indus signs) and build shape features, so that pictographic and allograph questions can be asked with an independent source of information | survey of open image datasets; extraction from the KP1979 sign-list scans |
+| L-3 | **Allographs** | Use the two transcriptions' disagreements (concordance splits and merges) and shape features (L-2) to propose and test allograph groups; re-run key L1 tests with merged groups | from `docs/SIGN_CONCORDANCE.md` |
+| L-4 | **New data watch** | Search for inscriptions published after the ICIT-style source (excavation reports, open datasets) to obtain unused data for confirming the L2 candidate | sourced list of new finds |
+| L-5 | **Reports** | Phase reports for phases 3–7 and the final report, written so that every claim cites the test and data behind it | from interim report 2 |
