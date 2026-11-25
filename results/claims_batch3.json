@@ -1,0 +1,46 @@
+{
+ "CT27": {
+  "mean_density": {
+   "icit": 0.28341999999999995,
+   "kp1979": 0.3316,
+   "akkadian": 0.40058
+  },
+  "icit_lower_count": 20,
+  "kp_lower_count": 20,
+  "pass": true
+ },
+ "CT28k": {
+  "records": {
+   "SEAL": 1490,
+   "TAB": 952
+  },
+  "n": 952,
+  "mean_difference": 0.5711985294117646,
+  "share_positive": 1.0,
+  "pass": true
+ },
+ "CT14k": {
+  "jar": 51.127,
+  "median_others": 25.041,
+  "rank_from_top": 1,
+  "n_signs": 24,
+  "pass": true
+ },
+ "CT25b": {
+  "counts": {
+   "1": 248,
+   "2": 273,
+   "3": 236,
+   "4": 51,
+   "5": 54,
+   "6": 28,
+   "7": 24,
+   "8": 5,
+   "9": 1
+  },
+  "predicted_8_plus_9": 18.08848555053397,
+  "observed_8_plus_9": 6,
+  "poisson_cdf": 0.000981627179345715,
+  "drop_remains": true
+ }
+}

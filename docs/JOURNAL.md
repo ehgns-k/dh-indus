@@ -2237,3 +2237,12 @@ Plan: (1) background survey of the meaning of the ICIT object and class codes; (
 **CT14k (replication of CT14 in KP1979).** Rarefied left-neighbour diversity (100 occurrences, 1,000 draws) of the jar sign in KP1979 (324 and 325 pooled as one sign, as ICIT 740 pools them) compared with the other KP signs with ≥ 100 occurrences (normalised as in R4). Prediction: the jar sign above the median of the others.
 
 **CT25b (robustness of CT25).** As CT25, but removing from the counts every occurrence of 7 strokes directly followed by 288 or 289 (the fixed pairing of H3.12a) before fitting counts 3–7 and predicting 8 + 9. Reported as a robustness check: whether the drop after seven remains (observed 8 + 9 below the 1st percentile of the Poisson prediction).
+
+### Results CT27, CT28k, CT14k, CT25b
+
+Script: `scripts/claims_batch3.py`; results: `results/claims_batch3.json`.
+
+- **CT27: supported.** Bigram density of the 50 most frequent signs (9,000-token samples): Indus ICIT 0.283, KP1979 0.332, Akkadian OB letters (syllabic graphemes) 0.401. The Indus value is lower than the Akkadian one in 20 of 20 resamples for both transcriptions. Frequent Indus signs combine less freely than the graphemes of a syllabic script, as claim C27 (logograms in functional classes) predicts. This does not show that the signs are logograms of a language; a non-linguistic system with restricted combinations would also be sparse.
+- **CT28k: supported (replication).** KP1979 records with seal codes (1,490) vs tablet codes (952), subsamples of 952: the share of distinct stems is 0.57 higher for seals, higher in 1,000 of 1,000 subsamples. CT28 is reproduced in the independent transcription with its independent object classification.
+- **CT14k: supported (replication).** In KP1979 (324 and 325 pooled), the jar sign has a rarefied left-neighbour diversity of 51.1 (100 occurrences), the highest of 24 signs with ≥ 100 occurrences (median of the others 25.0). CT14 is reproduced.
+- **CT25b: the drop after seven remains.** With the fixed pairing 7 + 288/289 removed, the count of seven falls from 50 to 24; the fit on counts 3–7 predicts 18.1 occurrences of 8 + 9; 6 are observed (Poisson cdf 0.001). The drop after seven is not an artefact of the fixed pairing. The base remains undecided (a decimal system with rarely needed large single-group numbers would show the same).
