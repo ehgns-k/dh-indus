@@ -3106,3 +3106,24 @@ Script: `scripts/batch11b_ct15b_bootstrap.py`; results: `results/batch11b_ct15b_
 - The CT22 data (strict held-out + fresh ICIT strings).
 - 1,000 bootstrap resamples of the strings (with replacement). In each, the CT22 statistic is computed: mean pairwise context similarity of the fish-shaped signs with ≥ 5 occurrences in the resample, minus the mean of 200 frequency-matched random sets.
 - Prediction: the difference is positive in at least 99 % of resamples.
+
+### Results SX3, SX4, H3.3c, CT22b
+
+Script: `scripts/batch12_sites_classes.py`; results: `results/batch12_sites_classes.json`.
+
+- **SX3: supported.** With zones learned at the other sites:
+  - Harappa strings show 126 inversions, against 282.0 for controls (p = 0.0001).
+  - Mohenjo-daro strings show 354, against 820.0 (p = 0.0001).
+- **SX4: supported.** With units learned at the other sites:
+  - Harappa: 650 covered positions, against 292.4 (p = 0.0001).
+  - Mohenjo-daro: 1,164, against 426.5 (p = 0.0001).
+- **H3.3c: supported.** The dominant order inside the closing cluster holds in every object class:
+  - seals 79 of 90 (88 %, p < 10⁻¹³);
+  - tablets 115 of 120 (96 %, p < 10⁻²⁷);
+  - other objects 10 of 11 (91 %, p = 0.0059).
+- **CT22b: supported.** In all 1,000 bootstrap resamples, the fish-shaped signs are more similar in context than frequency-matched sets. Median difference 0.060; 95 % interval 0.025–0.100.
+- The positional template, the recurring units and the closing order do not depend on one site or one object class. The fish-sign class is stable under resampling.
+
+### End of the thirty-first session
+
+Pre-registered analyses SX3, SX4, H3.3c and CT22b are all supported (robustness). The level assessment is unchanged.

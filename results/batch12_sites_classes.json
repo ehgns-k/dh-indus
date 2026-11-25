@@ -1,0 +1,70 @@
+{
+ "SX3": {
+  "Harappa": {
+   "train": 1360,
+   "test": 687,
+   "inversions": 126,
+   "control_mean": 281.9982,
+   "p": 9.999000099990002e-05,
+   "pass": true
+  },
+  "Mohenjo-daro": {
+   "train": 957,
+   "test": 1090,
+   "inversions": 354,
+   "control_mean": 819.9947,
+   "p": 9.999000099990002e-05,
+   "pass": true
+  },
+  "verdict": "supported"
+ },
+ "SX4": {
+  "Harappa": {
+   "covered": 650,
+   "control_mean": 292.3629,
+   "p": 9.999000099990002e-05,
+   "pass": true
+  },
+  "Mohenjo-daro": {
+   "covered": 1164,
+   "control_mean": 426.4693,
+   "p": 9.999000099990002e-05,
+   "pass": true
+  },
+  "verdict": "supported"
+ },
+ "H3.3c": {
+  "other": {
+   "agree": 10,
+   "total": 11,
+   "rate": 0.9090909090909091,
+   "p": 0.005859375,
+   "pass": 1.0
+  },
+  "seal": {
+   "agree": 79,
+   "total": 90,
+   "rate": 0.8777777777777778,
+   "p": 3.886880384756633e-14,
+   "pass": 1.0
+  },
+  "tablet": {
+   "agree": 115,
+   "total": 120,
+   "rate": 0.9583333333333334,
+   "p": 1.4977166869137588e-28,
+   "pass": 1.0
+  },
+  "verdict": "supported"
+ },
+ "CT22b": {
+  "resamples": 1000,
+  "share_positive": 1.0,
+  "median_difference": 0.06047437168260909,
+  "ci95": [
+   0.02533986815468625,
+   0.10036196663162747
+  ],
+  "verdict": "supported"
+ }
+}

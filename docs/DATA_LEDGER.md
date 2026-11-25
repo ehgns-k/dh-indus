@@ -137,6 +137,10 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | D9 | as D8 | as D8 | not supported (0/20) | positional rigidity within the full-writing range |
 | D10 | as D8 | as D8 | descriptive: within the proto-administrative range (also OB letters) | not discriminating |
 | CT15b | ICIT | CT15 data, stratified bootstrap | supported (95 % interval 1.49–16.0) | robustness of the effect size |
+| SX3 | ICIT | leave-one-site-out (Harappa, Mohenjo-daro) | supported (p = 0.0001 both) | template |
+| SX4 | ICIT | as SX3 | supported (p = 0.0001 both) | units |
+| H3.3c | ICIT | all strings by object class | supported (88–96 %) | closing order in every class |
+| CT22b | ICIT | CT22 data, 1,000 bootstrap resamples | supported (1,000/1,000 positive) | robustness |
 | R9 | all | – | review: all analyses re-run, no differences | |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
