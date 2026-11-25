@@ -1,57 +1,57 @@
-# 연구 로드맵: 인더스 문자 해독 시도 (2026-11-25 ~ 2026-12-25)
+# Research roadmap: an attempt to decipher the Indus script (2026-11-25 to 2026-12-25)
 
-## 1. 목표와 전제
+## 1. Aim and premises
 
-이 프로젝트의 목표는 인더스 문자 자료를 체계적으로 분석하여, 검증 가능한 범위 안에서 부분적 또는 전체적 해독을 시도하는 것이다. 인더스 문자는 현재 해독되지 않은 상태이며, 이것이 언어를 기록한 문자 체계인지에 대해서도 학계에 논쟁이 있다 (참고문헌 C절: Farmer, Sproat & Witzel 2004; Rao et al. 2009).
+The aim of this project is to analyse the Indus script material systematically and to attempt a partial or full decipherment within the limits of what can be verified. The Indus script is currently undeciphered, and scholars disagree even on whether it records language (bibliography section C: Farmer, Sproat & Witzel 2004; Rao et al. 2009).
 
-본 프로젝트의 자료 조건은 다음과 같다. 수치는 모두 `results/phase2_baseline.md`에서 계산한 값이다.
+The data conditions are as follows. All figures were computed in `results/phase2_baseline.md`.
 
-| 항목 | ICIT 계열 전사본 | Koskenniemi & Parpola 1979 |
+| Item | ICIT-style transcription | Koskenniemi & Parpola 1979 |
 |---|---:|---:|
-| 완전·중복 제거된 줄 | 2,059 | 2,123 |
-| 기호 종류 | 607 | 367 |
-| 1회만 나오는 기호 | 214 | 100 |
-| 줄 길이 중앙값 | 4 | 4 |
+| Complete, deduplicated lines | 2,059 | 2,123 |
+| Sign types | 607 | 367 |
+| Signs occurring once | 214 | 100 |
+| Median line length | 4 | 4 |
 
-텍스트가 짧고, 이중 언어 자료(bilingual)가 알려져 있지 않으며, 기호의 3분의 1가량이 한 번만 나타난다. 따라서 음가(音價) 해독은 실패할 가능성이 높다는 점을 처음부터 전제로 둔다. 이 전제 때문에 아래의 성공 기준을 단계별로 나누었다.
+The texts are short, no bilingual text is known, and about one third of the signs occur only once. A phonetic decipherment is therefore likely to fail, and this is taken as a premise from the start. For this reason the success criteria below are divided into levels.
 
-## 2. 성공 기준 (사전 등록)
+## 2. Success criteria (pre-registered)
 
-결과를 본 뒤 기준을 바꾸지 않도록, 기준을 먼저 적어 둔다. 각 단계는 앞 단계의 기준을 충족해야 주장할 수 있다.
+The criteria are written down before the analyses so that they cannot be changed after seeing the results. A level can be claimed only if the criteria of the levels below it are met.
 
-| 단계 | 이름 | 충족 조건 |
+| Level | Name | Conditions |
 |---|---|---|
-| L1 | 구조적 부분 해독 | 기호 분류, 텍스트 분절(단어 단위), 끝 기호의 기능 등 구조적 결과가 (a) 두 코퍼스에서 독립적으로 재현되고 (b) 무작위 대조 모형보다 유의하게(p < 0.01) 설명력이 높다. |
-| L2 | 의미 범주 부분 해독 | 특정 기호 또는 기호열에 의미 범주(수사, 칭호, 품목, 지명 등)를 배정하고, 이 배정이 텍스트 밖의 정보(유물 종류, 도상, 출토지)를 보류 자료(held-out)에서 예측한다. |
-| L3 | 음가 부분 해독 | 특정 언어 가설 아래 일부 기호에 음가를 배정하고, 그 체계가 보류 자료에서 같은 절차를 다른 언어(대조 언어)에 적용했을 때의 결과보다 유의하게 좋은 예측을 낸다. 거짓 양성률을 대조 실험으로 측정해 함께 보고한다. |
-| L4 | 전체 해독 | 코퍼스 대부분을 일관되게 읽고, 독립적 증거(외부 문헌의 고유명사 등)와 맞아떨어진다. 본 기간 안에 기대하지 않는다. |
+| L1 | Structural partial decipherment | A structural result (sign classes, segmentation into word-like units, function of terminal signs, etc.) is (a) reproduced independently in both corpora and (b) explains the data significantly better than a random control model (p < 0.01). |
+| L2 | Partial decipherment of semantic categories | A semantic category (numeral, title, commodity, place name, etc.) is assigned to particular signs or sign sequences, and the assignment predicts information outside the text (object type, iconography, find site) on held-out data. |
+| L3 | Partial phonetic decipherment | Under a specific language hypothesis, sound values are assigned to some signs, and the resulting system predicts held-out data significantly better than the same procedure applied to other (control) languages. The false-positive rate is measured by control experiments and reported alongside. |
+| L4 | Full decipherment | Most of the corpus is read consistently, and the readings agree with independent evidence (for example proper names in external texts). Not expected within this period. |
 
-"해독했다"는 표현은 L3 이상에서만 쓴다. L1·L2 결과는 "구조적 결과", "의미 범주 가설"로 부른다.
+The word "deciphered" is used only at L3 or above. L1 and L2 results are called "structural results" and "semantic-category hypotheses".
 
-## 3. 단계별 계획
+## 3. Plan by phase
 
-| 단계 | 기간(예정) | 내용 | 산출물 |
+| Phase | Period (planned) | Content | Outputs |
 |---|---|---|---|
-| 0. 설정 | 1일차 | 저장소 구성, 성공 기준, 작업 규칙 | `ROADMAP.md`, `docs/METHOD.md` |
-| 1. 자료 수집 | 1–3일차 | 공개 코퍼스 확보, 고정 버전·체크섬 기록, 정규화, 두 코퍼스 간 기호 번호 대응표 작성 | `data/sources.tsv`, `src/indus/corpus.py`, `docs/SIGN_CONCORDANCE.md` |
-| 2. 참고문헌 수집 | 1–5일차 | 검증된 참고문헌 목록, 선행 주장 목록(주장마다 검정 가능한 형태로 변환) | `docs/BIBLIOGRAPHY.md`, `docs/CLAIMS_REGISTER.md` |
-| 3. 구조 분석 | 3–10일차 | 위치 분포, 분절, 분포 기반 기호 군집, 이체자 병합, 수 체계, 도상·유물 종류와의 상관 | `results/phase3_*` |
-| 4. 문자 유형 판별 | 8–15일차 | 기호 수와 분포를 알려진 표어·음절·비언어 기호 체계와 비교, 대조 모형 설계 | `results/phase4_*` |
-| 5. 언어 가설 검정 | 12–22일차 | 원드라비다어, 인도아리아어, 문다어, 미지 언어 가설별로 제약 탐색; 대조 언어로 거짓 양성률 측정 | `results/phase5_*` |
-| 6. 반증·교차 검증 | 18–28일차 | 사전 등록 예측을 보류 자료에 적용, 독립 검토 작업 단위가 결과를 반박 시도 | `reports/REVIEW_*.md` |
-| 7. 종합 | 28–30일차 | 성공 기준 대비 결과 보고, 실패한 접근법 포함 | `reports/FINAL_REPORT.md` |
+| 0. Setup | Day 1 | Repository layout, success criteria, working rules | `ROADMAP.md`, `docs/METHOD.md` |
+| 1. Data collection | Days 1–3 | Obtain public corpora, record pinned versions and checksums, normalise, build a sign-number concordance between the two corpora | `data/sources.tsv`, `src/indus/corpus.py`, `docs/SIGN_CONCORDANCE.md` |
+| 2. Bibliography | Days 1–5 | Verified bibliography; register of earlier claims, each converted into a testable form | `docs/BIBLIOGRAPHY.md`, `docs/CLAIMS_REGISTER.md` |
+| 3. Structural analysis | Days 3–10 | Positional distributions, segmentation, distributional sign clustering, allograph merging, numeral system, correlation with iconography and object type | `results/phase3_*` |
+| 4. Script typology | Days 8–15 | Compare sign inventory and distributions with known logographic, syllabic and non-linguistic systems; design control models | `results/phase4_*` |
+| 5. Language hypotheses | Days 12–22 | Constrained search under Proto-Dravidian, Indo-Aryan, Munda and unknown-language hypotheses; measure false-positive rates with control languages | `results/phase5_*` |
+| 6. Falsification and cross-validation | Days 18–28 | Apply pre-registered predictions to held-out data; an independent review unit tries to refute the results | `reports/REVIEW_*.md` |
+| 7. Synthesis | Days 28–30 | Report results against the success criteria, including failed approaches | `reports/FINAL_REPORT.md` |
 
-단계는 겹쳐 진행할 수 있다. 진행 상황은 `docs/JOURNAL.md`에 날짜별로 기록한다.
+Phases may overlap. Progress is recorded by date in `docs/JOURNAL.md`.
 
-## 4. 시도할 접근법 목록
+## 4. Approaches to be tried
 
-각 접근법은 결과가 나쁘더라도 기록한다. 실패한 접근법도 결과이다.
+Each approach is recorded even when the result is negative. A failed approach is also a result.
 
-1. 위치 분포와 분절: 첫머리·끝 선호 기호, 경계 엔트로피에 의한 단어 단위 추정.
-2. 분포 의미론: 기호를 앞뒤 문맥 벡터로 표현해 군집화하고, 이체자 후보와 기능 범주를 찾는다.
-3. 수 체계: 획(stroke) 기호의 반복 패턴, 수량 표시 위치, 저울추·도량형 자료와의 대응.
-4. 외부 정보와의 상관: 동물 도상(일각수, 들소 등), 유물 종류(인장, 각인 태블릿, 토기 명문), 출토지별 기호 분포.
-5. 문자 유형 판별: 기호 수, 빈도 분포, 반복 구조를 알려진 문자 체계 및 비언어 기호 체계와 비교.
-6. 제약 기반 음가 탐색: 언어 가설별로 음절 구조·음소 분포를 사전 확률로 두고, 동일 절차를 대조 언어에 적용.
-7. 리버스(rebus) 가설 검정: 기존에 제안된 그림-음 대응(예: 물고기 기호)을 사전 등록된 예측으로 바꿔 검정.
-8. 외부 고유명사: 메소포타미아 문헌에 나오는 인더스 관련 이름과의 대응 가능성 검토.
+1. Positional distribution and segmentation: signs that prefer initial or final position; estimation of word-like units by boundary entropy.
+2. Distributional semantics: represent signs by their left and right contexts, cluster them, and look for allograph candidates and functional classes.
+3. Numeral system: repetition patterns of stroke signs, position of quantity markers, comparison with weights and measures.
+4. Correlation with external information: animal iconography, object type (seal, incised tablet, pottery inscription), and sign distribution by find site.
+5. Script typology: compare sign inventory size, frequency distribution and repetition structure with known writing systems and non-linguistic symbol systems.
+6. Constrained phonetic search: use syllable structure and phoneme distributions of each candidate language as priors, and apply the same procedure to control languages.
+7. Rebus hypotheses: convert previously proposed picture–sound correspondences (for example the fish sign) into pre-registered predictions and test them.
+8. External proper names: examine possible correspondences with names connected with the Indus region in Mesopotamian texts.

@@ -1,10 +1,10 @@
-# Phase 1 기호 번호 대응표 (ICIT 계열 ↔ KP1979)
+# Phase 1 sign-number concordance (ICIT-style ↔ KP1979)
 
-자동 생성 파일. 스크립트: `scripts/phase1_concordance.py`.
+Generated file. Script: `scripts/phase1_concordance.py`.
 
-## 반복 과정
+## Iterations
 
-| 회차 | 일치 기준 | 정렬된 줄 쌍 | 대응 기호 수 | 바뀐 대응 |
+| Iteration | Agreement threshold | Aligned line pairs | Mapped signs | Changed mappings |
 |---:|---:|---:|---:|---:|
 | 0 | 0.75 | 886 | 239 | 5 |
 | 1 | 0.75 | 908 | 240 | 0 |
@@ -12,12 +12,12 @@
 | 3 | 0.7 | 929 | 242 | 0 |
 | 4 | 0.67 | 929 | 242 | 0 |
 
-최종 정렬 줄 쌍: 929 (그중 완전 일치 594).
-정렬에 나타난 ICIT 기호: 400; 지지 3회 이상·순도 0.8 이상: 167.
+Final aligned line pairs: 929 (of which exact matches: 594).
+ICIT signs occurring in the alignment: 400; with support >= 3 and purity >= 0.8: 167.
 
-## 여러 ICIT 기호가 하나의 KP1979 기호로 대응되는 경우 (이체자 후보)
+## Several ICIT signs mapped to one KP1979 sign (allograph candidates)
 
-| KP1979 | ICIT 기호들 |
+| KP1979 | ICIT signs |
 |---|---|
 | 86 | 390, 405, 407, 406 |
 | 270 | 632, 630, 636, 642 |
@@ -46,9 +46,9 @@
 | 293 | 315, 360 |
 | 108 | 371, 370 |
 
-## 대응표 (지지 횟수 상위 80)
+## Concordance (top 80 by support)
 
-| ICIT | KP1979 | 지지 | 정렬 총수 | 순도 | 다른 후보 |
+| ICIT | KP1979 | Support | Aligned total | Purity | Alternatives |
 |---|---|---:|---:|---:|---|
 | 740 | 325 | 352 | 506 | 0.70 | 325:352;324:131;326:21;310:1 |
 | 002 | 119 | 279 | 287 | 0.97 | 119:279;122:5;121:2;248:1 |

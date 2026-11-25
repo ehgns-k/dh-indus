@@ -135,12 +135,12 @@ def summarise(name, lines):
 
 
 def md(res):
-    out = ["# Phase 2 기초 통계 결과", "",
-           "자동 생성 파일. 생성 스크립트: `scripts/phase2_baseline.py`.",
-           "분석 단위: 완전한(양 끝이 보존되고 손상 기호가 없는) 줄, 방향이 기록된 것, 동일 문자열은 1회만 계산.", ""]
+    out = ["# Phase 2 baseline statistics", "",
+           "Generated file. Script: `scripts/phase2_baseline.py`.",
+           "Unit of analysis: complete lines (both ends preserved, no damaged sign) with recorded direction; identical strings counted once.", ""]
     for r in res:
-        out += [f"## 코퍼스 `{r['corpus']}`", "",
-                "| 항목 | 값 |", "|---|---:|"]
+        out += [f"## Corpus `{r['corpus']}`", "",
+                "| Item | Value |", "|---|---:|"]
         for k in ["lines_total", "lines_complete_known_direction", "lines_unique",
                   "duplicate_share", "sign_types", "tokens_unique_lines", "hapax_types",
                   "types_lt5", "length_median", "length_mean", "length_max",
@@ -149,12 +149,12 @@ def md(res):
                   "cond_entropy_len3plus_shuffle_mean"]:
             v = r[k]
             out.append(f"| {k} | {v:.3f} |" if isinstance(v, float) else f"| {k} | {v} |")
-        out += ["", "### 위치 분포 (빈도 상위 40 기호)", "",
-                "| 기호 | n | 첫머리 | 중간 | 끝 | 단독 |", "|---|---:|---:|---:|---:|---:|"]
+        out += ["", "### Positional distribution (40 most frequent signs)", "",
+                "| Sign | n | Initial | Medial | Final | Solo |", "|---|---:|---:|---:|---:|---:|"]
         for p in r["positional"]:
             out.append(f"| {p['sign']} | {p['n']} | {p['initial']:.2f} | {p['medial']:.2f} | {p['final']:.2f} | {p['solo']:.2f} |")
-        out += ["", "### 여러 줄에 반복되는 n-gram (서로 다른 줄 수 기준 상위 60)", "",
-                "| n-gram (읽는 순서) | 길이 | 출현 | 서로 다른 줄 |", "|---|---:|---:|---:|"]
+        out += ["", "### n-grams recurring across lines (top 60 by number of distinct lines)", "",
+                "| n-gram (reading order) | Length | Occurrences | Distinct lines |", "|---|---:|---:|---:|"]
         for g in r["recurrent_ngrams"]:
             out.append(f"| {g['ngram']} | {g['n']} | {g['count']} | {g['distinct_lines']} |")
         out.append("")

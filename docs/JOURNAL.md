@@ -1,93 +1,93 @@
-# 연구 기록
+# Research log
 
-새 기록은 아래에 덧붙인다. 각 기록은 날짜, 한 일, 결과, 다음 할 일 순서로 쓴다.
+New entries are appended below. Each entry gives the date, the work done, the results, and the next steps.
 
 ---
 
-## 2026-11-25 (1일차)
+## 2026-11-25 (day 1)
 
-### 한 일
+### Work done
 
-1. 저장소 구성, 연구 단계와 성공 기준 작성 (`ROADMAP.md`, `docs/METHOD.md`).
-2. 공개 코퍼스 두 종을 고정 버전으로 확보 (`data/sources.tsv`).
-   - ICIT 계열 2차 전사본: 5,679개 기록, 출토지·유물 종류·방향 정보 포함.
-   - Koskenniemi & Parpola (1979) 기계 판독본: 4,066개 명문.
-3. 정규화 모듈 작성 (`src/indus/corpus.py`).
-4. 기초 통계 산출 (`scripts/phase2_baseline.py` → `results/phase2_baseline.md`).
-5. 보류 자료 정의: 텍스트 문자열의 SHA-256 값을 5로 나눈 나머지가 0인 것(약 20 %). 같은 문자열은 항상 같은 쪽에 속한다 (`is_heldout`).
+1. Set up the repository and wrote the research phases and success criteria (`ROADMAP.md`, `docs/METHOD.md`).
+2. Obtained two public corpora at pinned versions (`data/sources.tsv`).
+   - ICIT-style secondary transcription: 5,679 records, with find site, object type and writing direction.
+   - Machine reading of Koskenniemi & Parpola (1979): 4,066 inscriptions.
+3. Wrote the normalisation module (`src/indus/corpus.py`).
+4. Computed baseline statistics (`scripts/phase2_baseline.py` → `results/phase2_baseline.md`).
+5. Defined the held-out set: texts whose SHA-256 value modulo 5 equals 0 (about 20 %). Identical strings always fall on the same side (`is_heldout`).
 
-### 읽는 순서 확인
+### Checking the reading order
 
-ICIT 계열 전사본의 `text` 열이 어떤 방향으로 저장되어 있는지 확인했다. 기호 740은 이 자료에서 가장 흔한 기호다. 저장 순서 그대로 보면, 방향이 `R/L`로 기록된 줄에서도 `L/R`로 기록된 줄에서도 740이 첫 자리에 가장 많이 온다(`R/L`: 첫 자리 914회, `L/R`: 첫 자리 40회; 저장 순서 기준). 따라서 이 열은 기록 방향과 관계없이 한 방향으로 정규화되어 저장된 것으로 판단했고, 모든 줄을 뒤집어 읽는 순서로 바꾸었다. 뒤집은 뒤에는 740이 두 방향 모두에서 끝자리에 가장 많이 온다.
+I checked the direction in which the `text` column of the ICIT-style transcription is stored. Sign 740 is the most frequent sign in this source. Taking the stored order at face value, 740 most often comes first both in lines recorded as `R/L` and in lines recorded as `L/R` (`R/L`: first position 914 times; `L/R`: first position 40 times; counted in storage order). I therefore concluded that the column is stored in a single normalised orientation regardless of the recorded direction, and reversed all lines into reading order. After reversal, 740 most often comes last in both directions.
 
-Koskenniemi & Parpola (1979) 판독본은 첫 토큰이 오른쪽 끝 기호라고 설명되어 있다(원 저장소 `digitized/README.md`). 이 자료에서 가장 흔한 기호 325도 끝자리에 집중된다(끝자리 444회, 첫자리 22회). 두 자료의 방향 처리가 일관된다.
+The Koskenniemi & Parpola (1979) reading is documented as having the rightmost sign as its first token (upstream repository, `digitized/README.md`). The most frequent sign in this source, 325, is also concentrated in final position (final 444 times, initial 22 times). The direction handling of the two sources is consistent.
 
-### 결과 요약
+### Summary of results
 
-| 항목 | ICIT 계열 | KP1979 |
+| Item | ICIT-style | KP1979 |
 |---|---:|---:|
-| 완전·중복 제거 줄 | 2,059 | 2,123 |
-| 기호 종류 | 607 | 367 |
-| 1회 출현 기호 | 214 | 100 |
-| 줄 길이 중앙값 | 4 | 4 |
-| 조건부 엔트로피 H(다음 기호 \| 현재 기호), bit | 3.77 | 3.88 |
-| 같은 값, 줄 내부 무작위 섞기 평균 | 4.77 | 4.91 |
+| Complete, deduplicated lines | 2,059 | 2,123 |
+| Sign types | 607 | 367 |
+| Signs occurring once | 214 | 100 |
+| Median line length | 4 | 4 |
+| Conditional entropy H(next sign \| current sign), bits | 3.77 | 3.88 |
+| Same, mean over within-line shuffles | 4.77 | 4.91 |
 
-줄 안의 기호 순서를 섞으면 조건부 엔트로피가 약 1 bit 올라간다. 이는 기호 순서에 규칙이 있다는 뜻일 뿐, 이 체계가 언어를 기록했다는 증거는 아니다. 비언어 기호 체계도 순서 규칙을 가질 수 있다는 비판이 있다(참고문헌 C절).
+Shuffling the order of signs within a line raises the conditional entropy by about 1 bit. This shows only that sign order is rule-governed; it is not evidence that the system records language. It has been argued that non-linguistic symbol systems can also have ordering rules (bibliography section C).
 
-위치 분포에서 끝자리 선호가 강한 기호(ICIT 번호): 740(끝 0.72), 400(0.88), 520(0.84), 090(0.76), 151(0.87). 첫자리 선호가 강한 기호: 817(0.88), 820(0.75), 861(0.71), 920(0.65). 중간 자리에 거의 고정된 기호: 002(0.95), 060(0.96), 100(0.95), 760(0.97).
+Signs with a strong preference for final position (ICIT numbers): 740 (final share 0.72), 400 (0.88), 520 (0.84), 090 (0.76), 151 (0.87). Signs with a strong preference for initial position: 817 (0.88), 820 (0.75), 861 (0.71), 920 (0.65). Signs almost confined to medial position: 002 (0.95), 060 (0.96), 100 (0.95), 760 (0.97).
 
-### 한계
+### Limitations
 
-- 기초 통계는 보류 자료를 정의하기 전에 전체 자료로 계산했다. 이 통계는 기술 통계이며 가설 검정에 쓰지 않는다. 이후의 가설 검정은 보류 자료를 제외하고 세운다.
-- ICIT 계열 자료의 기호 종류(607)는 고전적 기호 목록보다 많다. 이체자나 합자가 따로 번호를 받았을 가능성이 있다.
-- KP1979 판독본은 원 저장소 설명에 따르면 전체 교정을 거치지 않았다.
+- The baseline statistics were computed on the whole data set before the held-out set was defined. They are descriptive statistics and are not used for hypothesis tests. Later hypotheses are formed without the held-out data.
+- The number of sign types in the ICIT-style source (607) is larger than in the classical sign lists. Allographs or ligatures may have received separate numbers.
+- According to the upstream description, the KP1979 reading has not been fully proofread.
 
-### 다음 할 일
+### Next steps
 
-1. 두 코퍼스 간 기호 번호 대응표 작성 (같은 명문을 두 코퍼스에서 찾아 정렬하는 방법).
-2. 검증된 참고문헌 목록 완성, 선행 주장 목록 작성.
-3. 3단계 구조 분석: 분절, 분포 기반 군집, 수 체계.
+1. Build a sign-number concordance between the two corpora (by locating and aligning the same inscriptions in both).
+2. Complete the verified bibliography and write the register of earlier claims.
+3. Phase 3 structural analysis: segmentation, distributional clustering, numeral system.
 
-### 추가: 기호 번호 대응표 (같은 날)
+### Addendum: sign-number concordance (same day)
 
-두 코퍼스 사이의 기호 번호 대응을 텍스트 정렬로 추정했다 (`docs/SIGN_CONCORDANCE.md`). 정렬된 줄 쌍 929개 가운데 594개가 모든 위치에서 일치했다. ICIT 740은 KP 325와 324에, ICIT 390·405·406·407은 KP 86 하나에 대응하는 등, 두 기호 목록의 이체자 구분이 서로 다른 사례를 얻었다. 이 대응표가 있으므로 이후의 구조 분석 결과를 두 코퍼스 사이에서 직접 비교할 수 있다.
+The sign-number correspondence between the two corpora was estimated by text alignment (`docs/SIGN_CONCORDANCE.md`). Of 929 aligned line pairs, 594 agree at every position. Cases were found where the two sign lists draw allograph boundaries differently, for example ICIT 740 corresponding to both KP 325 and 324, and ICIT 390, 405, 406 and 407 all corresponding to KP 86. With this concordance, later structural results can be compared directly between the two corpora.
 
-### 3단계 가설 사전 등록 (같은 날, 분석 전 작성)
+### Pre-registration of phase 3 hypotheses (same day, written before analysis)
 
-분석은 보류 자료를 제외한 학습 자료(약 80 %)로만 한다.
+The analyses use only the training data (about 80 %), excluding the held-out set.
 
-**H3.1 (끝 기호의 경계 표시 기능).** 줄 끝에 집중되는 기호(ICIT 740, 400, 520 등; 학습 자료에서 끝자리 비율 0.6 이상, 출현 30회 이상인 기호로 정의)는 텍스트 안의 한 단위가 끝나는 자리를 표시한다.
-- 예측: 이런 기호가 줄 중간에 나올 때, 바로 다음 기호의 "첫자리 비율"(그 기호가 줄 첫머리에 오는 비율) 평균이, 다른 중간 기호 다음에 오는 기호들의 평균보다 높다.
-- 대조: 기호 이름표를 무작위로 바꾼 순열 검정(1,000회). 유의 수준 0.01.
-- 재현: KP1979에서 같은 정의로 독립적으로 검정한다.
-- 반증 조건: 두 코퍼스 중 하나라도 p ≥ 0.01이면 H3.1은 지지되지 않은 것으로 기록한다.
+**H3.1 (terminal signs mark boundaries).** Signs concentrated at line end (ICIT 740, 400, 520 and others; defined as signs with a final share ≥ 0.6 and ≥ 30 occurrences in the training data) mark the end of a unit within the text.
+- Prediction: when such a sign occurs line-medially, the mean "initial share" of the next sign (the proportion of that sign's occurrences that are line-initial) is higher than the mean for signs following other medial signs.
+- Control: permutation test with random sign labels (1,000 permutations). Significance level 0.01.
+- Replication: tested independently in KP1979 with the same definition.
+- Refutation condition: if p ≥ 0.01 in either corpus, H3.1 is recorded as not supported.
 
-**H3.2 (분포 기반 기호 범주의 재현성).** 기호를 앞뒤 이웃 기호의 분포로 표현해 군집으로 나누면, 그 군집 구조는 전사 체계와 무관한 실제 구조를 반영한다.
-- 예측: ICIT에서 얻은 군집을 대응표로 KP 기호에 옮겼을 때, KP에서 독립적으로 얻은 군집과의 일치도(조정 랜드 지수, ARI)가 군집 표지를 무작위로 섞은 경우보다 높다.
-- 대조: 표지 순열 1,000회. 유의 수준 0.01.
-- 반증 조건: p ≥ 0.01이거나 ARI < 0.1이면 지지되지 않은 것으로 기록한다.
+**H3.2 (reproducibility of distributional sign classes).** If signs are represented by the distribution of their neighbouring signs and clustered, the cluster structure reflects real structure independent of the transcription system.
+- Prediction: when the clusters obtained from ICIT are transferred to KP signs through the concordance, their agreement (adjusted Rand index, ARI) with clusters obtained independently from KP is higher than with randomly permuted cluster labels.
+- Control: 1,000 label permutations. Significance level 0.01.
+- Refutation condition: if p ≥ 0.01 or ARI < 0.1, recorded as not supported.
 
-### 3단계 결과: H3.1, H3.2 (같은 날)
+### Phase 3 results: H3.1, H3.2 (same day)
 
-스크립트: `scripts/phase3_structure.py`, 결과: `results/phase3_structure.json`. 학습 자료 줄 수: ICIT 1,663, KP1979 1,692.
+Script: `scripts/phase3_structure.py`; results: `results/phase3_structure.json`. Training lines: ICIT 1,663, KP1979 1,692.
 
-**H3.1: 지지되지 않음 (두 코퍼스 모두).**
+**H3.1: not supported (in both corpora).**
 
-| 코퍼스 | 끝 기호 집합 | 중간 출현 | 관측 차이 | 순열 평균 (표준편차) | p |
+| Corpus | Terminal sign set | Medial occurrences | Observed difference | Permutation mean (SD) | p |
 |---|---|---:|---:|---:|---:|
 | ICIT | 740, 400, 520, 090, 151, 407, 527, 156 | 295 | −0.044 | 0.003 (0.040) | 0.91 |
 | KP1979 | 324, 98, 217, 326, 1, 13, 4, 301 | 229 | −0.011 | −0.003 (0.035) | 0.54 |
 
-끝 기호가 줄 중간에 올 때, 그 다음 기호는 새 단위의 첫머리 기호가 아니었다. 다음 기호로 가장 많이 온 것은 오히려 다른 끝 기호였다 (ICIT: 740 다음에 400이 86회, 090이 61회; KP1979: 98이 64회, 13이 31회). 대응표상 ICIT 400은 KP 98에 대응하므로, 이 경향은 두 코퍼스에서 같다.
+When a terminal sign occurs line-medially, the next sign is not an initial sign of a new unit. The most frequent next sign is in fact another terminal sign (ICIT: 400 follows 740 86 times, 090 61 times; KP1979: 98 64 times, 13 31 times). In the concordance, ICIT 400 corresponds to KP 98, so the tendency is the same in both corpora.
 
-해석: 끝자리 선호 기호들은 단어 경계 표시라기보다, 줄 끝에서 둘 이상이 이어 붙는 하나의 "끝 기호 묶음"을 이루는 것으로 보인다. 이는 새로운 가설(H3.3)로 다시 등록해 보류 자료에서 검정해야 하며, 지금은 사후 관찰일 뿐이다.
+Interpretation: the signs preferring final position appear to form a single "terminal cluster" in which two or more of them are joined at line end, rather than marking word boundaries. This must be registered as a new hypothesis (H3.3) and tested on held-out data; for now it is only a post hoc observation.
 
-**H3.2: 부분적으로 지지됨 (군집 수 k를 사전에 정하지 않은 문제 있음).**
+**H3.2: partly supported (the number of clusters k was not fixed in advance).**
 
-대응표로 연결된 공통 기호 58개에 대해 두 코퍼스의 군집을 비교했다 (순열 1,000회; 가능한 최소 p는 0.001).
+The clusters of the two corpora were compared on the 58 shared signs linked by the concordance (1,000 permutations; the smallest attainable p is 0.001).
 
-| k | ARI | 순열 평균 | p |
+| k | ARI | Permutation mean | p |
 |---:|---:|---:|---:|
 | 5 | 0.102 | 0.001 | 0.002 |
 | 6 | 0.053 | 0.001 | 0.033 |
@@ -96,73 +96,76 @@ Koskenniemi & Parpola (1979) 판독본은 첫 토큰이 오른쪽 끝 기호라�
 | 10 | 0.119 | 0.000 | 0.001 |
 | 12 | 0.128 | 0.000 | 0.002 |
 
-사전 등록 때 k를 정하지 않았으므로 여섯 값을 모두 보고한다. 여섯 번의 비교를 보정하면(본페로니, 0.01/6 ≈ 0.0017) k = 8, 10만 기준을 통과하고, ARI ≥ 0.1 조건까지 보면 k = 8, 10, 12 중 k = 8, 10이 남는다. 분포 기반 범주가 두 전사 체계에서 우연 이상으로 일치한다는 점은 대부분의 k에서 성립하지만, 일치 정도는 낮거나 중간 수준이다. 결론: 기호 범주에 실제 구조가 있다는 약한 증거. L1 기준을 충족했다고 보기에는 아직 이르다.
+Because k was not fixed at pre-registration, all six values are reported. With a correction for six comparisons (Bonferroni, 0.01/6 ≈ 0.0017), only k = 8 and 10 pass; the additional condition ARI ≥ 0.1 is also met by both. For most values of k, the distributional classes agree between the two transcription systems more than by chance, but the agreement is low to moderate. Conclusion: weak evidence that the sign classes have real structure. It is too early to say that the L1 criteria are met.
 
-### 참고문헌
+### Bibliography
 
-`docs/BIBLIOGRAPHY.md` 작성: 검증 62개 항목, 미검증 5개 항목. 확인 과정에서 바로잡은 사항:
-- Luo 외 (2021, TACL)의 저자는 Luo, Hartmann, Santus, Barzilay, Cao이다.
-- ICIT 데이터베이스와 관련된 2015년 단행본은 Wells, *The Archaeology and Epigraphy of Indus Writing* (Archaeopress)이다.
-- Fuls, *Catalog of Indus Signs* (2023)와 *Corpus of Indus Inscriptions* (2022)가 있다.
+Wrote `docs/BIBLIOGRAPHY.md`: 62 verified entries, 5 unverified. Corrections made during verification:
+- The authors of Luo et al. (2021, TACL) are Luo, Hartmann, Santus, Barzilay and Cao.
+- The 2015 monograph associated with the ICIT database is Wells, *The Archaeology and Epigraphy of Indus Writing* (Archaeopress).
+- Fuls, *Catalog of Indus Signs* (2023) and *Corpus of Indus Inscriptions* (2022) exist.
 
-### 다음 할 일
+### Next steps
 
-1. H3.3 사전 등록: 끝 기호 묶음의 내부 순서 규칙 (예: 740 다음 400 순서가 고정되어 있는가).
-2. 선행 주장 목록 `docs/CLAIMS_REGISTER.md` 작성.
-3. 수 체계 후보 분석: 같은 문맥에서 서로 바꿔 쓰이는 기호 계열 탐지.
-4. 4단계: 비언어 기호 체계 대조 자료 확보 (참고문헌 C·D절).
+1. Pre-register H3.3: internal order of the terminal cluster (for example, whether the order 740 then 400 is fixed).
+2. Write the register of earlier claims, `docs/CLAIMS_REGISTER.md`.
+3. Numeral candidates: detect series of signs that substitute for one another in the same context.
+4. Phase 4: obtain control data from non-linguistic symbol systems (bibliography sections C and D).
 
-### H3.3 사전 등록 (같은 날, 보류 자료 열람 전)
+### Pre-registration of H3.3 (same day, before inspecting the held-out data)
 
-**H3.3 (끝 기호 묶음의 고정 순서).** H3.1에서 정의한 끝 기호 집합에 속하는 두 기호가 서로 이웃할 때, 그 순서는 고정되어 있다.
-- 절차: 학습 자료에서 끝 기호 두 개가 이웃한 쌍 {a, b}마다 우세한 순서를 정한다. 보류 자료에서 같은 쌍이 나올 때 그 순서가 학습 자료의 우세 순서와 같은 비율을 센다.
-- 예측: 일치 비율 ≥ 0.8, 이항 검정(귀무 확률 0.5) p < 0.01. 두 코퍼스 모두에서 성립해야 한다.
-- 반증 조건: 어느 한 코퍼스에서 비율 < 0.8 또는 p ≥ 0.01.
+**H3.3 (fixed order within the terminal cluster).** When two signs of the terminal set defined in H3.1 are adjacent, their order is fixed.
+- Procedure: for each pair {a, b} of adjacent terminal signs in the training data, determine the dominant order. In the held-out data, count the proportion of occurrences of the same pair that follow the dominant training order.
+- Prediction: agreement ≥ 0.8, binomial test (null probability 0.5) p < 0.01, in both corpora.
+- Refutation condition: agreement < 0.8 or p ≥ 0.01 in either corpus.
 
-### H3.3 결과: 지지됨 (보류 자료, 두 코퍼스)
+### H3.3 result: supported (held-out data, both corpora)
 
-스크립트: `scripts/phase3_h33_heldout.py`, 결과: `results/phase3_h33_heldout.json`.
+Script: `scripts/phase3_h33_heldout.py`; results: `results/phase3_h33_heldout.json`.
 
-| 코퍼스 | 보류 자료 쌍 | 학습 우세 순서와 일치 | 비율 | 이항 p |
+| Corpus | Held-out pairs | Agreeing with dominant training order | Proportion | Binomial p |
 |---|---:|---:|---:|---:|
 | ICIT | 38 | 37 | 0.97 | 1.4 × 10⁻¹⁰ |
 | KP1979 | 34 | 31 | 0.91 | 3.8 × 10⁻⁷ |
 
-학습 자료의 주요 순서: ICIT 740 > 400 (65회), 740 > 090 (62회); KP1979 324 > 13 (27회), 324 > 98 (23회). 대응표에서 ICIT 090 ↔ KP 13, ICIT 400 ↔ KP 98, ICIT 740 ↔ KP 324/325이므로, 두 코퍼스는 같은 순서 규칙을 보인다. 읽는 순서로 보면 740이 먼저 오고 400 또는 090이 그 뒤에 와서 줄을 끝낸다.
+Main orders in the training data: ICIT 740 > 400 (65 times), 740 > 090 (62 times); KP1979 324 > 13 (27 times), 324 > 98 (23 times). In the concordance ICIT 090 ↔ KP 13, ICIT 400 ↔ KP 98 and ICIT 740 ↔ KP 324/325, so the two corpora show the same ordering rule. In reading order, 740 comes first, followed by 400 or 090, which ends the line.
 
-판정: H3.3은 사전 등록 기준을 충족했다. 다만 다음 제한을 함께 기록한다.
-- 두 코퍼스는 대체로 같은 유물을 전사한 것이므로, 두 코퍼스에서의 재현은 독립 표본이 아니라 독립 전사에서의 재현이다.
-- 일치한 쌍의 대부분은 740 > 400, 740 > 090 두 쌍이다. 즉 이 결과는 "끝 기호 일반"의 규칙이라기보다 몇 개 기호의 고정된 배열이라는 뜻에 가깝다.
-- 고정된 순서는 언어의 형태소 순서(예: 어간 뒤 접미사 순서)와도, 비언어적 표기 관습(예: 직함·단위 표시의 고정 배열)과도 양립한다. 이 결과만으로 둘을 구별할 수 없다.
+Verdict: H3.3 meets its pre-registered criteria. The following limitations are recorded with it.
+- The two corpora largely transcribe the same objects, so replication across them is replication across independent transcriptions, not across independent samples.
+- Most agreeing pairs are the two pairs 740 > 400 and 740 > 090. The result is therefore closer to a fixed arrangement of a few signs than to a rule for "terminal signs in general".
+- A fixed order is compatible both with the morpheme order of a language (for example the order of suffixes after a stem) and with a non-linguistic notational convention (for example a fixed arrangement of titles or unit markers). This result alone cannot distinguish the two.
 
-L1(구조적 부분 해독) 기준에 비추면, H3.3은 "두 전사에서 재현되고 대조 모형보다 유의한 구조적 결과"의 첫 사례이다. 단 위의 독립성 제한 때문에, 출토지가 다른 자료(예: 하라파와 모헨조다로)를 나누어 다시 검정한 뒤에 L1 충족으로 기록한다.
+Measured against the L1 criteria of the ROADMAP, H3.3 is the first case of "a structural result reproduced in two transcriptions and significant against a control model". Because of the independence limitation above, it will be recorded as meeting L1 only after a re-test with the data divided by find site (for example Harappa and Mohenjo-daro).
 
-### 다음 할 일 (갱신)
+### Next steps (updated)
 
-1. H3.3을 출토지별(하라파/모헨조다로/기타)로 나누어 재검정 (ICIT 메타데이터 사용).
-2. 끝 기호 묶음이 유물 종류(인장, 태블릿, 토기)에 따라 다른지 검정.
-3. 선행 주장 목록 `docs/CLAIMS_REGISTER.md` 작성.
-4. 수 체계 후보 분석.
+1. Re-test H3.3 by find site (Harappa / Mohenjo-daro / other), using the ICIT metadata.
+2. Test whether the terminal cluster differs by object type (seal, tablet, pottery).
+3. Write the register of earlier claims, `docs/CLAIMS_REGISTER.md`.
+4. Numeral candidate analysis.
 
-### H3.4 사전 등록 (같은 날)
+### Pre-registration of H3.4 (same day)
 
-**H3.4 (출토지 간 재현).** H3.3의 순서 규칙은 출토지가 달라도 같다.
-- 절차: ICIT 자료 전체(학습+보류)를 쓰되, 텍스트 문자열 단위로 출토지를 정한다(같은 문자열이 여러 출토지에서 나오면 제외). 하라파 자료에서 정한 우세 순서로 모헨조다로 자료를 예측하고, 반대 방향도 한다.
-- 예측: 두 방향 모두 일치 비율 ≥ 0.8, 이항 p < 0.01.
+**H3.4 (replication across find sites).** The ordering rule of H3.3 is the same at different find sites.
+- Procedure: use all ICIT data (training and held-out), assigning a find site to each text string (strings found at more than one site are excluded). Predict the Mohenjo-daro data from the dominant orders of the Harappa data, and the reverse.
+- Prediction: agreement ≥ 0.8 and binomial p < 0.01 in both directions.
 
-### H3.4 결과: 지지됨
+### H3.4 result: supported
 
-스크립트: `scripts/phase3_h34_sites.py`, 결과: `results/phase3_h34_sites.json`.
+Script: `scripts/phase3_h34_sites.py`; results: `results/phase3_h34_sites.json`.
 
-| 학습 출토지 → 예측 출토지 | 쌍 | 일치 | 비율 | 이항 p |
+| Training site → predicted site | Pairs | Agreeing | Proportion | Binomial p |
 |---|---:|---:|---:|---:|
-| 하라파 → 모헨조다로 | 69 | 63 | 0.91 | 2.2 × 10⁻¹³ |
-| 모헨조다로 → 하라파 | 98 | 96 | 0.98 | 1.5 × 10⁻²⁶ |
-| (사전 등록 외 추가) 하라파+모헨조다로 → 기타 출토지 | 21 | 17 | 0.81 | 0.0036 |
+| Harappa → Mohenjo-daro | 69 | 63 | 0.91 | 2.2 × 10⁻¹³ |
+| Mohenjo-daro → Harappa | 98 | 96 | 0.98 | 1.5 × 10⁻²⁶ |
+| (additional, not pre-registered) Harappa + Mohenjo-daro → other sites | 21 | 17 | 0.81 | 0.0036 |
 
-판정: H3.4는 사전 등록 기준을 충족했다. 두 대도시 출토 자료에서 끝 기호 묶음의 순서 규칙이 같다.
+Verdict: H3.4 meets its pre-registered criteria. The ordering rule of the terminal cluster is the same in material from the two large cities.
 
-### L1 판정 (2026-11-25)
+### L1 verdict (2026-11-25)
 
-끝 기호 묶음의 고정 순서(H3.3, H3.4)는 ROADMAP의 L1 조건 (a) 두 코퍼스에서 재현, (b) 대조 모형 대비 p < 0.01을 충족한다. 따라서 **L1(구조적 부분 해독)의 첫 결과**로 기록한다. 범위는 좁다: ICIT 740, 400, 090 (KP 324/325, 98, 13) 세 기호의 배열 규칙이며, 이 기호들의 의미나 음가에 대해서는 아무것도 말하지 않는다.
+The fixed order of the terminal cluster (H3.3, H3.4) meets the L1 conditions of the ROADMAP: (a) reproduced in both corpora and (b) p < 0.01 against a control model. It is therefore recorded as **the first L1 (structural partial decipherment) result**. Its scope is narrow: it is an ordering rule for three signs, ICIT 740, 400 and 090 (KP 324/325, 98 and 13), and says nothing about their meaning or sound values.
 
+### Language of the repository (same day)
+
+From this point all repository content (documents, code comments, generated reports and commit messages) is written in English. Earlier Korean documents were translated; their content was not changed.

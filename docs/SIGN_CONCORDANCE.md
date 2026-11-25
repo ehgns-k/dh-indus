@@ -1,25 +1,25 @@
-# 기호 번호 대응표 (ICIT 계열 ↔ KP1979)
+# Sign-number concordance (ICIT-style ↔ KP1979)
 
-두 코퍼스는 서로 다른 기호 번호 체계를 쓴다. 두 자료가 상당 부분 같은 유물을 전사했다는 점을 이용하여, 같은 텍스트를 서로 찾아 정렬하고 그 정렬에서 기호 대응을 추정했다.
+The two corpora use different sign-numbering systems. Since both sources largely transcribe the same objects, identical texts were located in both and aligned, and the sign correspondences were estimated from that alignment.
 
-- 스크립트: `scripts/phase1_concordance.py`
-- 전체 대응표: `results/phase1_concordance.tsv`
-- 요약: `results/phase1_concordance.md`
+- Script: `scripts/phase1_concordance.py`
+- Full table: `results/phase1_concordance.tsv`
+- Summary: `results/phase1_concordance.md`
 
-## 방법
+## Method
 
-1. 같은 길이의 줄끼리 순서대로 위치를 맞추고, 각 ICIT 줄이 어떤 KP 줄과 같은 텍스트인지(또는 대응 텍스트가 없는지)를 잠재 변수로 둔 EM 추정으로 기호 대응 확률표를 얻는다.
-2. 이 표를 초기값으로, 위치 일치율이 기준(0.75 → 0.67) 이상이고 최고 점수 상대가 하나뿐인 줄 쌍만 같은 텍스트로 보고 대응을 다시 계산한다.
+1. Lines of equal length are aligned position by position. An EM procedure, in which the KP line corresponding to each ICIT line (or the absence of one) is a latent variable, yields a table of sign-correspondence probabilities.
+2. Starting from this table, only line pairs whose positional agreement is above a threshold (0.75, lowered to 0.67) and that have a unique best partner are treated as the same text, and the correspondences are recomputed.
 
-처음에는 빈도와 위치 분포만으로 상위 60개 기호를 짝지은 뒤 같은 절차를 돌렸으나, 정렬된 줄 쌍이 25개에 그쳐 폐기했다.
+A first attempt paired the 60 most frequent signs by frequency and positional distribution alone and then ran the same procedure. It aligned only 25 line pairs and was discarded.
 
-## 결과 (2026-11-25)
+## Results (2026-11-25)
 
-- 정렬된 줄 쌍 929개, 그중 모든 위치가 일치하는 쌍 594개.
-- 지지 3회 이상, 순도 0.8 이상의 대응: 167개 ICIT 기호.
-- 대응이 일대일이 아닌 경우가 있다. 예: ICIT 740은 KP 325(352회)와 KP 324(131회)에 나뉘어 대응한다. 반대로 ICIT 390, 405, 406, 407은 모두 KP 86에 대응한다. 한쪽 체계가 나눈 것을 다른 쪽이 합친 경우로, 이체자 판정이 두 기호 목록 사이에서 다르다는 뜻이다. 이 목록은 3단계의 이체자 병합 검토 대상이다.
+- 929 aligned line pairs, of which 594 agree at every position.
+- Correspondences with support ≥ 3 and purity ≥ 0.8: 167 ICIT signs.
+- Some correspondences are not one-to-one. For example, ICIT 740 corresponds to both KP 325 (352 times) and KP 324 (131 times). Conversely, ICIT 390, 405, 406 and 407 all correspond to KP 86. In such cases one system splits what the other merges, which means the two sign lists draw allograph boundaries differently. These cases are candidates for the allograph review in phase 3.
 
-## 한계
+## Limitations
 
-- 길이가 다른 판독(한쪽이 기호 하나를 더 읽거나 덜 읽은 경우)은 정렬하지 않았다.
-- 드문 기호는 지지 횟수가 적어 대응이 불확실하다.
+- Readings of different length (where one source reads one sign more or fewer) were not aligned.
+- Rare signs have little support, so their correspondences are uncertain.

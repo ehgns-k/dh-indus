@@ -1,11 +1,11 @@
-# Phase 2 기초 통계 결과
+# Phase 2 baseline statistics
 
-자동 생성 파일. 생성 스크립트: `scripts/phase2_baseline.py`.
-분석 단위: 완전한(양 끝이 보존되고 손상 기호가 없는) 줄, 방향이 기록된 것, 동일 문자열은 1회만 계산.
+Generated file. Script: `scripts/phase2_baseline.py`.
+Unit of analysis: complete lines (both ends preserved, no damaged sign) with recorded direction; identical strings counted once.
 
-## 코퍼스 `icit`
+## Corpus `icit`
 
-| 항목 | 값 |
+| Item | Value |
 |---|---:|
 | lines_total | 5805 |
 | lines_complete_known_direction | 3236 |
@@ -25,9 +25,9 @@
 | cond_entropy_len3plus | 3.670 |
 | cond_entropy_len3plus_shuffle_mean | 4.738 |
 
-### 위치 분포 (빈도 상위 40 기호)
+### Positional distribution (40 most frequent signs)
 
-| 기호 | n | 첫머리 | 중간 | 끝 | 단독 |
+| Sign | n | Initial | Medial | Final | Solo |
 |---|---:|---:|---:|---:|---:|
 | 740 | 986 | 0.01 | 0.27 | 0.72 | 0.00 |
 | 002 | 506 | 0.02 | 0.95 | 0.03 | 0.00 |
@@ -70,9 +70,9 @@
 | 004 | 57 | 0.33 | 0.65 | 0.02 | 0.00 |
 | 700 | 56 | 0.21 | 0.27 | 0.52 | 0.00 |
 
-### 여러 줄에 반복되는 n-gram (서로 다른 줄 수 기준 상위 60)
+### n-grams recurring across lines (top 60 by number of distinct lines)
 
-| n-gram (읽는 순서) | 길이 | 출현 | 서로 다른 줄 |
+| n-gram (reading order) | Length | Occurrences | Distinct lines |
 |---|---:|---:|---:|
 | 861 002 | 2 | 122 | 122 |
 | 817 002 | 2 | 94 | 94 |
@@ -135,9 +135,9 @@
 | 002 031 | 2 | 15 | 15 |
 | 002 004 | 2 | 15 | 15 |
 
-## 코퍼스 `kp1979`
+## Corpus `kp1979`
 
-| 항목 | 값 |
+| Item | Value |
 |---|---:|
 | lines_total | 4698 |
 | lines_complete_known_direction | 3375 |
@@ -157,9 +157,9 @@
 | cond_entropy_len3plus | 3.778 |
 | cond_entropy_len3plus_shuffle_mean | 4.890 |
 
-### 위치 분포 (빈도 상위 40 기호)
+### Positional distribution (40 most frequent signs)
 
-| 기호 | n | 첫머리 | 중간 | 끝 | 단독 |
+| Sign | n | Initial | Medial | Final | Solo |
 |---|---:|---:|---:|---:|---:|
 | 325 | 623 | 0.03 | 0.42 | 0.54 | 0.00 |
 | 119 | 485 | 0.01 | 0.96 | 0.03 | 0.00 |
@@ -202,9 +202,9 @@
 | 270 | 63 | 0.33 | 0.67 | 0.00 | 0.00 |
 | 154 | 63 | 0.21 | 0.71 | 0.08 | 0.00 |
 
-### 여러 줄에 반복되는 n-gram (서로 다른 줄 수 기준 상위 60)
+### n-grams recurring across lines (top 60 by number of distinct lines)
 
-| n-gram (읽는 순서) | 길이 | 출현 | 서로 다른 줄 |
+| n-gram (reading order) | Length | Occurrences | Distinct lines |
 |---|---:|---:|---:|
 | 383 119 | 2 | 209 | 209 |
 | 276 86 | 2 | 77 | 77 |

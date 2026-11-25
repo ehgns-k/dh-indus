@@ -163,16 +163,16 @@ def main():
     for r in rows:
         if r[2] >= 3 and r[4] >= 0.8:
             inv[r[1]].append(r[0])
-    lines = ["# Phase 1 기호 번호 대응표 (ICIT 계열 ↔ KP1979)", "",
-             "자동 생성 파일. 스크립트: `scripts/phase1_concordance.py`.", "",
-             "## 반복 과정", "", "| 회차 | 일치 기준 | 정렬된 줄 쌍 | 대응 기호 수 | 바뀐 대응 |", "|---:|---:|---:|---:|---:|"]
+    lines = ["# Phase 1 sign-number concordance (ICIT-style ↔ KP1979)", "",
+             "Generated file. Script: `scripts/phase1_concordance.py`.", "",
+             "## Iterations", "", "| Iteration | Agreement threshold | Aligned line pairs | Mapped signs | Changed mappings |", "|---:|---:|---:|---:|---:|"]
     lines += [f"| {a} | {b} | {c} | {d} | {e} |" for a, b, c, d, e in history]
-    lines += ["", f"최종 정렬 줄 쌍: {len(pairs)} (그중 완전 일치 {exact}).",
-              f"정렬에 나타난 ICIT 기호: {len(rows)}; 지지 3회 이상·순도 0.8 이상: {sum(1 for r in rows if r[2] >= 3 and r[4] >= 0.8)}.", "",
-              "## 여러 ICIT 기호가 하나의 KP1979 기호로 대응되는 경우 (이체자 후보)", "",
-              "| KP1979 | ICIT 기호들 |", "|---|---|"]
+    lines += ["", f"Final aligned line pairs: {len(pairs)} (of which exact matches: {exact}).",
+              f"ICIT signs occurring in the alignment: {len(rows)}; with support >= 3 and purity >= 0.8: {sum(1 for r in rows if r[2] >= 3 and r[4] >= 0.8)}.", "",
+              "## Several ICIT signs mapped to one KP1979 sign (allograph candidates)", "",
+              "| KP1979 | ICIT signs |", "|---|---|"]
     lines += [f"| {k} | {', '.join(v)} |" for k, v in sorted(inv.items(), key=lambda kv: -len(kv[1])) if len(v) > 1]
-    lines += ["", "## 대응표 (지지 횟수 상위 80)", "", "| ICIT | KP1979 | 지지 | 정렬 총수 | 순도 | 다른 후보 |", "|---|---|---:|---:|---:|---|"]
+    lines += ["", "## Concordance (top 80 by support)", "", "| ICIT | KP1979 | Support | Aligned total | Purity | Alternatives |", "|---|---|---:|---:|---:|---|"]
     lines += [f"| {r[0]} | {r[1]} | {r[2]} | {r[3]} | {r[4]:.2f} | {r[5]} |" for r in rows[:80]]
     (OUT / "phase1_concordance.md").write_text("\n".join(lines) + "\n")
     print("final pairs", len(pairs), "exact", exact)
