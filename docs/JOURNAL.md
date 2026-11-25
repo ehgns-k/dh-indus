@@ -726,3 +726,25 @@ Main points:
 1. WP B1 (positional template) and B4 (recurring units), evaluated on fresh sets 1 and 2 with rule-preserving controls; gate G1.
 2. WP B3: the 121/144 single-stroke question and the 121 → 001 link.
 3. WP C3: does the count–item construction favour particular object types or materials (site-stratified, held-out)?
+
+---
+
+## 2026-11-25 (day 1, fifth working session): WP B1 and B4, gate G1
+
+Both tests build their description from KP1979 training data only, carry the fresh strings (sets 1 and 2 combined, mapped into KP numbering as in F3) and compare them with rule-preserving controls (`src/indus/controls.py`, KP rules), 1,000 control sets. Fresh data were used before for F1–F3 (different questions); this use is logged in the ledger.
+
+### Pre-registration of B1 (positional template)
+
+Zones from KP training data, for signs with ≥ 10 occurrences: initial zone I if initial share ≥ 0.5; terminal zone T if final share ≥ 0.5; otherwise medial zone M. Template: a line reads I* M* T* (zones never go backwards).
+- Statistic: total number of zone inversions (pairs of zoned signs i < j with zone(i) > zone(j)) over all mapped fresh strings.
+- Control: the same count for rule-preserving control versions of the fresh strings.
+- Prediction: fewer inversions in the real strings than in the controls, p < 0.01.
+
+### Pre-registration of B4 (recurring units)
+
+Units from KP training data: all 2- and 3-sign sequences that occur in at least 5 distinct training lines, excluding the count–item pairs and terminal-cluster pairs already built into the controls.
+- Statistic: number of adjacent sign pairs in the fresh strings that lie inside an occurrence of some unit.
+- Control: the same count for rule-preserving control versions.
+- Prediction: more covered pairs in the real strings than in the controls, p < 0.01.
+
+Gate G1 is passed if B1 or B4 is supported.
