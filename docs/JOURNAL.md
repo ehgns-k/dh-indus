@@ -2557,7 +2557,7 @@ Script: `scripts/batch5g_t2_mohenjodaro_levels.py`; results: `results/batch5g_t2
 
 ### Reproducibility check (R8)
 
-`scripts/run_all.py --skip-heavy` re-ran every analysis up to R7 with no failures and no changed result files. The analyses added later in this session were re-run separately (FACE1–FACE3, SZ1–SZ4, T2), also without changes. With 6–7 analyses per batch script, the repository now holds all analyses of this session in `scripts/run_all.py`.
+`scripts/run_all.py --skip-heavy` re-ran every analysis up to R7 with no failures and no changed result files. The analyses added later in this session were re-run separately (FACE1–FACE3, SZ1–SZ4, T2), also without changes. All analyses of this session are listed in `scripts/run_all.py`.
 
 ### End of the twenty-fourth session
 
