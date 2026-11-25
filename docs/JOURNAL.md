@@ -1241,3 +1241,22 @@ E3 and E3b failed even on known scripts hidden as ciphers of 2,000 lines. Two ex
 - Languages, models, search, measure Δ′ (E3b), bootstrap and decision rule as in E3b.
 - Outcome: for each cipher, whether its true language ranks first with p < 0.01 against every other language at 8,000 lines (the 2,000-line result is E3b).
 - Interpretation fixed in advance: if both ciphers succeed at 8,000 lines, the method has power only above the size of the Indus corpus, and the Indus corpus is too small for it. If either fails at 8,000 lines, the method is recorded as unsuitable for this task at the sizes tested.
+
+### E3c result: no power at 8,000 lines either
+
+Script: `scripts/phase7_e3c_power.py`; results: `results/phase7_e3c_power.json`. (A first run failed before computing anything because the worker processes could not import the helper modules; fixed and re-run.)
+
+| Cipher (8,000 lines) | Sanskrit | Old Tamil | Sumerian | Akkadian | Pseudo | First |
+|---|---:|---:|---:|---:|---:|---|
+| Akkadian OB letters | **0.287** | 0.218 | 0.146 | 0.168 | 0.006 | Sanskrit (wrong) |
+| Sumerian Ur III administrative | **0.189** | 0.184 | 0.081 | 0.105 | 0.004 | Sanskrit (wrong; not clearly ahead of Tamil, p = 0.38) |
+
+With four times as much data the method still ranks Sanskrit first for both known scripts. By the rule fixed in advance, the method is **unsuitable for this task at the sizes tested**; the failure is not a matter of corpus size in the range 2,000–8,000 lines. The Sanskrit model's advantage appears to come from its word list (many long compounds with internal repetition), which any assignment can exploit, independently of the language of the cipher.
+
+### Assessment of the remaining L3 routes (P4e, P4f)
+
+The calibration rule adopted after E2b and E3 requires that a phonetic method be shown to identify the language of a known script hidden as a cipher before its result on the Indus corpus is interpreted.
+- **P4e (rebus-constrained fitting)** needs, for its positive control, a known script whose signs are pictographs with known referents and known readings, in a comparable corpus. The reference corpora available here (proto-cuneiform, proto-Elamite, Sumerian, Akkadian) are transliterated by sign names or readings, not by depicted objects, so a calibrated positive control cannot be built with the data at hand. The identification of Indus pictographs would also rest on my own reading of the sign drawings (for example the fish family), which is not an independent source.
+- **P4f (external names)** needs a list of names that external sources connect with the Indus region, in a form specific enough to test. The sources seen in this project (claims register) give the region name *Meluhha* and a few individuals, not a set of names large enough for a calibrated test.
+
+Conclusion: under the standards of this project, no calibrated route to L3 is available with the data and sources accessible here. This is recorded as the outcome of WP-E. The remaining time is better used to strengthen and extend the L1 and L2 results and to prepare the reports.

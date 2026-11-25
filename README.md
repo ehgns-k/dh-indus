@@ -20,6 +20,7 @@ The Indus script is undeciphered. Results in this repository are labelled with t
 | 2026-11-25 | Test of a published claim | Under the normalisation used by the published Sanskrit reading (claim C33), 29 % of random letter strings of the same composition can also be divided into Sanskrit dictionary words (proposed readings: 84 %), so readability alone is weak evidence for that decipherment (E2) |
 | 2026-11-25 | Test of a published claim | With the same reading freedoms, random (unfitted) sign-value assignments make 84 % of Indus lines readable as Sanskrit dictionary words, the same rate as the published readings, so readability gives no evidence for that decipherment (E2b) |
 | 2026-11-25 | Method test (negative) | Fitting sign-to-sound assignments under sound-sequence models of Sanskrit, Old Tamil, Sumerian and Akkadian cannot identify the language even of known cuneiform texts hidden as ciphers, so no language preference for the Indus inscriptions is claimed (E3, E3b) |
+| 2026-11-25 | Method test (negative) | The phonetic search fails on known scripts even with 8,000 lines, so the failure is not a matter of corpus size; no calibrated route to a phonetic decipherment is available with the accessible data (E3c) |
 
 The full list of tests, including failed ones, is in `docs/JOURNAL.md`.
 

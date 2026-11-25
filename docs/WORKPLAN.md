@@ -123,3 +123,14 @@ Unconstrained phonetic fitting has no power on a corpus of this size (E3, E3b). 
 | P4e | Rebus-constrained fitting | values of pictographic signs restricted, before fitting, to words for the depicted object in each candidate language (from the sign drawings and a fixed word list); calibrated with the same positive-control design |
 | P4f | External names | test whether any recurring Indus unit can be matched to names associated with the Indus region in external (Mesopotamian) sources under a pre-registered rule, with the E2b random-assignment calibration |
 | P4b–P4d | as listed above | E4–E6 are kept but are lower priority, because they share the weakness of E3 |
+
+### Revision after E3c (twelfth working session)
+
+WP-E is closed: no calibrated route to L3 is available with the accessible data (E3, E3b, E3c; assessment of P4e and P4f in the journal). Revised priorities for the remaining time:
+
+| Priority | Task |
+|---|---|
+| Q1 | Extend the functional L2 result: which signs immediately before the closing sign vary with object class; whether the count–item construction differs by object class (site-stratified, discovery on train, confirmation on held-out or fresh data) |
+| Q2 | Sign classes: combine positional zones, concordance families and the C2 associations into one documented sign classification (descriptive), with a reproducibility check across the two transcriptions |
+| Q3 | Review pass (WP-F1) over all supported results: leakage, controls, multiple comparisons |
+| Q4 | Phase reports and the final report |
