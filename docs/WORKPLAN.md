@@ -104,3 +104,12 @@ G1 passed, G2 not met, G3 undecided. The remaining time is ordered by expected v
 | P5 | Phase reports and final report | F | Days 26–30 | – |
 
 Each scheduled session takes the highest unfinished priority.
+
+### Additions to the priority list (eleventh working session)
+
+| Priority | Task | Idea |
+|---|---|---|
+| P4a | E3 calibrated phonetic-assignment search | fit sign-to-sound assignments under each candidate language and compare held-out gains; positive controls with hidden known scripts (running) |
+| P4b | E4 family coherence | if an assignment is right, graphic variants of one sign (for example the fish family KP 48–63, the stroke series) should receive related values; test the fitted E3 assignments for coherence within families against random assignments, as a check independent of the language model |
+| P4c | E5 boundary-aware fitting | use the established structure (terminal cluster, count–item pairs, recurring units) to cut lines into word-like units before fitting, and repeat E3; tests whether structure improves the phonetic signal |
+| P4d | E6 logographic alternative | instead of syllables, assign words (whole lexical items) to frequent signs and test held-out gains, to compare logographic and syllabic readings under the same calibration |
