@@ -1996,3 +1996,11 @@ The scheduled task was revised so that each run completes a batch of at least fo
 - **Usage:** context similarity (1 − Jensen–Shannon divergence of previous/next-sign distributions) on the strict held-out set plus fresh sets 1 and 2, as in G2.
 - **Test:** one-sided Mann–Whitney, mirror pairs vs all other pairs among the same signs, p < 0.01. Fewer than 5 mirror pairs → "insufficient data".
 - **Claim C3** predicts that mirror pairs are allographs, i.e. used alike.
+
+### G3 result: insufficient data (two mirror pairs)
+
+Script: `scripts/phase8_g3_mirror_pairs.py`; results: `results/phase8_g3_mirror_pairs.json`.
+
+Among 103 frequent signs, only two pairs meet the mirror criterion: 920/921 (mirror similarity 0.997, direct 0.14) and 900/921 (0.92 vs 0.08). With fewer than five pairs the test is **insufficient data**.
+
+Descriptive (all unique lines): 920 (103 occurrences) is mostly line-initial (0.65) and followed by 060 in 52 cases; its mirror image 921 (13 occurrences) is followed by 070 (5), 072, 690. The one clear mirror pair is therefore not used like an allograph pair, which does not fit claim C3 for this pair; the evidence is too thin for a general verdict.

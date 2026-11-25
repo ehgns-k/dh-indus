@@ -12,7 +12,7 @@ Test labels refer to entries in `docs/JOURNAL.md`; figures for descriptive check
 |---|---|---|---|
 | C1 | Right-to-left direction (crowding of signs) | consistent | Layout not tested; order learned from KP1979 predicts later finds only right to left (F3, F3b) |
 | C2 | Direction from initial/final asymmetry | supported | Final-sign distribution far more concentrated than initial (4.8 vs 7.1 bits, ICIT); direction tests F3, F3b |
-| C3 | Multi-directional writing; mirrored signs as allographs | not tested | Mirror pairs not identified |
+| C3 | Multi-directional writing; mirrored signs as allographs | undecided | Automatic mirror detection on the sign images finds only two pairs among frequent signs (G3); the clearest, 920/921, is not used like an allograph pair (different following signs) |
 | C4 | Sign inventory 417–694 | consistent | Estimated totals 511 (KP1979) and 830 (ICIT); the figure depends on allograph decisions (D3, L3a, L3b) |
 | C5 | About 400 graphemes, a quarter singletons | consistent | KP1979: 100 of 367 types occur once (27 %) |
 | C6 | About five signs per inscription; longest 14 and 26 | consistent | Mean line length 4.5–4.6; longest line 13–14; longest object 17 (ICIT) and 28 (KP1979) signs |

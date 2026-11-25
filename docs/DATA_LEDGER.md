@@ -70,6 +70,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | CT16 | ICIT, KP | strict held-out (+ fresh for ICIT) | not supported (opposite direction) | claim C16 |
 | CT17 | ICIT, KP | strict held-out | supported (p = 0.001 both) | claim C17 |
 | CT10 | ICIT | all unique strings | supported | claim C10 |
+| G3 | ICIT + glyph images | strict held-out + fresh | insufficient data (2 mirror pairs) | claim C3 |
 
 Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 
