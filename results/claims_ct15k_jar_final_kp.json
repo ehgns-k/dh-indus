@@ -1,0 +1,15 @@
+{
+ "table_[[final_seal, final_tab],[nonfinal_seal, nonfinal_tab]]": [
+  [
+   67,
+   1
+  ],
+  [
+   27,
+   2
+  ]
+ ],
+ "odds_ratio": 4.962962962962963,
+ "p_value": 0.21203201302224636,
+ "pass": false
+}

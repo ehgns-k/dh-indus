@@ -26,7 +26,7 @@ The project set out to decipher the Indus script as far as verifiable evidence a
 
 ### L2 — semantic or functional categories (achieved only in narrow, functional scope)
 
-- **Confirmed (narrow, functional):** the jar sign 740 closes seal texts more often than tablet texts, in every site stratum, in a single pre-registered test on data not used for this question (CT15; odds ratio 4.3, p = 0.0022). What the closing sign means (a genitive, a title, a classifier) is not established. The result passes its own threshold but would not survive a family-wise correction over the eight questions decided on the strict held-out data (0.01/8), so it is not beyond doubt.
+- **Confirmed (narrow, functional):** the jar sign 740 closes seal texts more often than tablet texts, in every site stratum, in a single pre-registered test on data not used for this question (CT15; odds ratio 4.3, p = 0.0022). What the closing sign means (a genitive, a title, a classifier) is not established. The result passes its own threshold but would not survive a family-wise correction over the eight questions decided on the strict held-out data (0.01/8), so it is not beyond doubt. A replication in KP1979 points the same way but has almost no power (three tablet texts; CT15k, p = 0.21).
 
 Further candidates:
 

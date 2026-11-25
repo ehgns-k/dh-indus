@@ -2111,3 +2111,7 @@ None of the four testable pairs is distinct (threshold 0.0017). This is consiste
 ### Pre-registration of CT15k (replication of CT15 in KP1979; before running)
 
 KP1979 strict held-out strings have not been used for this question (R1 used them for code 11 × final 98). Among KP strict held-out strings that contain the jar sign (324 or 325) and carry one object code, the share with the jar sign in final position is higher for seal codes {11, 23} than for tablet codes {62, 67, 72, 75} (codes identified in C2k). One-sided Fisher exact test (KP has no decoded site field), p < 0.01.
+
+### CT15k result: not supported (underpowered; same direction)
+
+Script: `scripts/claims_ct15k_jar_final_kp.py`; results: `results/claims_ct15k_jar_final_kp.json`. KP strict held-out strings with the jar sign: seals 67 final / 27 not final; tablets 1 / 2. Odds ratio 5.0, one-sided p = 0.21. The direction agrees with CT15, but only three tablet texts with the jar sign remain in the KP strict held-out set, so the replication has almost no power. **CT15k is not supported**; the narrow functional L2 result rests on CT15 alone, with the family-wise caveat noted there.
