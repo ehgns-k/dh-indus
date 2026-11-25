@@ -44,6 +44,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | C3 | ICIT | discovery train, confirmation held-out | 1 of 5 confirmed (TAB:I short) | 15th held-out question; not counted as L2 |
 | R1 | ICIT, KP | strict held-out (no near-duplicates) | L1 results pass; C2/C2k fail strict thresholds | review; L2 downgraded to candidate |
 | Q2a | ICIT, KP | train (each) | supported (zone agreement 0.91) | reproducibility of the descriptive classification |
+| E3d | ICIT strict held-out + two ciphers | as E3b | method has no power | equalised running-text models; Indus row not interpreted |
 
 Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 

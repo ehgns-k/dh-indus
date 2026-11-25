@@ -22,6 +22,7 @@ The Indus script is undeciphered. Results in this repository are labelled with t
 | 2026-11-25 | Method test (negative) | Fitting sign-to-sound assignments under sound-sequence models of Sanskrit, Old Tamil, Sumerian and Akkadian cannot identify the language even of known cuneiform texts hidden as ciphers, so no language preference for the Indus inscriptions is claimed (E3, E3b) |
 | 2026-11-25 | Method test (negative) | The phonetic search fails on known scripts even with 8,000 lines, so the failure is not a matter of corpus size; no calibrated route to a phonetic decipherment is available with the accessible data (E3c) |
 | 2026-11-25 | Review | All L1 held-out results pass again on a strict held-out set without near-duplicate texts (R1) |
+| 2026-11-25 | Method test (negative) | With equal amounts of running text for Sanskrit (Ṛgveda), Old Tamil, Sumerian and Akkadian, the phonetic search still cannot identify the language of known texts hidden as ciphers; the Indus ranking is therefore not interpreted (E3d) |
 
 The full list of tests, including failed ones, is in `docs/JOURNAL.md`.
 

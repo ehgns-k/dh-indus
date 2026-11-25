@@ -1363,3 +1363,19 @@ Script: `scripts/phase3_q2_sign_classes.py`; results: `results/phase3_q2a_zone_a
 For 58 one-to-one linked signs, the independently computed zones agree in 53 cases (0.91); permutation mean 0.64 (SD 0.04), p = 0.0001. All five terminal-zone and all five initial-zone signs of the linked set agree; the five disagreements are between the medial zone and one of the others. The positional classification is a property of the signs, not of a particular transcription.
 
 `docs/SIGN_CLASSES.md` lists the 80 ICIT signs with at least 20 occurrences, with their KP1979 equivalent, zones in both transcriptions, positional shares and the roles established by the tests of this project (terminal set, stroke counts, count–item targets, fish-shaped family, C2 candidate associations).
+
+### E3d result: no power with equalised models either
+
+Script: `scripts/phase7_e3d_equalised.py`; results: `results/phase7_e3d_equalised.json`.
+
+| Corpus | Sanskrit (Ṛgveda) | Old Tamil | Sumerian | Akkadian | Pseudo | First (p vs second) |
+|---|---:|---:|---:|---:|---:|---|
+| Cipher: Akkadian OB letters | 0.178 | **0.203** | 0.133 | 0.160 | −0.002 | Tamil (p = 0.25 vs Sanskrit) — wrong |
+| Cipher: Sumerian Ur III admin. | **0.184** | 0.183 | 0.108 | 0.139 | 0.010 | Sanskrit (p = 0.50 vs Tamil) — wrong |
+| Indus (strict held-out) | 0.113 | **0.176** | 0.103 | 0.092 | −0.022 | Tamil (p = 0.07 vs Sumerian) |
+
+With equal amounts of running text for every model, the large gaps between languages seen in E3–E3c disappear, which confirms that those gaps came from the models. But the positive controls still fail: neither cipher ranks its true language first, and no language is clearly ahead for either cipher. By decision rule 1 the method has **no power**, and the Indus row is **not interpreted**: Old Tamil ranks first for the Indus corpus, but it also ranks first for the Akkadian cipher, and it is not clearly ahead (p = 0.07). This row must not be cited as support for a Dravidian reading.
+
+### Conclusion on phonetic fitting (E3–E3d)
+
+Four variants (raw gain; gain corrected by reordered lines; 8,000-line ciphers; equalised running-text models) all fail to identify the language of known cuneiform texts hidden as ciphers. The only stable result across them is that every natural-language model gains from the real sign order while a pseudo-language does not. Phonetic fitting by sound-sequence models is closed as a route in this project.
