@@ -791,3 +791,19 @@ Script: `scripts/phase5_h51_sign119.py`; results: `results/phase5_h51_sign119.js
 | ICIT (002) | 8 / 92 | 7 / 156 | 0.08 vs 0.04 | 1.9 | 0.16 |
 
 By the pre-registered rule (both corpora), H5.1 is not supported. The two transcriptions disagree strongly, which points to a transcription question rather than a simple absence of the effect: ICIT 002 is more frequent than KP 119 (855 vs 704 occurrences in all lines), and the concordance link 002 → 119 may merge or split signs differently (as found for 121 → 001). Before the construction "119 + count + item" can be examined further, the correspondence of KP 119, 121, 122 and ICIT 001, 002 must be checked line by line in the aligned pairs (WP B3).
+
+### WP B3 finding: the ICIT long-stroke series, and an error in the H5.1 sign set
+
+Aligned line pairs (`results/phase1_concordance.tsv`) show:
+- ICIT 031 ↔ KP 144 (one long stroke; 37 of 50 alignments, the rest mostly KP 121);
+- ICIT 032 ↔ KP 145 (two long strokes; 34 of 45);
+- ICIT 033 ↔ KP 147 (three long strokes; as found before);
+- ICIT 001 ↔ KP 121 (one short stroke; 57 of 64); ICIT 002 ↔ KP 119 (279 of 287).
+
+So the ICIT numbers 031–035 are the long-stroke series. The ICIT stroke set pre-registered for H5.1 included 033 and 035 but omitted 031 and 032, while the KP set included all long strokes. The two sets were not equivalent; this was an error in the pre-registration. The H5.1 verdict stands as recorded (not supported), because changing the set after seeing the result would not be a test. The corrected question is pre-registered below on data not used for it.
+
+The earlier stroke tests H3.8–H3.14 used short strokes only in both corpora (KP 121–130 / ICIT 001–017), plus KP 147 / ICIT 033 in H3.12b, so they are not affected.
+
+### Pre-registration of H5.1b (corrected sets; fresh sets 1 and 2)
+
+Same question and test as amended H5.1, on fresh sets 1 + 2 (ICIT only; KP1979 has no fresh data), with the ICIT stroke set {001, 003, 004, 034, 005, 016, 017, 031, 032, 033, 035}. Pool of comparison signs defined from ICIT training data as in H5.1. Prediction: 002 is followed by a stroke sign more often than the pooled medial signs, one-sided Fisher p < 0.01. If fewer than 10 occurrences of 002 have a following sign in the fresh sets, the result is "insufficient data".
