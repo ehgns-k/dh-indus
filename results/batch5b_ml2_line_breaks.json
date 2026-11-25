@@ -1,0 +1,18 @@
+{
+ "icit": {
+  "objects": 76,
+  "share_real": 0.2565789473684211,
+  "null_mean": 0.2493375,
+  "p_value": 0.42905709429057093,
+  "objects_without_alternative_cut": 6,
+  "verdict": "not supported"
+ },
+ "kp": {
+  "objects": 80,
+  "share_real": 0.15,
+  "null_mean": 0.14571375,
+  "p_value": 0.4607539246075392,
+  "objects_without_alternative_cut": 4,
+  "verdict": "not supported"
+ }
+}

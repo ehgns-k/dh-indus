@@ -2379,3 +2379,21 @@ Scripts: `scripts/review_r7_familywise.py`, `scripts/review_r7b_*.py`; results: 
   - The core L1 results (direction, closing cluster, count–item pairs, template, recurring units, nested structure) survive the strictest correction applied here.
   - CT15, the functional L2 result, survives Holm at α = 0.05 and false-discovery control at q = 0.01, but not Holm at α = 0.01. Its earlier description ("would not survive a family-wise correction over the strict held-out questions at 0.01") stays true for the family-wise error rate at 0.01. It is now stated with these figures.
   - H9.4 class 4 × copper tablets survives even Holm at α = 0.01. It remains an L2 candidate only because the class has no interpretation fixed in advance, not because of multiple testing.
+
+### Pre-registration of ML2 (before running)
+
+**ML2 (line breaks at segment boundaries).** If a two-line inscription is one text (ML1), the scribe may break it at the boundary of a recurring segment, or simply where the space runs out.
+- Data:
+  - ICIT objects of ML1 (two complete lines).
+  - KP objects of ML1k with `lines_code` 2.
+- Text of each object: the two lines joined, with the line that closes put last. If neither or both lines close, the ICIT order (line 0, line 1) is used, and the KP order is reversed (record 1, record 0), following the majority order in ML1/ML1k.
+- Statistic: share of line parts (two per object) that occur as complete single-line texts on other objects (unique complete strings of single-line objects; strings of the object itself are not counted).
+- Control: for each object, the joined text is cut at a random position, other than the real one, that leaves at least one sign on each side; 10,000 draws.
+- Prediction: the real share is higher, one-sided p < 0.01, in each transcription.
+- Insufficient data: fewer than 30 objects.
+
+### Result ML2: not supported
+
+Script: `scripts/batch5b_ml2_line_breaks.py`; results: `results/batch5b_ml2_line_breaks.json`.
+
+ICIT: 25.7 % of line parts occur as complete single-line texts elsewhere, against 24.9 % for random cuts (p = 0.43). KP: 15.0 % against 14.6 % (p = 0.46). Objects whose joined text has only two signs (ICIT 6, KP 4) keep their real cut in the control, because no other cut exists. The line break of a two-line inscription does not fall at segment boundaries more often than a random cut. This fits the description of signs being moved to the second line when the space runs out, rather than a break at a boundary in the text. ML1 and ML2 together: one text per object, broken where the space ends.

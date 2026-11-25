@@ -98,6 +98,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | NUM2 | ICIT, KP | all unique strings | not supported (ICIT 22 vs 11, p = 0.080); KP insufficient data | no fixed long/short order |
 | NUM1 | ICIT, CDLI proto-Elamite and proto-cuneiform | all lines | descriptive: numeral before sign (0.71), unlike proto-Elamite (0.004) | not a test |
 | KF1 | ICIT, KP | all unique strings | supported (75 % vs 7.9 % of control frames) | across transcriptions of the same objects |
+| ML2 | ICIT, KP | objects of ML1, ML1k | not supported (p = 0.43, 0.46) | line breaks not at segment boundaries |
 | R7b | as B1, B4, CT17, CT18 | as original | p = 0.0001 with 10,000 draws | review: resolution only |
 | R7 | – | – | review: 15 of 37 fresh/strict tests survive Holm 0.01; CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
 
