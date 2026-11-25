@@ -769,3 +769,12 @@ Both results hold against controls that already keep the line length, the termin
 ### Observation from the recurring units (not a test)
 
 Units found in the fresh strings include `119 121`, `119 123`, `119 124`, `119 124 86`, `119 126`, `119 127`, `119 144`: the sign KP 119 (ICIT 002) directly before stroke signs. Together with the H3.8 left-context result (stroke signs are most often preceded by the line start or by KP 119), this suggests that 119 introduces a number. The sign 119 is the most frequent non-terminal sign in KP1979 (704 occurrences) and is almost always medial in ICIT (002: medial share 0.95). Its relation to the stroke signs is the next target (WP C3/B3): does 119 precede stroke signs more than matched controls do, and is "119 + count + item" a fixed construction?
+
+### Pre-registration of H5.1 (sign KP 119 / ICIT 002 introduces numbers; held-out data)
+
+**H5.1.** The sign KP 119 (ICIT 002) is followed by a stroke sign more often than signs matched to it for frequency and medial share.
+- Stroke signs: KP short 121–130 and long 144–151; ICIT {001, 003, 004, 034, 005, 016, 017, 033, 035}.
+- Statistic: share of occurrences of 119 / 002 in held-out strings that are followed by a stroke sign.
+- Control: 1,000 draws of one matched sign (training frequency within a factor 2 of 119 / 002, training medial share within 0.15), each evaluated on the held-out strings in the same way; signs in the stroke set are excluded from the pool.
+- Prediction: observed share above the matched draws, p < 0.01, in both corpora.
+- Held-out use: this is the 12th question decided on the held-out split.
