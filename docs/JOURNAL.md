@@ -1742,3 +1742,13 @@ Script: `scripts/phase9_h92_formula_objects.py`; results: `results/phase9_h92_fo
 Primary (all strings): CMH odds ratio 0.91, p = 0.58. Secondary (strict held-out and fresh strings): odds ratio 5.3, p = 0.093 on very few strings. **H9.2 is not supported**; no L2 result.
 
 The tablet share among count-variable texts is the same as among other formulaic texts at each site: tablets dominate at Harappa and seals at Mohenjo-daro for both groups. Formulae with a variable count occur on seals as much as on tablets. This does not fit a simple division in which seals carry names and tablets carry quantities; it is compatible with seals that themselves state quantities or ranks, or with numerals that are part of names or titles (for example the recurrent "7 + 585/575").
+
+### Pre-registration of H9.3 (substitution classes reproduced across transcriptions; before running)
+
+**Idea.** Signs that replace one another in otherwise identical texts fill the same slot of a formula. Grouping signs by these substitutions gives paradigmatic classes. If they are real, classes built independently from the two transcriptions should agree.
+
+- **Graph:** for each corpus separately, nodes are signs, edge weights are the numbers of minimal pairs (H9.1 definition, all unique complete strings) in which two signs substitute for each other; nodes with total weight ≥ 2.
+- **Classes:** Louvain community detection (networkx, resolution 1.0, seed 20261125).
+- **Comparison:** for one-to-one concordance pairs (support ≥ 3, purity ≥ 0.8) present in both graphs, adjusted Rand index between ICIT classes and KP classes.
+- **Null:** 10,000 permutations of the KP class labels over the linked signs.
+- **Prediction:** ARI above the null, p < 0.01.
