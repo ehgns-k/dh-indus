@@ -1,0 +1,13 @@
+{
+ "status": "exploratory, not pre-registered",
+ "n_eligible": 86,
+ "observed_share": 0.03488372093023256,
+ "null_mean": 0.012081395348837209,
+ "null_sd": 0.008461082286961805,
+ "p_value": 0.012987012987012988,
+ "matches": [
+  "233 550 527",
+  "233 798 740",
+  "920 017 575 740 400"
+ ]
+}

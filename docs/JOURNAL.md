@@ -545,3 +545,25 @@ The count–item pairing is the strongest result so far. An L2 claim requires a 
 - Control: for each tablet string, 1,000 random reorderings of its own signs; the control share is the expected suffix-match share of the reordered strings. p is the probability, under the reordering control, of a share at least as large as observed (computed by drawing one reordering per string, 1,000 times).
 - Prediction: observed share above the control, p < 0.01.
 - Also reported (not part of the decision): the share of tablet strings that equal the prefix (beginning) of a seal string, under the same control.
+
+### H4.3 result: supported as pre-registered, but mostly explained by the line-final rule
+
+Scripts: `scripts/phase4_h43_tablet_suffix.py` (pre-registered), `scripts/phase4_h43_strict_control.py` (exploratory); results: `results/phase4_h43_tablet_suffix.json`, `results/phase4_h43_strict_control.json`.
+
+| Test | Tablet strings | Observed share | Control mean (SD) | p |
+|---|---:|---:|---:|---:|
+| Suffix of a seal text, full reordering control (decision) | 102 | 0.059 (6) | 0.018 (0.010) | 0.001 |
+| Prefix of a seal text, full reordering control (reported) | 102 | 0.010 (1) | 0.005 (0.005) | 0.53 |
+| Suffix, control keeping the final sign fixed (exploratory) | 86 | 0.035 (3) | 0.012 (0.008) | 0.013 |
+
+By the pre-registered rule H4.3 is supported: tablet texts match the endings of seal texts more often than reorderings of their own signs do, and they do not match the beginnings. However, four of the six matches end in 740, and the full reordering control moves 740 away from the end, which the line-final rule (H3.3) already forbids. With the final sign held in place the excess remains in the same direction (3 of 86 vs 1.2 % expected) but no longer reaches p < 0.01.
+
+Verdict: the claim that tablet texts reproduce the endings of seal texts is supported only weakly. The pre-registered control was too lenient, because it did not respect an ordering rule established earlier. This is recorded as a lesson for later designs: controls must preserve every structural rule already established, so that a new test measures only the new effect.
+
+The three matches that survive the strict control are `233 550 527`, `233 798 740` and `920 017 575 740 400`. The last contains the seven-stroke pairing of H3.12a (017 → 575).
+
+### Next steps
+
+1. Fresh data: look for inscriptions outside both corpora (for example published after 1979 and missing from the ICIT-style source), to serve as a new test set, since the held-out set has been used for several questions.
+2. Phase 4 (script typology): compare the corpus with synthetic and non-linguistic baselines, with the caution from the bibliography (D section, Raghavendra 2026) that common statistical measures are not specific to language.
+3. Revisit H3.2 with a pre-fixed number of clusters on a new data split, if fresh data become available.
