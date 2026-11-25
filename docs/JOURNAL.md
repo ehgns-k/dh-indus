@@ -2159,3 +2159,11 @@ Seal legends are almost always individual (their stems rarely repeat), whereas t
 ### CT15s result: insufficient data
 
 Script: `scripts/claims_ct15s_pottery.py`; results: `results/claims_ct15s_pottery.json`. Only 3 stamped-pottery strings contain 740 (all with 740 final); incised pottery: 11 of 12 with 740 final. With fewer than 5 strings in one group the result is "insufficient data". Descriptively, incised pottery inscriptions that contain 740 also end in it, so the closing function of 740 is not confined to seal legends; this tempers the reading of CT15 as specific to seals and is noted in the final report.
+
+### Pre-registration of CT31c (claim C31c: tablets share their non-numeral part with seals; before running)
+
+- **Tablet stems:** distinct stems (text without its final terminal-set run, as in CT28) of ICIT tablet records (`TAB*`) from Harappa, with stroke numerals also removed; stems of length ≥ 2.
+- **Seal stem set:** stems of all seal records (`SEAL*`, all sites), with stroke numerals removed.
+- **Statistic:** share of tablet stems that occur in the seal stem set.
+- **Control:** the same share for rule-preserving reorderings of the tablet stems (`src/indus/controls.py` applied to the stems), 1,000 control sets.
+- **Prediction:** real share above controls, p < 0.01.
