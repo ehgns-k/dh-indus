@@ -40,6 +40,7 @@ docs/BIBLIOGRAPHY.md    verified bibliography
 docs/SIGN_CONCORDANCE.md  sign-number concordance between the two corpora
 docs/SIGN_CLASSES.md    frequent signs with their established roles
 docs/FORMULAE.md        formulae with a variable slot and their fillers
+docs/CLAIMS_EVALUATION.md  verdicts on the 35 published claims of the claims register
 data/sources.tsv        list of raw sources (pinned commit, SHA-256)
 scripts/fetch_data.py   download and verify the raw sources
 src/indus/corpus.py     normalise both corpora into lines in reading order
