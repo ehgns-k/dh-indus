@@ -2554,3 +2554,17 @@ Script: `scripts/batch5g_t2_mohenjodaro_levels.py`; results: `results/batch5g_t2
 - Of 34 signs scanned, none differs between the levels at p < 0.01 in the discovery set, so there are no candidates.
 - Descriptive: legends ending in 740 make up 36 % of seals in the Intermediate levels and 42 % in the Late levels.
 - No change of sign use between the Intermediate and Late levels of Mohenjo-daro is detected. This agrees with the negative chronological test at Harappa (T1). With these sample sizes, only large changes could have been found.
+
+### Reproducibility check (R8)
+
+`scripts/run_all.py --skip-heavy` re-ran every analysis up to R7 with no failures and no changed result files. The analyses added later in this session were re-run separately (FACE1–FACE3, SZ1–SZ4, T2), also without changes. With 6–7 analyses per batch script, the repository now holds all analyses of this session in `scripts/run_all.py`.
+
+### End of the twenty-fourth session
+
+Pre-registered analyses in this session:
+- Supported: ML1, ML1k, KF1, F5, FACE1, FACE2.
+- Not supported: NUM2, ML2, SZ2, SZ4, FACE3, T2.
+- Sanity check passed: SZ1.
+- Descriptive comparison: NUM1.
+- Reviews: R7, R7b, R8.
+The level assessment is unchanged: L1 achieved, L2 only in narrow functional scope (CT15), L3 not achieved.
