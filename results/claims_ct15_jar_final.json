@@ -1,0 +1,37 @@
+{
+ "strata_[[final_seal, final_tab],[nonfinal_seal, nonfinal_tab]]": {
+  "other": [
+   [
+    31,
+    1
+   ],
+   [
+    8,
+    0
+   ]
+  ],
+  "Mohenjo-daro": [
+   [
+    47,
+    1
+   ],
+   [
+    14,
+    5
+   ]
+  ],
+  "Harappa": [
+   [
+    11,
+    6
+   ],
+   [
+    7,
+    11
+   ]
+  ]
+ },
+ "odds_ratio": 4.328650940895839,
+ "p_value": 0.0021956675729562915,
+ "pass": true
+}

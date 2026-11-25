@@ -24,7 +24,11 @@ The project set out to decipher the Indus script as far as verifiable evidence a
 5. Recurring multi-sign units and formulae with variable slots: units learned from the 1979 corpus recur in later finds (B4); signs that substitute for one another form classes (numerals; closing and counted-item signs; fish-shaped signs with single strokes; others) that agree between transcriptions (H9.3); 131 formulae with a variable slot are listed in `docs/FORMULAE.md`. Longer texts have a nested structure: parts obtained by recursive splitting at the weakest link are complete short texts about three times as often as in controls (CT18).
 6. Near-variant sign shapes are used alike on unused data (G2), while shape in general does not predict usage (G1) and added marks do not shift position consistently (M1).
 
-### L2 — semantic or functional categories (not achieved; two candidates)
+### L2 — semantic or functional categories (achieved only in narrow, functional scope)
+
+- **Confirmed (narrow, functional):** the jar sign 740 closes seal texts more often than tablet texts, in every site stratum, in a single pre-registered test on data not used for this question (CT15; odds ratio 4.3, p = 0.0022). What the closing sign means (a genitive, a title, a classifier) is not established.
+
+Further candidates:
 
 - The closing sign depends on the kind of object (400 avoided on motif seals and favoured on tablets; 407 and 154 on rectangular seals without motif), consistent in both transcriptions and two object classifications (C2, C2k), with unchanged effect sizes but below the strict thresholds after near-duplicate removal (R1).
 - A substitution class containing 002 and 090 is absent from copper tablets (H9.4), but the class has no interpretation fixed in advance.
@@ -45,7 +49,7 @@ All 35 claims of the claims register are evaluated in `docs/CLAIMS_EVALUATION.md
 
 ## 4. Assessment
 
-The project achieved L1 in broad scope: the Indus inscriptions follow a consistent, reproducible organisation of short formulae with a right-to-left order, fixed closing signs and a numeral notation tied to particular signs, which holds across sites, transcriptions and later finds. It did not achieve L2 or L3. With about two thousand short texts, no bilingual and no unused inscriptions of the relevant kinds, the main obstacle to further progress is the evidence, not the methods: calibrated tests showed that the phonetic methods available cannot identify a language from data of this size, and the meaning candidates could not be confirmed for lack of unused material.
+The project achieved L1 in broad scope: the Indus inscriptions follow a consistent, reproducible organisation of short formulae with a right-to-left order, fixed closing signs and a numeral notation tied to particular signs, which holds across sites, transcriptions and later finds. It achieved L2 only in a narrow, functional form (the jar sign as the characteristic closing sign of seal legends) and did not achieve L3. With about two thousand short texts, no bilingual and no unused inscriptions of the relevant kinds, the main obstacle to further progress is the evidence, not the methods: calibrated tests showed that the phonetic methods available cannot identify a language from data of this size, and the meaning candidates could not be confirmed for lack of unused material.
 
 ## 5. Errors found and corrected
 

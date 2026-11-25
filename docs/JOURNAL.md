@@ -2027,3 +2027,19 @@ Splitting held-out lines recursively at their weakest link produces parts that o
 ### Pre-registration of CT15 (claim C15: jar sign as a genitive on seals; before running)
 
 Among ICIT lines that contain 740, the share in which 740 is the final sign is higher on seals (`SEAL*`) than on tablets (`TAB*`). Data: strict held-out strings plus fresh sets (ICIT), single coarse object type, site strata Harappa / Mohenjo-daro / other. Test: one-sided Cochran–Mantel–Haenszel, p < 0.01.
+
+### CT15 result: supported — the jar sign closes seal texts more often than tablet texts
+
+Script: `scripts/claims_ct15_jar_final.py`; results: `results/claims_ct15_jar_final.json`.
+
+Lines containing 740 (strict held-out + fresh sets), 740 final / not final:
+
+| Site stratum | Seals | Tablets |
+|---|---:|---:|
+| Harappa | 11 / 7 | 6 / 11 |
+| Mohenjo-daro | 47 / 14 | 1 / 5 |
+| Other sites | 31 / 8 | 1 / 0 |
+
+Cochran–Mantel–Haenszel odds ratio 4.3, one-sided p = 0.0022. **CT15 is supported**, with the same direction in each stratum.
+
+**Level.** This is a single pre-registered test of a functional category (the jar sign as the closing element of a legend) against an external variable (seal vs tablet), on data not used for this question, stratified by site. It confirms in one specific form the functional L2 candidate found in C2/C2k (the closing sign depends on the kind of object). It is recorded as **L2 in narrow, functional scope**: 740 is the characteristic closing sign of seal legends. The genitive reading of claim C15 ("of X") is one interpretation of this function and is not itself established; the result is also compatible with other closing functions (a title, a classifier, a mark of the seal-owner formula).
