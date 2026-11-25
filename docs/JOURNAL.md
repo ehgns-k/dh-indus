@@ -1379,3 +1379,12 @@ With equal amounts of running text for every model, the large gaps between langu
 ### Conclusion on phonetic fitting (E3–E3d)
 
 Four variants (raw gain; gain corrected by reordered lines; 8,000-line ciphers; equalised running-text models) all fail to identify the language of known cuneiform texts hidden as ciphers. The only stable result across them is that every natural-language model gains from the real sign order while a pseudo-language does not. Phonetic fitting by sound-sequence models is closed as a route in this project.
+
+### Pre-registration of H6.1 (two numeral series tied to different items; fresh data; before running)
+
+**Idea.** In proto-cuneiform, different numerical sign systems are used for different kinds of goods (the counted item determines the notation). D1 placed the Indus corpus next to proto-cuneiform and proto-Elamite. The Indus script has two stroke series, short strokes and long strokes. If they are two numeral notations for different classes of items, they should be followed by different signs.
+
+**H6.1.** On fresh sets 1 and 2 (ICIT, post-1979 sites; not yet used for any stroke question except F2, which tested only short strokes 4–9), the signs following short-stroke signs {001, 003, 004, 034, 005, 016, 017} and those following long-stroke signs {031, 032, 033, 035} differ in distribution.
+- Follower classes fixed from earlier training-split results: A = {390, 405, 406, 407, 585, 575} (short-stroke partners, H3.10, H3.12a); B = {520} (long-stroke partner, H3.12b); C = all other signs and the line end.
+- Test: chi-square test of independence on the 2 × 3 table (series × follower class); Fisher-type exact p by 10,000 permutations of series labels.
+- Prediction: p < 0.01. If either series has fewer than 10 occurrences in the fresh sets, the result is "insufficient data".
