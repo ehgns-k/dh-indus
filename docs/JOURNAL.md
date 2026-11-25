@@ -986,3 +986,34 @@ The scheduled task now runs hourly (the user asked for continuous work); a run t
 **Confirmation.** Held-out split (the 14th question decided on it); each discovered pair is tested one-sided in its discovered direction with the same test; Bonferroni threshold 0.01 / (number of discovered pairs).
 
 **Interpretation rule (fixed now).** A confirmed association counts toward L2 only if the sign involved belongs to a group already defined structurally (the terminal cluster, the stroke signs, the count–item targets) or the association is to an object class in a way that supports a semantic reading named in advance (stroke signs with tablets = "numerals on records", claim C31). Other confirmed associations are recorded as "confirmed sign–context associations" (L2 candidates), not as L2 results.
+
+### C2 result: 40 associations discovered, 6 confirmed on held-out data
+
+Script: `scripts/phase6_c2_association_scan.py`; results: `results/phase6_c2_association_scan.json`.
+
+1,312 (sign, value) tests on the training split (82 signs); 40 pass the false-discovery-rate threshold; confirmation threshold on the held-out split 0.01/40 = 0.00025.
+
+| Variable | Value | Sign | OR (train) | OR (held-out) | p (held-out) | Confirmed |
+|---|---|---|---:|---:|---:|---|
+| subtype | SEAL:R | 154 | 9.2 | 22.8 | 7.2 × 10⁻⁷ | yes |
+| region | Inter-Riverine | 400 | 5.2 | 4.5 | 1.3 × 10⁻⁶ | yes (regional) |
+| subtype | SEAL:R | 806 | 9.5 | 8.1 | 7.1 × 10⁻⁶ | yes |
+| subtype | SEAL:R | 407 | 8.5 | 10.9 | 3.0 × 10⁻⁵ | yes |
+| subtype | SEAL:S | 741 | 3.5 | 14.9 | 9.9 × 10⁻⁵ | yes |
+| subtype | SEAL:S | 400 | 0.30 | 0.17 | 1.8 × 10⁻⁴ | yes (negative) |
+
+Thirteen further associations have held-out p < 0.01 but miss the strict threshold, for example `TAB:B` × 400 (OR 3.3, p = 8.9 × 10⁻⁴), `TAB:C` × 407 (OR 6.1, p = 0.011), faience × 400 (OR 3.5, p = 0.0036).
+
+**What `SEAL:S` and `SEAL:R` denote (from the data, not from a codebook).** Cross-tabulating the ICIT `shape` and `symbol` fields: `SEAL:R` objects are rectangular (153) or cuboid-convex (188) and almost never carry an animal motif (229 of 240 lines have none); `SEAL:S` objects carry a motif in most cases (`Bull1` 987 of 1,316 lines). `SEAL:R` therefore denotes rectangular seals without an animal motif, and `SEAL:S` the motif-bearing seals.
+
+**Positions of the confirmed signs (all data, descriptive).** 154 is line-final in 85 % of its occurrences on `SEAL:R`; 407 in 58 % on `SEAL:R` and 59 % on `TAB:C`; 400 in 93 % on `TAB:B`; 740 in 80 % on `SEAL:S`. 741 and 806 are almost never line-final (final shares 0.01 and 0.00–0.03).
+
+**Interpretation under the pre-registered rule.** Two confirmed associations involve members of the structurally defined terminal set (H3.1): 407 is favoured on rectangular seals without motif, and 400 is avoided on motif-bearing seals (and favoured on `TAB:B` tablets, below the strict threshold). Together with the descriptive positions, the pattern is that **the sign that closes a line varies with the kind of object**: 740 on motif-bearing seals, 407 and 154 on rectangular seals without motif and on copper tablets, 400 on `TAB:B` tablets. The test is stratified by site, so the pattern is not a difference between Harappa and Mohenjo-daro.
+
+By the interpretation rule fixed before the scan, this counts toward L2. It is recorded as **L2 in narrow, functional scope**: the line-final signs form a category whose members predict the object class on held-out data. It does not identify what any of these signs means (for example "seal of", "tablet of", a title, or a commodity), and it is not a phonetic result. The associations of 806, 741 and 154 (154 is not in the terminal set as defined from the training data) are recorded as confirmed sign–context associations (L2 candidates).
+
+Regional association: 400 is more frequent in the Inter-Riverine region (OR 4.5); this is regional variation and not interpreted.
+
+### Gate G2
+
+Met in narrow, functional scope (see above). A stronger L2 result would assign a specific meaning to a sign group and predict an external variable from it; this remains open.

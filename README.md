@@ -16,6 +16,7 @@ The Indus script is undeciphered. Results in this repository are labelled with t
 | 2026-11-25 | L1 (gate G1 passed) | A positional template (initial → medial → terminal zones) and a lexicon of recurring sign units, learned from the 1979 corpus, predict inscriptions from ten sites excavated after 1979, against controls that keep all earlier rules (B1, B4) |
 | 2026-11-25 | Typology (descriptive) | Among five reference corpora from the CDLI, the Indus corpus is statistically closest to proto-Elamite and proto-cuneiform (proto-administrative systems), not to Sumerian or Akkadian full writing (D1) |
 | 2026-11-25 | Undecided (gate G3) | With the non-linguistic corpora of Sproat (2014) added, the statistics used cannot separate writing from non-linguistic symbol systems, so the linguistic status of the Indus signs remains open (D2) |
+| 2026-11-25 | L2 (narrow, functional) | The sign that closes a line varies with the kind of object: line-final 407 and 154 favour rectangular seals without animal motif, 400 is avoided on motif-bearing seals; discovered with FDR control on training data, confirmed on held-out data, stratified by site (C2). The meaning of these signs is not identified |
 
 The full list of tests, including failed ones, is in `docs/JOURNAL.md`.
 

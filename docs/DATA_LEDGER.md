@@ -33,7 +33,8 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | H5.1b | ICIT | fresh sets 1+2 | not supported | corrected stroke set |
 | D1 | ICIT + CDLI reference corpora | all ICIT unique complete lines (resampled) | supported | typology, descriptive; no non-linguistic corpus |
 | D2 | ICIT + CDLI + Sproat (2014) corpora | all (resampled to 300 lines) | G3 undecided | leave-one-out 5/7 |
+| C2 | ICIT | discovery train, confirmation held-out | 6 of 40 confirmed | 14th held-out question; Bonferroni 0.01/40 |
 
-Count of tests decided on the held-out split so far: 11 (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
+Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 
 The supported held-out results remain significant after a Bonferroni correction over these 11 tests (0.01/11 ≈ 0.0009) except where noted: H3.3 (p ≤ 3.8 × 10⁻⁷), H3.10 (p ≤ 7.5 × 10⁻⁹), H3.12 (p ≤ 3.4 × 10⁻⁷) pass; H4.3 (p = 0.001) does not.
