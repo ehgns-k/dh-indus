@@ -2069,3 +2069,18 @@ Script: `scripts/phase4_d5_formula_typology.py`; results: `results/phase4_d5_for
 | Akkadian OB letters | 3.97 | 0.15 | 16.6 |
 
 Proto-Elamite is the nearest reference corpus in 13 of 20 resamples (proto-cuneiform 6, Ur III administrative 1); the registered criterion (≥ 19) is not met, so **D5 is not supported**. On average the ordering is the same as in D1: KP1979 (the other Indus transcription, 0.90, a sanity check), then proto-Elamite (1.67), proto-cuneiform (2.06), Ur III administrative (2.50), OB literary (3.02), Akkadian letters (3.48). The Indus corpus resembles the proto-administrative corpora in the density of minimal pairs and formulae (F2, F3), and the full-writing corpora in its recursive recurrence (F1).
+
+### Claim sign identifications (C26, C3)
+
+`docs/CLAIM_SIGN_IDENTIFICATIONS.md` identifies (from search-engine excerpts and the sign mappings of the mayig corpus and the project concordance) the four-sign sequence of claim C26 as Mahadevan 51–130–149–342 = ICIT 255–435 (or its mirror 436)–690–740 = KP1979 73–188–255–324/325, a frequent fixed string (ICIT 34 records; KP1979 43 occurrences of 73 188 255). It also reconstructs, from the artefact lists in Daggumati & Revesz (2021), the ICIT numbers of 17 of their 23 mirror pairs, six of them securely: 436/435, 402/400, 551/550, 622/621, 526/527, 126/125.
+
+### Pre-registration of CT26 (claim C26, structural part; before running)
+
+Sequence A B C D = ICIT 255 435 690 740 (436 counted as 435) and KP1979 73 188 255 {324, 325}. Data: all unique complete strings (the claim concerns the corpus as a whole).
+- (a1) PMI(B, C) is lower than both PMI(A, B) and PMI(C, D) (PMI from adjacent-pair counts in all unique strings, add-0.5 smoothing).
+- (a2) AB occurs in at least 3 strings without CD following, CD occurs in at least 3 strings without AB preceding, and BC occurs without A before and without D after in fewer strings than either.
+- Verdict: the two-part structure AB + CD is supported if (a1) and (a2) hold in both corpora.
+
+### Pre-registration of CT3 (claim C3, six secure mirror pairs; before running)
+
+For each of the six pairs 436/435, 402/400, 551/550, 622/621, 526/527, 126/125: relabelling test of L3a (Jensen–Shannon divergence of pooled previous/next-sign contexts; all unique complete ICIT strings, because the mirror forms are rare), 10,000 relabellings; Bonferroni threshold 0.01/6. Claim C3 predicts that no pair is contextually distinct. Pairs whose mirror form has fewer than 5 occurrences are reported but have almost no power.
