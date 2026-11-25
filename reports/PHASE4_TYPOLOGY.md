@@ -42,6 +42,10 @@ In the Indus texts the stroke numeral comes before the sign it goes with in 71 %
 
 Frequent Indus signs combine less freely than the graphemes of OB Akkadian letters in both transcriptions (CT27). Among all reference corpora, the ICIT value (0.283) lies next to proto-cuneiform (0.268) and proto-Elamite (0.266). The KP1979 value (0.331) lies nearer OB literary Sumerian (0.357). The placement therefore depends on the transcription (D7).
 
+### 2.7 Specificity of numeral partners (D6, descriptive)
+
+The partner sign of an Indus numeral is more predictable from the numeral (Theil's U 0.34) than the item next to a proto-Elamite (0.20) or proto-cuneiform (0.18) numeral is from its unit sign. The Indus count signs are themselves the units of comparison, so the figures are not strictly equivalent.
+
 ## 3. Conclusion
 
 Statistically the Indus inscriptions resemble proto-Elamite most closely, in both transcriptions; an administrative corpus is nearer than the full-writing corpora in 20/20 (ICIT) and 19/20 (KP1979) resamples, although proto-cuneiform itself is the farthest corpus for KP1979. Whether the signs record a spoken language cannot be decided with these methods.

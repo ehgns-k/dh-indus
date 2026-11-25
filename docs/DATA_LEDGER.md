@@ -120,6 +120,10 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | FACE4k | KP | all objects with ≥ 3 records (28) | not supported (p = 0.33) | mixed lines codes |
 | FACE5 | ICIT | numeral-face tablets (144 text faces) | not supported (p = 0.12) | count vs manufacture technique |
 | D7 | ICIT, KP, CDLI and Sproat corpora | 9,000-token resamples | not supported (ICIT nearest proto-administrative 20/20; KP nearest OB literary 20/20) | transcription-dependent |
+| DIR1 | ICIT | L/R lines (122), model from R/L lines | supported (105/122) | direction normalisation confirmed |
+| SX1 | ICIT | leave-one-site-out (Harappa, Mohenjo-daro) | supported (p < 10⁻¹⁰⁰ both) | |
+| SX2 | ICIT | SEAL:S legends, Harappa vs Mohenjo-daro | not supported (p = 0.14) | |
+| D6 | ICIT, proto-Elamite, proto-cuneiform | 300-pair resamples | descriptive: Indus partners more numeral-specific (U 0.34 vs 0.20, 0.18) | not strictly comparable |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
 

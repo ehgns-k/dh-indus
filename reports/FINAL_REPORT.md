@@ -17,7 +17,7 @@ The project set out to decipher the Indus script as far as verifiable evidence a
 
 ### L1 — structure (achieved)
 
-1. The texts are read right to left; order regularities learned from the 1979 corpus predict inscriptions from later excavations only in that direction (F3, F3b).
+1. The texts are read right to left; order regularities learned from the 1979 corpus predict inscriptions from later excavations only in that direction (F3, F3b); regularities learned at other sites predict Harappa and Mohenjo-daro forward far better than reversed (SX1); the 216 lines written left to right follow the same order once mirrored (DIR1), so the direction of writing varies but the order of the text does not.
 2. Lines have an initial zone, a medial zone and a closing zone; zones agree between the two transcriptions (Q2a) and predict later finds (B1).
 3. The closing signs form a cluster with a fixed internal order, 740 before 400 or 090 (H3.3, H3.4, R1).
 4. Stroke signs of one to ten strokes form a numeral notation: particular counts are followed by particular signs (4–9 strokes → 390–407; 7 → 585/575; three long strokes → 520) in both transcriptions and on strict held-out data (H3.10–H3.12, R1, R2), and for 4–9 strokes also on later finds (F2); texts that are identical except for the count are six to eight times more frequent than chance, also after normalisation of writing variants (H9.1, R4).

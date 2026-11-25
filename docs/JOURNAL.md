@@ -2816,3 +2816,22 @@ Mean density (20 resamples of about 9,000 tokens):
 - A numeral token is paired with its partner: in the Indus texts (ICIT) the next sign after a stroke sign; in proto-Elamite the sign before the numeral group; in proto-cuneiform the sign after the numeral group. Numeral tokens are reduced to their unit: Indus stroke sign as is; CDLI `n(Nxx)` → `Nxx`.
 - Statistic: Theil's uncertainty coefficient U(partner | numeral unit), on 20 resamples of 300 pairs per corpus.
 - Decision rule stated in advance: the Indus value is called "within the proto-administrative range" if its mean lies between the two proto means, ± 2 resample SDs.
+
+### Results DIR1, SX1, SX2, D6
+
+Script: `scripts/batch8_direction_sites.py`; results: `results/batch8_direction_sites.json`.
+
+- **DIR1: supported.**
+  - Of 122 unique `L/R` strings (mostly Harappa tablets: `TAB:B` 54, `TAB:I` 48; seals 36), 105 have a lower log-loss forward than reversed under a model trained on `R/L` strings (p < 10⁻¹⁶).
+  - Once normalised, the lines written left to right follow the same order as the others. This confirms the direction normalisation of the first session: the direction of writing varies, but the order of the text is the same.
+- **SX1: supported.**
+  - Only Harappa and Mohenjo-daro have at least 150 unique strings. A model trained on the other sites reads the held-out site forward better than reversed in 626 of 687 strings (Harappa) and 1,030 of 1,090 (Mohenjo-daro); both p < 10⁻¹⁰⁰.
+  - The sequential regularities are shared across the two main sites.
+- **SX2: not supported.**
+  - 179 Harappa and 801 Mohenjo-daro square-seal legends (strings shared by both sites removed), 77 signs. The Jensen–Shannon divergence is 0.030, against 0.025 under permutation (p = 0.14).
+  - The sign use of seal legends at the two main sites does not differ detectably.
+  - Descriptive: the largest contributions come from 405 (Harappa 12, Mohenjo-daro 9 occurrences) and from 923, 226 and 705, which are more frequent at Mohenjo-daro.
+- **D6 (descriptive): "outside the proto-administrative range".**
+  - U(partner | numeral) is 0.34 (SD 0.011) for the Indus texts, against 0.20 (proto-Elamite) and 0.18 (proto-cuneiform).
+  - The partner of an Indus numeral depends more on the numeral than in either proto-administrative system.
+  - Limitation: the Indus numeral "unit" is the count sign itself (each count is its own sign), whereas the CDLI unit was reduced to the unit sign without its count. The comparison therefore measures count-specific partners in the Indus texts (H3.10, H3.12) against unit-specific partners in the proto-administrative texts. The two are not strictly equivalent.

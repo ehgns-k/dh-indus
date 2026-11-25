@@ -1,0 +1,150 @@
+{
+ "DIR1": {
+  "strings": 122,
+  "forward_wins": 105,
+  "ties": 0,
+  "p": 5.737281066610722e-17,
+  "types": {
+   "TAB:B": 54,
+   "TAB:I": 48,
+   "SEAL:S": 27,
+   "POT:T:g": 13,
+   "SEAL:R": 9,
+   "MISC": 2,
+   "SEAL": 2,
+   "POT:T:s": 2
+  },
+  "sites": {
+   "Harappa": 108,
+   "Mohenjo-daro": 24,
+   "Lothal": 6,
+   "Dholavira": 5,
+   "Alamgirpur": 3,
+   "Chanhu-daro": 3,
+   "Kalibangan": 3,
+   "Nausharo": 2
+  },
+  "verdict": "supported"
+ },
+ "SX1": {
+  "sites": {
+   "Harappa": {
+    "strings": 687,
+    "forward_wins": 626,
+    "ties": 6,
+    "p": 6.087243399956497e-124,
+    "pass": 1.0
+   },
+   "Mohenjo-daro": {
+    "strings": 1090,
+    "forward_wins": 1030,
+    "ties": 9,
+    "p": 4.194168004985308e-238,
+    "pass": 1.0
+   }
+  },
+  "threshold": 0.005,
+  "verdict": "supported"
+ },
+ "SX2": {
+  "harappa_strings": 179,
+  "mohenjodaro_strings": 801,
+  "signs": 77,
+  "jsd": 0.030259558310871227,
+  "null_mean": 0.025377789205267093,
+  "p_value": 0.14408559144085592,
+  "top_contributions_[contrib, sign, n_harappa, n_mohenjodaro]": [
+   [
+    0.0038676465403057634,
+    "405",
+    12,
+    9
+   ],
+   [
+    0.0024358557973367975,
+    "923",
+    0,
+    15
+   ],
+   [
+    0.002367786157082043,
+    "806",
+    10,
+    11
+   ],
+   [
+    0.0020553677748151975,
+    "705",
+    4,
+    51
+   ],
+   [
+    0.001948684637869438,
+    "226",
+    0,
+    12
+   ],
+   [
+    0.0013017475742315393,
+    "003",
+    15,
+    32
+   ],
+   [
+    0.0012316884519179803,
+    "900",
+    10,
+    18
+   ],
+   [
+    0.0009501065071197547,
+    "460",
+    1,
+    17
+   ],
+   [
+    0.0009269007398652667,
+    "760",
+    5,
+    44
+   ],
+   [
+    0.000898723627881045,
+    "590",
+    16,
+    40
+   ],
+   [
+    0.0008427304600137136,
+    "595",
+    6,
+    10
+   ],
+   [
+    0.0007488124120507817,
+    "615",
+    5,
+    8
+   ]
+  ],
+  "verdict": "not supported"
+ },
+ "D6": {
+  "pairs": {
+   "indus_icit": 836,
+   "proto_elamite": 4397,
+   "proto_cuneiform": 11751
+  },
+  "mean_U": {
+   "indus_icit": 0.3415965689582676,
+   "proto_elamite": 0.20056937388119866,
+   "proto_cuneiform": 0.17943009741534807
+  },
+  "sd_U": {
+   "indus_icit": 0.01070711980651795,
+   "proto_elamite": 0.014511128835195973,
+   "proto_cuneiform": 0.015171874499490609
+  },
+  "decision": "outside the proto-administrative range"
+ }
+}
