@@ -41,6 +41,14 @@ fam += [("CT18|icit", "strict held-out", c18["icit"]["p_value"], 1 / 10001 if R7
         ("CT15k", "strict held-out (KP)", J("claims_ct15k_jar_final_kp")["p_value"], None),
         ("CT22", "strict held-out + fresh", J("claims_batch4")["CT22"]["p_value"], 1 / 10001),
         ("F5", "fresh 1+2", J("batch5c_f5_formulae_fresh")["p_value"], 1 / 10001)]
+for c in J("batch5e_object_size")["SZ2"]["candidates"]:
+    if "p_conf" in c:
+        fam.append(("SZ2 " + c["sign"], "strict held-out + fresh", c["p_conf"], None))
+b6 = J("batch6_iconography_faces")
+for key in ("MO2a", "MO2b", "MO1k"):
+    for c in b6[key]["candidates"]:
+        if "p_conf" in c:
+            fam.append((f"{key} {c['sign']}", "strict held-out" + (" + fresh" if key != "MO1k" else " (KP)"), c["p_conf"], None))
 
 m = len(fam)
 order = sorted(range(m), key=lambda i: fam[i][2])

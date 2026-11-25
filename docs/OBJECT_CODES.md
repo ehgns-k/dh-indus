@@ -100,3 +100,9 @@ Shared observations behind the inferences: every row in `??` contains the illegi
 - `SC` as "Short Complex" is an analogy, not a sourced name.
 - All other class codes (`TS`, `NU`, `VN`, `NV`, `VX`, `PN`, `ZN`, `AN`, `MT`, `IT`, `IM`, `MS`, `LT`, `IC`, `CT`, `PA`, `2L`, `3L`, `UC`, `??`) are described only by what the texts in them share; the letters themselves are not expanded by any source found. The descriptions for `UC`, `??`, `2L`, `3L`, `TS`, `NU`, `VN`, `NV` and `VX` are near-exact (true for 90-100% of rows); the others are tendencies.
 - To settle these, the ICIT help pages (epigraphica.de / user.tu-berlin.de/fuls) and Wells 2015, chapter 3, should be read directly; they could not be reached from this environment.
+
+## `cult` codes and `Bull1` suffixes (added twenty-fifth session)
+
+A survey found no definition of the `cult` codes (SAN, SAF, RAN, RAF, RBF, S) or of the suffixes of `Bull1` (W, J, S, I, L). The ICIT host could not be reached. The only lead, a search-engine excerpt from a paper that could not be found again, says that a "SAN cult object" was "classified by Wells (2011)" (B. K. Wells, *Epigraphic Approaches to Indus Writing*, 2011). Their meanings are therefore not known.
+
+Analysis of the data shows two things. `cult` is filled mainly for unicorn seals (SAN, SAF, RAN, RAF, RBF, S) and for other animals with `Trough`, so it appears to code the object in front of the animal. The `Bull1` suffixes occur at all main sites, so they are not site codes. Tests MO2a and MO2b used both fields only as physical details, without interpreting them.

@@ -2624,3 +2624,13 @@ Script: `scripts/batch6_iconography_faces.py`; results: `results/batch6_iconogra
 - **FACE4: supported.** 38 ICIT objects with three faces (Harappa 34; `TAB:I` 30, `TAB:B` 8). Exactly one face closes on 30, against 17.0 expected (p = 0.0001). The closing-face counts are 0 on 6 objects, 2 on 1 and 3 on 1.
   - Several three-face tablets combine a text face with one or two numeral faces (`176 740 400 / 033 700 / 033 700`).
   - As for two faces (FACE1), the faces of one object carry one closed text.
+
+The survey of the `cult` codes and `Bull1` suffixes found no definition; see `docs/OBJECT_CODES.md`.
+
+### R7 recomputed (45 tests)
+
+The confirmation tests of SZ2 (3), MO2b (3) and MO1k (1) were added to the family, which now has 45 tests (MO2a and T2 had no candidates).
+- Holm at α = 0.01 keeps 13 tests: the F3 direction test, H3.3 (ICIT), H3.10 (both transcriptions), H3.12a (ICIT), H3.12b (both), B1, B4, CT17 (both) and CT18 (both).
+- F2 (p = 0.00037) and H9.4 class 4 × copper tablets (p = 0.00039) no longer survive Holm at α = 0.01. Both still survive Holm at α = 0.05. The statement of the previous session that H9.4 survives even Holm at 0.01 is therefore withdrawn for the larger family.
+- Holm at α = 0.05 keeps 24 tests, including CT15, F5, CT22, H6.1 and G2. Benjamini–Hochberg at q = 0.01 keeps 24.
+- The count–item pairing is still covered at α = 0.01 by the strict held-out tests H3.10 and H3.12.
