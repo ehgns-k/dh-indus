@@ -1665,3 +1665,17 @@ Descriptive observation (seen after the test; not tested): only 2 of the 15 abro
 - **Positional measures (training split):** initial share and final share of each sign.
 - **Test:** for each measure, a two-sided sign test over pairs of (marked − unmarked); Bonferroni over the two measures, threshold 0.005.
 - **Prediction:** at least one measure shifts consistently (p < 0.005). Otherwise marks are recorded as not shifting position consistently.
+
+### M1 result: not supported; a limitation of the G1/G2 shape measure; G2 holds under a better measure
+
+Scripts: `scripts/phase8_m1_marks.py` (pre-registered), `scripts/phase8_g2_hog_robustness.py`, `scripts/phase8_m1_hog_robustness.py` (robustness checks); results in the corresponding `results/phase8_*.json`.
+
+**M1.** 245 near-variant pairs; the more-marked member has a higher initial share in 133 pairs and a lower one in 112 (p = 0.20), a higher final share in 115 and a lower one in 123 (p = 0.65). Added marks do not shift position consistently. **Not supported.**
+
+**Limitation found.** The list of M1 pairs showed that the shape measure of G1, G2 and M1 (blurred 32 × 32 images, cosine similarity) pairs signs of quite different design when both are tall and narrow, for example the single stroke 001 with fish-shaped signs. The measure is dominated by outline and proportions rather than internal structure.
+
+**Robustness with a structural measure.** A histogram-of-edge-orientation measure (4 × 4 cells, 9 orientations) gives sensible nearest pairs (the stroke series 031 / 032 / 033, the jar-type variants 741 / 742 / 745, 231 / 233, 690 / 692, 004 / 005). With it:
+- G2 (usage on strict held-out + fresh data): close-shape pairs median context similarity 0.094 vs 0.084 for other pairs; p = 0.0074. **G2 holds**, with a smaller effect than first reported.
+- M1: 238 pairs; initial share p = 0.48, final share p = 0.84. **M1 remains not supported.**
+
+G1 was not repeated with the new measure, because its conclusion (no global correlation) was negative and a coarser measure cannot have hidden a positive correlation that a finer one would reveal more weakly; this is noted as an untested possibility.

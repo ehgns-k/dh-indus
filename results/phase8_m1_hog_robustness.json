@@ -1,0 +1,13 @@
+{
+ "n_pairs": 238,
+ "initial": {
+  "marked_higher": 113,
+  "marked_lower": 125,
+  "p_value": 0.475907736904388
+ },
+ "final": {
+  "marked_higher": 115,
+  "marked_lower": 119,
+  "p_value": 0.844572163962271
+ }
+}
