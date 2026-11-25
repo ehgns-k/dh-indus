@@ -24,7 +24,7 @@ for s in icit:
                 found[(x, k[i], k[i + 1])] += 1
                 if len(examples[(x, k[i], k[i + 1])]) < 3:
                     examples[(x, k[i], k[i + 1])].append([" ".join(s), " ".join(k)])
-res = [{"icit_sign": a, "kp_pair": f"{b} {c}", "count": n, "examples": examples[(a, b, c)]} for (a, b, c), n in found.most_common()]
+res = [{"icit_sign": a, "kp_pair": f"{b} {c}", "count": n, "examples": examples[(a, b, c)]} for (a, b, c), n in sorted(found.items(), key=lambda x: (-x[1], x[0]))]
 (ROOT / "results" / "phase3_split_merge.json").write_text(json.dumps(res, indent=1))
 for r in res[:25]:
     print(r["icit_sign"], "->", r["kp_pair"], r["count"], r["examples"][0])

@@ -6,55 +6,55 @@ Templates: 131; slot position: initial 65, medial 34, final 32; templates with t
 
 | Template | Slot | Fillers | Filler classes |
 |---|---|---|---|
-| `_ 740` | initial | 005, 049, 058, 061, 100, 142, 176, 177, 180, 191, 215, 220 … | class0 51, stroke 1, class1 3, class3 2 |
-| `_ 740 400` | initial | 032, 141, 176, 178, 220, 263, 337, 382, 388, 440, 455, 637 … | class5 11, class3 1, class0 4, stroke 1, class1 1 |
+| `_ 740` | initial | 005, 049, 058, 061, 100, 142, 176, 177, 180, 191, 215, 220 … | class0 51, class1 3, class3 2, stroke 1 |
+| `_ 740 400` | initial | 032, 141, 176, 178, 220, 263, 337, 382, 388, 440, 455, 637 … | class5 11, class0 4, class1 1, class3 1, stroke 1 |
 | `_ 400` | initial | 090, 097, 098, 131, 137, 139, 140, 226, 234, 236, 565, 678 … | class4 15 |
-| `033 _` | final | 033, 066, 111, 136, 142, 151, 220, 235, 255, 413, 482, 700 … | class0 4, class1 3, class3 6, stroke 1 |
-| `_ 151` | initial | 033, 055, 061, 097, 142, 216, 219, 220, 229, 231, 243, 416 … | class3 7, class4 1, class0 5, stroke 1 |
+| `033 _` | final | 033, 066, 111, 136, 142, 151, 220, 235, 255, 413, 482, 700 … | class3 6, class0 4, class1 3, stroke 1 |
+| `_ 151` | initial | 033, 055, 061, 097, 142, 216, 219, 220, 229, 231, 243, 416 … | class3 7, class0 5, class4 1, stroke 1 |
 | `_ 390` | initial | 003, 004, 005, 016, 017, 018, 034, 035, 060, 371, 415, 790 … | stroke 7, class2 6, class5 1 |
-| `_` | initial | 032, 374, 457, 530, 550, 621, 688, 790, 820, 828, 858, 930 | class1 1, class0 9, stroke 1, class5 1 |
-| `_ 156` | initial | 003, 004, 005, 019, 031, 140, 142, 176, 230, 389, 803, 843 | stroke 4, class2 3, class4 1, class0 4 |
+| `_` | initial | 032, 374, 457, 530, 550, 621, 688, 790, 820, 828, 858, 930 | class0 9, class1 1, class5 1, stroke 1 |
+| `_ 156` | initial | 003, 004, 005, 019, 031, 140, 142, 176, 230, 389, 803, 843 | class0 4, stroke 4, class2 3, class4 1 |
 | `_ 520` | initial | 001, 013, 031, 073, 175, 220, 231, 233, 235, 240, 442, 460 | class3 10, stroke 2 |
 | `_ 700` | initial | 003, 004, 014, 031, 032, 033, 034, 036, 090, 125, 126, 745 | stroke 6, class2 5, class4 1 |
-| `_ 760 740` | initial | 032, 240, 260, 315, 382, 440, 445, 552, 605, 742, 797 | class5 7, stroke 1, class3 1, class0 2 |
+| `_ 760 740` | initial | 032, 240, 260, 315, 382, 440, 445, 552, 605, 742, 797 | class5 7, class0 2, class3 1, stroke 1 |
 | `003 _` | final | 154, 156, 390, 405, 407, 422, 426, 430, 700, 861 | class1 10 |
-| `032 _` | final | 116, 140, 158, 220, 226, 511, 700, 741, 840, 865 | class4 7, class3 1, class2 1, class1 1 |
+| `032 _` | final | 116, 140, 158, 220, 226, 511, 700, 741, 840, 865 | class4 7, class1 1, class2 1, class3 1 |
 | `004 _` | final | 154, 156, 390, 405, 407, 408, 690, 700, 900 | class1 8, class0 1 |
 | `005 _` | final | 154, 155, 156, 390, 405, 407, 411, 706, 740 | class1 8, class0 1 |
 | `817 002 _ 740` | medial | 048, 061, 176, 222, 354, 540, 760, 772 | class0 4, class6 4 |
-| `031 _` | final | 032, 136, 156, 520, 592, 700, 850 | class1 4, class0 1, stroke 1, class3 1 |
+| `031 _` | final | 032, 136, 156, 520, 592, 700, 850 | class1 4, class0 1, class3 1, stroke 1 |
 | `235 _ 740` | medial | 176, 388, 482, 772, 798, 803, 923 | class0 7 |
 | `240 _ 740` | medial | 100, 636, 643, 760, 772, 773, 904 | class0 4, class6 3 |
 | `_ 032 740 400` | initial | 014, 015, 025, 027, 028, 059, 840 | class2 7 |
-| `_ 100 740` | initial | 031, 176, 220, 240, 415, 440, 717 | stroke 1, class5 1, class2 1, class3 2, class0 2 |
+| `_ 100 740` | initial | 031, 176, 220, 240, 415, 440, 717 | class0 2, class3 2, class2 1, class5 1, stroke 1 |
 | `142 _` | final | 001, 151, 156, 157, 617, 740 | class1 5, stroke 1 |
 | `240 _ 740 400` | medial | 100, 152, 176, 636, 637, 904 | class6 3, class0 2, class5 1 |
-| `700 _` | final | 031, 032, 033, 034, 824, 892 | class0 1, stroke 4, class3 1 |
+| `700 _` | final | 031, 032, 033, 034, 824, 892 | stroke 4, class0 1, class3 1 |
 | `820 002 _ 740` | medial | 042, 222, 388, 482, 540, 904 | class6 4, class0 2 |
-| `920 060 741 _ 740` | medial | 042, 416, 440, 460, 821, 927 | class5 1, class0 3, class3 1, class6 1 |
+| `920 060 741 _ 740` | medial | 042, 416, 440, 460, 821, 927 | class0 3, class3 1, class5 1, class6 1 |
 | `_ 031` | initial | 046, 151, 575, 700, 817, 893 | class1 6 |
-| `_ 220` | initial | 014, 016, 017, 032, 033, 233 | stroke 4, class3 1, class2 1 |
+| `_ 220` | initial | 014, 016, 017, 032, 033, 233 | stroke 4, class2 1, class3 1 |
 | `_ 527` | initial | 140, 388, 456, 550, 555, 556 | class4 4, class0 2 |
 | `_ 690` | initial | 004, 322, 323, 518, 681, 687 | class5 5, stroke 1 |
 | `_ 740 090` | initial | 220, 240, 327, 362, 615, 792 | class3 5, class0 1 |
 | `017 _` | final | 090, 220, 390, 405, 410 | class1 3, class3 1, class4 1 |
 | `032 _ 740` | medial | 220, 255, 760, 790, 877 | class0 2, class3 2, class5 1 |
-| `220 _` | final | 140, 151, 240, 520, 740 | class1 3, class4 1, class3 1 |
+| `220 _` | final | 140, 151, 240, 520, 740 | class1 3, class3 1, class4 1 |
 | `233 _ 740` | medial | 176, 798, 803, 879, 923 | class0 5 |
 | `503 _ 740` | medial | 007, 017, 460, 463, 615 | class3 4, stroke 1 |
-| `861 002 _` | final | 125, 136, 226, 236, 832 | class4 2, class2 1, class3 1, class0 1 |
+| `861 002 _` | final | 125, 136, 226, 236, 832 | class4 2, class0 1, class2 1, class3 1 |
 | `861 002 _ 390` | medial | 003, 004, 015, 016, 869 | stroke 3, class2 2 |
-| `_ 032` | initial | 029, 031, 700, 840, 905 | stroke 1, class2 1, class1 3 |
-| `_ 154` | initial | 003, 004, 005, 101, 384 | stroke 3, class2 1, class0 1 |
-| `_ 176 740 400` | initial | 140, 235, 240, 519, 791 | class0 1, class3 3, class4 1 |
+| `_ 032` | initial | 029, 031, 700, 840, 905 | class1 3, class2 1, stroke 1 |
+| `_ 154` | initial | 003, 004, 005, 101, 384 | stroke 3, class0 1, class2 1 |
+| `_ 176 740 400` | initial | 140, 235, 240, 519, 791 | class3 3, class0 1, class4 1 |
 | `_ 220 520` | initial | 003, 006, 016, 034, 415 | stroke 3, class2 2 |
-| `_ 617` | initial | 016, 117, 142, 145, 831 | stroke 1, class2 3, class0 1 |
+| `_ 617` | initial | 016, 117, 142, 145, 831 | class2 3, class0 1, stroke 1 |
 | `_ 806 158 400` | initial | 467, 470, 472, 473, 475 | class7 5 |
-| `_ 840 032 740` | initial | 002, 220, 679, 803, 820 | class1 1, class3 1, class4 2, class0 1 |
+| `_ 840 032 740` | initial | 002, 220, 679, 803, 820 | class4 2, class0 1, class1 1, class3 1 |
 | `_ 923 740` | initial | 233, 235, 803, 806, 838 | class3 4, class0 1 |
 | `031 _ 740` | medial | 100, 176, 384, 388 | class0 4 |
 | `097 _` | final | 151, 159, 161, 400 | class1 4 |
-| `220 _ 740` | medial | 100, 176, 235, 585 | class0 2, class3 1, class1 1 |
+| `220 _ 740` | medial | 100, 176, 235, 585 | class0 2, class1 1, class3 1 |
 | `388 _` | final | 526, 527, 740, 920 | class1 3, class5 1 |
 | `705 _` | final | 034, 167, 740, 840 | class1 2, class2 1, stroke 1 |
 | `820 002 _` | final | 104, 137, 139, 236 | class4 4 |
@@ -62,26 +62,26 @@ Templates: 131; slot position: initial 65, medial 34, final 32; templates with t
 | `861 _` | final | 002, 392, 740, 741 | class4 3, class1 1 |
 | `_ 002` | initial | 817, 818, 820, 861 | class1 4 |
 | `_ 002 003 390` | initial | 803, 817, 820, 861 | class1 3, class0 1 |
-| `_ 004 390` | initial | 104, 260, 491, 817 | class5 1, class4 2, class1 1 |
+| `_ 004 390` | initial | 104, 260, 491, 817 | class4 2, class1 1, class5 1 |
 | `_ 032 740` | initial | 025, 028, 059, 840 | class2 4 |
-| `_ 033` | initial | 033, 255, 700, 720 | class0 1, class1 2, stroke 1 |
-| `_ 090` | initial | 017, 125, 160, 740 | class1 1, class2 2, stroke 1 |
+| `_ 033` | initial | 033, 255, 700, 720 | class1 2, class0 1, stroke 1 |
+| `_ 090` | initial | 017, 125, 160, 740 | class2 2, class1 1, stroke 1 |
 | `_ 176 740` | initial | 031, 220, 233, 235 | class3 3, stroke 1 |
-| `_ 368` | initial | 035, 091, 817, 900 | stroke 1, class1 3 |
+| `_ 368` | initial | 035, 091, 817, 900 | class1 3, stroke 1 |
 | `_ 405` | initial | 003, 004, 005, 017 | stroke 4 |
-| `_ 415 220 520` | initial | 235, 240, 519, 798 | class3 2, class0 2 |
+| `_ 415 220 520` | initial | 235, 240, 519, 798 | class0 2, class3 2 |
 | `_ 740 151` | initial | 221, 222, 231, 235 | class3 3, class6 1 |
-| `_ 798 740` | initial | 233, 235, 700, 820 | class3 2, class1 2 |
+| `_ 798 740` | initial | 233, 235, 700, 820 | class1 2, class3 2 |
 | `003 _ 617` | medial | 122, 550, 798 | class0 3 |
 | `004 _ 740` | medial | 783, 785, 900 | class1 3 |
-| `016 _` | final | 220, 390, 617 | class3 1, class1 2 |
+| `016 _` | final | 220, 390, 617 | class1 2, class3 1 |
 | `017 _ 740` | medial | 575, 585, 590 | class1 3 |
 | `032 220 _ 740` | medial | 176, 773, 923 | class0 3 |
 | `032 _ 400` | medial | 226, 740, 854 | class1 2, class4 1 |
 | `140 _` | final | 156, 400, 527 | class1 3 |
-| `176 _ 740` | medial | 100, 336, 337 | class0 1, class5 2 |
-| `233 _` | final | 220, 520, 550 | class3 1, class0 1, class1 1 |
-| `233 _ 400` | medial | 236, 520, 804 | class1 1, class4 2 |
+| `176 _ 740` | medial | 100, 336, 337 | class5 2, class0 1 |
+| `233 _` | final | 220, 520, 550 | class0 1, class1 1, class3 1 |
+| `233 _ 400` | medial | 236, 520, 804 | class4 2, class1 1 |
 | `235 _` | final | 241, 520, 740 | class1 3 |
 | `240 _ 690 740` | medial | 630, 636, 642 | class6 2, class0 1 |
 | `255 _` | final | 033, 250, 740 | class1 2, stroke 1 |

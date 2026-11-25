@@ -19,7 +19,7 @@ for (pre, post), fillers in by_key.items():
         pos = "initial" if not pre else "final" if not post else "medial"
         fc = collections.Counter("stroke" if f in STROKE else cls.get(f, "unclassified") for f in fillers)
         forms.append({"template": " ".join(pre + ("_",) + post), "length": L, "slot": pos, "n_fillers": len(fillers),
-                      "fillers": sorted(fillers), "filler_classes": dict(fc)})
+                      "fillers": sorted(fillers), "filler_classes": dict(sorted(fc.items(), key=lambda x: (-x[1], x[0])))})
 forms.sort(key=lambda f: (-f["n_fillers"], f["template"]))
 slot_counts = collections.Counter(f["slot"] for f in forms)
 stroke_slots = sum(1 for f in forms if f["filler_classes"].get("stroke", 0) >= 2)

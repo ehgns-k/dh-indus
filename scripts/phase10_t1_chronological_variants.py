@@ -42,6 +42,6 @@ for a, b in PAIRS:
         res["pairs"][f"{a}/{b}"] = {"table_[[a3B,b3B],[a3C,b3C]]": tab, "odds_ratio": o, "p_value": p, "significant": bool(p < thr)}
     else:
         res["pairs"][f"{a}/{b}"] = {"table_[[a3B,b3B],[a3C,b3C]]": tab, "status": "insufficient data"}
-res["threshold"] = thr; res["texts_by_period"] = dict(collections.Counter(p for _, p in seen))
+res["threshold"] = thr; res["texts_by_period"] = dict(sorted(collections.Counter(p for _, p in seen).items()))
 (ROOT / "results" / "phase10_t1_chronological_variants.json").write_text(json.dumps(res, indent=1, default=float))
 print(json.dumps(res, indent=1, default=float))

@@ -50,7 +50,7 @@ shared = {}
 for m, ss in by.items():
     if len(ss) >= 2:
         c = collections.Counter(t for s in ss for t in set(s.split()))
-        shared[m] = [(t, k) for t, k in c.most_common() if k >= 2][:8]
+        shared[m] = sorted([(t, k) for t, k in c.items() if k >= 2], key=lambda x: (-x[1], x[0]))[:8]
 res = {"groups": n, "motif_counts": dict(collections.Counter(labels)), "observed_diff": float(obs),
        "null_mean": float(null.mean()), "null_sd": float(null.std()),
        "p_value": float((np.sum(null >= obs) + 1) / 10001), "texts_by_motif": dict(by),
