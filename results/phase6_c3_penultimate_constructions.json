@@ -1,0 +1,67 @@
+{
+ "values": [
+  "POT:T:g",
+  "SEAL:R",
+  "SEAL:S",
+  "TAB:B",
+  "TAB:C",
+  "TAB:I"
+ ],
+ "n_features": 27,
+ "n_tests": 162,
+ "n_discovered": 5,
+ "threshold": 0.002,
+ "n_confirmed": 1,
+ "discovered": [
+  {
+   "value": "TAB:I",
+   "feature": "length>=5",
+   "odds_train": 0.20946490131573933,
+   "p_train": 5.2844497422681606e-08,
+   "direction": "less",
+   "odds_heldout": 0.20988805970149255,
+   "p_heldout": 0.0010010142075344269,
+   "confirmed": true
+  },
+  {
+   "value": "SEAL:S",
+   "feature": "length>=5",
+   "odds_train": 1.798618763797751,
+   "p_train": 1.2574683687241345e-07,
+   "direction": "greater",
+   "odds_heldout": 1.4963753264548467,
+   "p_heldout": 0.04209366444132514,
+   "confirmed": false
+  },
+  {
+   "value": "POT:T:g",
+   "feature": "length>=5",
+   "odds_train": 0.03027788656177249,
+   "p_train": 1.3551037153699348e-06,
+   "direction": "less",
+   "odds_heldout": 1.34375,
+   "p_heldout": 0.6138491803048691,
+   "confirmed": false
+  },
+  {
+   "value": "SEAL:R",
+   "feature": "has_short_stroke",
+   "odds_train": 2.1542308929516736,
+   "p_train": 2.5501397265526802e-05,
+   "direction": "greater",
+   "odds_heldout": 1.5388052681091249,
+   "p_heldout": 0.14508150387964092,
+   "confirmed": false
+  },
+  {
+   "value": "TAB:B",
+   "feature": "penult=740",
+   "odds_train": 2.1032550703062913,
+   "p_train": 0.000952129074826541,
+   "direction": "greater",
+   "odds_heldout": 2.128786725529,
+   "p_heldout": 0.032806995482137995,
+   "confirmed": false
+  }
+ ]
+}

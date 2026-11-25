@@ -41,6 +41,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | E3 | ICIT + two cuneiform ciphers | held-out (ICIT fixed split; ciphers 80/20) | method has no power | positive control 2 failed |
 | E3b | same | same | method has no power | both positive controls failed |
 | E3c | two cuneiform ciphers, 8,000 lines | 80/20 | method has no power | failure not due to corpus size |
+| C3 | ICIT | discovery train, confirmation held-out | 1 of 5 confirmed (TAB:I short) | 15th held-out question; not counted as L2 |
 
 Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 

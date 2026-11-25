@@ -1268,3 +1268,19 @@ Same units, object-subtype values (≥ 30 training strings), site-stratified Coc
 - **constructions**: "contains a short-stroke sign" (ICIT 001, 003, 004, 034, 005, 016, 017), "contains a long-stroke sign" (031, 032, 033, 035), "contains a count–item pair" (as defined in `src/indus/controls.py`), "line length ≥ 5".
 
 Prediction: at least one association is confirmed. Interpretation rule: confirmed associations of the constructions count toward L2 (a structurally defined category predicting object class); confirmed penultimate-sign associations are L2 candidates unless the sign belongs to the terminal set.
+
+### C3 result: one association confirmed (text length), not counted as L2
+
+Script: `scripts/phase6_c3_penultimate_constructions.py`; results: `results/phase6_c3_penultimate_constructions.json`.
+
+162 tests (27 features × 6 object subtypes); 5 discovered; confirmation threshold 0.002.
+
+| Subtype | Feature | OR (train) | OR (held-out) | p (held-out) | Confirmed |
+|---|---|---:|---:|---:|---|
+| TAB:I | length ≥ 5 | 0.21 | 0.21 | 1.0 × 10⁻³ | yes |
+| SEAL:S | length ≥ 5 | 1.80 | 1.50 | 0.042 | no |
+| POT:T:g | length ≥ 5 | 0.03 | 1.34 | 0.61 | no |
+| SEAL:R | has short-stroke sign | 2.15 | 1.54 | 0.15 | no |
+| TAB:B | penultimate sign 740 | 2.10 | 2.13 | 0.033 | no |
+
+The only confirmed association is that `TAB:I` texts are short. Applied literally, the pre-registered rule would count "length ≥ 5" as a construction and therefore toward L2. I do not count it: text length is a physical property of small objects, not a semantic category, and listing it among the constructions was a mistake in the pre-registration. The decision is recorded here as stricter than the rule. Neither the count–item construction nor the stroke signs nor any penultimate sign is confirmed to vary with object class. The functional L2 result therefore remains limited to the closing sign (C2, C2k).
