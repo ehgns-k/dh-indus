@@ -2155,3 +2155,7 @@ Seal legends are almost always individual (their stems rarely repeat), whereas t
 ### Pre-registration of CT15s (stamped vs incised pottery; before running)
 
 **Prediction from the functional reading of 740 (CT15).** Pottery stamped with a seal (`POT:T:s`) carries seal legends; pottery with incised graffiti (`POT:T:g`) does not. Among ICIT unique complete strings with one of these two types that contain 740, the share with 740 in final position is higher for stamped than for incised pottery. One-sided Fisher exact test, p < 0.01; fewer than 5 strings with 740 in either group → "insufficient data". This question has not been examined before.
+
+### CT15s result: insufficient data
+
+Script: `scripts/claims_ct15s_pottery.py`; results: `results/claims_ct15s_pottery.json`. Only 3 stamped-pottery strings contain 740 (all with 740 final); incised pottery: 11 of 12 with 740 final. With fewer than 5 strings in one group the result is "insufficient data". Descriptively, incised pottery inscriptions that contain 740 also end in it, so the closing function of 740 is not confined to seal legends; this tempers the reading of CT15 as specific to seals and is noted in the final report.
