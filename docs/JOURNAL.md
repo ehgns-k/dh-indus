@@ -169,3 +169,22 @@ The fixed order of the terminal cluster (H3.3, H3.4) meets the L1 conditions of 
 ### Language of the repository (same day)
 
 From this point all repository content (documents, code comments, generated reports and commit messages) is written in English. Earlier Korean documents were translated; their content was not changed.
+
+## 2026-11-25 (day 1, continued)
+
+### Object type and find site are confounded
+
+Counts of complete lines with recorded direction in the ICIT-style source, by coarse object type (prefix of the `type` field) and site: tablet types `TAB:B` (Harappa 631, Mohenjo-daro 83) and `TAB:I` (Harappa 542, Mohenjo-daro 8) come mostly from Harappa, `TAB:C` (Mohenjo-daro 175) almost only from Mohenjo-daro, while seals (`SEAL*`) are frequent at both (Harappa 274, Mohenjo-daro 1,003). Any test of text against object type must therefore control for site; otherwise a classifier could learn site-specific vocabulary instead of object-specific text.
+
+### Pre-registration of H3.5 (before running the test)
+
+**H3.5 (seal texts and tablet texts differ in a way that transfers across sites).** The sign content of a text distinguishes seals from tablets, and the distinction learned at one site holds at another.
+- Unit: unique text strings with a single coarse object type, either `SEAL*` or `TAB*`.
+- Training: Harappa strings outside the held-out set.
+- Test: Mohenjo-daro strings that do not also occur at Harappa (primary); Mohenjo-daro held-out strings only (secondary).
+- Model: logistic regression on sign counts, initial sign, final sign and line length (fixed before the test; no tuning).
+- Metric: balanced accuracy (mean of per-class recall), because the classes are unbalanced.
+- Control: the same model trained on randomly permuted training labels (200 permutations).
+- Prediction: balanced accuracy ≥ 0.65 and permutation p < 0.01 on the primary test set.
+- Refutation condition: balanced accuracy < 0.65 or p ≥ 0.01.
+- If supported, the most informative features will be listed as candidates for L2 (semantic-category) hypotheses. They are not by themselves an L2 result.
