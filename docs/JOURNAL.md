@@ -2778,3 +2778,41 @@ Mean density (20 resamples of about 9,000 tokens):
 - The new scripts were re-run without changes in their results.
 - Interim report 5 was written.
 - The level assessment is unchanged.
+
+---
+
+## 2026-11-25 (day 1, twenty-seventh working session, 19:18 UTC): direction variants, sites, numeral partners
+
+### Plan of the run
+
+1. DIR1: do the 216 lines recorded as written left to right (`L/R`) follow the same order as the right-to-left lines, once normalised? This checks the direction normalisation of the first session.
+2. SX1: leave-one-site-out. Do order regularities learned at the other sites predict each main site, in the reading direction only?
+3. SX2: do Harappa and Mohenjo-daro seal legends differ in sign use beyond chance?
+4. D6: how specific is the partner of a numeral in the Indus texts, compared with proto-Elamite and proto-cuneiform? (descriptive, with a decision rule)
+5. R7 update; README, claims, reports; reproducibility.
+
+### Pre-registrations (before running)
+
+**DIR1.**
+- Model: a bigram model with add-0.1 smoothing over the ICIT vocabulary, trained on unique complete `R/L` strings in reading order. Strings that also occur as `L/R` lines are excluded.
+- Test: unique complete `L/R` strings of length ≥ 2, in reading order (`indus.corpus`, i.e. after the normalisation).
+- Statistic: number of strings with a lower mean log-loss forward than reversed.
+- Prediction: forward wins more often, sign test one-sided p < 0.01.
+- If the normalisation were wrong for `L/R` lines, the reversed order would win.
+
+**SX1.** For each site with at least 150 unique complete strings (expected: Harappa, Mohenjo-daro, and possibly Lothal, Kalibangan, Chanhu-daro, Dholavira):
+- train the same bigram model on the strings of all other sites (strings occurring at the held-out site are excluded);
+- on the held-out site's strings, count forward wins over reversed.
+- Prediction: forward wins at every such site, sign test one-sided p < 0.01 at each (Bonferroni over sites: 0.01/m).
+
+**SX2.**
+- Data: `SEAL:S` legends from Harappa and Mohenjo-daro (unique strings per site; strings found at both sites are dropped).
+- Statistic: Jensen–Shannon divergence between the sign-frequency distributions of the two sites, restricted to signs with at least 10 occurrences in the pooled data.
+- Null: site labels permuted among strings; 10,000 draws.
+- Prediction: the real divergence is larger, one-sided p < 0.01.
+- Descriptive: the signs that contribute most.
+
+**D6 (descriptive comparison).**
+- A numeral token is paired with its partner: in the Indus texts (ICIT) the next sign after a stroke sign; in proto-Elamite the sign before the numeral group; in proto-cuneiform the sign after the numeral group. Numeral tokens are reduced to their unit: Indus stroke sign as is; CDLI `n(Nxx)` → `Nxx`.
+- Statistic: Theil's uncertainty coefficient U(partner | numeral unit), on 20 resamples of 300 pairs per corpus.
+- Decision rule stated in advance: the Indus value is called "within the proto-administrative range" if its mean lies between the two proto means, ± 2 resample SDs.
