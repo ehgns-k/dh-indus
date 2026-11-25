@@ -1,0 +1,79 @@
+{
+ "AR1": {
+  "objects": 936,
+  "areas": {
+   "DKG": 479,
+   "DK": 87,
+   "DKC": 69,
+   "HRB": 58,
+   "DKB": 44,
+   "VSA": 44,
+   "HR": 41,
+   "DKE": 32,
+   "HRA": 31,
+   "SD": 15,
+   "DKD": 6,
+   "DKH": 5,
+   "DKA": 4,
+   "SDStupa": 4,
+   "VS": 4,
+   "L": 4,
+   "LB": 2,
+   "SDSo": 2,
+   "SDBath": 2,
+   "MN": 1,
+   "LC": 1,
+   "LD": 1
+  },
+  "rare_signs": 150,
+  "pairs": 461,
+  "share_same_area": 0.351409978308026,
+  "null_mean": 0.2881123644251627,
+  "p_value": 0.018598140185981403,
+  "verdict": "not supported"
+ },
+ "AR1_examples": {
+  "objects": 936,
+  "areas": {
+   "DK": 726,
+   "HR": 130,
+   "VS": 48,
+   "SD": 23,
+   "L": 4,
+   "LB": 2,
+   "MN": 1,
+   "LC": 1,
+   "LD": 1
+  },
+  "rare_signs": 150,
+  "pairs": 461,
+  "share_same_area": 0.6876355748373102,
+  "null_mean": 0.6240626898047723,
+  "p_value": 0.031796820317968204,
+  "verdict": "not supported"
+ },
+ "AR1h": {
+  "objects": 216,
+  "areas": {
+   "FTrench": 79,
+   "AB": 48,
+   "F": 32,
+   "FGranery": 21,
+   "ETrench": 10,
+   "D": 7,
+   "E": 5,
+   "J": 4,
+   "H": 4,
+   "ABTrench": 3,
+   "Cemetery": 1,
+   "G": 1,
+   "EC": 1
+  },
+  "rare_signs": 58,
+  "pairs": 224,
+  "share_same_area": 0.19196428571428573,
+  "null_mean": 0.21553035714285715,
+  "p_value": 0.7918208179182081,
+  "verdict": "not supported"
+ }
+}

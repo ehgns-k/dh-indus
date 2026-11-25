@@ -2634,3 +2634,32 @@ The confirmation tests of SZ2 (3), MO2b (3) and MO1k (1) were added to the famil
 - F2 (p = 0.00037) and H9.4 class 4 × copper tablets (p = 0.00039) no longer survive Holm at α = 0.01. Both still survive Holm at α = 0.05. The statement of the previous session that H9.4 survives even Holm at 0.01 is therefore withdrawn for the larger family.
 - Holm at α = 0.05 keeps 24 tests, including CT15, F5, CT22, H6.1 and G2. Benjamini–Hochberg at q = 0.01 keeps 24.
 - The count–item pairing is still covered at α = 0.01 by the strict held-out tests H3.10 and H3.12.
+
+### Pre-registration of AR1, AR1h (before running)
+
+**AR1 (rare signs cluster within a site).** If rare signs were local (for example parts of names, or signs of a local group of users), seals sharing a rare sign should come from the same part of the site more often than chance.
+- Data: Mohenjo-daro seal objects (`SEAL…` types), text as in SZ2 (complete, no `?`).
+- Main area: the letters of `area-section` before the first non-letter (DKG., DK-, DKC → "DK"; HRB, HR- → "HR"; VSA → "VS"). Objects whose area has no letters are excluded.
+- Rare sign: a sign occurring in 2 to 5 of these objects. Pairs: all pairs of objects sharing at least one rare sign.
+- Statistic: share of these pairs whose objects have the same main area.
+- Null: the area labels are permuted among the objects; 10,000 draws.
+- Prediction: the real share is higher, one-sided p < 0.01.
+- Insufficient data: fewer than 30 pairs.
+- Limitation stated in advance: the main areas were excavated and published by different excavators. Clustering could also come from differences in how signs were drawn or recorded, not from use.
+
+**AR1h (Harappa).** The same for Harappa seal objects, with the main area as the first letter group of `area-section` (AB-, F-, FTrench … → "AB", "F", "FTrench"; '--' excluded).
+
+### Result AR1, AR1h: not supported
+
+Script: `scripts/batch6b_ar1_areas.py`; results: `results/batch6b_ar1_areas.json`.
+
+**Error in the registration.** The registered rule for the main area (the letters before the first non-letter) gives "DKG" for `DKG.`, while the registered examples give "DK". The registration therefore did not fix the grouping uniquely. Both readings were run, and AR1 was to count as supported only if both passed.
+
+Results:
+- Mohenjo-daro, by the rule: 936 seals, 150 rare signs, 461 pairs. 35.1 % of the pairs come from the same area, against 28.8 % under permutation (p = 0.019).
+- Mohenjo-daro, by the examples (DK, HR, VS, SD …): 68.8 % against 62.4 % (p = 0.032).
+- Harappa (AR1h): 216 seals, 224 pairs. 19.2 % against 21.6 % (p = 0.79).
+
+In neither reading and at neither site do seals sharing a rare sign come from the same area significantly more often. At Mohenjo-daro the direction is positive but weak, and it is open to the recording confound stated in advance.
+
+From now on, a registered rule takes precedence over its examples. The examples are checked against the rule before registration.

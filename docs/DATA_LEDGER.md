@@ -113,6 +113,8 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | MO1k | KP (seals) | discovery train, confirmation strict held-out | not supported | icon code 40 vs others |
 | CT15r | ICIT | strict held-out + fresh (as CT15) | supported (OR 5.7, p = 0.0010) | robustness: strata site × length |
 | FACE4 | ICIT | all objects with three faces (38) | supported (p = 0.0001) | one closed text per object |
+| AR1 | ICIT (Mohenjo-daro seals) | all seals with area | not supported (p = 0.019 / 0.032, two area readings) | registration ambiguous; both readings fail |
+| AR1h | ICIT (Harappa seals) | all seals with area | not supported (p = 0.79) | |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 45 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
 

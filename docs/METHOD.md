@@ -36,3 +36,4 @@ Each working session follows these steps.
 
 - Permutation tests: the number of permutations is chosen so that the smallest attainable p-value is at most one tenth of the decision threshold (added after L3b).
 - Held-out tests use the strict held-out set without near-duplicates (added after R1).
+- **Rules and examples in registrations (added after AR1).** Where a registration gives both a rule and examples, the examples are checked against the rule before the registration is committed. If they still disagree, the rule takes precedence, and the analysis is also run with the examples' reading; the result counts as supported only if both readings pass.
