@@ -188,3 +188,29 @@ Counts of complete lines with recorded direction in the ICIT-style source, by co
 - Prediction: balanced accuracy ≥ 0.65 and permutation p < 0.01 on the primary test set.
 - Refutation condition: balanced accuracy < 0.65 or p ≥ 0.01.
 - If supported, the most informative features will be listed as candidates for L2 (semantic-category) hypotheses. They are not by themselves an L2 result.
+
+### H3.5 result: not supported
+
+Script: `scripts/phase3_h35_objecttype.py`; results: `results/phase3_h35_objecttype.json`.
+
+| Test set | Seal | Tablet | Balanced accuracy |
+|---|---:|---:|---:|
+| Mohenjo-daro, strings not found at Harappa (primary) | 882 | 96 | 0.555 |
+| Mohenjo-daro, held-out strings only (secondary) | 173 | 22 | 0.568 |
+
+Permutation control (200): mean 0.501, SD 0.039; p = 0.080. Both pre-registered conditions fail (balanced accuracy < 0.65, p ≥ 0.01). A model trained at Harappa does not separate seal texts from tablet texts at Mohenjo-daro.
+
+### Exploratory follow-up (not pre-registered)
+
+Script: `scripts/phase3_h35_explore_within_site.py`; results: `results/phase3_h35_explore_within_site.json`.
+
+Within Harappa alone (train on non-held-out strings, test on Harappa held-out strings: 42 seal, 73 tablet), the same model reaches balanced accuracy 0.79 (permutation mean 0.50, p = 0.005, the smallest value attainable with 200 permutations). Seal and tablet texts therefore do differ at Harappa, but the difference does not carry over to Mohenjo-daro.
+
+One possible reason is that "tablet" covers different subtypes at the two sites: Harappa tablets are `TAB:B` (631 lines) and `TAB:I` (542), whereas Mohenjo-daro tablets are mostly `TAB:C` (175) with some `TAB:B` (83). Since this explanation was formed after seeing the result, it is tested separately below as H3.6.
+
+### Pre-registration of H3.6 (before running)
+
+**H3.6 (seal vs `TAB:B` transfers across sites).** Restricting tablets to the one subtype that is common at both sites, `TAB:B`, a model trained at Harappa separates seal texts from `TAB:B` texts at Mohenjo-daro.
+- Same unit, features, model, metric and control as H3.5, with the tablet class limited to `TAB:B` at both sites.
+- Prediction: balanced accuracy ≥ 0.65 and permutation p < 0.01 on Mohenjo-daro strings not found at Harappa.
+- Refutation condition: either condition fails.

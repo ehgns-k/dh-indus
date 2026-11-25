@@ -1,0 +1,24 @@
+{
+ "status": "exploratory, not pre-registered",
+ "train": {
+  "TAB": 292,
+  "SEAL": 178
+ },
+ "test": {
+  "TAB": 73,
+  "SEAL": 42
+ },
+ "balanced_accuracy": 0.7901174168297456,
+ "null_mean": 0.5041087736464449,
+ "p_value": 0.004975124378109453,
+ "tablet_subtypes_by_site": {
+  "Harappa|TAB:B": 631,
+  "Harappa|TAB:I": 542,
+  "Mohenjo-daro|TAB:C": 175,
+  "Mohenjo-daro|TAB:B": 83,
+  "other|TAB:B": 11,
+  "Mohenjo-daro|TAB:I": 8,
+  "other|TAB:I": 6,
+  "other|TAB:C": 1
+ }
+}
