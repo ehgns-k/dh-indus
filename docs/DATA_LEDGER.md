@@ -129,6 +129,10 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | PT2 | ICIT | other objects (model from seals and tablets) | supported (p = 0.0005, 0.0001) | |
 | D2b | ICIT + CDLI + Sproat | 300-line samples | not supported (5/7 known corpora correct) | G3 still undecided |
 | PT3 | ICIT | pottery and other objects (217 strings) | supported (OR 11.6, p = 0.00004) | rule found on training strings of all types |
+| PT2k | KP | other object codes (184 strings) | supported (p = 0.0001 both) | replication of PT2 |
+| PT3k | KP | as PT2k | supported (OR 6.0, p = 0.0043) | replication of PT3 |
+| CT28h | ICIT | Harappa, Mohenjo-daro seal vs tablet strings | not supported (p = 0.87) | seal stems not richer in rare signs |
+| CT28hk | KP | seal vs tablet codes | not supported (p = 0.11) | |
 | R9 | all | – | review: all analyses re-run, no differences | |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |

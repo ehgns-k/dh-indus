@@ -1,0 +1,71 @@
+{
+ "PT2k": {
+  "train": 1613,
+  "test": 184,
+  "test_codes": {
+   "51": 89,
+   "91": 40,
+   "81": 26,
+   "52": 19,
+   "47": 16,
+   "93": 15,
+   "31": 13,
+   "82": 12,
+   "44": 6,
+   "89": 6,
+   "97": 6,
+   "42": 5
+  },
+  "with_two_zoned": 167,
+  "inversions": 75,
+  "inv_control_mean": 124.6774,
+  "p_template": 9.999000099990002e-05,
+  "covered": 197,
+  "cov_control_mean": 93.9224,
+  "p_units": 9.999000099990002e-05,
+  "verdict": "supported"
+ },
+ "PT3k": {
+  "table": [
+   [
+    5,
+    18
+   ],
+   [
+    24,
+    521
+   ]
+  ],
+  "odds_ratio": 6.030092592592593,
+  "p_value": 0.004295443357905734,
+  "verdict": "supported"
+ },
+ "CT28h": {
+  "strings": {
+   "Harappa": {
+    "SEAL": 256,
+    "TAB": 421
+   },
+   "Mohenjo-daro": {
+    "SEAL": 988,
+    "TAB": 120
+   }
+  },
+  "rare_signs": 402,
+  "statistic": -0.02072565025725598,
+  "null_mean": 0.00020028488147561774,
+  "p_value": 0.8733126687331267,
+  "verdict": "not supported"
+ },
+ "CT28hk": {
+  "strings": {
+   "SEAL": 1328,
+   "TAB": 334
+  },
+  "rare_signs": 161,
+  "statistic": 0.005940118345839938,
+  "null_mean": 3.495788498018072e-05,
+  "p_value": 0.11498850114988501,
+  "verdict": "not supported"
+ }
+}

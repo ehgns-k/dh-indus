@@ -2972,3 +2972,18 @@ Script: `scripts/batch9c_pt3_count_pairs.py`; results: `results/batch9c_pt3_coun
 - Prediction: seals have more rare signs, one-sided p < 0.01.
 
 **CT28hk (KP1979).** The same with KP codes {11, 23} vs {62, 67, 72, 75}, without site strata (KP has no site field in this source), the KP terminal set, and rarity counted on KP unique strings.
+
+### Results PT2k, PT3k, CT28h, CT28hk
+
+Script: `scripts/batch10_kp_classes_rare.py`; results: `results/batch10_kp_classes_rare.json`.
+
+- **PT2k: supported (replication).**
+  - 184 KP test strings from other object codes (mostly 51, 91, 81 and 52), 167 of them with two zoned signs.
+  - 75 inversions, against 124.7 for controls (p = 0.0001); 197 covered positions, against 93.9 (p = 0.0001).
+  - Note: the KP rule-preserving controls were applied to normalised strings, in which the long-stroke pair 147 → 217 appears as 123 → 217 and is not kept as a unit. This makes the controls slightly less strict for that pair.
+- **PT3k: supported (replication).** After the 4–9-stroke signs, 5 of 23 bigrams end in 86, against 24 of 545 after other signs (OR 6.0, p = 0.0043).
+- **CT28h: not supported.**
+  - Harappa 256 seal and 421 tablet strings; Mohenjo-daro 988 and 120. The share of rare signs in seal stems is not higher than in tablet stems: the summed difference is −0.021 (p = 0.87).
+- **CT28hk: not supported.**
+  - 1,328 seal and 334 tablet strings; difference +0.006 (p = 0.11).
+- CT28 found seal stems more diverse than tablet stems. They are not built from rarer signs, so their individuality lies in the combination of common signs, not in a special stock of rare signs. Names written with rare signs (as personal names often are in other scripts) would predict the opposite. The test does not decide claim C28 either way.
