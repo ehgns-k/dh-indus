@@ -10,7 +10,7 @@ Several cross-checks were made between resources:
 
 - In three independent sources, the glyphs for ICIT 001, 002, 003, 151, 342, 390, 392, 740, 741 and 920 were rendered and compared: the ICIT sign-list images in `decipher-indus/font-generation`, the PUA fonts that encode ICIT numbers, and the ICIT-indexed font table in `yajnadevam/indus-website`. They agree.
 - The Mahadevan images in `ejhong/rongo` were checked at M001, M002, M012, M342 and other signs. M342 is the jar sign.
-- The P numbers in `mayig/indus-valley-script-corpus` were compared with the sign ranks of the 1979 sign list digitised in `koskenni/indus` (see 3.8).
+- The P numbers in `mayig/indus-valley-script-corpus` were compared with the sign ranks of the 1979 sign list digitised in `koskenni/indus` (see 3.4).
 
 ## 2. Summary table
 
@@ -25,7 +25,7 @@ Abbreviations: ICIT = Wells/Fuls three-digit sign numbers; KP = Koskenniemi–Pa
 | 5 | yajnadevam/indus-website (`2434249`) | GPL-3.0 (LICENSE); bundled font: "© Shabir Kumbhar … 2017. All Rights Reserved" | SQL table ICIT ID → codepoint(s) in the SK Indus Script font; table of 69 "similar glyph" pairs | 698 ICIT IDs | ICIT | ICIT → font codepoint; no Parpola mapping | Partly: font glyphs are rendered via this table; the font licence is restrictive |
 | 6 | mayig/indus-valley-script-corpus (`ad2f1e2`) | MIT (LICENSE) | JSON per Parpola sign: description, Parpola variant codes, Wells numbers, Mahadevan numbers, schema of shape features; partial CISI corpus | 396 P signs (P000–P396); 498 Wells numbers; 359 Mahadevan numbers | P (= KP 1979 rank), V (1965 variant code), W (= ICIT), M | **Yes: Wells/ICIT → Parpola and Mahadevan → Parpola**, in `features/P###.json` | Indirectly: feature schemas, not images; serves as the bridge between image sets |
 | 7 | koskenni/indus (`60f6e28`) | none stated (contains the Helda reprint PDF of Koskenniemi & Parpola 1979) | Digitised 1979 sign list and corpus; binary glyph templates cut from the sign list (in a pickle) | 687 sign-list entries, 401 ranks | KP 1979 rank + 1965 variant code | KP and variant code only | Yes: one template image per KP allograph |
-| 8 | ejhong/rongo (`bb714c7`, archived, moved to ejhong/birdmen) | README: "Code and derived data: MIT licence. Catalogue images are reproduced for scholarly comparison." No licence file | Per-sign PNG crops from Mahadevan 1977 sign list, 64×64 skeletons, complexity counts, source scans | 417 | M (001–417) | M only | Yes (low resolution); see 3.9 |
+| 8 | ejhong/rongo (`bb714c7`, archived, moved to ejhong/birdmen) | README: "Code and derived data: MIT licence. Catalogue images are reproduced for scholarly comparison." No licence file | Per-sign PNG crops from Mahadevan 1977 sign list, 64×64 skeletons, complexity counts, source scans | 417 | M (001–417) | M only | Yes (low resolution); see 3.6 |
 | 9 | HimanshuAttri/IndusValleyScriptDataset (`c78ad4b`) | none stated | PNG per sign, 256×256, with printed sign number inside the image | 418 files | File index 1–418 ≠ printed number; printed numbers follow Mahadevan 1977 | None in files | Weak: tiny glyphs, labels inside image |
 | 10 | Cmathiaz/Indus-Valley-Script-fonts (`f9e04d7`) | README: none stated; font `name` table: SIL Open Font License 1.1, "Copyright (c) 2016, C. Mathiazhagan" | TTF font | 327 PUA glyphs, U+E000–U+E146 | Own sequence | None | Only with a manual mapping |
 | 11 | akksshhaay/Indus-Alphabates-Dataset (`4e8c06a`) | none stated | 1840 small images (70×54 PNG data with `.bmp` names) | 1840 images of signs and variants | Own file index (`PPRRCCNN.bmp`) | None | Only after manual labelling |
@@ -80,7 +80,7 @@ URL: https://github.com/koskenni/indus, commit `60f6e28bd058aa91edafc55b9b5102b0
 - `digitized/sign_list.tsv`: 687 rows with the columns `sign, variant_code, underlined, pdf_page, column, row`. There are 401 ranks (KP 1979 numbers), and `variant_code` is the 1965 code.
 - `digitized/pipeline/templates.pkl` (25.8 MB, a Python pickle that contains only numpy arrays): a list of 687 dicts with the keys `rank, code, ul, img, w, h, top, vec`. `img` is a binary uint8 crop of the plotter-drawn sign from the 1979 sign list, about 110 px high. `vec` is a 42×160 blurred float canvas used for template matching. There is one template per allograph (variant code). The file was loaded with a restricted unpickler for inspection.
 - `digitized/proofsheets/p###_colN.png` (114 files): scan strips with recognised signs re-plotted underneath.
-- Shape similarity: good for KP allographs. All glyphs are drawn in one uniform plotter style, which avoids differences in drawing hand. They are keyed only to KP rank and variant code. Through #4 (P = KP rank) they can be linked to ICIT.
+- Shape similarity: good for KP allographs. All glyphs are drawn in one uniform plotter style, which avoids differences in drawing hand. They are keyed only to KP rank and variant code. Through #6 (P = KP rank) they can be linked to ICIT.
 
 ### 3.6 ejhong/rongo
 URL: https://github.com/ejhong/rongo, commit `bb714c77c3f377cdae9b6e9a8cc5eaeab210cd2d` (archived; merged into ejhong/birdmen on 10 September 2026).
@@ -89,7 +89,7 @@ URL: https://github.com/ejhong/rongo, commit `bb714c77c3f377cdae9b6e9a8cc5eaeab2
 - `data/glyphs/indus_manifest.json`: a list of 417 records with the keys `page, row, col, number, ocr, ocr_conf, label_box, glyph_box, ocr_agrees, status, file`. Status is `ok` for 180 records and `check_ocr` for 237. The numbering comes from the grid position, and OCR of the printed number was used only as a check.
 - `data/norm/indus/###.png`: 64×64 skeletons. `data/norm/indus.json` adds `length, endpoints, junctions, loops` per sign.
 - `data/raw/mahadevan/`: the source PDF and page scans, including eight pages of the variant tables (`variants-000.jpg` … `variants-007.jpg`) that have not been processed.
-- Mapping: M numbers only. They can be linked to Parpola and ICIT through the `mahadevan_graphemes` lists in #4.
+- Mapping: M numbers only. They can be linked to Parpola and ICIT through the `mahadevan_graphemes` lists in #6.
 
 ### 3.7 HimanshuAttri/IndusValleyScriptDataset
 Commit `c78ad4b10f4ccbe7df7ba6f5388c39068a0a5126`, licence none stated. There are 418 PNGs, `1.png`–`418.png`, at 256×256 RGBA. Each glyph occupies only about 20–40 px and has its printed sign number (with daggers) beneath it inside the image. The file index does not equal the printed number: `2.png` shows "101", `12.png` "11", `418.png` "347†". The dagger convention and number range match the Mahadevan 1977 sign list, but the README names no source. Without a table from file index to printed number, the files are not usable.
@@ -131,4 +131,4 @@ For Mahadevan numbers, `ejhong/rongo/data/glyphs/indus/` together with `data/gly
 `yajnadevam/indus-website` table `GLYPHSIMILARITY` (69 ICIT pairs) can serve as a small independent check of similarity clusters.
 
 ### (b) ICIT–Parpola sign-number mapping
-The only explicit mapping found is **mayig/indus-valley-script-corpus**, `features/P###.json`, fields `wells_graphemes` (W### = ICIT number) and `mahadevan_graphemes` (M###), under a Parpola sign `id` that equals the KP 1979 rank. It covers 498 ICIT numbers and 396 P signs. It is hand-made, many-to-one, and differs in places from the alignment-based concordance in `docs/SIGN_CONCORDANCE.md` (e.g. ICIT 740). It is therefore best used as a second, independent concordance alongside `results/phase1_concordance.tsv`, with disagreements reviewed against the images of (a). The chain ICIT → P (#4) → KP template (#5) also gives each ICIT sign a second, independently drawn image for checking allograph decisions.
+The only explicit mapping found is **mayig/indus-valley-script-corpus**, `features/P###.json`, fields `wells_graphemes` (W### = ICIT number) and `mahadevan_graphemes` (M###), under a Parpola sign `id` that equals the KP 1979 rank. It covers 498 ICIT numbers and 396 P signs. It is hand-made, many-to-one, and differs in places from the alignment-based concordance in `docs/SIGN_CONCORDANCE.md` (e.g. ICIT 740). It is therefore best used as a second, independent concordance alongside `results/phase1_concordance.tsv`, with disagreements reviewed against the images of (a). The chain ICIT → P (#6) → KP template (#7) also gives each ICIT sign a second, independently drawn image for checking allograph decisions.

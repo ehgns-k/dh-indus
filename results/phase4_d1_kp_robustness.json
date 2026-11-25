@@ -1,0 +1,60 @@
+{
+ "means": {
+  "indus_kp1979": {
+   "S1_direction": 2.2413754786676217,
+   "S2_template": 0.49716229200035933,
+   "S3_units": 2.225523098411612,
+   "S4_repetition": 0.16633507853403143,
+   "S5_hapax": 0.2690611868677945,
+   "S6_final_conc": 0.4157591623036649
+  },
+  "proto_cuneiform": {
+   "S1_direction": 1.887259984445685,
+   "S2_template": 0.7723573577959305,
+   "S3_units": 2.1102549000415256,
+   "S4_repetition": 0.035884353741496594,
+   "S5_hapax": 0.36470136202970693,
+   "S6_final_conc": 0.06252834467120183
+  },
+  "proto_elamite": {
+   "S1_direction": 2.7571960231328143,
+   "S2_template": 0.615666556031737,
+   "S3_units": 2.2498673384753873,
+   "S4_repetition": 0.06776110068792995,
+   "S5_hapax": 0.314511804356699,
+   "S6_final_conc": 0.43746091307066914
+  },
+  "akkadian_ob_letters": {
+   "S1_direction": 1.4752603494009997,
+   "S2_template": 0.26673875161133226,
+   "S3_units": 2.006860131602737,
+   "S4_repetition": 0.13873563218390808,
+   "S5_hapax": 0.3266087371622904,
+   "S6_final_conc": 0.2125574712643678
+  },
+  "sumerian_ur3_admin": {
+   "S1_direction": 1.6177818691774892,
+   "S2_template": 0.47590032288487877,
+   "S3_units": 3.1170165390235445,
+   "S4_repetition": 0.09155334728033473,
+   "S5_hapax": 0.28964417817485855,
+   "S6_final_conc": 0.1345711297071129
+  },
+  "sumerian_ob_literary": {
+   "S1_direction": 1.6625392231327474,
+   "S2_template": 0.41881696604182295,
+   "S3_units": 2.6693950606436117,
+   "S4_repetition": 0.18075015499070055,
+   "S5_hapax": 0.3781251892280882,
+   "S6_final_conc": 0.1203657780533168
+  }
+ },
+ "mean_distance_to_indus_kp": {
+  "proto_cuneiform": 4.738919889022535,
+  "proto_elamite": 2.695254603718577,
+  "akkadian_ob_letters": 3.2178209373523203,
+  "sumerian_ur3_admin": 3.736634939098143,
+  "sumerian_ob_literary": 3.9891235411868435
+ },
+ "admin_closer_count": 19
+}

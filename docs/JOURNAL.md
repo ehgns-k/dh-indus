@@ -1568,3 +1568,15 @@ Script: `scripts/review_r2_h310_leave_one_out.py`; results: `results/review_r2_h
 - ICIT: it passes when any single target sign is left out, and when 005, 016, 017 or 034 is left out; it fails when 004 (four strokes) is left out (2 of 9 bigrams; p = 0.026).
 
 H3.10 does not rest on one sign in KP1979. In the ICIT strict held-out set the counts are small (12 bigrams after the stroke set), and the sign 004 carries a large share. The result stands, with the note that its ICIT replication on strict held-out data is driven mainly by four-stroke signs; the post-1979 confirmation (F2) is independent of this.
+
+### Repetition within lines depends on the transcription (descriptive)
+
+Script: `scripts/phase3_repetition.py`; results: `results/phase3_repetition.json`. Share of unique lines (length ≥ 2) containing some sign twice: **ICIT 0.038, KP1979 0.167**. Most KP repetitions are adjacent doublings of the same sign (144 144: 71; 121 121: 51; 268 268: 49), which the ICIT-style source writes as single composite signs (for example ICIT 032 ↔ KP 121/144 + 121/144; ICIT 617 ↔ KP 268 268, split/merge table). The low repetition rate of the Indus texts, an argument used in the debate on whether the signs are writing (claims register C9), is therefore largely a property of how a transcription segments doubled signs, not of the inscriptions themselves.
+
+### D1 robustness with the KP1979 transcription (not pre-registered)
+
+Script: `scripts/phase4_d1_kp_robustness.py`; results: `results/phase4_d1_kp_robustness.json`.
+
+With KP1979 in place of the ICIT-style source, the nearest reference corpus is still proto-Elamite (mean distance 2.70), followed by Akkadian letters (3.22), Ur III administrative (3.74), OB literary (3.99) and proto-cuneiform (4.74); an administrative corpus is nearer than both non-administrative ones in 19 of 20 resamples. The D1 placement next to proto-Elamite holds for both transcriptions.
+
+**Correction.** The D1 and D2 entries noted that the Indus corpus shares a very low repetition rate with proto-cuneiform and proto-Elamite. With KP1979 the repetition rate is 0.166, higher than in proto-Elamite (0.068) and close to OB literary Sumerian (0.181). That observation depends on the transcription and is withdrawn. The other D1 observations (direction asymmetry, final concentration, closeness to proto-Elamite) are unaffected.

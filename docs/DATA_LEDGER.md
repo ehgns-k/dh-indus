@@ -51,6 +51,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | D3 | ICIT, KP, reference corpora | all unique lines (9,000 tokens) | descriptive (Chao1: ICIT 830, KP 511, proto-Elamite 820) | not a test |
 | H7.1 | ICIT | fresh sets 1+2 | not supported (HMM worse than bigram) | states reproduce the functional grouping (descriptive) |
 | R2 | ICIT, KP | strict held-out | H3.10 robust in KP; in ICIT depends on 004 | review |
+| D1-KP | KP + CDLI reference corpora | resampled | proto-Elamite still nearest (19/20) | robustness; low-repetition observation withdrawn |
 
 Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 
