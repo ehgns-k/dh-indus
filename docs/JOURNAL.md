@@ -896,3 +896,27 @@ Interpretation and limits:
 - G1: passed (B1, B4).
 - G2: not met (no L2 result).
 - G3: undecided; D1 places the Indus corpus with proto-administrative systems. The next step for G3 is a genuinely non-linguistic reference corpus.
+
+---
+
+## 2026-11-25 (day 1, seventh working session): gate G3 with non-linguistic corpora
+
+### Non-linguistic reference corpora
+
+The corpora of Sproat (2014, *Language* 90(2), bibliography section C) are public at https://github.com/rwsproat/non-linguistic-symbols (commit `44e1ee3`, Apache License 2.0). Each document's symbol titles, in document order, form one line. Sizes (documents, median length, symbol types): Asian emoticons 10,000 / 6 / 333; barn stars 310 / 3 / 32; kudurrus 69 / 13 / 64; Pictish symbols 283 / 3 / 85; totem poles 325 / 5 / 484; Vinča signs 591 / 1 / 185; weather icons 10,142 / 5 / 16 (all of length 5). The collection also contains an Indus corpus, which is not used here.
+
+### Pre-registration of D2 (gate G3; before computing any statistic)
+
+Because several non-linguistic corpora are small, every corpus is resampled 20 times to **300 unique lines** (all unique lines if fewer; no length matching), and the six statistics S1–S6 of D1 are computed in each sample with the same code.
+
+Groups:
+- **Full writing (linguistic):** Sumerian Ur III administrative, Sumerian OB literary, Akkadian OB letters.
+- **Non-linguistic:** barn stars, totem poles, weather icons, Asian emoticons. Kudurrus are excluded (69 documents, too few for the train/test split).
+- **To be classified:** Indus (ICIT), proto-Elamite, proto-cuneiform, Pictish, Vinča.
+
+Decision rule for G3:
+1. Leave-one-corpus-out check on the seven known corpora: each is assigned to the nearer group centroid (Euclidean distance on statistics z-scored across the seven known corpora, using sample means), with the centroids computed without it.
+2. If all seven are assigned correctly (false-positive rate 0 < 0.1), the statistics are taken to separate the groups, and the Indus corpus is assigned to the nearer centroid. The assignment counts as stable if it is the same in at least 19 of 20 resamples.
+3. If any known corpus is misassigned, G3 is recorded as **undecided**, and no claim about the linguistic status of the Indus corpus is made.
+
+Limits stated in advance: seven known corpora is a small reference set; the non-linguistic corpora differ from the Indus corpus in medium and function; success would show only that the Indus statistics resemble one group, not that the Indus signs record language.
