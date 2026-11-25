@@ -1,0 +1,16 @@
+{
+ "strings": 217,
+ "table_[[stroke_T, stroke_other],[other_T, other_other]]": [
+  [
+   7,
+   19
+  ],
+  [
+   13,
+   409
+  ]
+ ],
+ "odds_ratio": 11.591093117408906,
+ "p_value": 4.4943761963550245e-05,
+ "verdict": "supported"
+}

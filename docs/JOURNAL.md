@@ -2914,3 +2914,25 @@ Scripts: `scripts/batch9_object_classes.py`, `scripts/batch9b_d2b_density.py`; r
   - With the seventh statistic, leave-one-out again classifies 5 of 7 known corpora correctly; totem poles and Asian emoticons are again classed as writing.
   - The seven statistics still do not separate writing from non-linguistic systems. Gate G3 remains undecided.
   - The Indus samples are assigned to "linguistic" in 20 of 20 resamples. As in D2, this is not interpreted, because the method fails on known corpora.
+
+### Pre-registration of PT3 (before running)
+
+**PT3 (count–item pairing on objects other than seals and tablets).**
+- Data: unique complete ICIT strings (no `?`) from pottery and other non-seal, non-tablet objects (as in PT1 + PT2, any direction).
+- Statistic: Fisher exact test, one-sided. It compares the share of bigrams whose second sign is in {390, 405, 406, 407} after a 4–9-stroke sign {004, 034, 005, 016, 017} with that after any other sign.
+- Prediction: p < 0.01. Insufficient data: fewer than 5 bigrams after the stroke set.
+- Data note: the H3.10 rule was found on training strings of all object types. Some of these strings may have been among them, so this is a test of the rule on an object class, not on unused data.
+
+### Result PT3: supported
+
+Script: `scripts/batch9c_pt3_count_pairs.py`; results: `results/batch9c_pt3_count_pairs.json`.
+- On 217 strings from pottery and other objects, 7 of 26 bigrams after a 4–9-stroke sign end in 390–407, against 13 of 422 after other signs (OR 11.6, p = 0.00004).
+- The count–item pairing is not confined to seals and tablets.
+
+### End of the twenty-eighth session
+
+- Pre-registered analyses:
+  - Supported: PT2, PT3.
+  - Partly supported: PT1 (units yes, template undecided).
+  - Not supported: D2b.
+- The L1 structure (template, units, count–item pairing) holds on every class of inscribed object. Gate G3 (writing or not) remains undecided.
