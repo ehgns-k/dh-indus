@@ -778,3 +778,5 @@ Units found in the fresh strings include `119 121`, `119 123`, `119 124`, `119 1
 - Control: 1,000 draws of one matched sign (training frequency within a factor 2 of 119 / 002, training medial share within 0.15), each evaluated on the held-out strings in the same way; signs in the stroke set are excluded from the pool.
 - Prediction: observed share above the matched draws, p < 0.01, in both corpora.
 - Held-out use: this is the 12th question decided on the held-out split.
+
+**Amendment to H5.1 (before any outcome was computed).** The pre-registered control could not be built: no sign lies within a factor 2 of the training frequency of KP 119 (394) or ICIT 002 (404) with a similar medial share (0.96 / 0.95); with a factor 4 or 8 only 2–8 signs qualify, too few for p < 0.01. Amended control: all other signs with training frequency ≥ 30 and training medial share ≥ 0.8 (stroke signs excluded), pooled. Test: one-sided Fisher exact test on held-out bigrams, (preceding sign is 119/002 vs a pooled medial sign) × (next sign is a stroke sign vs not). Prediction and threshold unchanged (p < 0.01 in both corpora).
