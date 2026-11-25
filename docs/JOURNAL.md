@@ -1260,3 +1260,11 @@ The calibration rule adopted after E2b and E3 requires that a phonetic method be
 - **P4f (external names)** needs a list of names that external sources connect with the Indus region, in a form specific enough to test. The sources seen in this project (claims register) give the region name *Meluhha* and a few individuals, not a set of names large enough for a calibrated test.
 
 Conclusion: under the standards of this project, no calibrated route to L3 is available with the data and sources accessible here. This is recorded as the outcome of WP-E. The remaining time is better used to strengthen and extend the L1 and L2 results and to prepare the reports.
+
+### Pre-registration of C3 (Q1; before running)
+
+Same units, object-subtype values (≥ 30 training strings), site-stratified Cochran–Mantel–Haenszel test, discovery on the training split with false-discovery rate q = 0.05 and confirmation on the held-out split (15th question on it; Bonferroni 0.01/number discovered) as in C2, but with these features:
+- **penultimate sign**: "the sign immediately before the final sign is t", for every t occurring in that position in ≥ 15 training strings (strings of length ≥ 2);
+- **constructions**: "contains a short-stroke sign" (ICIT 001, 003, 004, 034, 005, 016, 017), "contains a long-stroke sign" (031, 032, 033, 035), "contains a count–item pair" (as defined in `src/indus/controls.py`), "line length ≥ 5".
+
+Prediction: at least one association is confirmed. Interpretation rule: confirmed associations of the constructions count toward L2 (a structurally defined category predicting object class); confirmed penultimate-sign associations are L2 candidates unless the sign belongs to the terminal set.
