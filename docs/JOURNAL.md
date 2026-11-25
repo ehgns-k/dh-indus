@@ -1073,3 +1073,18 @@ Conclusion for claim C33: the published readings are mostly divisible into dicti
 ### Methodological consequence for WP-E3
 
 Any language-hypothesis test in this project must report the rate at which random or reordered strings pass the same acceptance criterion (as here), and must use a criterion with a control rate below 0.1 before readability can count as evidence.
+
+### Pre-registration of E2b (before running)
+
+**Question.** With the reading freedoms described in the proposal's README (a consonant sign may be read with or without the inherent vowel *a*; vowel length is free) and its normalisation, how much of the Indus corpus becomes readable under **random** sign-value assignments?
+
+**Procedure.**
+- Lines: ICIT unique complete lines with recorded direction (reading order), length ≤ 10, no damaged sign.
+- Value inventory after normalisation: consonants {k, g, c, j, t, d, n, p, b, m, y, r, l, v, s, h}; vowels {a, i, u, e, o}.
+- Random assignment: each sign type independently becomes a consonant (probability 0.8, uniform among consonants) or a vowel (0.2, uniform). A consonant sign is read as C or Ca; a vowel sign as V or VV (for e and o only the single form).
+- A line is readable if some choice of these options gives a string that divides completely into dictionary words (the E2 dictionary, words of length ≥ 2).
+- 20 random assignments.
+
+**Outcome.** Mean and maximum share of readable lines over the 20 assignments, compared with the 0.84 segmentability of the proposed readings (E2).
+
+**Decision rule.** If the mean share for random assignments is at least half of 0.84 (≥ 0.42), the reading freedoms alone make a large part of the corpus readable, and readability is recorded as no evidence for any particular assignment under these freedoms.
