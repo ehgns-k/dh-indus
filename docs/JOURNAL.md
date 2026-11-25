@@ -2995,3 +2995,34 @@ Script: `scripts/batch10_kp_classes_rare.py`; results: `results/batch10_kp_class
   - Not supported: CT28h, CT28hk.
 - The script reproduces its results on re-run.
 - The level assessment is unchanged.
+
+---
+
+## 2026-11-25 (day 1, thirtieth working session, 22:18 UTC): typology of order and frequency; consistency review
+
+### Plan of the run
+
+1. D8: order rigidity of sign pairs, compared with the reference corpora.
+2. D9: positional rigidity of signs, compared with the reference corpora.
+3. D10: shape of the rank–frequency distribution, compared with the reference corpora.
+4. R10: consistency review of README, claims evaluation and final report against the ledger and the result files.
+5. Interim report 6.
+
+### Pre-registrations (before running)
+
+Common design:
+- 20 resamples of about 9,000 tokens of unique lines, as in CT27 and D7.
+- Corpora: ICIT; KP1979 (normalised); the five CDLI corpora; the Sproat corpora with at least 9,000 tokens (weather icons, Asian emoticons; descriptive only).
+- The predictions concern the CDLI corpora. They are stated for each Indus transcription separately, and a prediction holds only if it holds in at least 19 of 20 resamples for both transcriptions.
+
+**D8 (order rigidity).**
+- Statistic: among ordered pairs of different signs (a, b) that occur adjacent at least 3 times in the sample, the share whose reverse (b, a) never occurs adjacent.
+- Prediction: the Indus value is higher than that of each of the three full-writing CDLI corpora (Ur III administrative, OB literary, OB letters).
+
+**D9 (positional rigidity).**
+- Statistic: for the 50 most frequent signs, the mean share of their occurrences (in lines of length ≥ 3) that fall in their modal position class (initial / medial / final).
+- Prediction: the Indus value is higher than that of each full-writing CDLI corpus.
+
+**D10 (rank–frequency shape).**
+- Statistic: the slope of log frequency against log rank for ranks 1–50 (least squares).
+- Prediction: none on direction. The decision rule is that the Indus slope is called "like the proto-administrative corpora" if it lies within the range of proto-Elamite and proto-cuneiform (± 2 resample SDs), for both transcriptions.
