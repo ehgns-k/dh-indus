@@ -1651,3 +1651,17 @@ Script: `scripts/phase8_h81_abroad.py`; results: `results/phase8_h81_abroad.json
 15 abroad lines (Gulf, Mesopotamia, Central Asia) vs 228 strict held-out home lines. Mean log-loss per token: abroad 5.09, home 4.31; one-sided Mann–Whitney p = 0.011. The direction is the predicted one, but p ≥ 0.01, so **H8.1 is not supported**.
 
 Descriptive observation (seen after the test; not tested): only 2 of the 15 abroad lines end in a sign of the terminal set (Kish: `… 590 390 740`; Gonur Depe: `… 590 390 740`), and those two have low log-loss (3.3, 3.8). The lines from Gulf sites (Saar, Janabiyah, Karzakan, Qala'at al-Bahrain, Hajar, Salut) all lack the terminal cluster and have the highest log-loss (5.2–7.0). If tested on new material, the prediction would be that Gulf finds lack the closing cluster that marks home-site seals. No unused abroad material is available here to test this.
+
+---
+
+## 2026-11-25 (day 1, fifteenth working session, 10:18 UTC): L-2b, do added marks behave like modifiers?
+
+### Pre-registration of M1 (before running)
+
+**Idea.** G2 showed that near-variant shapes share usage. If the added parts of a variant (extra strokes, marks, enclosures) act like modifiers with a consistent function, the marked member of a pair should shift position in the line in a consistent direction across many different base signs.
+
+- **Pairs (shape only):** ICIT sign pairs with shape similarity ≥ 0.807 (the top-5 % cut of G2), both signs with ≥ 10 occurrences in the training split.
+- **Marked member:** the sign with more ink (more black pixels in the normalised 32 × 32 image of G1); pairs whose ink differs by less than 5 % are excluded as undecidable.
+- **Positional measures (training split):** initial share and final share of each sign.
+- **Test:** for each measure, a two-sided sign test over pairs of (marked − unmarked); Bonferroni over the two measures, threshold 0.005.
+- **Prediction:** at least one measure shifts consistently (p < 0.005). Otherwise marks are recorded as not shifting position consistently.
