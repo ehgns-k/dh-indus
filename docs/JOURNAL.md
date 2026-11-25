@@ -1599,3 +1599,16 @@ With KP1979 in place of the ICIT-style source, the nearest reference corpus is s
 - **Test:** Mantel test, Spearman correlation between the two similarity matrices (upper triangles), 10,000 permutations of sign labels (smallest attainable p = 0.0001, one hundredth of the threshold).
 - **Prediction:** positive correlation, p < 0.01.
 - **Descriptive follow-up:** the sign pairs that are most similar in both respects are listed.
+
+### G1 result: not supported (no global correlation)
+
+Script: `scripts/phase8_g1_shape_usage.py`; results: `results/phase8_g1_shape_usage.json`. 82 signs; Spearman correlation between shape and context similarity 0.007; permutation mean 0.000 (SD 0.049); p = 0.43. Across all pairs of frequent signs, looking alike does not go with being used alike.
+
+Descriptive: the pairs most similar in both respects are known families: the initial signs 817 / 861 / 820, the fish-shaped signs 231 / 233 / 235 / 240 / 220, the count–item partners 390 / 405 / 407, 803 / 806, 154 / 156, 705 / 706. This suggests a local rather than a global relation: very close shapes may share usage even though shape similarity in general does not. Because this was seen in the training data, it is tested on other data below.
+
+### Pre-registration of G2 (local shape–usage relation; before running)
+
+- **Close-shape pairs:** among ICIT signs with an image, the 5 % of pairs with the highest shape similarity (defined by shape alone, as in G1).
+- **Usage data not used in G1:** the strict held-out set together with fresh sets 1 and 2; signs with ≥ 5 occurrences there.
+- **Statistic:** context similarity (1 − JS, as in G1) computed on these data only; one-sided Mann–Whitney test, close-shape pairs vs all other pairs among the same signs.
+- **Prediction:** close-shape pairs have higher context similarity, p < 0.01.
