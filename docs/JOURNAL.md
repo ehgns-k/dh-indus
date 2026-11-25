@@ -2134,3 +2134,12 @@ Script: `scripts/claims_ct15t_tags.py`; results: `results/claims_ct15t_tags.json
 Strings containing 740, with 740 final / not final: tags 14 / 2 (0.88); tablets 130 / 111 (0.54); seals, for reference, 523 / 140 (0.79). One-sided Fisher exact test tags vs tablets: odds ratio 6.0, p = 0.0068. **CT15t is supported.** Tags, which carry seal-type legends, show the seal pattern of the closing sign, not the tablet pattern, on objects never used as a class before.
 
 Limitation (stated in advance): tags come mostly from Lothal and cannot be compared with tablets of the same site, so a site effect cannot be excluded. With this limitation, CT15t adds independent support to the narrow functional L2 result of CT15.
+
+### Pre-registration of CT28 (claim C28: are seal texts name-like? before running)
+
+**Idea.** If seal legends name individual owners, the part of a seal text before its closing cluster (the "stem") should be more diverse than the stems of tablet texts, which repeat formulae.
+- **Records:** all ICIT complete records with recorded direction (each record counted, so that repeated texts on several objects count as repetitions), coarse type `SEAL*` or `TAB*`, at Harappa or Mohenjo-daro.
+- **Stem:** the text with its final run of terminal-set signs removed (terminal set as in `src/indus/controls.py`).
+- **Statistic:** share of distinct stems among n records, with n equal for seals and tablets within each site (n = the smaller count at that site), averaged over sites and over 1,000 random subsamples.
+- **Test:** the difference (seal share − tablet share) is positive in at least 99 % of the 1,000 subsamples (two sites pooled as above).
+- **Prediction (claim C28's alternative, names):** seal stems more diverse. A positive result is compatible with names but also with individual licences; a negative result speaks against seals carrying individual names.
