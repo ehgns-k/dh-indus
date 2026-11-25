@@ -2252,3 +2252,10 @@ Script: `scripts/claims_batch3.py`; results: `results/claims_batch3.json`.
 **CT32k (replication of CT32a in KP1979).** KP records with tablet codes {62, 67, 72, 75} occur on more records per distinct text than records with seal codes {11, 23}. Statistic: difference of mean records per distinct text; null: 10,000 permutations of the class labels; one-sided p < 0.01. (KP records are inscriptions; repeated texts on different objects appear as different records.)
 
 **CT22 (claim C22, distributional part: the fish signs form one class).** ICIT fish-shaped set {220, 222, 226, 231, 233, 235, 236, 240, 241}. Mean pairwise context similarity (1 − JS of previous/next-sign distributions) of the set members with ≥ 5 occurrences, computed on the strict held-out set plus fresh sets 1 and 2; null: 10,000 random sets of the same size from signs with ≥ 5 occurrences there, each member matched to a fish sign by frequency (within a factor of 1.5 where possible). Prediction: fish set more similar, p < 0.01.
+
+### Results CT32k and CT22
+
+Script: `scripts/claims_batch4.py`; results: `results/claims_batch4.json`.
+
+- **CT32k: supported (replication).** KP1979: tablet texts occur on 2.61 records per distinct text, seal texts on 1.10; p = 0.0001. CT32a is reproduced with the independent transcription and object codes.
+- **CT22: supported.** On the strict held-out and fresh data, six fish-shaped signs have at least 5 occurrences (220, 231, 233, 235, 236, 240); their mean pairwise context similarity is 0.211, against 0.104 (SD 0.025) for frequency-matched random sets; p = 0.0009. The plain and modified fish-shaped signs are used in similar contexts, as a single functional class would be (claim C22, distributional part; compare G2 and H9.3). The reading of the fish sign as *mīn* "fish/star" is not tested by this.
