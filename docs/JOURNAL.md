@@ -2733,3 +2733,38 @@ Script: `scripts/batch7_kp_replications.py`; results: `results/batch7_kp_replica
 - **NUM3 (descriptive).** In one-face texts, sign 700 occurs only 17 times. 11 of these follow a stroke sign (033: 4, 004: 4, 034: 2, 003: 1). Sign 700 is therefore almost confined to the numeral faces and to numeral contexts. On the numeral faces themselves it follows only 2–4 strokes (FACE2).
 
 R7 recomputed with CT22k and F5k (47 tests). Holm at α = 0.01 keeps the same 13 tests. CT22k and F5k survive Holm at α = 0.05, as do CT15, F5 and CT22.
+
+### Pre-registration of D7 (before running)
+
+**D7 (combinatorial sparsity across reference systems; typology).** CT27 found that frequent Indus signs combine less freely than the graphemes of syllabic Akkadian letters. D7 asks where the Indus value lies among all reference corpora.
+- Statistic: the CT27 density, the share of the 50 × 50 ordered pairs of the 50 most frequent signs that occur as adjacent pairs, in a sample of about 9,000 tokens of unique lines.
+- Corpora:
+  - Indus: ICIT and KP1979 (normalised).
+  - The CDLI reference corpora: proto-Elamite, proto-cuneiform, Ur III administrative Sumerian, OB literary Sumerian, OB Akkadian letters and Old Assyrian letters, where available in `indus.reference`.
+  - Sproat (2014) corpora with at least 9,000 tokens (descriptive only).
+- 20 resamples per corpus.
+- Prediction (from the D1 placement): in at least 19 of 20 resamples, the CDLI corpus whose density is nearest to the Indus value is proto-Elamite or proto-cuneiform, for each transcription separately.
+
+### Result D7: not supported (transcription-dependent)
+
+Script: `scripts/batch7b_d7_sparsity.py`; results: `results/batch7b_d7_sparsity.json`.
+
+Mean density (20 resamples of about 9,000 tokens):
+
+| Corpus | Density |
+|---|---:|
+| Sproat weather icons | 0.057 |
+| Sumerian Ur III administrative | 0.242 |
+| proto-Elamite | 0.266 |
+| proto-cuneiform | 0.268 |
+| Indus (ICIT) | 0.283 |
+| Indus (KP1979, normalised) | 0.331 |
+| Sumerian OB literary | 0.357 |
+| Akkadian OB letters | 0.402 |
+| Sproat Asian emoticons | 0.407 |
+
+- For ICIT, the nearest CDLI corpus is proto-cuneiform (14 resamples) or proto-Elamite (6); the prediction holds.
+- For KP1979, the nearest is OB literary Sumerian in all 20 resamples; the prediction fails. D7 is therefore not supported.
+- KP1979 writes more distinctions as separate signs than the ICIT source. Its frequent signs then combine more freely, and its density falls between the proto-administrative corpora and the literary corpus.
+- The administrative corpora are sparser than the literary and letter corpora. A non-linguistic system lies at each end (weather icons very sparse, emoticons dense).
+- The density measure therefore depends on the transcription, as the repetition measure did. It does not separate writing from non-writing.

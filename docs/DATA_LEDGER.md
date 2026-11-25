@@ -119,6 +119,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | F5k | KP formulae → ICIT fresh | fresh sets 1+2 | supported (10 vs 4.7, p = 0.0003) | independent discovery transcription |
 | FACE4k | KP | all objects with ≥ 3 records (28) | not supported (p = 0.33) | mixed lines codes |
 | FACE5 | ICIT | numeral-face tablets (144 text faces) | not supported (p = 0.12) | count vs manufacture technique |
+| D7 | ICIT, KP, CDLI and Sproat corpora | 9,000-token resamples | not supported (ICIT nearest proto-administrative 20/20; KP nearest OB literary 20/20) | transcription-dependent |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
 

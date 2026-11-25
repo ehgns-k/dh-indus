@@ -1,0 +1,45 @@
+{
+ "mean_density": {
+  "icit": 0.28298,
+  "kp1979": 0.33126,
+  "proto_cuneiform": 0.26782,
+  "proto_elamite": 0.26564,
+  "akkadian_ob_letters": 0.40178,
+  "sumerian_ur3_admin": 0.24220000000000003,
+  "sumerian_ob_literary": 0.35724,
+  "sproat_AsianEmoticons": 0.40653999999999996,
+  "sproat_WeatherIcons": 0.05736
+ },
+ "sd": {
+  "icit": 0.0027784168153824626,
+  "kp1979": 0.0033853212550657577,
+  "proto_cuneiform": 0.007087425484617103,
+  "proto_elamite": 0.0037005945468262234,
+  "akkadian_ob_letters": 0.007181615417160684,
+  "sumerian_ur3_admin": 0.007867401095660498,
+  "sumerian_ob_literary": 0.007729320798103805,
+  "sproat_AsianEmoticons": 0.010565055607993746,
+  "sproat_WeatherIcons": 0.0007735631842325495
+ },
+ "tokens_per_sample": {
+  "akkadian_ob_letters": 9002,
+  "icit": 9004,
+  "kp1979": 9001,
+  "proto_cuneiform": 9001,
+  "proto_elamite": 9001,
+  "sproat_AsianEmoticons": 9003,
+  "sproat_WeatherIcons": 9000,
+  "sumerian_ob_literary": 9007,
+  "sumerian_ur3_admin": 9002
+ },
+ "nearest_icit": {
+  "proto_cuneiform": 14,
+  "proto_elamite": 6
+ },
+ "pass_icit": true,
+ "nearest_kp1979": {
+  "sumerian_ob_literary": 20
+ },
+ "pass_kp1979": false,
+ "verdict": "not supported"
+}

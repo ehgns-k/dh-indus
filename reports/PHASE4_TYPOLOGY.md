@@ -38,6 +38,10 @@ Sound-sequence models of four natural languages all gain from the real Indus sig
 
 In the Indus texts the stroke numeral comes before the sign it goes with in 71 % of cases (ICIT). In proto-Elamite entries the sign comes before the numeral (99.6 %), while the CDLI transliterations of proto-cuneiform put the numeral first (98 %; partly an editorial order). On this point the Indus texts differ from proto-Elamite, the reference system they are otherwise closest to.
 
+### 2.6 Combinatorial sparsity (CT27, D7)
+
+Frequent Indus signs combine less freely than the graphemes of OB Akkadian letters in both transcriptions (CT27). Among all reference corpora, the ICIT value (0.283) lies next to proto-cuneiform (0.268) and proto-Elamite (0.266). The KP1979 value (0.331) lies nearer OB literary Sumerian (0.357). The placement therefore depends on the transcription (D7).
+
 ## 3. Conclusion
 
 Statistically the Indus inscriptions resemble proto-Elamite most closely, in both transcriptions; an administrative corpus is nearer than the full-writing corpora in 20/20 (ICIT) and 19/20 (KP1979) resamples, although proto-cuneiform itself is the farthest corpus for KP1979. Whether the signs record a spoken language cannot be decided with these methods.
