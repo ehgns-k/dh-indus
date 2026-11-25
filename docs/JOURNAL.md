@@ -1956,3 +1956,30 @@ Plan: give every claim in `docs/CLAIMS_REGISTER.md` a verdict based on the tests
 **CT17 (claim C17, long texts are built from short texts).** For each held-out line of length ≥ 5 (strict held-out set), test whether it can be divided completely into segments that occur as complete texts of length 2–4 in the training split (one single-sign remainder allowed). Compare the share of divisible lines with the same share for rule-preserving control versions of the same lines (`src/indus/controls.py`, 1,000 control sets). Prediction: real lines divisible more often, p < 0.01, both corpora.
 
 **CT10 (claim C10, repetition rises with length).** In ICIT unique complete lines (the transcription in which doubled signs are single signs, so that repetition is not a writing convention), the share of lines with a repeated sign increases with line length: Cochran–Armitage-type test by a one-sided Spearman correlation between length (2–13) and the presence of a repetition, p < 0.01. Data: all unique strings (descriptive claim about the corpus).
+
+### Results of the claim tests
+
+Script: `scripts/claims_tests.py`; results: `results/claims_tests.json`.
+
+| Test | Corpus | Result | Verdict |
+|---|---|---|---|
+| CT16 jar sign with numerals | ICIT (strict held-out + fresh) | lines with 740: 55/153 contain a numeral; other lines 89/183; OR 0.59, p = 0.99 | not supported (opposite direction) |
+| CT16 | KP1979 (strict held-out, normalised) | 45/114 vs 60/113; OR 0.58, p = 0.99 | not supported (opposite direction) |
+| CT17 long texts built from short texts | ICIT | 8.0 % of 162 long lines divisible; controls 0.6 % (SD 0.6 %); p = 0.001 | supported |
+| CT17 | KP1979 | 4.2 % of 167; controls 0.4 % (SD 0.5 %); p = 0.001 | supported |
+| CT10 repetition rises with length | ICIT | Spearman 0.19, p = 1.4 × 10⁻¹⁷; share with repetition from 0.3 % (length 2) to 16 % (length 9) | supported |
+
+CT16: texts with the jar sign contain numerals less often, not more, which does not fit a reading of 740 as a unit of measure attached to quantities (claim C16). CT17: long texts can be divided into complete short texts much more often than rule-preserving reorderings, although only a small share of long texts (4–8 %) can be divided completely; this supports C17 in a weak form. CT10 supports C10: the low repetition of the Indus texts is largely a matter of their shortness (and, as found earlier, of transcription).
+
+### Descriptive figures for further claims
+
+Script: `scripts/claims_descriptive.py`; results: `results/claims_descriptive.json`.
+
+- C2: entropy of the initial-sign distribution 7.09 bits (ICIT) / 6.59 (KP) vs final-sign distribution 4.78 / 4.89 — line ends are much more concentrated.
+- C6/C7: mean length of unique lines 4.49 (ICIT) / 4.61 (KP); longest line 13 / 14 signs; mean signs per object 4.09 / 4.96; longest object 17 / 28 signs.
+- C11/C13: the most frequent sign is 740 in ICIT with 10.7 % of tokens (KP: 325 with 6.4 %, the jar sign being split between KP 324 and 325); 82 (ICIT) / 63 (KP) signs cover 80 % of tokens.
+- C14: left-neighbour variety of 740 (distinct preceding signs per occurrence) is 0.19, among the lowest of the 20 most frequent signs (initial signs 817, 861: 0.79–0.88); 740 follows a limited set of signs, which is not what a freely attaching suffix would show.
+- C15: share of 740 occurrences in line-final position by object type: SEAL:S 0.82, TAB:C 0.84, SEAL:R 0.72, TAB:B 0.58, TAB:I 0.37.
+- C21a: restoring one masked sign per strict held-out line with a bigram model: correct first guess 29 %, within the top five 52 % (227 lines).
+- C27: among the 50 most frequent signs, the share of possible ordered pairs that occur (9,000-token samples): Indus 0.29, proto-Elamite 0.27, Ur III administrative 0.24, Akkadian OB letters (syllabic graphemes) 0.41.
+- C28: 1,585 seal lines carry 1,453 distinct texts; 78 texts occur on more than one seal record and 44 at more than one site.

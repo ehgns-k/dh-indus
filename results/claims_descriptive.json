@@ -1,0 +1,76 @@
+{
+ "icit": {
+  "C2_entropy_initial_bits": 7.093018034129437,
+  "C2_entropy_final_bits": 4.781219018723539,
+  "C6_mean_line_length_unique": 4.491500728508985,
+  "C6_max_line_length": 13,
+  "C6_mean_object_length_all_records": 4.089618176080783,
+  "C6_max_object_length": 17,
+  "C11_top_sign": "740",
+  "C11_top_share": 0.10661764705882353,
+  "C11_signs_for_80pct": 82,
+  "C11_types": 607
+ },
+ "kp1979": {
+  "C2_entropy_initial_bits": 6.5852339377950955,
+  "C2_entropy_final_bits": 4.894982351197926,
+  "C6_mean_line_length_unique": 4.606217616580311,
+  "C6_max_line_length": 14,
+  "C6_mean_object_length_all_records": 4.9593466424682395,
+  "C6_max_object_length": 28,
+  "C11_top_sign": "325",
+  "C11_top_share": 0.06370794559770938,
+  "C11_signs_for_80pct": 63,
+  "C11_types": 367
+ },
+ "C13_740_rank_share": {
+  "rank": 1,
+  "share": 0.10661764705882353
+ },
+ "C14_left_neighbour_types_per_occurrence": {
+  "740": 0.189,
+  "002": 0.237,
+  "032": 0.326,
+  "220": 0.195,
+  "400": 0.319,
+  "240": 0.147,
+  "520": 0.164,
+  "390": 0.317,
+  "060": 0.185,
+  "861": 0.792,
+  "033": 0.216,
+  "820": 0.718,
+  "741": 0.504,
+  "235": 0.208,
+  "031": 0.562,
+  "001": 0.418,
+  "817": 0.875,
+  "233": 0.225,
+  "590": 0.43,
+  "003": 0.457
+ },
+ "C15_740_final_share_by_type": {
+  "SEAL:S": 0.82,
+  "SEAL:R": 0.72,
+  "TAB:B": 0.58,
+  "TAB:I": 0.37,
+  "TAB:C": 0.84
+ },
+ "C21a_restoration": {
+  "lines": 227,
+  "top1": 0.28634361233480177,
+  "top5": 0.5154185022026432
+ },
+ "C27_bigram_density_top50": {
+  "indus_icit": 0.2868,
+  "proto_elamite": 0.2656,
+  "akkadian_ob_letters": 0.414,
+  "sumerian_ur3_admin": 0.2364
+ },
+ "C28_seals": {
+  "seal_lines": 1585,
+  "distinct_texts": 1453,
+  "texts_on_more_than_one_seal_record": 78,
+  "texts_at_more_than_one_site": 44
+ }
+}
