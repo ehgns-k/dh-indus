@@ -1140,3 +1140,38 @@ Scripts: `scripts/phase6_c2k_kp_typecodes.py` (pre-registered), `scripts/phase6_
 **Interpretation.** The confirmed KP association says that motif-bearing seals (code 11) avoid ending a line with KP 98, which is the same sign as ICIT 400 (concordance purity 0.99). This is the C2 association "400 avoided on `SEAL:S`" reproduced in an independent transcription with an independent object classification (the 1973 codes). The tablet codes 75 (`TAB:I`) and 62 (`TAB:B`) favour line-final 98 on held-out data at p = 0.001 and 0.006, the same direction as `TAB:B` × 400 in C2, but below the strict threshold. KP has no decoded site field, so C2k is not stratified by site.
 
 **Status of the functional L2 result.** The finding that line-final signs vary with the class of object, in particular that 400/98 closes tablet texts and is avoided on motif-bearing seals, is now confirmed on held-out data in two transcriptions with two independent object classifications. It remains a functional result: it says that the closing sign depends on the kind of document, not what the closing sign means.
+
+---
+
+## 2026-11-25 (day 1, eleventh working session): E3, calibrated phonetic-assignment search
+
+### Idea
+
+E2b showed that readability under flexible rules is no evidence. A different use of random and fitted sound values can be calibrated: for each candidate language, **search for the sign-to-sound assignment that best fits the training lines** under a statistical model of that language's sound sequences, and measure how much better the fitted assignment predicts **held-out lines** than random assignments do. If the inscriptions record language L phonetically, an assignment fitted under L should generalise better under L than assignments fitted under other languages. Because about 600 free signs can fit almost anything, only the held-out gain is used, and the whole procedure is first run on **known scripts whose language is hidden** (positive controls), to measure whether it can identify the right language at all.
+
+### Pre-registration of E3 (before any code is run)
+
+**Languages (sound-sequence models).** All texts are normalised to one reduced alphabet: consonants k g c j t d n p b m y r l v s h, vowels a i u e o (aspirates, retroflexes, nasals, sibilants and vowel length merged as in E2), with `#` as a word boundary.
+- Sanskrit: Monier-Williams headwords (E2 dictionary source).
+- Old Tamil: Sangam anthologies (Purananuru, Akananuru, Kuruntokai, Natrinai) from https://github.com/indic-corpora/sentamizh-corpus (commit `e833395`, Apache License 2.0), Tamil script transliterated by a fixed table.
+- Sumerian: Old Babylonian literary texts (CDLI), graphemes of a word joined.
+- Akkadian: Neo-Assyrian letters (CDLI), graphemes of a word joined.
+- Pseudo-language: random strings with the pooled letter frequencies of the four languages (null model).
+Model: letter trigram model with interpolated smoothing, trained on words of the language.
+
+**Corpora to decipher.**
+- Positive control 1: Akkadian Old Babylonian letters (CDLI) with every grapheme replaced by an opaque number (a cipher of a known syllabic script); lines of 2–10 signs.
+- Positive control 2: Sumerian Ur III administrative texts (CDLI) as a cipher in the same way; lines of 2–10 signs (short administrative lines, closer to the Indus texts).
+- Indus: ICIT unique complete lines, reading order.
+Each corpus is limited to 2,000 unique lines and split 80/20 at random (Indus: the fixed held-out split).
+
+**Assignment and search.** The 100 most frequent signs of the training lines receive values from one inventory used for all languages: V (5), CV (80) or C (16), 101 values in all; any other sign breaks the line into separately scored segments. For each (corpus, language) pair: coordinate ascent over signs (each sign in turn takes the value that maximises training log-probability), 4 sweeps, 2 random restarts; the best restart is kept.
+
+**Measure.** Δ_L = mean held-out log-probability per sign under the fitted assignment minus the mean over 20 random assignments, for language L. Bootstrap over held-out lines (1,000 resamples) for the difference between the best and second-best language.
+
+**Decision rules.**
+1. The method has power only if, in **both** positive controls, the true language has the largest Δ and its difference to every other language has bootstrap p < 0.01. If not, the Indus results are reported as uninterpretable and no language preference is claimed.
+2. If the method has power, a language is *favoured* for the Indus inscriptions only if its Δ exceeds that of every other language and of the pseudo-language with bootstrap p < 0.01.
+3. Even a favoured language is not an L3 result: L3 needs sign values that predict held-out texts under a criterion with a random-assignment pass rate below 0.1 (gate G4). A favoured language would be recorded as conditional evidence, on the assumption that the signs record sounds.
+
+**Untested hypothesis.** No usable Munda text corpus was found, so a Munda hypothesis is not tested.
