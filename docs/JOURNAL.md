@@ -1284,3 +1284,25 @@ Script: `scripts/phase6_c3_penultimate_constructions.py`; results: `results/phas
 | TAB:B | penultimate sign 740 | 2.10 | 2.13 | 0.033 | no |
 
 The only confirmed association is that `TAB:I` texts are short. Applied literally, the pre-registered rule would count "length ≥ 5" as a construction and therefore toward L2. I do not count it: text length is a physical property of small objects, not a semantic category, and listing it among the constructions was a mistake in the pre-registration. The decision is recorded here as stricter than the rule. Neither the count–item construction nor the stroke signs nor any penultimate sign is confirmed to vary with object class. The functional L2 result therefore remains limited to the closing sign (C2, C2k).
+
+---
+
+## 2026-11-25 (day 1, thirteenth working session): review pass (WP-F1)
+
+### Finding: near-duplicates between training and held-out strings
+
+The held-out split is defined on exact strings, so identical texts never cross the split. Near-identical texts can: strings that differ by one sign (a reading variant, a damaged copy, an extra stroke) fall on different sides at random. Counted now:
+- ICIT: 166 of 396 held-out strings (42 %) have a training string within edit distance 1;
+- KP1979: 204 of 431 (47 %).
+
+Held-out tests therefore partly measured agreement between near-copies, which makes them easier than intended. This affects every result decided on the held-out split.
+
+### Pre-registration of R1 (before running)
+
+The supported held-out results are re-decided on the **strict held-out set**: held-out strings with no training string within edit distance 1. Tests and thresholds are those originally registered:
+- H3.3 (terminal-cluster order; ≥ 0.8 agreement and binomial p < 0.01, both corpora);
+- H3.10 (4–9 strokes → target group; Fisher p < 0.01, both corpora);
+- H3.12a and H3.12b (count-specific pairs; p < 0.005 each, both corpora);
+- C2 (the six confirmed associations; threshold 0.01/40);
+- C2k (KP code 11 × final 98; threshold 0.001).
+A result keeps its status only if it passes on the strict set; otherwise its status is downgraded in the README and the reports, with the reason. Results decided on fresh data (F2, F3, B1, B4) are unaffected, because the fresh sites are disjoint from the training corpus by date of excavation; they are listed for completeness.
