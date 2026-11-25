@@ -2198,3 +2198,17 @@ Script: `scripts/claims_batch2.py`; results: `results/claims_batch2.json`.
 - **CT14: supported.** Rarefied to 100 occurrences, 740 has 55.2 distinct left neighbours, the highest of the 22 signs with ≥ 100 occurrences (median of the others 27.5). The jar sign follows a wider variety of signs than any other frequent sign, as a freely attaching final element would.
 
 **Correction.** The descriptive entry for C14 (`results/claims_descriptive.json`, "left-neighbour types per occurrence", 0.19 for 740) and its use in `docs/CLAIMS_EVALUATION.md` ("740 follows a narrow set of signs") were wrong in interpretation: distinct neighbours per occurrence fall automatically with frequency, and 740 is the most frequent sign. With frequency controlled by rarefaction (CT14), 740 has the most diverse left context of all frequent signs. The claims evaluation is corrected.
+
+### R6 (review): robustness of H9.3 to resolution and seed
+
+Script: `scripts/review_r6_h93_robustness.py`; results: `results/review_r6_h93_robustness.json`. Not pre-registered.
+
+| Louvain resolution | ARI over five seeds | p (2,000 permutations) |
+|---|---|---|
+| 0.6 | 0.005–0.089 | 0.003–0.31 |
+| 0.8 | 0.055–0.080 | 0.003–0.015 |
+| 1.0 (registered) | 0.185–0.218 | ≤ 0.0005 |
+| 1.2 | 0.242–0.320 | ≤ 0.0005 |
+| 1.5 | 0.102–0.207 | ≤ 0.001 |
+
+The agreement between the transcriptions holds for every seed at the registered resolution and at finer resolutions (1.0–1.5), but is weak and not always significant when the graphs are cut into a few large classes (0.6–0.8). H9.3 stands, with the qualification that the agreement concerns fine-grained substitution classes, not a coarse division of the inventory.

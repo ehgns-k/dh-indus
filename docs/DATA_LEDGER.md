@@ -85,6 +85,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | CT19 | ICIT, KP, D2 corpora | 300-line samples | not supported (inside both ranges) | claim C19 |
 | CT25 | KP (normalised) | all unique strings | drop after seven (6 observed vs 34.5 predicted) | claim C25; base undecided |
 | CT14 | ICIT | all unique strings | supported (740 most diverse left context) | claim C14; corrects earlier descriptive reading |
+| R6 | ICIT, KP | all unique strings | H9.3 robust at resolution ≥ 1.0, weak at 0.6–0.8 | review |
 
 Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 
