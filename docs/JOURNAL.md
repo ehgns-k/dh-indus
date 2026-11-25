@@ -1942,3 +1942,17 @@ For the Indus corpus the share (0.026–0.028) is close to proto-cuneiform (0.03
 ### Visual check of key signs (descriptive)
 
 The ICIT-keyed images of the stroke signs (003, 004, 005, 016, 017, 031, 032, 033, 035), the count partners (390, 405, 406, 407, 520, 575, 585) and the closing signs (740, 400, 090) and 002 were inspected. The stroke counts read earlier from the KP1979 sign list agree with the ICIT images (for example 016 = three over three, 017 = four over three short strokes; 033 = three long strokes). ICIT 740 is a U-shaped vessel with two lateral attachments, which matches the "jar" sign of the literature; this identification had been assumed in the claims register and is now checked against the image. Shape descriptions are collected in `docs/COUNTED_ITEMS.md`, marked as descriptions only.
+
+---
+
+## 2026-11-25 (day 1, twentieth working session): evaluating the claims register
+
+Plan: give every claim in `docs/CLAIMS_REGISTER.md` a verdict based on the tests of this project, and run new tests for claims that are testable now but have not been tested. Result: `docs/CLAIMS_EVALUATION.md`.
+
+### Pre-registration of three claim tests (before running)
+
+**CT16 (claim C16, the "jar" sign as a unit of measure).** Lines containing the jar sign (ICIT 740; KP 324/325) contain a stroke numeral more often than lines without it. Data: strict held-out set of each corpus, plus the fresh sets for ICIT. One-sided Fisher exact test; p < 0.01 in both corpora. Numeral sets as in H9.1 (KP normalised as in R4).
+
+**CT17 (claim C17, long texts are built from short texts).** For each held-out line of length ≥ 5 (strict held-out set), test whether it can be divided completely into segments that occur as complete texts of length 2–4 in the training split (one single-sign remainder allowed). Compare the share of divisible lines with the same share for rule-preserving control versions of the same lines (`src/indus/controls.py`, 1,000 control sets). Prediction: real lines divisible more often, p < 0.01, both corpora.
+
+**CT10 (claim C10, repetition rises with length).** In ICIT unique complete lines (the transcription in which doubled signs are single signs, so that repetition is not a writing convention), the share of lines with a repeated sign increases with line length: Cochran–Armitage-type test by a one-sided Spearman correlation between length (2–13) and the presence of a repetition, p < 0.01. Data: all unique strings (descriptive claim about the corpus).
