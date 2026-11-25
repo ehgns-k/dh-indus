@@ -2171,3 +2171,19 @@ Script: `scripts/claims_ct15s_pottery.py`; results: `results/claims_ct15s_potter
 ### CT31c result: not supported (p = 0.013)
 
 Script: `scripts/claims_ct31c_shared_stems.py`; results: `results/claims_ct31c_shared_stems.json`. Of 275 distinct Harappa tablet stems (numerals removed, length ≥ 2), 10.2 % also occur among 1,332 seal stems; rule-preserving reorderings reach 8.9 % on average (SD 0.5 %); p = 0.013. The excess is small and does not reach p < 0.01. **CT31c is not supported**: tablet texts do not, beyond chance, repeat the non-numeral parts of seal legends. Shared stems include the C26 sequence `255 435 690`.
+
+---
+
+## 2026-11-25 (day 1, twenty-second working session, 14:18 UTC): batch of claim tests
+
+Plan: (1) consistency review of the summary documents (background); (2) CT32a, copies per text on tablets vs seals (claim C32a); (3) CT19, conditional entropy of the Indus corpus against linguistic and non-linguistic corpora (claim C19); (4) CT25, a drop in stroke-count frequency after seven (claim C25); (5) CT14, left-neighbour diversity of the jar sign (claim C14); (6) report updates.
+
+### Pre-registrations (before running)
+
+**CT32a (claim C32a).** At Harappa, texts on tablets occur on more objects per distinct text than texts on seals. Records (complete, direction known) of coarse type `TAB*` or `SEAL*` at Harappa; statistic: mean number of records per distinct text (tablets minus seals); null: 10,000 permutations of the type labels among records; one-sided, p < 0.01.
+
+**CT19 (claim C19, Rao et al. 2009).** Bigram conditional entropy H(next | current), divided by the unigram entropy of the same sample, for 20 samples of 300 unique lines (all corpora as in D2: Indus ICIT and KP1979, the three full-writing corpora, the four non-linguistic corpora). The claim predicts that the Indus value lies within the range spanned by the full-writing corpora and outside the range spanned by the non-linguistic corpora. Decision: the claim's prediction holds if both conditions hold for the mean over samples, for ICIT and for KP1979.
+
+**CT25 (claim C25: base).** For short-stroke counts 1–9 in KP1979 normalised as in R4 (all unique strings), fit a log-linear decline of frequency on counts 3–7 (least squares on log counts) and predict counts 8 and 9. A base-8-like system predicts that the observed sum of counts 8 + 9 is far below the prediction. Decision: observed (8 + 9) below the 1st percentile of a Poisson distribution with the predicted mean → "drop after seven"; otherwise "no evidence of a drop".
+
+**CT14 (claim C14: the jar sign as a freely attaching suffix).** Distinct left neighbours of 740 among 100 randomly chosen occurrences (rarefaction, 1,000 draws, all unique ICIT strings), compared with the same quantity for the other signs with ≥ 100 occurrences. The suffix reading predicts high diversity; decision: the claim's prediction holds if the mean rarefied diversity of 740 is above the median of the other signs.
