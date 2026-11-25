@@ -2267,3 +2267,57 @@ Script: `scripts/claims_batch4.py`; results: `results/claims_batch4.json`.
 - `TAB:B` (bas-relief tablets) and `TAB:I` (incised tablets) have only a weak source (a search-engine summary).
 - The pottery letters `g` (incised graffito) and `s` (stamped) are likely but unsourced; CT15s relied on this reading, so its descriptive note ("incised pottery also ends in 740") carries this uncertainty.
 - The `class` field is a classification derived from the text itself (for example `NU` numeral-only texts, `VN` sign 700 followed by a numeral). It was never used as an external variable in any test of this project; tests that used it would be circular.
+
+---
+
+## 2026-11-25 (day 1, twenty-fourth working session, 16:18 UTC): multi-line texts, combined numerals, formulae across transcriptions
+
+### Plan of the run
+
+1. ML1, ML1k: do the lines of a two-line object form one text or separate texts? (ICIT; KP1979 replication)
+2. NUM2: do different stroke signs combine in a fixed order, as the units of a multi-unit numeral notation would? (ICIT, KP1979)
+3. NUM1: order of numeral and counted sign in the Indus texts compared with proto-Elamite and proto-cuneiform (L-1, descriptive comparison with a decision stated in advance)
+4. KF1: formula table for KP1979 and reproduction of the ICIT formulae across transcriptions
+5. R7: family-wise review of all decisive p-values
+6. L-3b: combined sign inventory (descriptive document)
+7. Literature notes on numeral order and multi-line texts (survey done in parallel; see below)
+8. Interim report 4; README, claims evaluation, final report
+
+### Pre-registrations (before running)
+
+**ML1 (ICIT).** Objects with exactly two lines, both complete and without unreadable signs. A line "closes" if its last sign in reading order is in the ICIT terminal set {740, 400, 520, 090, 151, 407, 527, 156}.
+- Hypothesis: the two lines form one continuous text, which is closed only once.
+- Statistic: number of objects in which exactly one of the two lines closes.
+- Null: 10,000 random re-pairings of the lines, within groups of objects with the same `type` value. This keeps the closing rate and tests only dependence within objects.
+- Prediction: the statistic exceeds the null, one-sided p < 0.01 (smallest attainable p ≈ 0.0001).
+- Insufficient data: fewer than 30 objects.
+- Descriptive: the number of objects where both lines close (one-sided p in the other direction); and, among objects with exactly one closing line, whether it is line 0 or line 1 of the source.
+
+**ML1k (KP1979).** The same test for KP objects with exactly two records, both complete and without `?`, using `lines_code` 2. The meaning of the code (two lines on one face, as opposed to 6 for different faces) is inferred from the data, not from a source. Terminal set: {324, 325, 98, 217, 326, 1, 13, 4, 301}; groups: `type_code`. Code 6 is reported descriptively.
+
+**NUM2 (ICIT, KP1979).** All unique complete strings without `?`. Count the adjacent pairs (a, b) in reading order where both signs are stroke signs and a ≠ b.
+- ICIT stroke sets: short {001, 003, 004, 034, 005, 016, 017}; long {031, 032, 033, 035}.
+- KP stroke sets: short 121–130; long {144, 145, 147, 150, 151}.
+  - First, any adjacent pair of 121/144 (in any combination) is merged into one two-stroke token of unknown length class. These pairs are how KP writes the ICIT two-stroke sign 032 (fourteenth session).
+  - Merged tokens are excluded from the order count.
+- Pair types: LS (long then short) and SL (short then long).
+- Hypothesis: long and short strokes are units of a multi-unit notation written in a fixed order.
+- Prediction: one order makes up at least 80 % of LS + SL pairs, with a two-sided binomial p < 0.01, in each transcription separately.
+- Insufficient data: fewer than 10 LS + SL pairs.
+- Descriptive: pairs of two different short (or two different long) signs.
+
+**NUM1 (descriptive comparison, L-1).** For each numeral token that has a non-numeral neighbour within the line on exactly one side, record whether that neighbour follows or precedes it.
+- Indus: ICIT, in reading order, with the stroke signs of NUM2 as numerals.
+- Proto-Elamite and proto-cuneiform: CDLI lines, tokens containing `(N` as numerals.
+- Statistic: share of "neighbour follows" (the numeral comes before the sign).
+- Decision stated in advance: the Indus order is called "like proto-Elamite" if its share and the proto-Elamite share are on the same side of 0.5, and "like proto-cuneiform" otherwise. The proto-cuneiform order is the editorial order of the CDLI transliteration (see literature notes).
+
+**KF1 (cross-transcription reproduction of formulae).**
+- Build the formula table for KP1979 (normalised as in R4) with the method of `scripts/phase9_formulae.py`: templates with one variable slot and at least three different fillers.
+- Map each sign of each ICIT formula frame (the template without the slot) to its KP counterpart through the concordance (`results/phase1_concordance.tsv`, best match).
+- A frame is reproduced if the mapped frame takes at least two different fillers in KP.
+- Control: ICIT frames with exactly one filler, of the same length distribution (all of them, stratified by length).
+- Prediction: formula frames are reproduced more often than control frames; Fisher exact one-sided p < 0.01.
+- This is a check across transcriptions of the same objects, not a test on unused data.
+
+**R7 (review).** List the decisive p-value of every supported result decided on held-out, strict held-out or fresh data, and apply Holm and Benjamini–Hochberg corrections over that family (α = 0.01 and 0.05). Report which results survive.
