@@ -3047,3 +3047,17 @@ Script: `scripts/batch11_typology_order.py`; results: `results/batch11_typology_
 - **D9: not supported.** The positional rigidity of the Indus signs (0.74–0.76) lies inside the range of the full-writing corpora (0.73–0.84). The fixed positions found in B1 and Q2a are therefore not unusual by this measure.
 - **D10: "like the proto-administrative corpora" by the stated rule.** The Indus slopes (−0.70, −0.74) lie within the proto-Elamite/proto-cuneiform range (−0.76 to −0.63). The OB letters (−0.65) also fall in that range, so the measure does not single out the proto-administrative group.
 - In these measures the Indus corpus behaves like an ordinary member of the reference group, not like either extreme. None of the three separates writing from non-writing, because the two non-linguistic corpora lie at opposite ends on D8 and D10.
+
+### Pre-registration of CT15b (before running)
+
+**CT15b (stability of the CT15 effect size).**
+- Data: the CT15 data (strict held-out + fresh strings containing 740, one object class, site strata).
+- Method: 10,000 stratified bootstrap resamples, drawing strings with replacement within each site stratum. The Mantel–Haenszel odds ratio is computed for each resample; a resample whose denominator is zero gives an infinite odds ratio, which is counted as > 1.
+- Prediction: the 2.5th percentile of the bootstrap distribution is above 1.
+
+### Result CT15b: supported
+
+Script: `scripts/batch11b_ct15b_bootstrap.py`; results: `results/batch11b_ct15b_bootstrap.json`.
+- Mantel–Haenszel odds ratio 4.33 (as in CT15); bootstrap median 4.55; 95 % interval 1.49–16.0.
+- 0.5 % of the resamples give an odds ratio ≤ 1, and 0.01 % give an infinite one.
+- The effect is positive in the large majority of resamples. Its size is uncertain: it lies anywhere between about 1.5 and 16.
