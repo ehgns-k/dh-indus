@@ -2151,3 +2151,7 @@ Script: `scripts/claims_ct28_stem_diversity.py`; results: `results/claims_ct28_s
 Records: Harappa 274 seals / 1,173 tablets; Mohenjo-daro 1,003 seals / 266 tablets; subsamples of 274 and 266 per class and site. The share of distinct stems is on average 0.49 higher for seals than for tablets, and higher in all 1,000 subsamples. **CT28 is supported.**
 
 Seal legends are almost always individual (their stems rarely repeat), whereas tablet texts repeat a limited set of stems (consistent with tablets made in series). This is what owners' names would produce, which claim C28 denies; it is equally what individual licences or titles with personal elements would produce. For C28 the verdict stays undecided, but the evidence now shows that seal legends are individual-specific in a way tablet texts are not.
+
+### Pre-registration of CT15s (stamped vs incised pottery; before running)
+
+**Prediction from the functional reading of 740 (CT15).** Pottery stamped with a seal (`POT:T:s`) carries seal legends; pottery with incised graffiti (`POT:T:g`) does not. Among ICIT unique complete strings with one of these two types that contain 740, the share with 740 in final position is higher for stamped than for incised pottery. One-sided Fisher exact test, p < 0.01; fewer than 5 strings with 740 in either group → "insufficient data". This question has not been examined before.
