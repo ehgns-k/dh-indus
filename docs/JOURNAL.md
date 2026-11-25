@@ -1088,3 +1088,19 @@ Any language-hypothesis test in this project must report the rate at which rando
 **Outcome.** Mean and maximum share of readable lines over the 20 assignments, compared with the 0.84 segmentability of the proposed readings (E2).
 
 **Decision rule.** If the mean share for random assignments is at least half of 0.84 (≥ 0.42), the reading freedoms alone make a large part of the corpus readable, and readability is recorded as no evidence for any particular assignment under these freedoms.
+
+### E2b result: random assignments make the corpus as readable as the proposed readings
+
+Script: `scripts/phase7_e2b_random_assignments.py`; results: `results/phase7_e2b_random_assignments.json`.
+
+2,044 lines (≤ 10 signs, no damage), 603 sign types, 20 random sign-value assignments. Share of lines readable as complete sequences of Sanskrit dictionary words: mean **0.835**, range 0.713–0.920. The proposed readings reach 0.84 (E2).
+
+By the pre-registered rule (mean ≥ 0.42) the reading freedoms alone make most of the corpus readable. An arbitrary assignment of sound values to the signs, drawn at random and not fitted in any way, yields as many "Sanskrit" readings as the published decipherment. Readability under these freedoms is therefore **no evidence** for any particular assignment, including the published one.
+
+Remarks:
+- The freedoms tested here are those stated in the proposal's README (optional inherent vowel, free vowel length) together with its normalisation. The proposal also allows sandhi and compound stems, which would make random assignments even more readable.
+- The test does not show that the Indus inscriptions are not Sanskrit. It shows that this method cannot distinguish a correct assignment from a random one, so the published readings do not provide evidence either way.
+
+### Consequence for the project (WP-E)
+
+E2 and E2b give a concrete calibration for any phonetic decipherment attempt on this corpus: with short texts, a large dictionary and flexible reading rules, almost any assignment "reads". A phonetic hypothesis can count toward L3 only with a criterion whose rate under random assignments, computed as in E2b, is below 0.1. This requirement is added to gate G4.

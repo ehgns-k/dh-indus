@@ -69,7 +69,7 @@ Gate G3: if no statistic separates linguistic from non-linguistic systems with a
 | E2 Proposal testing | Turn published readings (Parpola, Mahadevan, the Sanskrit claim C33) into predictions about sign distributions, and test them on fresh data |
 | E3 Constrained mapping | Map recurring units (B4) to lexicon items under constraints from the structural results (count–item construction, terminal cluster); evaluate on held-out/fresh data against control lexicons with matched phonotactics and unrelated languages |
 
-Gate G4 (L3 claim): only if the pre-registered held-out fit beats every control language at p < 0.01 and the false-positive rate of the procedure has been measured. Otherwise the outcome is reported as "no phonetic decipherment supported".
+Gate G4 (L3 claim): only if the pre-registered held-out fit beats every control language at p < 0.01 and the false-positive rate of the procedure has been measured. Added after E2b: the acceptance criterion must have a rate below 0.1 under random sign-value assignments with the same reading freedoms. Otherwise the outcome is reported as "no phonetic decipherment supported".
 
 ### WP-F Review and reporting (continuous; days 26–30)
 
