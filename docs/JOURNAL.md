@@ -1559,3 +1559,12 @@ Script: `scripts/phase6_h61_without_033.py`; results: `results/phase6_h61_withou
 With 033 removed from the long series: short strokes 30 (8 followed by the A group), long strokes 17 (0 followed by A, 1 by 520); χ² = 6.9, permutation p = 0.015. The separation keeps its direction (no long stroke is followed by an A-group sign), but it no longer reaches p < 0.01, because three of the four 520 followers in the long series follow 033.
 
 **Assessment.** H6.1 remains supported as registered, but its strength rests largely on the sign 033 → 520 pairing, and the identity of 033 (three long strokes or, in part, three short strokes) is not settled between the two transcriptions. The interpretation "two numeral notations for different classes of items" is therefore weaker than stated in the first H6.1 entry and is downgraded to "suggested". The README entry is adjusted accordingly.
+
+### R2 (review): leave-one-sign-out check of H3.10 on the strict held-out set
+
+Script: `scripts/review_r2_h310_leave_one_out.py`; results: `results/review_r2_h310_leave_one_out.json`. Not pre-registered (review).
+
+- KP1979: the result passes (p < 0.01) whichever stroke sign is left out (p from 3.3 × 10⁻⁶ to 3.6 × 10⁻³).
+- ICIT: it passes when any single target sign is left out, and when 005, 016, 017 or 034 is left out; it fails when 004 (four strokes) is left out (2 of 9 bigrams; p = 0.026).
+
+H3.10 does not rest on one sign in KP1979. In the ICIT strict held-out set the counts are small (12 bigrams after the stroke set), and the sign 004 carries a large share. The result stands, with the note that its ICIT replication on strict held-out data is driven mainly by four-stroke signs; the post-1979 confirmation (F2) is independent of this.
