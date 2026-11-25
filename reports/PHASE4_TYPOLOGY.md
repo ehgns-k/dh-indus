@@ -46,6 +46,10 @@ Frequent Indus signs combine less freely than the graphemes of OB Akkadian lette
 
 The predictability of the partner sign from the numeral (Theil's U) is 0.34 for the Indus texts. For the proto-administrative texts it is 0.20 and 0.18 when the numerals are reduced to their unit signs, but 0.40 and 0.36 when the counts are kept. The measure depends on the size of the numeral vocabulary (11 Indus stroke signs against 99 and 207 CDLI numeral tokens), so the comparison is inconclusive (D6, D6b).
 
+### 2.8 Order rigidity, positional rigidity and rank–frequency shape (D8–D10)
+
+The order rigidity of Indus sign pairs (0.65–0.73) lies between the letters and literary texts and the administrative corpora (0.84–0.87). The positional rigidity of frequent signs (0.74–0.76) lies inside the full-writing range (0.73–0.84). The rank–frequency slope (−0.70 to −0.74) lies within the proto-administrative range, which also contains the OB letters. In none of these measures is the Indus corpus extreme, and none separates writing from non-writing.
+
 ## 3. Conclusion
 
 Statistically the Indus inscriptions resemble proto-Elamite most closely, in both transcriptions; an administrative corpus is nearer than the full-writing corpora in 20/20 (ICIT) and 19/20 (KP1979) resamples, although proto-cuneiform itself is the farthest corpus for KP1979. Whether the signs record a spoken language cannot be decided with these methods.

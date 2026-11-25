@@ -3026,3 +3026,24 @@ Common design:
 **D10 (rank–frequency shape).**
 - Statistic: the slope of log frequency against log rank for ranks 1–50 (least squares).
 - Prediction: none on direction. The decision rule is that the Indus slope is called "like the proto-administrative corpora" if it lies within the range of proto-Elamite and proto-cuneiform (± 2 resample SDs), for both transcriptions.
+
+### Results D8, D9, D10
+
+Script: `scripts/batch11_typology_order.py`; results: `results/batch11_typology_order.json`.
+
+| Corpus | D8 order rigidity | D9 positional rigidity | D10 rank–frequency slope |
+|---|---:|---:|---:|
+| Indus (ICIT) | 0.726 | 0.757 | −0.70 |
+| Indus (KP1979) | 0.649 | 0.740 | −0.74 |
+| proto-Elamite | 0.871 | 0.717 | −0.75 |
+| proto-cuneiform | 0.842 | 0.640 | −0.66 |
+| Sumerian Ur III administrative | 0.857 | 0.734 | −0.46 |
+| Sumerian OB literary | 0.674 | 0.835 | −0.56 |
+| Akkadian OB letters | 0.596 | 0.778 | −0.65 |
+| Sproat Asian emoticons | 0.287 | 0.902 | −1.11 |
+| Sproat weather icons | 0.006 | 0.652 | −1.91 |
+
+- **D8: not supported.** The Indus order rigidity is not higher than that of every full-writing corpus. It lies between the letters and literary texts (0.60–0.67) and the administrative corpora (0.84–0.87, including Ur III administrative Sumerian). The administrative corpora, with their fixed entry formats, are the most rigid.
+- **D9: not supported.** The positional rigidity of the Indus signs (0.74–0.76) lies inside the range of the full-writing corpora (0.73–0.84). The fixed positions found in B1 and Q2a are therefore not unusual by this measure.
+- **D10: "like the proto-administrative corpora" by the stated rule.** The Indus slopes (−0.70, −0.74) lie within the proto-Elamite/proto-cuneiform range (−0.76 to −0.63). The OB letters (−0.65) also fall in that range, so the measure does not single out the proto-administrative group.
+- In these measures the Indus corpus behaves like an ordinary member of the reference group, not like either extreme. None of the three separates writing from non-writing, because the two non-linguistic corpora lie at opposite ends on D8 and D10.

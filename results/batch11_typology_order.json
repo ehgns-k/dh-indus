@@ -1,0 +1,85 @@
+{
+ "D8": {
+  "mean": {
+   "icit": 0.7258449989147253,
+   "kp1979": 0.6489110831929594,
+   "proto_cuneiform": 0.8415683394593598,
+   "proto_elamite": 0.8713978654013976,
+   "akkadian_ob_letters": 0.5955016674281826,
+   "sumerian_ur3_admin": 0.8566076867713834,
+   "sumerian_ob_literary": 0.673641456702329,
+   "sproat_AsianEmoticons": 0.2867985972422611,
+   "sproat_WeatherIcons": 0.005944066053840297
+  },
+  "sd": {
+   "icit": 0.004460874627892269,
+   "kp1979": 0.004439901484857436,
+   "proto_cuneiform": 0.016743830615069292,
+   "proto_elamite": 0.00696360464182699,
+   "akkadian_ob_letters": 0.01030570207814858,
+   "sumerian_ur3_admin": 0.013963642046626938,
+   "sumerian_ob_literary": 0.01775018573274132,
+   "sproat_AsianEmoticons": 0.01657676869470289,
+   "sproat_WeatherIcons": 0.007111957648596064
+  },
+  "higher_than_all_full_writing_icit": 0,
+  "higher_than_all_full_writing_kp1979": 0,
+  "verdict": "not supported"
+ },
+ "D9": {
+  "mean": {
+   "icit": 0.7565549883248077,
+   "kp1979": 0.7396777479910257,
+   "proto_cuneiform": 0.64017755687746,
+   "proto_elamite": 0.7167058834752764,
+   "akkadian_ob_letters": 0.778348000704061,
+   "sumerian_ur3_admin": 0.7341912654783196,
+   "sumerian_ob_literary": 0.8351867987555865,
+   "sproat_AsianEmoticons": 0.9018414144114514,
+   "sproat_WeatherIcons": 0.6516087119909202
+  },
+  "sd": {
+   "icit": 0.0031339807507412493,
+   "kp1979": 0.0018700027530144363,
+   "proto_cuneiform": 0.0051723707181233845,
+   "proto_elamite": 0.0038203948327605298,
+   "akkadian_ob_letters": 0.006787746380530125,
+   "sumerian_ur3_admin": 0.0073851506369388056,
+   "sumerian_ob_literary": 0.009639382412123481,
+   "sproat_AsianEmoticons": 0.00750818618381122,
+   "sproat_WeatherIcons": 0.0181862408400235
+  },
+  "higher_than_all_full_writing_icit": 0,
+  "higher_than_all_full_writing_kp1979": 0,
+  "verdict": "not supported"
+ },
+ "D10": {
+  "mean": {
+   "icit": -0.7042521680373148,
+   "kp1979": -0.7371398707059034,
+   "proto_cuneiform": -0.6563290852308941,
+   "proto_elamite": -0.7446540389943579,
+   "akkadian_ob_letters": -0.6452878447065397,
+   "sumerian_ur3_admin": -0.45616444330330796,
+   "sumerian_ob_literary": -0.5626865010488721,
+   "sproat_AsianEmoticons": -1.1128495593962822,
+   "sproat_WeatherIcons": -1.9060467120905742
+  },
+  "sd": {
+   "icit": 0.0018166451840959882,
+   "kp1979": 0.0021023057699048,
+   "proto_cuneiform": 0.011882120211098525,
+   "proto_elamite": 0.005464864155859716,
+   "akkadian_ob_letters": 0.010493853390221533,
+   "sumerian_ur3_admin": 0.017149806390837154,
+   "sumerian_ob_literary": 0.012190996587154626,
+   "sproat_AsianEmoticons": 0.018558413856066342,
+   "sproat_WeatherIcons": 0.31452307278594277
+  },
+  "proto_range": [
+   -0.7555837673060773,
+   -0.632564844808697
+  ],
+  "decision": "like the proto-administrative corpora"
+ }
+}

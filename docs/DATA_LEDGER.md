@@ -133,6 +133,9 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | PT3k | KP | as PT2k | supported (OR 6.0, p = 0.0043) | replication of PT3 |
 | CT28h | ICIT | Harappa, Mohenjo-daro seal vs tablet strings | not supported (p = 0.87) | seal stems not richer in rare signs |
 | CT28hk | KP | seal vs tablet codes | not supported (p = 0.11) | |
+| D8 | ICIT, KP, CDLI, Sproat | 9,000-token resamples | not supported (0/20) | order rigidity between letters and administrative corpora |
+| D9 | as D8 | as D8 | not supported (0/20) | positional rigidity within the full-writing range |
+| D10 | as D8 | as D8 | descriptive: within the proto-administrative range (also OB letters) | not discriminating |
 | R9 | all | – | review: all analyses re-run, no differences | |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
