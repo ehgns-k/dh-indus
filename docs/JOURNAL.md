@@ -1679,3 +1679,18 @@ Scripts: `scripts/phase8_m1_marks.py` (pre-registered), `scripts/phase8_g2_hog_r
 - M1: 238 pairs; initial share p = 0.48, final share p = 0.84. **M1 remains not supported.**
 
 G1 was not repeated with the new measure, because its conclusion (no global correlation) was negative and a coarser measure cannot have hidden a positive correlation that a finer one would reveal more weakly; this is noted as an untested possibility.
+
+---
+
+## 2026-11-25 (day 1, sixteenth working session): templates with a variable numeral slot
+
+### Pre-registration of H9.1 (before running)
+
+**Idea (claims register C31b).** If some inscriptions are records that repeat a fixed formula with a changing quantity, the corpus should contain texts that are identical except for the stroke sign. H3.8 tested a weaker form (similar contexts) and failed; this test looks directly at minimal pairs.
+
+- **Minimal pairs:** pairs of unique complete strings of equal length that differ in exactly one position; the substitution at that position is the unordered sign pair {a, b}.
+- **Stroke sets:** ICIT {001, 003, 004, 034, 005, 016, 017, 031, 032, 033, 035}; KP1979 {121–130, 144, 145, 147, 150, 151}.
+- **Statistic:** number of minimal pairs whose substitution has both a and b in the stroke set.
+- **Null:** 10,000 random sets in which each stroke sign is replaced by a non-stroke sign of similar frequency (within a factor of 1.5 in all unique strings); the statistic is recomputed for each set. The pairs themselves do not change, only the set; smallest attainable p = 0.0001.
+- **Data:** all unique complete strings of each corpus (this question has not been examined before; minimal pairs are a property of the whole corpus).
+- **Prediction:** more stroke–stroke substitutions than in the null sets, p < 0.01, in both corpora.
