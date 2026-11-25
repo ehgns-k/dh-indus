@@ -19,6 +19,7 @@ The Indus script is undeciphered. Results in this repository are labelled with t
 | 2026-11-25 | L2 (narrow, functional) | The sign that closes a line varies with the kind of object: line-final 407 and 154 favour rectangular seals without animal motif, 400 is avoided on motif-bearing seals; discovered with FDR control on training data, confirmed on held-out data, stratified by site (C2). The meaning of these signs is not identified. Replicated in KP1979 with its independent 1973 object codes (C2k) |
 | 2026-11-25 | Test of a published claim | Under the normalisation used by the published Sanskrit reading (claim C33), 29 % of random letter strings of the same composition can also be divided into Sanskrit dictionary words (proposed readings: 84 %), so readability alone is weak evidence for that decipherment (E2) |
 | 2026-11-25 | Test of a published claim | With the same reading freedoms, random (unfitted) sign-value assignments make 84 % of Indus lines readable as Sanskrit dictionary words, the same rate as the published readings, so readability gives no evidence for that decipherment (E2b) |
+| 2026-11-25 | Method test (negative) | Fitting sign-to-sound assignments under sound-sequence models of Sanskrit, Old Tamil, Sumerian and Akkadian cannot identify the language even of known cuneiform texts hidden as ciphers, so no language preference for the Indus inscriptions is claimed (E3, E3b) |
 
 The full list of tests, including failed ones, is in `docs/JOURNAL.md`.
 

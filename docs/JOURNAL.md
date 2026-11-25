@@ -1205,3 +1205,26 @@ To remove the language-model effect, each language's gain on a corpus is compare
 The language-model effect affects both terms alike and cancels; what remains is how much the sequential structure of the corpus agrees with the sound sequences of language L. Everything else (models, search, held-out split, 4 sweeps, 2 restarts, bootstrap) is as in E3; the bootstrap is over held-out lines, pairing each real line with its reordered version.
 
 Decision rules as in E3, applied to Δ′: the method has power only if both positive controls rank their true language first with p < 0.01 against every other language; only then is an Indus preference considered.
+
+### E3b result: the corrected method also has no power
+
+Script: `scripts/phase7_e3b_corrected.py`; results: `results/phase7_e3b_corrected.json`.
+
+Mean Δ′ per sign (gain on real lines minus gain on within-line reordered lines, held-out):
+
+| Corpus | Sanskrit | Old Tamil | Sumerian | Akkadian | Pseudo |
+|---|---:|---:|---:|---:|---:|
+| Cipher: Akkadian OB letters (true: Akkadian) | **0.285** | 0.161 | 0.111 | 0.158 | −0.007 |
+| Cipher: Sumerian Ur III administrative (true: Sumerian) | **0.229** | 0.166 | 0.099 | 0.149 | 0.006 |
+| Indus | **0.294** | 0.154 | 0.117 | 0.086 | 0.006 |
+
+Both positive controls rank Sanskrit first, not their true language; by decision rule 1 the method has **no power**, and no language preference is claimed for the Indus inscriptions. The Indus row has the same shape as the two control rows, which again indicates a property of the language models (here, the Sanskrit headword list, which contains many long compounds with repeated internal patterns), not a property of the corpus.
+
+One part of the result is consistent across all three corpora: every real-language model gains more from the real line order than from reordered lines (Δ′ > 0.08), whereas the pseudo-language gains nothing (Δ′ ≈ 0). The sequential structure of the Indus lines, like that of the two cuneiform ciphers, is exploitable by the sound-sequence model of any natural language. This says that the Indus sign order has language-like local regularities of some kind; it does not identify a language, and it does not distinguish writing from a structured notation (gate G3).
+
+### What E2–E3b establish about phonetic decipherment of this corpus
+
+1. Readability under flexible rules is reached by random assignments as often as by a published decipherment (E2b).
+2. Fitting sign values under a language's sound-sequence model cannot identify the language of a hidden **known** syllabic script of comparable size, by two different measures (E3, E3b).
+
+With a corpus of about 2,000 short lines, unconstrained phonetic fitting does not have the power to choose among candidate languages. Any future L3 attempt in this project therefore needs an additional, independent constraint before it can be calibrated: for example bilingual evidence, proper names known from outside the script (claims register, external names), or pictographic (rebus) constraints fixed in advance from the sign drawings. These are the remaining routes; they are added to the work plan.

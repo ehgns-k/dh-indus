@@ -38,6 +38,8 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | E2 | proposed readings (claim C33) | all readings | readability not discriminating | control rate 0.29 |
 | E2b | ICIT lines, random assignments | all lines ≤ 10 signs | random assignments readable at 0.84 | same as proposed readings |
 | C2k | KP | discovery train, confirmation held-out | 1 of 10 confirmed (11 × final 98) | replicates C2 (400 avoided on motif seals) |
+| E3 | ICIT + two cuneiform ciphers | held-out (ICIT fixed split; ciphers 80/20) | method has no power | positive control 2 failed |
+| E3b | same | same | method has no power | both positive controls failed |
 
 Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 

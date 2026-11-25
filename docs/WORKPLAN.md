@@ -113,3 +113,13 @@ Each scheduled session takes the highest unfinished priority.
 | P4b | E4 family coherence | if an assignment is right, graphic variants of one sign (for example the fish family KP 48–63, the stroke series) should receive related values; test the fitted E3 assignments for coherence within families against random assignments, as a check independent of the language model |
 | P4c | E5 boundary-aware fitting | use the established structure (terminal cluster, count–item pairs, recurring units) to cut lines into word-like units before fitting, and repeat E3; tests whether structure improves the phonetic signal |
 | P4d | E6 logographic alternative | instead of syllables, assign words (whole lexical items) to frequent signs and test held-out gains, to compare logographic and syllabic readings under the same calibration |
+
+### Revision after E3 and E3b (eleventh working session)
+
+Unconstrained phonetic fitting has no power on a corpus of this size (E3, E3b). The remaining L3 routes require an independent constraint, fixed before any fitting:
+
+| Priority | Task | Constraint |
+|---|---|---|
+| P4e | Rebus-constrained fitting | values of pictographic signs restricted, before fitting, to words for the depicted object in each candidate language (from the sign drawings and a fixed word list); calibrated with the same positive-control design |
+| P4f | External names | test whether any recurring Indus unit can be matched to names associated with the Indus region in external (Mesopotamian) sources under a pre-registered rule, with the E2b random-assignment calibration |
+| P4b–P4d | as listed above | E4–E6 are kept but are lower priority, because they share the weakness of E3 |
