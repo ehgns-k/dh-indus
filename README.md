@@ -14,6 +14,7 @@ The Indus script is undeciphered. Results in this repository are labelled with t
 | 2026-11-25 | Not met | Seal vs tablet texts transfer across sites (H3.5); stroke signs share following contexts (H3.8); 090- vs 400-final lines tied to object type (H3.7) |
 | 2026-11-25 | L1 (narrow scope) | Order regularities learned from the 1979 corpus predict later finds from Dholavira and Nausharo, only in the right-to-left reading direction (F3) |
 | 2026-11-25 | L1 (gate G1 passed) | A positional template (initial → medial → terminal zones) and a lexicon of recurring sign units, learned from the 1979 corpus, predict inscriptions from ten sites excavated after 1979, against controls that keep all earlier rules (B1, B4) |
+| 2026-11-25 | Typology (descriptive) | Among five reference corpora from the CDLI, the Indus corpus is statistically closest to proto-Elamite and proto-cuneiform (proto-administrative systems), not to Sumerian or Akkadian full writing (D1) |
 
 The full list of tests, including failed ones, is in `docs/JOURNAL.md`.
 
@@ -51,5 +52,7 @@ The raw data are not included in this repository. `scripts/fetch_data.py` downlo
 
 - ICIT-style secondary transcription: <https://github.com/horus84/Computational_Linguistics> (commit `ac44f08`)
 - Machine reading of Koskenniemi & Parpola (1979), *Corpus of Texts in the Indus Script*: <https://github.com/koskenni/indus> (commit `60f6e28`)
+
+Reference corpora for the typology phase come from the CDLI bulk data (<https://github.com/cdli-gh/data>, August 2022), fetched by `scripts/fetch_cdli.py`.
 
 The two sources use different sign-numbering systems. Neither replaces the original photographs or a primary concordance.

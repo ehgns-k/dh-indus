@@ -31,6 +31,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | B4 | ICIT (units from KP train) | fresh sets 1+2 | supported | rule-preserving controls |
 | H5.1 | ICIT, KP | held-out | not supported | KP passes, ICIT fails; control amended before running |
 | H5.1b | ICIT | fresh sets 1+2 | not supported | corrected stroke set |
+| D1 | ICIT + CDLI reference corpora | all ICIT unique complete lines (resampled) | supported | typology, descriptive; no non-linguistic corpus |
 
 Count of tests decided on the held-out split so far: 11 (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 

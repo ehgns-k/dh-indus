@@ -1,0 +1,144 @@
+{
+ "statistics": [
+  "S1_direction",
+  "S2_template",
+  "S3_units",
+  "S4_repetition",
+  "S5_hapax",
+  "S6_final_conc"
+ ],
+ "means": {
+  "indus_icit": {
+   "S1_direction": 2.251666190974231,
+   "S2_template": 0.5646432274522863,
+   "S3_units": 2.3461265839993017,
+   "S4_repetition": 0.0381036217303823,
+   "S5_hapax": 0.35338243332559804,
+   "S6_final_conc": 0.5083501006036217
+  },
+  "proto_cuneiform": {
+   "S1_direction": 1.9790196015299404,
+   "S2_template": 0.7530790677414754,
+   "S3_units": 2.062033232671617,
+   "S4_repetition": 0.034774633123689724,
+   "S5_hapax": 0.34718553229447946,
+   "S6_final_conc": 0.06150419287211741
+  },
+  "proto_elamite": {
+   "S1_direction": 2.94329799185537,
+   "S2_template": 0.6416336543238886,
+   "S3_units": 2.2514119369150745,
+   "S4_repetition": 0.06390824622531939,
+   "S5_hapax": 0.3079060461571632,
+   "S6_final_conc": 0.434349593495935
+  },
+  "akkadian_ob_letters": {
+   "S1_direction": 1.4361760637282381,
+   "S2_template": 0.25870974964768767,
+   "S3_units": 2.0085783976467715,
+   "S4_repetition": 0.1274813539873781,
+   "S5_hapax": 0.32910038100502437,
+   "S6_final_conc": 0.20880665519219735
+  },
+  "sumerian_ur3_admin": {
+   "S1_direction": 1.6095105584443736,
+   "S2_template": 0.48601582353667644,
+   "S3_units": 2.9995690664651113,
+   "S4_repetition": 0.08211770623742455,
+   "S5_hapax": 0.291080309714027,
+   "S6_final_conc": 0.1284456740442656
+  },
+  "sumerian_ob_literary": {
+   "S1_direction": 1.6441582707520883,
+   "S2_template": 0.41251401013624445,
+   "S3_units": 2.6248441372391462,
+   "S4_repetition": 0.16883780332056197,
+   "S5_hapax": 0.3780661575210754,
+   "S6_final_conc": 0.1220625798212005
+  },
+  "synthetic_bigram": {
+   "S1_direction": 2.0967481563620782,
+   "S2_template": 0.4974031734411784,
+   "S3_units": 2.3437856476673,
+   "S4_repetition": 0.11400905432595572,
+   "S5_hapax": 0.2296740098541088,
+   "S6_final_conc": 0.25812374245472836
+  }
+ },
+ "sds": {
+  "indus_icit": {
+   "S1_direction": 0.05975612927419939,
+   "S2_template": 0.048129792331976354,
+   "S3_units": 0.04262407869147734,
+   "S4_repetition": 0.0006910780515107686,
+   "S5_hapax": 0.004391185038947971,
+   "S6_final_conc": 0.002200668295193888
+  },
+  "proto_cuneiform": {
+   "S1_direction": 0.09396735313003483,
+   "S2_template": 0.04840641582009364,
+   "S3_units": 0.11186869242522939,
+   "S4_repetition": 0.0020519051997749944,
+   "S5_hapax": 0.01175039548812539,
+   "S6_final_conc": 0.0036132175823154256
+  },
+  "proto_elamite": {
+   "S1_direction": 0.06073826055727758,
+   "S2_template": 0.03595488445183342,
+   "S3_units": 0.056845571555317435,
+   "S4_repetition": 0.00184989203672433,
+   "S5_hapax": 0.0089033054124815,
+   "S6_final_conc": 0.006163503285053911
+  },
+  "akkadian_ob_letters": {
+   "S1_direction": 0.06755428661208147,
+   "S2_template": 0.06424154482795409,
+   "S3_units": 0.07380139588366909,
+   "S4_repetition": 0.007890731496020282,
+   "S5_hapax": 0.01564813262791826,
+   "S6_final_conc": 0.006664767973979278
+  },
+  "sumerian_ur3_admin": {
+   "S1_direction": 0.05151949163527191,
+   "S2_template": 0.05453885725187782,
+   "S3_units": 0.11378350890572475,
+   "S4_repetition": 0.00596002168748376,
+   "S5_hapax": 0.013613389322397968,
+   "S6_final_conc": 0.008680925276675229
+  },
+  "sumerian_ob_literary": {
+   "S1_direction": 0.04244568946352904,
+   "S2_template": 0.059963440356599916,
+   "S3_units": 0.11320859334671858,
+   "S4_repetition": 0.005843522499480637,
+   "S5_hapax": 0.010726090180156678,
+   "S6_final_conc": 0.0038381964298022557
+  },
+  "synthetic_bigram": {
+   "S1_direction": 0.06475910079999332,
+   "S2_template": 0.06294972070682961,
+   "S3_units": 0.061296941069693245,
+   "S4_repetition": 0.007044543677632377,
+   "S5_hapax": 0.01692091918601159,
+   "S6_final_conc": 0.011603565863575607
+  }
+ },
+ "mean_distance_to_indus": {
+  "proto_cuneiform": 3.162804985000851,
+  "proto_elamite": 2.3135536487926007,
+  "akkadian_ob_letters": 3.882966787736027,
+  "sumerian_ur3_admin": 4.06700775141265,
+  "sumerian_ob_literary": 4.102147847777447,
+  "synthetic_bigram": 4.867173932763241
+ },
+ "D1_admin_closer_count": 20,
+ "D1_supported": true,
+ "sample_sizes": {
+  "indus_icit": 2000,
+  "proto_cuneiform": 1920,
+  "proto_elamite": 1734,
+  "akkadian_ob_letters": 1745,
+  "sumerian_ur3_admin": 2000,
+  "sumerian_ob_literary": 1578
+ }
+}
