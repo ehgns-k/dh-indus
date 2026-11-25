@@ -1,0 +1,22 @@
+{
+ "mean_share": {
+  "indus_icit": 0.025571005086034444,
+  "indus_kp1979": 0.02838977987779766,
+  "proto_cuneiform": 0.034023773716336914,
+  "proto_elamite": 0.09198916299453033,
+  "akkadian_ob_letters": 0.022260052670740483,
+  "sumerian_ur3_admin": 0.13256073560438555,
+  "sumerian_ob_literary": 0.3941798337016226
+ },
+ "sd_share": {
+  "indus_icit": 0.001216067128182816,
+  "indus_kp1979": 0.0006853425100875097,
+  "proto_cuneiform": 0.005553572046047193,
+  "proto_elamite": 0.009430233957560815,
+  "akkadian_ob_letters": 0.00949618671155708,
+  "sumerian_ur3_admin": 0.022628661103282228,
+  "sumerian_ob_literary": 0.011186470774165415
+ },
+ "resamples_in_predicted_order": 0,
+ "prediction_holds": false
+}

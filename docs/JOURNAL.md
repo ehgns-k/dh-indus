@@ -1916,3 +1916,25 @@ Distribution of differences: ICIT 1: 42, 2: 26, 3: 13, 4: 6, 5: 1; KP1979 1: 29,
 - **Numeral tokens:** Indus stroke signs (ICIT set of H9.1; KP 121–130 after normalisation); cuneiform tokens containing a numeral group, i.e. a parenthesis (for example `3(disz)`, `1(N01)`).
 - **Sampling:** 20 resamples of 2,000 unique lines matched to the ICIT length distribution (as in D1); statistic = numeral↔numeral substitutions / all minimal-pair substitutions; mean over resamples.
 - **Prediction (ordinal, from the administrative reading of claim C31 and the D1 result):** the Indus share is lower than that of each administrative corpus (proto-Elamite, proto-cuneiform, Ur III administrative) and higher than that of each non-administrative corpus (OB literary, OB letters). Decision: the prediction holds if all five comparisons go in the predicted direction in at least 19 of 20 resamples.
+
+### D4 result: prediction not supported; the statistic measures numbered formulae, not genre
+
+Script: `scripts/phase4_d4_numeral_variation.py`; results: `results/phase4_d4_numeral_variation.json`.
+
+Mean share of numeral↔numeral substitutions among minimal-pair substitutions (20 resamples):
+
+| Corpus | Share |
+|---|---:|
+| Sumerian OB literary | 0.394 |
+| Sumerian Ur III administrative | 0.133 |
+| proto-Elamite | 0.092 |
+| proto-cuneiform | 0.034 |
+| Indus (KP1979, normalised) | 0.028 |
+| Indus (ICIT) | 0.026 |
+| Akkadian OB letters | 0.022 |
+
+The predicted order held in 0 of 20 resamples. **D4 is not supported.**
+
+The OB literary value was checked before interpretation: its numeral tokens are real numerals (`1(disz)`, `7(disz)`, `1(u)` …; 2,239 tokens in all), and its numeral minimal pairs come from numbered formulae such as `5(disz) mu i3 ak` / `6(disz) mu i3 ak` ("ruled 5 / 6 years", king-list type) and `2(disz) kam-ma …` / `3(disz) kam-ma …` (ordinals). The statistic therefore measures how much of a corpus consists of short formulae with a numeral slot, which literary collections can also contain; it does not separate administrative from non-administrative texts.
+
+For the Indus corpus the share (0.026–0.028) is close to proto-cuneiform (0.034) and the Akkadian letters (0.022) and well below proto-Elamite (0.092) and the Ur III administrative texts (0.133): numeral slots exist (H9.1) but form a small part of the Indus formulae.

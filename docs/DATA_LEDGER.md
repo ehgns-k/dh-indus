@@ -66,6 +66,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | R3 | all | – | review: all analyses re-run; phonetic searches made deterministic; conclusions unchanged | |
 | R4 | KP (normalised strokes) | all unique complete strings | H9.1 holds (84 vs 12.4, p = 0.0001) | review |
 | H9.6 | ICIT, KP (normalised) | all unique complete strings | not supported (ICIT p = 0.0022; KP p = 0.050) | substituted counts closer than chance in both, significant in one |
+| D4 | ICIT, KP, reference corpora | resampled | not supported (0/20) | statistic measures numbered formulae, not genre |
 
 Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 
