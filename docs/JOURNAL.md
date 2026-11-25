@@ -1551,3 +1551,11 @@ The learned states, however, recover without supervision the structure establish
 | 7 | 0.00 | 0.86 | 740, 400, 520, 090, 151, 527 | terminal cluster |
 
 The states that end lines (7, and 2 with end probability 0.48) contain the terminal set and the partners of the numerals, the states that start lines contain the initial-zone signs and the numerals, and the fish-shaped signs form their own state. An unsupervised model trained only on the training split thus arrives at the same functional grouping (initial signs, numerals, counted items, fish-shaped signs, closing signs) as the hypothesis tests, which is a useful consistency check, although the model does not predict better than the bigram.
+
+### H6.1 robustness check: the result depends on sign 033
+
+Script: `scripts/phase6_h61_without_033.py`; results: `results/phase6_h61_without_033.json`. Not pre-registered; run because L3b showed that ICIT 033 also covers KP 123 (three short strokes).
+
+With 033 removed from the long series: short strokes 30 (8 followed by the A group), long strokes 17 (0 followed by A, 1 by 520); χ² = 6.9, permutation p = 0.015. The separation keeps its direction (no long stroke is followed by an A-group sign), but it no longer reaches p < 0.01, because three of the four 520 followers in the long series follow 033.
+
+**Assessment.** H6.1 remains supported as registered, but its strength rests largely on the sign 033 → 520 pairing, and the identity of 033 (three long strokes or, in part, three short strokes) is not settled between the two transcriptions. The interpretation "two numeral notations for different classes of items" is therefore weaker than stated in the first H6.1 entry and is downgraded to "suggested". The README entry is adjusted accordingly.

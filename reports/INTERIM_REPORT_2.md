@@ -18,7 +18,7 @@ This report supersedes the level assignments of interim report 1. Every result l
 | Reading order and direction carry over to later finds | F3, F3b (post-1979 sites) |
 | Fixed order within the line-final cluster (740 before 400 / 090) | H3.3, H3.4; strict held-out (R1) |
 | Count-specific partner signs: 4–9 short strokes → 390–407; 7 → 585/575; 3 long → 520 | H3.10, H3.12; matched controls (H3.11); strict held-out (R1); post-1979 sites (F2) |
-| Two numeral series with disjoint partners | H6.1 (post-1979 sites) |
+| Two numeral series with disjoint partners (depends largely on sign 033; see journal) | H6.1 (post-1979 sites) |
 | Positional template and recurring units predict later finds | B1, B4 (gate G1) |
 | Positional classes are the same in both transcriptions | Q2a |
 

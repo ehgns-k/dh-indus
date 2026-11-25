@@ -1,0 +1,13 @@
+{
+ "table": {
+  "long|B": 1,
+  "long|C": 16,
+  "short|A": 8,
+  "short|C": 22
+ },
+ "n_short": 30,
+ "n_long": 17,
+ "status": "tested",
+ "chi2": 6.877812177502579,
+ "p_value": 0.015298470152984701
+}

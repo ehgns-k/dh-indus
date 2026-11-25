@@ -45,7 +45,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | R1 | ICIT, KP | strict held-out (no near-duplicates) | L1 results pass; C2/C2k fail strict thresholds | review; L2 downgraded to candidate |
 | Q2a | ICIT, KP | train (each) | supported (zone agreement 0.91) | reproducibility of the descriptive classification |
 | E3d | ICIT strict held-out + two ciphers | as E3b | method has no power | equalised running-text models; Indus row not interpreted |
-| H6.1 | ICIT | fresh sets 1+2 | supported (p = 0.0012) | short and long strokes take disjoint partners |
+| H6.1 | ICIT | fresh sets 1+2 | supported (p = 0.0012) | short and long strokes take disjoint partners; without 033 p = 0.015 (robustness) |
 | L3a | ICIT | train | 3 of 10 KP-merged pairs distinct | descriptive classification; robustness check with 10,000 relabellings |
 | L3b | KP | train | none by registered test (resolution flaw); 6 distinct in robustness check | descriptive classification |
 | D3 | ICIT, KP, reference corpora | all unique lines (9,000 tokens) | descriptive (Chao1: ICIT 830, KP 511, proto-Elamite 820) | not a test |
