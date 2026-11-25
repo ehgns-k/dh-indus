@@ -567,3 +567,17 @@ The three matches that survive the strict control are `233 550 527`, `233 798 74
 1. Fresh data: look for inscriptions outside both corpora (for example published after 1979 and missing from the ICIT-style source), to serve as a new test set, since the held-out set has been used for several questions.
 2. Phase 4 (script typology): compare the corpus with synthetic and non-linguistic baselines, with the caution from the bibliography (D section, Raghavendra 2026) that common statistical measures are not specific to language.
 3. Revisit H3.2 with a pre-fixed number of clusters on a new data split, if fresh data become available.
+
+### Search for a fresh test set: ICIT strings absent from KP1979 (not usable yet)
+
+Idea: KP1979 contains only inscriptions known by 1979, so ICIT strings with no KP1979 counterpart could be later finds and serve as fresh test data for hypotheses formed on KP1979 alone.
+
+Check (concordance with support ≥ 2 and purity ≥ 0.5): of 2,059 unique complete ICIT strings, 576 contain a sign without a KP image, and 847 can be mapped but do not equal any complete KP1979 line. By site, the 847 are Mohenjo-daro 417, Harappa 276, Dholavira 40, Lothal 27, Chanhu-daro 17, Kalibangan 17, others fewer.
+
+Dholavira was excavated mainly after 1979, so its strings are plausible new finds, but the large Mohenjo-daro share shows that many of the 847 are probably the same objects read differently (a sign more or less, a different allograph decision) rather than new inscriptions. Without an object-level link between the two sources (KP1979 inscription numbers to CISI numbers), this set cannot be used as clean fresh data. Building that link is a task for a later session, using the CISI numbers in the ICIT-style source and the KP1979 type and icon codes.
+
+### Next steps (updated)
+
+1. Object-level link between KP1979 and the ICIT-style source (inscription numbers ↔ CISI numbers), so that post-1979 finds can be separated as a fresh test set.
+2. Phase 4 (typology) with controls that preserve the rules already established (lesson from H4.3).
+3. Positional "slot" description of the texts (which sign classes occupy which positions), formed on KP1979 training data and tested on ICIT held-out strings for that new question.
