@@ -374,3 +374,16 @@ Interpretation: the result fits a pattern in which a counted number of strokes i
 2. Design an L2 test for the KP 86 group: does its presence predict object type or site beyond what H3.5/H3.6 already show?
 3. Check whether count 7 → 288/289 and long count 3 (147) → 217 (ICIT 520) are similar count–item pairs (training split first, then new data if available).
 4. Look for further data sources (for example newly published inscriptions) to serve as a fresh test set, since the held-out set is being used up.
+
+### H3.11 robustness check for H3.10 (training split): passed
+
+Script: `scripts/phase3_h311_matched_control.py`; results: `results/phase3_h311_matched_control.json`.
+
+Each stroke sign was replaced by a random sign matched for frequency (within a factor of 1.5) and medial share (within 0.15); 1,000 draws.
+
+| Corpus | Share followed by target, stroke set | Matched sets: mean (SD), maximum | p |
+|---|---:|---:|---:|
+| KP1979 | 0.31 | 0.05 (0.05), 0.27 | 0.001 |
+| ICIT | 0.38 | 0.04 (0.04), 0.16 | 0.001 |
+
+No matched set reached the observed share in either corpus. The H3.10 effect therefore cannot be explained by frequency or by a general preference of medial signs for KP 86 / ICIT 390–407. This check used the training split, from which the pattern was first noticed, so it is a robustness check and not an independent confirmation; the independent confirmation is H3.10 on the held-out set.
