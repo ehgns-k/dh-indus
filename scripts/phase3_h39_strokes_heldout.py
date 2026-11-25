@@ -11,7 +11,7 @@ exec(src.split("res = {}")[0], ns)  # reuse SETS, contexts, mean_js without runn
 def heldout(name):
     L = load_icit() if name == "icit" else load_kp1979()
     u = {tuple(l.tokens) for l in L if l.complete and l.direction != "unknown"}
-    return [list(s) for s in u if is_heldout(list(s), name)]
+    return [list(s) for s in sorted(u) if is_heldout(list(s), name)]
 
 rng = random.Random(20261126)
 res = {}
@@ -19,7 +19,7 @@ for name, S in ns["SETS"].items():
     seqs = heldout(name)
     freq = collections.Counter(t for s in seqs for t in s)
     S = [s for s in S if freq[s] > 0]
-    pool = [t for t in freq if freq[t] >= 3 and t not in S and t != "?"]
+    pool = sorted(t for t in freq if freq[t] >= 3 and t not in S and t != "?")
     ctx = ns["contexts"](seqs, "left")
     vocab = sorted({w for c in ctx.values() for w in c})
     obs = ns["mean_js"](S, ctx, vocab)

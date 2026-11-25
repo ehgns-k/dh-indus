@@ -13,7 +13,7 @@ N_PERM = 1000
 def train(name):
     L = load_icit() if name == "icit" else load_kp1979()
     u = {tuple(l.tokens) for l in L if l.complete and l.direction != "unknown"}
-    return [list(s) for s in u if not is_heldout(list(s), name)]
+    return [list(s) for s in sorted(u) if not is_heldout(list(s), name)]
 
 def contexts(seqs, side):
     ctx = collections.defaultdict(collections.Counter)
@@ -36,7 +36,7 @@ for name, S in SETS.items():
     seqs = train(name)
     freq = collections.Counter(t for s in seqs for t in s)
     S = [s for s in S if freq[s] > 0]
-    pool = [t for t in freq if 10 <= freq[t] <= 700 and t not in S and t != "?"]
+    pool = sorted(t for t in freq if 10 <= freq[t] <= 700 and t not in S and t != "?")
     out = {"set": S, "set_freq": {s: freq[s] for s in S}, "pool_size": len(pool)}
     for side in ["right", "left"]:
         ctx = contexts(seqs, side)

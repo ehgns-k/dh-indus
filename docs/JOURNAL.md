@@ -291,10 +291,10 @@ Script: `scripts/phase3_h38_strokes.py`; results: `results/phase3_h38_strokes.js
 
 | Corpus | Side | Observed mean JS | Control mean (SD) | p |
 |---|---|---:|---:|---:|
-| KP1979 | right (decision) | 0.732 | 0.817 (0.037) | 0.025 |
-| ICIT | right (decision) | 0.763 | 0.805 (0.036) | 0.109 |
-| KP1979 | left (reported only) | 0.598 | 0.769 (0.052) | 0.003 |
-| ICIT | left (reported only) | 0.641 | 0.760 (0.046) | 0.005 |
+| KP1979 | right (decision) | 0.732 | 0.818 (0.036) | 0.023 |
+| ICIT | right (decision) | 0.763 | 0.808 (0.037) | 0.109 |
+| KP1979 | left (reported only) | 0.598 | 0.768 (0.050) | 0.002 |
+| ICIT | left (reported only) | 0.641 | 0.762 (0.045) | 0.005 |
 
 By the pre-registered rule H3.8 is not supported: the signs that follow the stroke signs are not significantly more alike than for random sign sets. In both corpora, however, the signs that precede the stroke signs are more alike than for random sets. The most common preceding context is the start of the line (KP 143 of the counted occurrences, ICIT 83), followed by KP 119 / ICIT 002 (59 and 49), which the concordance maps onto each other (ICIT 002 → KP 119, purity 0.97).
 
@@ -316,8 +316,8 @@ Script: `scripts/phase3_h39_strokes_heldout.py`; results: `results/phase3_h39_st
 
 | Corpus | Observed mean JS | Control mean (SD) | p |
 |---|---:|---:|---:|
-| KP1979 | 0.641 | 0.765 (0.056) | 0.031 |
-| ICIT | 0.583 | 0.757 (0.044) | 0.003 |
+| KP1979 | 0.641 | 0.760 (0.055) | 0.032 |
+| ICIT | 0.583 | 0.757 (0.045) | 0.001 |
 
 ICIT meets the criterion; KP1979 does not. By the pre-registered rule (both corpora required), H3.9 is not supported. In both corpora the observed value lies on the predicted side of the control distribution, and in the held-out set several stroke signs occur fewer than 10 times (KP 125: 5, 126: 3, 127: 8), so the test has low power. The shared-preceding-context pattern of the stroke signs therefore remains a suggestion, not a result.
 
@@ -326,3 +326,7 @@ ICIT meets the criterion; KP1979 does not. By the pre-registered rule (both corp
 - Glyph evidence (sign list) and the agreement of the two numbering systems support treating KP 121–130 / ICIT 001, 003, 004, 005, 016, 017 as a series of signs that differ by stroke count.
 - Distributional tests (H3.8, H3.9) did not reach the pre-registered thresholds. The stroke signs do not yet form a demonstrated paradigm.
 - Next approaches: (a) test whether stroke count interacts with the following sign (for example, whether certain following signs take only small counts); (b) compare the short-stroke and long-stroke series (KP 121–130 vs 144–151) to see whether they are positional variants or distinct functions; (c) frequency by stroke count (does frequency fall as the count rises?), after verifying the relevant literature on frequencies of number words.
+
+### Correction: reproducibility of the stroke-sign tests (same day)
+
+The first runs of H3.8 and H3.9 drew their random control sets from lists whose order depended on Python's per-process hash seed, so re-running the scripts gave slightly different p-values (H3.9: 0.031 / 0.003, then 0.038 / 0.002). The scripts now sort these lists, and repeated runs give identical output. The tables above show the values of the deterministic version. No conclusion changed: H3.8 and H3.9 remain not supported, for the same reasons. The other scripts were checked: `scripts/phase3_structure.py` reproduces its committed output exactly, and the remaining tests do not draw random samples from unordered collections.
