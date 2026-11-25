@@ -1,0 +1,58 @@
+{
+ "statistics": [
+  "F1_recursive_recurrence_ratio",
+  "F2_minimal_pairs_per_line",
+  "F3_formulae_per_1000_lines"
+ ],
+ "means": {
+  "indus_icit": [
+   2.7238601414450967,
+   1.7081249999999997,
+   62.625
+  ],
+  "indus_kp1979": [
+   2.640282697922143,
+   1.0326291079812207,
+   63.875847678664584
+  ],
+  "proto_cuneiform": [
+   1.6150541196872008,
+   1.546119791666667,
+   34.661458333333336
+  ],
+  "proto_elamite": [
+   1.4147177377905253,
+   2.211505190311419,
+   61.70703575547865
+  ],
+  "akkadian_ob_letters": [
+   3.9660824592144466,
+   0.15240687679083095,
+   16.647564469914037
+  ],
+  "sumerian_ur3_admin": [
+   2.3587591403879724,
+   0.33710000000000007,
+   31.275
+  ],
+  "sumerian_ob_literary": [
+   3.004514027192103,
+   0.351615969581749,
+   17.015209125475284
+  ]
+ },
+ "mean_distance_to_icit": {
+  "proto_cuneiform": 2.0624150772066216,
+  "proto_elamite": 1.672782761416028,
+  "akkadian_ob_letters": 3.484359880319446,
+  "sumerian_ur3_admin": 2.497208891026834,
+  "sumerian_ob_literary": 3.0204837912293936,
+  "indus_kp1979": 0.9002511203451865
+ },
+ "nearest_per_resample": {
+  "proto_elamite": 13,
+  "proto_cuneiform": 6,
+  "sumerian_ur3_admin": 1
+ },
+ "prediction_holds": false
+}

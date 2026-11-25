@@ -2053,3 +2053,19 @@ Three formula statistics, computed identically on 20 resamples of 2,000 unique l
 - **F2 minimal-pair density:** minimal pairs (strings differing in one position) per line.
 - **F3 formula richness:** templates with ≥ 3 different fillers in one slot per 1,000 lines.
 Distances on z-scored means as in D1. **Prediction:** the reference corpus nearest to ICIT is proto-Elamite, in ≥ 19 of 20 resamples (per-resample distances).
+
+### D5 result: not supported by the registered criterion (13 of 20); same ordering on average
+
+Script: `scripts/phase4_d5_formula_typology.py`; results: `results/phase4_d5_formula_typology.json`.
+
+| Corpus | F1 recursive recurrence ratio | F2 minimal pairs per line | F3 formulae per 1,000 lines |
+|---|---:|---:|---:|
+| Indus (ICIT) | 2.72 | 1.71 | 62.6 |
+| Indus (KP1979, normalised) | 2.64 | 1.03 | 63.9 |
+| proto-Elamite | 1.42 | 2.21 | 61.7 |
+| proto-cuneiform | 1.62 | 1.55 | 34.7 |
+| Sumerian Ur III administrative | 2.36 | 0.34 | 31.3 |
+| Sumerian OB literary | 3.01 | 0.35 | 17.0 |
+| Akkadian OB letters | 3.97 | 0.15 | 16.6 |
+
+Proto-Elamite is the nearest reference corpus in 13 of 20 resamples (proto-cuneiform 6, Ur III administrative 1); the registered criterion (≥ 19) is not met, so **D5 is not supported**. On average the ordering is the same as in D1: KP1979 (the other Indus transcription, 0.90, a sanity check), then proto-Elamite (1.67), proto-cuneiform (2.06), Ur III administrative (2.50), OB literary (3.02), Akkadian letters (3.48). The Indus corpus resembles the proto-administrative corpora in the density of minimal pairs and formulae (F2, F3), and the full-writing corpora in its recursive recurrence (F1).
