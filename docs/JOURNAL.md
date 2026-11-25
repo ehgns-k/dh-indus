@@ -920,3 +920,43 @@ Decision rule for G3:
 3. If any known corpus is misassigned, G3 is recorded as **undecided**, and no claim about the linguistic status of the Indus corpus is made.
 
 Limits stated in advance: seven known corpora is a small reference set; the non-linguistic corpora differ from the Indus corpus in medium and function; success would show only that the Indus statistics resemble one group, not that the Indus signs record language.
+
+### D2 result: gate G3 undecided
+
+Scripts: `scripts/fetch_sproat.py`, `scripts/phase4_d2_nonlinguistic.py`; results: `results/phase4_d2_nonlinguistic.json`.
+
+Leave-one-corpus-out check on the seven known corpora: 5 of 7 assigned correctly. Totem poles and Asian emoticons, both non-linguistic, were assigned to the full-writing group. By the pre-registered rule the statistics do not separate full writing from non-linguistic symbol systems, so **G3 is undecided** and no claim is made about whether the Indus signs record language.
+
+Sample means (300 unique lines per corpus, 20 resamples):
+
+| Corpus | S1 dir. | S2 templ. | S3 units | S4 repet. | S5 hapax | S6 final |
+|---|---:|---:|---:|---:|---:|---:|
+| Indus (ICIT) | 1.58 | 0.56 | 3.06 | 0.034 | 0.49 | 0.51 |
+| proto-Elamite | 1.79 | 0.58 | 2.85 | 0.037 | 0.47 | 0.43 |
+| proto-cuneiform | 1.27 | 0.84 | n/a | 0.016 | 0.53 | 0.07 |
+| Sumerian Ur III admin. | 1.14 | 0.45 | 4.51 | 0.159 | 0.40 | 0.18 |
+| Sumerian OB literary | 0.96 | 0.43 | 4.29 | 0.597 | 0.42 | 0.16 |
+| Akkadian OB letters | 1.12 | 0.29 | 3.11 | 0.363 | 0.36 | 0.26 |
+| Barn stars (110 lines) | 0.00 | 0.00 | 0.96 | 0.971 | 0.16 | 0.36 |
+| Totem poles | 0.55 | 0.35 | 1.83 | 0.359 | 0.72 | 0.16 |
+| Weather icons | 0.03 | 0.02 | 1.02 | 0.963 | 0.02 | 0.53 |
+| Asian emoticons | 1.91 | 0.94 | 1.88 | 0.732 | 0.32 | 0.82 |
+| Pictish (217 lines) | 1.16 | 0.28 | 1.98 | 0.156 | 0.45 | 0.37 |
+| Vinča (244 lines) | −0.03 | 0.05 | n/a | 0.323 | 0.62 | 0.25 |
+
+("n/a": at 300 lines no recurring unit occurred in the controls, so S3 is undefined for that corpus in some resamples. This affects only corpora to be classified, not the leave-one-out decision, and the classification of these corpora is not reported as a result because G3 is undecided.)
+
+Observations:
+- The non-linguistic corpora are very heterogeneous. Asian emoticons have strong order and direction effects (S1 1.91, S2 0.94), stronger than any full-writing corpus, because emoticons are built from paired characters in fixed positions. Barn stars and weather icons have almost no order effects. A single "non-linguistic profile" does not exist in these data, which is the reason the check fails. This agrees with the caution of Sproat (2014) and Raghavendra (2026) that such statistics are not specific to language.
+- Among all twelve corpora, the Indus corpus again stands next to proto-Elamite on every statistic (compare D1). The Indus corpus has a lower within-line repetition rate (0.034) than every corpus except the two proto-administrative ones (0.037, 0.016) and Pictish (0.156 is the next lowest). Low repetition is therefore shared with the proto-administrative systems rather than being unique to the Indus corpus.
+
+### Status of the gates (end of the seventh working session)
+
+| Gate | Status |
+|---|---|
+| G1 (L1 consolidated) | passed |
+| G2 (L2) | not met |
+| G3 (writing or not) | undecided: the available statistics cannot separate writing from non-linguistic systems |
+| G4 (L3) | not attempted; under the work plan, WP-E results will be labelled conditional on the linguistic assumption |
+
+The firm finding of phase 4 is comparative: the Indus inscriptions pattern with proto-Elamite (and, less closely, proto-cuneiform), the two proto-administrative systems of the late fourth millennium BCE in the reference set.

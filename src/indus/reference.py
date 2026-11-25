@@ -94,3 +94,26 @@ def load_reference(names=None) -> dict[str, list[list[str]]]:
             if toks:
                 out[cur].append(toks)
     return dict(out)
+
+
+SPROAT = ["AsianEmoticons", "BarnStars", "Kudurrus", "Pictish", "TotemPoles", "Vinca", "WeatherIcons"]
+
+
+def load_sproat(names=None) -> dict[str, list[list[str]]]:
+    """Symbol sequences from the corpora of Sproat (2014); one line per
+    document, symbol titles in document order (scripts/fetch_sproat.py)."""
+    import xml.etree.ElementTree as ET
+    out = {}
+    for n in names or SPROAT:
+        root = ET.parse(RAW / "sproat" / "corpora" / f"{n}.xml").getroot()
+        docs = []
+        for doc in root.iter("document"):
+            dt = doc.find("docText")
+            if dt is None:
+                continue
+            toks = [s.findtext("title", "").strip() for s in dt.iter("symbol")]
+            toks = [t for t in toks if t]
+            if toks:
+                docs.append(toks)
+        out[n] = docs
+    return out

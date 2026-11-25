@@ -1,0 +1,154 @@
+{
+ "statistics": [
+  "S1_direction",
+  "S2_template",
+  "S3_units",
+  "S4_repetition",
+  "S5_hapax",
+  "S6_final_conc"
+ ],
+ "means": {
+  "indus_icit": {
+   "S1_direction": 1.5830473795407936,
+   "S2_template": 0.5574731869376859,
+   "S3_units": 3.058759145385815,
+   "S4_repetition": 0.03424131571053077,
+   "S5_hapax": 0.49111572194645337,
+   "S6_final_conc": 0.5133642360714143
+  },
+  "proto_cuneiform": {
+   "S1_direction": 1.2678314583962629,
+   "S2_template": 0.8363016745026852,
+   "S3_units": NaN,
+   "S4_repetition": 0.0164322027466375,
+   "S5_hapax": 0.5256019444607415,
+   "S6_final_conc": 0.07018627765898422
+  },
+  "proto_elamite": {
+   "S1_direction": 1.7883240290582028,
+   "S2_template": 0.5753705290062758,
+   "S3_units": 2.851665269743005,
+   "S4_repetition": 0.03709087355563519,
+   "S5_hapax": 0.46643692895575467,
+   "S6_final_conc": 0.4250284969403837
+  },
+  "akkadian_ob_letters": {
+   "S1_direction": 1.117567820267866,
+   "S2_template": 0.2921317464147176,
+   "S3_units": 3.1097443374576654,
+   "S4_repetition": 0.3626666666666667,
+   "S5_hapax": 0.35895161334511894,
+   "S6_final_conc": 0.25766666666666665
+  },
+  "sumerian_ur3_admin": {
+   "S1_direction": 1.1423448148470896,
+   "S2_template": 0.444619469319362,
+   "S3_units": 4.5076303445055155,
+   "S4_repetition": 0.1593896321070234,
+   "S5_hapax": 0.4028957416959281,
+   "S6_final_conc": 0.18406354515050166
+  },
+  "sumerian_ob_literary": {
+   "S1_direction": 0.9553014967116857,
+   "S2_template": 0.4318518886457398,
+   "S3_units": 4.292424719352142,
+   "S4_repetition": 0.5974648829431438,
+   "S5_hapax": 0.41477607523623855,
+   "S6_final_conc": 0.1600891861761427
+  },
+  "BarnStars": {
+   "S1_direction": -0.003980646632722906,
+   "S2_template": 0.0,
+   "S3_units": 0.9573578352262191,
+   "S4_repetition": 0.9708737864077669,
+   "S5_hapax": 0.15625,
+   "S6_final_conc": 0.35922330097087385
+  },
+  "TotemPoles": {
+   "S1_direction": 0.5481135678820096,
+   "S2_template": 0.35387970089808307,
+   "S3_units": 1.8317821856140764,
+   "S4_repetition": 0.35888743398072304,
+   "S5_hapax": 0.7187679994495423,
+   "S6_final_conc": 0.15553270550184903
+  },
+  "WeatherIcons": {
+   "S1_direction": 0.03156137463366277,
+   "S2_template": 0.024025974025974027,
+   "S3_units": 1.0234272368665245,
+   "S4_repetition": 0.9631666666666667,
+   "S5_hapax": 0.02095238095238095,
+   "S6_final_conc": 0.5340000000000001
+  },
+  "AsianEmoticons": {
+   "S1_direction": 1.9085824963568672,
+   "S2_template": 0.9356088717836176,
+   "S3_units": 1.8820234638935986,
+   "S4_repetition": 0.732359782421644,
+   "S5_hapax": 0.3164370938080983,
+   "S6_final_conc": 0.8214001631089465
+  },
+  "Pictish": {
+   "S1_direction": 1.1560044695136267,
+   "S2_template": 0.28180197697225945,
+   "S3_units": 1.9747179448009902,
+   "S4_repetition": 0.15625,
+   "S5_hapax": 0.44705882352941184,
+   "S6_final_conc": 0.3697916666666668
+  },
+  "Vinca": {
+   "S1_direction": -0.031648079849919984,
+   "S2_template": 0.0460893799353215,
+   "S3_units": NaN,
+   "S4_repetition": 0.32258064516129026,
+   "S5_hapax": 0.6162162162162163,
+   "S6_final_conc": 0.2473118279569891
+  }
+ },
+ "sizes": {
+  "indus_icit": 300,
+  "proto_cuneiform": 300,
+  "proto_elamite": 300,
+  "akkadian_ob_letters": 300,
+  "sumerian_ur3_admin": 300,
+  "sumerian_ob_literary": 300,
+  "BarnStars": 110,
+  "TotemPoles": 300,
+  "WeatherIcons": 300,
+  "AsianEmoticons": 300,
+  "Pictish": 217,
+  "Vinca": 244
+ },
+ "loo_known": {
+  "sumerian_ur3_admin": "linguistic",
+  "sumerian_ob_literary": "linguistic",
+  "akkadian_ob_letters": "linguistic",
+  "BarnStars": "non-linguistic",
+  "TotemPoles": "linguistic",
+  "WeatherIcons": "non-linguistic",
+  "AsianEmoticons": "linguistic"
+ },
+ "loo_correct": 5,
+ "separates": false,
+ "assignments_per_resample": {
+  "indus_icit": {
+   "linguistic": 20
+  },
+  "proto_elamite": {
+   "linguistic": 20
+  },
+  "proto_cuneiform": {
+   "non-linguistic": 2,
+   "linguistic": 18
+  },
+  "Pictish": {
+   "linguistic": 19,
+   "non-linguistic": 1
+  },
+  "Vinca": {
+   "non-linguistic": 19,
+   "linguistic": 1
+  }
+ },
+ "G3": "undecided"
+}
