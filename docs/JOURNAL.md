@@ -748,3 +748,24 @@ Units from KP training data: all 2- and 3-sign sequences that occur in at least 
 - Prediction: more covered pairs in the real strings than in the controls, p < 0.01.
 
 Gate G1 is passed if B1 or B4 is supported.
+
+### B1 and B4 results: both supported; gate G1 passed
+
+Script: `scripts/phase3_b1_b4_template_units.py`; results: `results/phase3_b1_b4_template_units.json`. 78 fresh strings mapped (sets 1 and 2).
+
+| Test | Observed | Rule-preserving controls: mean (SD) | p |
+|---|---:|---:|---:|
+| B1 zone inversions (fewer predicted) | 31 | 55.7 (7.3) | 0.001 |
+| B4 adjacent pairs inside recurring units (more predicted) | 84 | 37.2 (4.6) | 0.001 |
+
+Zones from KP training data: 15 initial-zone signs, 83 medial, 16 terminal. Recurring units: 313 two- and three-sign sequences.
+
+Both results hold against controls that already keep the line length, the terminal cluster and the count–item pairs. Therefore:
+- **B1:** beyond the terminal cluster, the order of the rest of the line follows an initial → medial → terminal template at sites excavated after the training corpus was published.
+- **B4:** multi-sign units that recur in the pre-1979 corpus recur in the later finds, and this is not explained by the rules already built into the controls.
+
+**Gate G1: passed.** The L1 result is no longer limited to a few sign pairs. A positional template and a lexicon of recurring units, both learned from KP1979, predict inscriptions from ten sites excavated later. As before, this is a structural result. It is compatible with writing, and equally with a structured non-linguistic notation.
+
+### Observation from the recurring units (not a test)
+
+Units found in the fresh strings include `119 121`, `119 123`, `119 124`, `119 124 86`, `119 126`, `119 127`, `119 144`: the sign KP 119 (ICIT 002) directly before stroke signs. Together with the H3.8 left-context result (stroke signs are most often preceded by the line start or by KP 119), this suggests that 119 introduces a number. The sign 119 is the most frequent non-terminal sign in KP1979 (704 occurrences) and is almost always medial in ICIT (002: medial share 0.95). Its relation to the stroke signs is the next target (WP C3/B3): does 119 precede stroke signs more than matched controls do, and is "119 + count + item" a fixed construction?

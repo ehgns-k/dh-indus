@@ -13,6 +13,7 @@ The Indus script is undeciphered. Results in this repository are labelled with t
 | 2026-11-25 | L1 (narrow scope) | Signs of 4–9 short strokes are followed by one particular sign group (KP 86 / ICIT 390–407) far more often than other signs are; held-out data, both transcriptions (H3.10), robust to matched controls (H3.11), and confirmed on inscriptions from sites excavated after 1979 (F2) |
 | 2026-11-25 | Not met | Seal vs tablet texts transfer across sites (H3.5); stroke signs share following contexts (H3.8); 090- vs 400-final lines tied to object type (H3.7) |
 | 2026-11-25 | L1 (narrow scope) | Order regularities learned from the 1979 corpus predict later finds from Dholavira and Nausharo, only in the right-to-left reading direction (F3) |
+| 2026-11-25 | L1 (gate G1 passed) | A positional template (initial → medial → terminal zones) and a lexicon of recurring sign units, learned from the 1979 corpus, predict inscriptions from ten sites excavated after 1979, against controls that keep all earlier rules (B1, B4) |
 
 The full list of tests, including failed ones, is in `docs/JOURNAL.md`.
 
