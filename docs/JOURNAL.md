@@ -1837,3 +1837,11 @@ Testable pairs (≥ 5 occurrences in each period): 154/156 (p = 0.61), 817/861 (
 - **Test:** difference of mean site-specificity (name-like minus conventional); null by 10,000 permutations of the group labels within frequency tertiles (to control for the higher variability of rarer signs).
 - **Prediction:** name-like signs more site-specific, p < 0.01.
 - **Level:** if supported, the result links a text-internal category (slot class) to an external variable (site) and is recorded as an L2 candidate, because the name-like reading of class 0 is an interpretation, not an established result.
+
+### H10.1 result: not supported
+
+Script: `scripts/phase10_h101_site_specificity.py`; results: `results/phase10_h101_site_specificity.json`.
+
+25 name-like (class 0) and 36 conventional signs. Mean site-specificity 0.123 vs 0.115; difference 0.008; permutation mean 0.018 (SD 0.022); p = 0.67. **H10.1 is not supported.**
+
+The most site-specific signs are in fact conventional ones: 700 and 400 (concentrated at Harappa), which close many Harappa tablet texts (C2). Site differences in sign use are dominated by the different mixes of object types at the sites, not by a name-like slot.
