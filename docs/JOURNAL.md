@@ -1027,3 +1027,29 @@ Among fresh-set strings (ICIT, sites excavated after 1979) whose records are all
 Script: `scripts/phase6_f4_final_sign_fresh.py`; results: `results/phase6_f4_final_sign_fresh.json`.
 
 On the fresh sets, 3 of 22 rectangular-seal strings end in 407 or 154, against 0 of 75 motif-seal strings. One-sided Fisher exact p = 0.0104, just above the threshold 0.01. By the pre-registered rule F4 is not supported. The direction agrees with C2, and the result is limited by the small number of rectangular seals in the fresh sets. The C2 result therefore rests on the held-out confirmation alone.
+
+---
+
+## 2026-11-25 (day 1, ninth working session): P2, the Sanskrit reading claim (C33)
+
+### Materials
+
+- The proposed readings: the `sanskrit` column of the ICIT-style source (3,831 records with an entry; entries of the form `ref:…` point to other records and are skipped). The readings are written in SLP1 transliteration with hyphens and spaces as word divisions. They are used here only as the object of the test, never as data for other analyses.
+- The proposal's published procedure (https://github.com/yajnadevam/ScriptDerivation, commit `5835e8b`, `scripts/prove.sh`): it builds its dictionary from the Monier-Williams dictionary, keeps headwords that cite a source other than lexicographers only, and normalises both dictionary and readings by merging aspirated with plain stops, retroflex with dental consonants, all nasals with *n*, all sibilants with *s*, and the vocalic liquids with *r*, and by writing long vowels as double vowels.
+- The Monier-Williams dictionary from the Cologne source files (`scripts/fetch_mw.py`; the Cologne site itself is blocked from the working environment, so the GitHub mirror of the same source file is used).
+
+### Pre-registration of E2 (before running)
+
+**Question.** How much evidence does "the reading can be divided into Sanskrit dictionary words" give, under the proposal's normalisation? If random letter strings can also be divided into dictionary words at a high rate, readability is weak evidence for the decipherment.
+
+**Procedure.**
+1. Dictionary: headwords (`k1`) of Monier-Williams entries that contain at least one `<ls>` citation other than `L.`, normalised as in `prove.sh`; only words of length ≥ 2 are used for segmentation.
+2. Claimed readings: unique readings, brackets and parentheses removed, normalised in the same way, word divisions removed.
+3. Segmentability: a string is segmentable if it can be divided completely into dictionary words (dynamic programming).
+4. Controls, for each claimed reading: (a) 20 random strings of the same length drawn from the letter frequencies of all claimed readings; (b) 20 random reorderings of the reading's own letters.
+
+**Outcomes reported.** Segmentability rate of the claimed readings, of control (a) and of control (b).
+
+**Decision rule.** Readability is counted as *discriminating evidence* only if the rate for control (b) is below half the rate for the claimed readings (likelihood ratio > 2) **and** below 0.1. Otherwise it is recorded that, under the proposal's normalisation, readability as Sanskrit does not distinguish the proposed readings from random letter sequences of the same composition.
+
+**Limits.** The proposal also uses an augmented dictionary with inflected forms (`data/aux.txt`, 35 entries, and declined forms not published as a list). Inflected forms are not added here, which lowers the rates for the claimed readings and for the controls alike. The test concerns the evidential value of the readability criterion, not the sign values themselves.
