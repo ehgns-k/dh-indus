@@ -695,3 +695,18 @@ Rakhigarhi is excluded: sources disagree on whether excavation began in the 1960
 ### Pre-registration of F2b and F3b (fresh set 2 only, before running)
 
 Same procedures and criteria as F2 and F3 (rules and models from KP1979 training data), applied to fresh set 2 only. F2b is marked "insufficient data" if fewer than 3 bigrams follow a 4–9 stroke sign. F3b uses the sign test over mapped strings; prediction p < 0.01 for forward vs reversed. Because fresh set 2 is small, a failure of F3b's bigram-vs-unigram comparison is expected to be likely and is reported without a decision.
+
+### F2b and F3b results (fresh set 2: 24 unique strings from eight post-1979 sites)
+
+Script: `scripts/phase5_fresh_tests.py --set2`; results: `results/phase5_fresh_tests_set2.json`. (The script without `--set2` reproduces the committed fresh-set-1 results exactly.)
+
+- **F1b:** insufficient data (no adjacent terminal-set pair).
+- **F2b: not supported.** After a 4–9 stroke sign the target group follows in 1 of 3 cases (other signs: 3 of 68); p = 0.16. With three bigrams the test has almost no power; the direction agrees with F2.
+- **F3b:** 15 strings mapped. Forward bigram beats reversed on 14 of 15 (p = 0.0005, **supported**). Forward bigram beats unigram on 11 of 15 (p = 0.059; reported without a decision, as pre-registered). Mean log-loss: forward 3.52, unigram 3.82, reversed 5.40 — the same pattern as fresh set 1.
+
+Ledger additions: F2b, F3b on fresh set 2.
+
+### Gate status after this session
+
+- G1 (L1 consolidation): pending B1/B4.
+- G2 (L2): no L2 result yet; tests so far (object type, motif, copper tablets) are negative.

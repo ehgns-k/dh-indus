@@ -25,6 +25,8 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | F2 | ICIT (rule from KP train) | fresh | supported | |
 | F3 | ICIT (model from KP train) | fresh | supported | |
 | C1 | ICIT | all copper-tablet strings | not supported | not held-out; motif coding inconsistent |
+| F2b | ICIT (rule from KP train) | fresh set 2 | not supported | 3 bigrams only |
+| F3b | ICIT (model from KP train) | fresh set 2 | supported (direction) | |
 
 Count of tests decided on the held-out split so far: 11 (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 

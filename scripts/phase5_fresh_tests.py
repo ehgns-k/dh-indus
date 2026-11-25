@@ -6,7 +6,8 @@ import collections, csv, json, math
 from scipy.stats import binomtest, fisher_exact
 from indus.corpus import ROOT, is_heldout, load_icit, load_kp1979
 
-FRESH_SITES = {"Dholavira", "Nausharo"}
+import sys
+FRESH_SITES = {"Farmana", "Gola Dhoro (Bagasra)", "Lakhanjo-daro", "Kanmer", "Bhirrana", "Khirsara", "Shikarpur", "Ganweriwala"} if "--set2" in sys.argv else {"Dholavira", "Nausharo"}
 conc = {}
 for r in csv.DictReader(open(ROOT / "results" / "phase1_concordance.tsv"), delimiter="\t"):
     if int(r["support"]) >= 2 and float(r["purity"]) >= 0.5:
@@ -46,8 +47,8 @@ for s in fresh:
             a += y in TG; b += y not in TG
         else:
             c += y in TG; d += y not in TG
-res["F2"] = {"table": [[a, b], [c, d]], "status": "insufficient data" if a + b < 5 else "tested",
-             "p_value": fisher_exact([[a, b], [c, d]], alternative="greater")[1] if a + b >= 5 else None}
+res["F2"] = {"table": [[a, b], [c, d]], "status": "insufficient data" if a + b < (3 if "--set2" in sys.argv else 5) else "tested",
+             "p_value": fisher_exact([[a, b], [c, d]], alternative="greater")[1] if a + b >= (3 if "--set2" in sys.argv else 5) else None}
 
 # ---- F3
 V = sorted({t for s in kp_tr for t in s} | {"</s>"}); nV = len(V)
@@ -73,5 +74,5 @@ res["F3"] = {"mapped_strings": n,
              "mean_logloss_bigram_reversed": sum(lp_big(m[::-1]) for m in mapped) / n,
              "bigram_beats_unigram": w1, "p_bigram_vs_unigram": binomtest(w1, n, 0.5, alternative="greater").pvalue,
              "forward_beats_reversed": w2, "p_forward_vs_reversed": binomtest(w2, n, 0.5, alternative="greater").pvalue}
-(ROOT / "results" / "phase5_fresh_tests.json").write_text(json.dumps(res, indent=1))
+(ROOT / "results" / ("phase5_fresh_tests_set2.json" if "--set2" in sys.argv else "phase5_fresh_tests.json")).write_text(json.dumps(res, indent=1))
 print(json.dumps(res, indent=1))
