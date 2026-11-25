@@ -1468,3 +1468,7 @@ Note on resolution: with 1,000 relabellings the smallest attainable p is 0.00099
 - Seven pairs show no detectable difference and are consistent with free variants (allographs) at this sample size, for example 817 / 861 (both line-initial signs, KP 383) and 705 / 706 (KP 316).
 
 **Consequence.** The ICIT distinctions 617/741, 151/158 and 390/407 are supported by usage; analyses that merge them (KP numbering) lose information. This is recorded in `docs/SIGN_CONCORDANCE.md`.
+
+### Pre-registration of L3b (reverse direction; before running)
+
+Same test as L3a in the other direction: ICIT signs that receive two or more frequent KP signs (concordance rows with support ≥ 3 and purity ≥ 0.5, grouped by ICIT sign; KP members with ≥ 15 occurrences in the KP training split); contexts from the KP training split; 1,000 relabellings; Bonferroni 0.01 / number of pairs.
