@@ -1718,3 +1718,13 @@ Breakdown of the stroke–stroke substitutions (not pre-registered):
 Three explanations were considered in advance of the breakdown: changing quantities in a fixed formula, different readings of the stroke count of copies of the same text, and short and long variants of the same count. Short/long substitutions with the same count are frequent in KP1979 (49, of which 41 within the same site and object type), which fits the third explanation and the split/merge findings. But about half of the substitutions involve count differences of two or more strokes (ICIT 46 of 94, KP 92 of 183), which are unlikely to be misreadings of the same text. Example (ICIT): `003 390 …` beside `005 390 …` (see results file).
 
 **Interpretation.** The corpus contains texts that repeat the same formula with a different number of strokes in the same slot. This is what record-like texts with a variable quantity would look like (claim C31b, administrative records). It is a structural (L1) result: it shows a variable numeral slot within otherwise fixed formulae, without identifying what is counted. It strengthens the numeral reading of the stroke signs more directly than H3.8, which looked only at shared contexts and failed.
+
+### Pre-registration of H9.2 (do variable-count formulae belong to tablets? before running)
+
+**Hypothesis (claim C31).** If formulae with a variable count are records, the texts involved should be on record-like objects (tablets) more often than on seals.
+
+- **Units:** ICIT unique complete strings with one coarse object type (`SEAL*` or `TAB*`) and one site stratum (Harappa, Mohenjo-daro, other).
+- **Groups:** "count-variable" strings = strings that take part in at least one stroke–stroke minimal pair (H9.1); "other" = strings that take part in at least one minimal pair but none with a stroke–stroke substitution (so both groups are formulaic texts with near-variants).
+- **Test:** Cochran–Mantel–Haenszel test (site strata) on (group) × (tablet vs seal), one-sided: tablets over-represented among count-variable strings.
+- **Primary (L2 candidate):** all strings; p < 0.01.
+- **Secondary (decides L2):** only strings from the strict held-out set or the fresh sets (partners may be anywhere); p < 0.01. Only if the secondary test passes is the result counted as L2.
