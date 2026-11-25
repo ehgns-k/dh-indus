@@ -2568,3 +2568,40 @@ Pre-registered analyses in this session:
 - Descriptive comparison: NUM1.
 - Reviews: R7, R7b, R8.
 The level assessment is unchanged: L1 achieved, L2 only in narrow functional scope (CT15), L3 not achieved.
+
+---
+
+## 2026-11-25 (day 1, twenty-fifth working session, 17:18 UTC): iconographic detail, robustness of CT15, multi-face objects
+
+### Plan of the run
+
+1. MO2a, MO2b: do signs vary with iconographic details of unicorn seals (the object in front of the animal, `cult`; the suffix of the `Bull1` code)? These details have not been used before. C2 used only the base motif, and it found no motif association even on training data.
+2. MO1k: sign × motif scan in KP1979 with its own icon codes (not scanned before; C2k used type codes only).
+3. CT15r: robustness of CT15 to text length.
+4. FACE4: objects with three or more faces.
+5. Survey of the meaning of the `cult` codes and `Bull1` suffixes (background, in parallel).
+6. Updates of ledger, claims, reports; reproducibility run.
+
+### Pre-registrations (before running)
+
+Common scan design for MO2a, MO2b and MO1k:
+- Unit: one object, with its text as in SZ2 (all faces and lines joined; complete, no `?`).
+- Discovery: objects whose text is a training string. For every sign in at least 15 discovery objects, a two-sided Fisher exact test of presence × binary variable; candidates have p < 0.01.
+- Confirmation: objects whose text is in the strict held-out set, plus objects from the fresh sites (ICIT only). Each candidate gets a one-sided Fisher test in its discovered direction, with Bonferroni threshold 0.01/k.
+- Prediction: at least one candidate is confirmed. If there are no candidates, the result is "not supported".
+- Insufficient data for a candidate: fewer than 5 confirmation objects contain it.
+
+**MO2a (ICIT).** `SEAL:S` objects with a `Bull1` motif (any suffix) and a `cult` code in {SAN, SAF, RAN, RAF, RBF, S}. Variable: `cult` = SAN (the most frequent code) vs any other of these codes. The meaning of the codes is not known at registration (survey in progress). The test asks only whether the text co-varies with this physical detail.
+
+**MO2b (ICIT).** `SEAL:S` objects with motif code `Bull1:W`, `Bull1:J`, `Bull1:S`, `Bull1:I` or `Bull1:L`. Variable: suffix W (the most frequent) vs the others.
+
+**MO1k (KP1979).** Records with `type_code` 11 (seals) and an icon code. Variable: icon code 40 (the most frequent; probably the unicorn, not checked) vs all other icon codes except 99 (excluded: possibly "unknown"; unsourced). Discovery: KP training strings (not `is_heldout`); confirmation: KP strict held-out strings.
+
+**CT15r (robustness of CT15).** The CT15 data and test, with the CMH strata defined by site stratum × text-length band (2, 3, 4, ≥ 5 signs) instead of site stratum alone. Tablet texts are shorter on average, and the final position of 740 could depend on length. Prediction: one-sided p < 0.01. A failure would mean CT15 is partly a length effect.
+
+**FACE4 (ICIT).** Objects with three or more faces, each face one complete line without `?`.
+- Statistic: number of objects on which exactly one face closes.
+- Null: faces re-assigned at random among these objects, keeping each object's number of faces; 10,000 draws.
+- Prediction: more objects with exactly one closing face than under the null, one-sided p < 0.01.
+- Insufficient data: fewer than 20 objects.
+- The ICIT objects of this kind are mostly incised tablets from Harappa (to be reported).
