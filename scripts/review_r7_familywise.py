@@ -39,7 +39,8 @@ fam += [("CT18|icit", "strict held-out", c18["icit"]["p_value"], 1 / 10001 if R7
         ("CT18|kp1979", "strict held-out", c18["kp1979"]["p_value"], 1 / 10001 if R7B else 1 / 1001),
         ("CT15", "strict held-out + fresh", J("claims_ct15_jar_final")["p_value"], None),
         ("CT15k", "strict held-out (KP)", J("claims_ct15k_jar_final_kp")["p_value"], None),
-        ("CT22", "strict held-out + fresh", J("claims_batch4")["CT22"]["p_value"], 1 / 10001)]
+        ("CT22", "strict held-out + fresh", J("claims_batch4")["CT22"]["p_value"], 1 / 10001),
+        ("F5", "fresh 1+2", J("batch5c_f5_formulae_fresh")["p_value"], 1 / 10001)]
 
 m = len(fam)
 order = sorted(range(m), key=lambda i: fam[i][2])

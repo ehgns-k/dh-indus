@@ -99,8 +99,9 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | NUM1 | ICIT, CDLI proto-Elamite and proto-cuneiform | all lines | descriptive: numeral before sign (0.71), unlike proto-Elamite (0.004) | not a test |
 | KF1 | ICIT, KP | all unique strings | supported (75 % vs 7.9 % of control frames) | across transcriptions of the same objects |
 | ML2 | ICIT, KP | objects of ML1, ML1k | not supported (p = 0.43, 0.46) | line breaks not at segment boundaries |
+| F5 | ICIT (formulae from train) | fresh sets 1+2 | supported (9 vs 4.8 matches, p = 0.0008) | rule-preserving controls |
 | R7b | as B1, B4, CT17, CT18 | as original | p = 0.0001 with 10,000 draws | review: resolution only |
-| R7 | – | – | review: 15 of 37 fresh/strict tests survive Holm 0.01; CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
+| R7 | – | – | review: 15 of 38 fresh/strict tests survive Holm 0.01; CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
 
 Count of questions decided on the (full) held-out split before the review R1: 15 (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, the H3.5 secondary set, H5.1, C2, C3; see rows). From R1 on, held-out tests use the strict held-out set; questions decided on it (alone or with the fresh sets) include R1, H8.1, H9.2 (secondary), E3d, G2, H9.4, CT16, CT17, CT18, G3, CT15 and later rows (at least 11 at the time of CT15). Questions decided on fresh data are marked in the table (F2, F3, F2b, F3b, B1, B4, H5.1b, F4, H6.1, H7.1 and the fresh parts of G2, CT16, CT15).
 

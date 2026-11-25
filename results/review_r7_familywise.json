@@ -1,5 +1,5 @@
 {
- "family_size": 37,
+ "family_size": 38,
  "uses_r7b_10000_draws": true,
  "excluded": "C2 and C2k associations (selected on the full held-out split; registered families 0.01/40 and 0.01/10, which they fail after R1)",
  "rows": [
@@ -182,6 +182,16 @@
    "bh_0.01": true,
    "bh_0.05": true,
    "resolution_limited_p": null
+  },
+  {
+   "test": "F5",
+   "data": "fresh 1+2",
+   "p": 0.0007999200079992001,
+   "holm_0.01": false,
+   "holm_0.05": true,
+   "bh_0.01": true,
+   "bh_0.05": true,
+   "resolution_limited_p": 9.999000099990002e-05
   },
   {
    "test": "CT22",
@@ -375,7 +385,7 @@
   }
  ],
  "survive_holm_0.01": 15,
- "survive_holm_0.05": 23,
- "survive_bh_0.01": 23,
- "survive_bh_0.05": 26
+ "survive_holm_0.05": 24,
+ "survive_bh_0.01": 24,
+ "survive_bh_0.05": 27
 }

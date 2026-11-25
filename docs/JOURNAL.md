@@ -2406,3 +2406,23 @@ ICIT: 25.7 % of line parts occur as complete single-line texts elsewhere, agains
 - Kept separate: ICIT 151/158, 617/741, 803/806 and 390/405/407; KP 324/325/326, 119/122, 123/147 and 62 vs 50/56.
 - Result: 713 ICIT types − 4 + 5 = 714 units. The allograph decisions supported by usage do not change the inventory estimate of D3 in any material way.
 - No key L1 test is re-run on the combined list. Its merges concern rare signs outside the tested sets, and its splits cannot be applied to ICIT tokens without a per-token alignment.
+
+### Pre-registration of F5 (before running)
+
+**F5 (formulae learned from training data recur in later finds).**
+- Formulae: templates of length ≥ 3 with one variable slot and at least three different fillers. They are found, as in `scripts/phase9_formulae.py`, on ICIT training strings only (not `is_heldout`, and not from the ten fresh sites).
+- Test strings: unique complete ICIT strings of length ≥ 3, without `?`, from fresh sets 1 and 2.
+- A string matches if it equals a template with any sign (including signs not seen in training) in the slot.
+- Statistic: number of fresh strings matching at least one template.
+- Control: each fresh string is replaced by a rule-preserving control (`indus.controls.control`; keeps the length, the closing cluster and the count–item pairs); 10,000 draws.
+- Prediction: more real strings match than control strings, one-sided p < 0.01.
+- Insufficient data: fewer than 5 real matches.
+- This adds one question to the fresh data (R7 family: 38).
+
+### Result F5: supported
+
+Script: `scripts/batch5c_f5_formulae_fresh.py`; results: `results/batch5c_f5_formulae_fresh.json`.
+- 52 formula templates of length ≥ 3 were found on 1,561 training strings.
+- Of 86 fresh strings of length ≥ 3, 9 fit a template (for example `861 002 016 390`, `817 002 222 740`, `920 740 400`), against 4.8 on average for rule-preserving controls (p = 0.0008).
+- Formulae with a variable slot learned from the older corpus recur in later finds beyond what the established rules (length, closing cluster, count–item pairs) explain. The effect is small in absolute terms: most fresh strings fit no training formula.
+- R7 recomputed with F5 (38 tests): Holm 0.01 keeps the same 15 tests; F5 survives Holm 0.05 and BH 0.01.
