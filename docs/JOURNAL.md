@@ -1516,3 +1516,17 @@ Observations:
 - The two Indus transcriptions differ in granularity (ICIT about 830 types, KP1979 about 510), as expected from the split/merge differences (L3a, L3b). Either estimate is far above the size of any syllabary or alphabet and in the range of the proto-administrative and logo-syllabic systems here.
 - For the cuneiform corpora the types are transliteration values (one sign can have several readings), so their numbers overstate the sign inventory; the comparison with them is indicative only. The proto-Elamite figure (signs, not readings) is the cleanest comparison and is almost identical to the ICIT figure.
 - An inventory of several hundred signs excludes a purely syllabic or alphabetic system, if the signs are writing at all; it is compatible with a logo-syllabic script and with a proto-administrative system of the proto-Elamite kind.
+
+### Pre-registration of H7.1 (class-based grammar by a hidden Markov model; before running)
+
+**Question.** Is the order of signs better described by a small number of hidden classes (a class grammar) than by sign-to-sign transitions?
+
+**Model.** A hidden Markov model with **8 states** (fixed now), trained by Baum–Welch (50 iterations, 3 random starts, best training likelihood kept) on ICIT training lines (unique, complete, reading order), with start and end transitions; emission and transition probabilities smoothed by adding 0.01. Unknown signs in test lines receive the probability of an unseen sign under add-0.1 smoothing in both models.
+
+**Comparison.** The bigram model of F3 (add-0.1, trained on the same lines in ICIT numbering).
+
+**Test data.** Fresh sets 1 and 2 (all ICIT lines from post-1979 sites, unique, complete; not used to train either model).
+
+**Statistic.** Per-line mean log-probability per token (including the end symbol) under each model; one-sided sign test over lines (HMM better than bigram).
+
+**Prediction.** HMM better on more lines than the bigram, p < 0.01. The state composition (most probable signs per state) is reported descriptively and compared with the positional zones (Q2).
