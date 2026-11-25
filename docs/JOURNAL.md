@@ -1472,3 +1472,27 @@ Note on resolution: with 1,000 relabellings the smallest attainable p is 0.00099
 ### Pre-registration of L3b (reverse direction; before running)
 
 Same test as L3a in the other direction: ICIT signs that receive two or more frequent KP signs (concordance rows with support ≥ 3 and purity ≥ 0.5, grouped by ICIT sign; KP members with ≥ 15 occurrences in the KP training split); contexts from the KP training split; 1,000 relabellings; Bonferroni 0.01 / number of pairs.
+
+### L3b result: none distinct by the registered test (design flaw); six pairs distinct in the robustness check
+
+Scripts: `scripts/phase3_l3b_allographs_kp.py` (registered), `scripts/phase3_l3b_allographs_kp_10k.py` (robustness check); results: `results/phase3_l3b_allographs_kp.json`, `results/phase3_l3b_allographs_kp_10k.json`.
+
+**Design flaw in the registration.** With 15 pairs the threshold is 0.01/15 = 0.00067, below the smallest p attainable with 1,000 relabellings (0.000999). The registered test therefore could not declare any pair distinct, and by the registered rule **no pair is distinct**. The flaw is recorded here; from now on the number of relabellings is set so that the smallest attainable p is at most one tenth of the threshold. In addition, the pair 121/144 entered twice (as members of ICIT 001 and of ICIT 031), so there are 14 distinct pairs, not 15.
+
+Robustness check with 10,000 relabellings (threshold unchanged), unique pairs:
+
+| ICIT sign | KP pair | p (10,000) | Final shares | Note |
+|---|---|---:|---|---|
+| 001 / 031 | 121 / 144 | 0.0001 | 0.08 / 0.07 | short vs long single stroke differ in context |
+| 002 | 119 / 122 | 0.0001 | 0.03 / 0.18 | |
+| 033 | 123 / 147 | 0.0001 | 0.05 / 0.08 | three short vs three long strokes differ |
+| 240 | 50 / 62 | 0.0001 | 0.06 / 0.01 | fish-shaped variants |
+| 240 | 56 / 62 | 0.0001 | 0.05 / 0.01 | fish-shaped variants |
+| 740 | 324 / 325 | 0.0001 | 0.71 / 0.56 | the two KP "jar" variants differ |
+
+Not distinguishable: 50/56, 50/58, 56/58 (fish-shaped variants), 324/326, 325/326.
+
+**Findings (robustness level).**
+- The ICIT-style source merges some distinctions that KP1979 makes and that are visible in usage: short vs long strokes (KP 121/144 → ICIT 001 or 031; KP 123/147 → ICIT 033), the jar variants KP 324/325 (→ ICIT 740), and some fish-shaped variants.
+- **Consequence for earlier tests.** ICIT 033 was used as "three long strokes" (H3.12b, H6.1). The concordance shows that ICIT 033 also covers some KP 123 (three short strokes) occurrences. In H6.1 this would, if anything, mix the two series and weaken the separation that was found; it cannot create it. H3.12b was confirmed in KP1979 with the unambiguous KP 147, so its conclusion stands.
+- Neither transcription is uniformly finer: each merges distinctions that the other keeps and that matter in usage. A combined sign inventory that keeps all usage-supported distinctions from both lists would be the best basis for further work (work plan L-3).

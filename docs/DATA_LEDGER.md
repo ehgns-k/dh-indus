@@ -47,6 +47,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | E3d | ICIT strict held-out + two ciphers | as E3b | method has no power | equalised running-text models; Indus row not interpreted |
 | H6.1 | ICIT | fresh sets 1+2 | supported (p = 0.0012) | short and long strokes take disjoint partners |
 | L3a | ICIT | train | 3 of 10 KP-merged pairs distinct | descriptive classification; robustness check with 10,000 relabellings |
+| L3b | KP | train | none by registered test (resolution flaw); 6 distinct in robustness check | descriptive classification |
 
 Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 

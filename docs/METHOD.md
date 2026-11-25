@@ -33,3 +33,6 @@ Each working session follows these steps.
 - Held-out data: the held-out set used for prediction tests from phase 3 onward is fixed in advance and is not inspected while hypotheses are formed.
 - Multiple comparisons: when several hypotheses are tested, their number is recorded and corrected for.
 - Citation: factual claims from the literature cite an entry of `docs/BIBLIOGRAPHY.md`. Claims for which no source can be found are not written.
+
+- Permutation tests: the number of permutations is chosen so that the smallest attainable p-value is at most one tenth of the decision threshold (added after L3b).
+- Held-out tests use the strict held-out set without near-duplicates (added after R1).
