@@ -2143,3 +2143,11 @@ Limitation (stated in advance): tags come mostly from Lothal and cannot be compa
 - **Statistic:** share of distinct stems among n records, with n equal for seals and tablets within each site (n = the smaller count at that site), averaged over sites and over 1,000 random subsamples.
 - **Test:** the difference (seal share − tablet share) is positive in at least 99 % of the 1,000 subsamples (two sites pooled as above).
 - **Prediction (claim C28's alternative, names):** seal stems more diverse. A positive result is compatible with names but also with individual licences; a negative result speaks against seals carrying individual names.
+
+### CT28 result: supported — seal stems are far more diverse than tablet stems
+
+Script: `scripts/claims_ct28_stem_diversity.py`; results: `results/claims_ct28_stem_diversity.json`.
+
+Records: Harappa 274 seals / 1,173 tablets; Mohenjo-daro 1,003 seals / 266 tablets; subsamples of 274 and 266 per class and site. The share of distinct stems is on average 0.49 higher for seals than for tablets, and higher in all 1,000 subsamples. **CT28 is supported.**
+
+Seal legends are almost always individual (their stems rarely repeat), whereas tablet texts repeat a limited set of stems (consistent with tablets made in series). This is what owners' names would produce, which claim C28 denies; it is equally what individual licences or titles with personal elements would produce. For C28 the verdict stays undecided, but the evidence now shows that seal legends are individual-specific in a way tablet texts are not.

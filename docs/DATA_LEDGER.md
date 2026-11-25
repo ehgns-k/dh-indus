@@ -78,6 +78,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | CT3 | ICIT | all unique strings | no mirror pair distinct (low power) | claim C3 |
 | CT15k | KP | strict held-out | not supported (p = 0.21; 3 tablet texts) | replication of CT15, underpowered |
 | CT15t | ICIT | all tag and tablet strings with 740 | supported (OR 6.0, p = 0.0068) | tags never used before as a class; site-confounded |
+| CT28 | ICIT | all records, Harappa and Mohenjo-daro | supported (difference 0.49, 1,000/1,000 subsamples) | seal stems individual-specific |
 
 Count of tests decided on the held-out split so far: 14 (see table; updated in the eighth session) (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, and the H3.5 secondary set). Count decided on fresh data: 3.
 

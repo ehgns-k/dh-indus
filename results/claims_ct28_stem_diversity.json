@@ -1,0 +1,15 @@
+{
+ "records": {
+  "Harappa|TAB": 1173,
+  "Harappa|SEAL": 274,
+  "Mohenjo-daro|SEAL": 1003,
+  "Mohenjo-daro|TAB": 266
+ },
+ "subsample_n": {
+  "Harappa": 274,
+  "Mohenjo-daro": 266
+ },
+ "mean_difference": 0.48976052357170297,
+ "share_positive": 1.0,
+ "pass": true
+}

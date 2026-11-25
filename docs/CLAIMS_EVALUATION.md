@@ -37,7 +37,7 @@ Test labels refer to entries in `docs/JOURNAL.md`; figures for descriptive check
 | C25 | Base unknown, possibly 8 or 10 | undecided | Counts 8, 9, 10 attested but rare (B2) |
 | C26 | Four-sign sequence "trader" + title | not supported (structure) | Identified as ICIT 255–435–690–740 / KP 73–188–255–324/325; in both transcriptions it behaves as a fixed unit ABC + closing jar sign, not as two pairs AB + CD (CT26); the reading is not testable |
 | C27 | Logograms, not phonograms | consistent (descriptive) | Bigram density of frequent signs 0.29, like proto-Elamite (0.27) and below syllabic Akkadian graphemes (0.41) |
-| C28 | Seal texts are not owners' names | undecided | 1,453 distinct texts on 1,585 seal lines; few texts repeat across sites (44); compatible with names and with other readings |
+| C28 | Seal texts are not owners' names | undecided | Seal legends are individual-specific: their stems (text before the closing cluster) are far more diverse than tablet stems at both main sites (CT28); this fits owners' names, which the claim denies, but equally individual licences or titles |
 | C29 | Tablets as licences | undecided | Seal and tablet texts differ within Harappa (H3.5 exploratory) but the difference does not transfer across sites (H3.5); closing sign by object class is an L2 candidate (C2, C2k) |
 | C30 | Motifs as emblems; text independent of motif | consistent | Text does not predict the motif (H4.2, C1) |
 | C31 | Tablets as ration records | partly supported | Variable numeral slots in fixed formulae exist (H9.1, R4), but numerals are not more frequent on tablets (H4.1) and count-variable formulae are not concentrated on tablets (H9.2) |
