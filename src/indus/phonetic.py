@@ -243,3 +243,38 @@ def indus_lines():
     tr = [list(s) for s in u if not is_heldout(list(s), "icit")]
     te = [list(s) for s in u if is_heldout(list(s), "icit")]
     return tr, te
+
+
+_IAST = [("kh", "k"), ("gh", "g"), ("ch", "c"), ("jh", "j"), ("ṭh", "t"), ("ḍh", "d"), ("th", "t"), ("dh", "d"),
+         ("ph", "p"), ("bh", "b"), ("ā", "a"), ("ī", "i"), ("ū", "u"), ("ṛ", "r"), ("ṝ", "r"), ("ḷ", "l"),
+         ("ṃ", "n"), ("ṁ", "n"), ("ḥ", "h"), ("ṅ", "n"), ("ñ", "n"), ("ṭ", "t"), ("ḍ", "d"), ("ṇ", "n"),
+         ("ś", "s"), ("ṣ", "s")]
+
+
+def rgveda_words():
+    out = []
+    with open(RAW / "rgveda.txt", encoding="utf-8") as f:
+        for line in f:
+            if line.startswith("["):
+                continue
+            for w in line.lower().split():
+                for a, b in _IAST:
+                    w = w.replace(a, b)
+                w = _keep(w)
+                if len(w) >= 2:
+                    out.append(w)
+    return out
+
+
+def equalised(words, n, seed):
+    """Deterministic sample of n running-text tokens: words are taken in
+    contiguous blocks of 50 starting at random block offsets."""
+    rng = random.Random(seed)
+    blocks = [words[i:i + 50] for i in range(0, len(words), 50)]
+    rng.shuffle(blocks)
+    out = []
+    for b in blocks:
+        out += b
+        if len(out) >= n:
+            break
+    return out[:n]

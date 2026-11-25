@@ -1332,3 +1332,22 @@ Script: `scripts/review_r1_strict_heldout.py`; results: `results/review_r1_stric
 **L2.** The effect sizes of the C2 and C2k associations are almost unchanged on the strict sets (for example SEAL:R × 407: OR 10.9 → 8.7; code 11 × 98: OR 0.23 → 0.22), but with about half the data none reaches the strict multiple-comparison thresholds. By the rule registered for R1, the L2 result is **downgraded to an L2 candidate**: the association between closing sign and object class is consistent in two transcriptions and survives the removal of near-duplicates in direction and size, but it is not confirmed at the registered level once near-duplicates are excluded. The strict held-out data have now been looked at for this question, so a confirmatory test needs new data.
 
 **Lesson for later tests.** All future held-out tests use the strict held-out set by default (`strict_heldout` in `src/indus/corpus.py`).
+
+---
+
+## 2026-11-25 (day 1, thirteenth working session, continued): E3d, equalised running-text models
+
+### Why another attempt
+
+In E3–E3c the language models differed in kind and size: Sanskrit was a list of 175,177 dictionary headwords (no running text), the Akkadian model was trained on 23,032 words, the others on running texts of 80,000–175,000 words. The rankings followed these differences (E3: smallest model first; E3b/E3c: headword list first). If the failure is caused by unequal models rather than by the method itself, equalising the models should restore power on the positive controls.
+
+### Pre-registration of E3d (before running)
+
+- **Models.** All five trained on exactly **20,000 running-text word tokens**, taken deterministically (random sample of sentences/lines with a fixed seed, then the first 20,000 words):
+  - Sanskrit: the Ṛgveda text layer of the Digital Corpus of Sanskrit (O. Hellwig; CC BY 4.0; via https://github.com/tokushige-koyasan/dcs-corpus, commit `edea664`; `scripts/fetch_rgveda.py`), IAST normalised to the common alphabet;
+  - Old Tamil: Sangam anthologies (as in E3);
+  - Sumerian: Old Babylonian literary texts (as in E3);
+  - Akkadian: Old Assyrian letters (as in E3);
+  - pseudo-language: random words with the pooled letter frequencies of the four.
+- **Corpora, search, measure.** As in E3b (Δ′, real minus within-line reordered, held-out lines, 2,000-line ciphers), except that the Indus held-out set is the **strict** held-out set.
+- **Decision rules.** As in E3: the method has power only if both positive controls rank their true language first with bootstrap p < 0.01 against every other language; only then is an Indus language preference considered, and even then it is conditional evidence, not L3.
