@@ -1768,3 +1768,11 @@ The ICIT classes (largest ones) group, among others:
 Compared with H3.2 (classes from contexts; agreement 0.05–0.24 depending on the number of clusters, not fixed in advance), the substitution classes are defined without a free parameter and agree well beyond chance. As before, the two transcriptions cover largely the same objects, so this is agreement between independent transcriptions, not between independent samples.
 
 **Interpretation.** The formulaic texts have slots that are filled from distinct classes of signs: a numeral class, a class of closing and counted-item signs, a class containing the fish-shaped signs, and others. This is the clearest picture so far of the paradigmatic organisation of the inscriptions (L1).
+
+### Pre-registration of H9.4 (substitution classes and object class; before running)
+
+- **Classes:** the ICIT substitution classes of H9.3 with ≥ 10 signs (defined from text-internal substitutions only; no object information enters their definition).
+- **Feature:** a string contains at least one member of the class.
+- **Values:** ICIT object subtypes with ≥ 30 training strings (as in C2).
+- **Test:** site-stratified Cochran–Mantel–Haenszel; discovery on the training split with false-discovery rate q = 0.05; confirmation on the **strict** held-out split, one-sided in the discovered direction, Bonferroni 0.01 / number discovered.
+- **L2 rule:** a confirmed association counts as L2 if the class has a structural interpretation established before this test (numeral class; closing / counted-item class; fish-shaped class). Otherwise it is an L2 candidate.
