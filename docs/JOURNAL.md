@@ -2986,4 +2986,12 @@ Script: `scripts/batch10_kp_classes_rare.py`; results: `results/batch10_kp_class
   - Harappa 256 seal and 421 tablet strings; Mohenjo-daro 988 and 120. The share of rare signs in seal stems is not higher than in tablet stems: the summed difference is −0.021 (p = 0.87).
 - **CT28hk: not supported.**
   - 1,328 seal and 334 tablet strings; difference +0.006 (p = 0.11).
-- CT28 found seal stems more diverse than tablet stems. They are not built from rarer signs, so their individuality lies in the combination of common signs, not in a special stock of rare signs. Names written with rare signs (as personal names often are in other scripts) would predict the opposite. The test does not decide claim C28 either way.
+- CT28 found seal stems more diverse than tablet stems. They are not built from rarer signs, so their individuality lies in the combination of common signs, not in a special stock of rare signs. A reading in which seal legends contain names written with special rare signs would have predicted the opposite. The test does not decide claim C28 either way.
+
+### End of the twenty-ninth session
+
+- Pre-registered analyses:
+  - Supported: PT2k and PT3k (replications).
+  - Not supported: CT28h, CT28hk.
+- The script reproduces its results on re-run.
+- The level assessment is unchanged.
