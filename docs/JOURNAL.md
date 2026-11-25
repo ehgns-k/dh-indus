@@ -2045,3 +2045,11 @@ Cochran–Mantel–Haenszel odds ratio 4.3, one-sided p = 0.0022. **CT15 is supp
 **Level.** This is a single pre-registered test of a functional category (the jar sign as the closing element of a legend) against an external variable (seal vs tablet), on data not used for this question, stratified by site. It confirms in one specific form the functional L2 candidate found in C2/C2k (the closing sign depends on the kind of object). It is recorded as **L2 in narrow, functional scope**: 740 is the characteristic closing sign of seal legends. The genitive reading of claim C15 ("of X") is one interpretation of this function and is not itself established; the result is also compatible with other closing functions (a title, a classifier, a mark of the seal-owner formula).
 
 **Caveat on CT15 (family-wise correction).** The strict held-out set (with or without the fresh sets) has now been used to decide about eight questions (R1, G2, H9.4, CT16, CT17, CT18, G3, CT15). CT15 passes its own registered threshold (p = 0.0022 < 0.01), but it would not pass a family-wise correction over these questions (0.01/8 = 0.00125). The narrow functional L2 result is therefore recorded with this caveat: it is the strongest evidence for a function of a sign that the project has produced, but it is not beyond doubt.
+
+### Pre-registration of D5 (typology with formula statistics; before running)
+
+Three formula statistics, computed identically on 20 resamples of 2,000 unique lines matched to the ICIT length distribution (as in D1), for the Indus corpus (ICIT; KP1979 normalised as in R4) and the five CDLI reference corpora:
+- **F1 recursive recurrence:** within each sample (80/20 split), the share of parts from recursive weakest-PMI splitting of test lines (length ≥ 4) that are complete training lines, divided by the same share for test lines with all but the final sign shuffled (20 shuffles).
+- **F2 minimal-pair density:** minimal pairs (strings differing in one position) per line.
+- **F3 formula richness:** templates with ≥ 3 different fillers in one slot per 1,000 lines.
+Distances on z-scored means as in D1. **Prediction:** the reference corpus nearest to ICIT is proto-Elamite, in ≥ 19 of 20 resamples (per-resample distances).
