@@ -25,6 +25,7 @@ The Indus script is undeciphered. Results in this repository are labelled with t
 | 2026-11-25 | Method test (negative) | With equal amounts of running text for Sanskrit (Ṛgveda), Old Tamil, Sumerian and Akkadian, the phonetic search still cannot identify the language of known texts hidden as ciphers; the Indus ranking is therefore not interpreted (E3d) |
 | 2026-11-25 | L1 (with a caveat) | Short-stroke and long-stroke signs take disjoint sets of partner signs at sites excavated after 1979 (H6.1); the result depends largely on one sign (033) whose identity differs between the two transcriptions, so the reading as two numeral notations is only suggested |
 | 2026-11-25 | L1 | Signs that are near-variants in shape (a base form with added marks) are used in similar contexts, tested on data not used to notice the pattern, and confirmed with a second, structural shape measure; across all signs, shape does not predict usage, and added marks do not shift position consistently (G1, G2, M1) |
+| 2026-11-25 | L1 | Texts that are identical except for the number of strokes in one slot are six to eight times more frequent than chance, in both transcriptions; about half differ by two or more strokes, so they are not misreadings. This fits fixed formulae with a variable quantity (H9.1) |
 
 The full list of tests, including failed ones, is in `docs/JOURNAL.md`.
 

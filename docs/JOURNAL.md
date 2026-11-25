@@ -1694,3 +1694,27 @@ G1 was not repeated with the new measure, because its conclusion (no global corr
 - **Null:** 10,000 random sets in which each stroke sign is replaced by a non-stroke sign of similar frequency (within a factor of 1.5 in all unique strings); the statistic is recomputed for each set. The pairs themselves do not change, only the set; smallest attainable p = 0.0001.
 - **Data:** all unique complete strings of each corpus (this question has not been examined before; minimal pairs are a property of the whole corpus).
 - **Prediction:** more stroke–stroke substitutions than in the null sets, p < 0.01, in both corpora.
+
+### H9.1 result: supported in both corpora — texts that differ only in the count are common
+
+Scripts: `scripts/phase9_h91_numeral_slot.py` (pre-registered), `scripts/phase9_h91_count_differences.py` (breakdown, not pre-registered); results: `results/phase9_h91_numeral_slot.json`, `results/phase9_h91_count_differences.json`.
+
+| Corpus | Minimal pairs | Stroke–stroke substitutions | Null mean (SD), max | p |
+|---|---:|---:|---:|---:|
+| ICIT | 3,609 | 94 | 15.2 (9.4), 71 | 0.0001 |
+| KP1979 | 6,322 | 183 | 23.0 (11.2), 82 | 0.0001 |
+
+**H9.1 is supported.** Among texts that differ in exactly one sign, the differing signs are both stroke signs six to eight times as often as for frequency-matched random sign sets.
+
+Breakdown of the stroke–stroke substitutions (not pre-registered):
+
+| Kind of substitution | ICIT | KP1979 |
+|---|---:|---:|
+| Same count, short vs long strokes | 6 | 49 |
+| Count differs by 1 | 42 | 42 |
+| Count differs by 2 | 26 | 37 |
+| Count differs by 3 or more | 20 | 55 |
+
+Three explanations were considered in advance of the breakdown: changing quantities in a fixed formula, different readings of the stroke count of copies of the same text, and short and long variants of the same count. Short/long substitutions with the same count are frequent in KP1979 (49, of which 41 within the same site and object type), which fits the third explanation and the split/merge findings. But about half of the substitutions involve count differences of two or more strokes (ICIT 46 of 94, KP 92 of 183), which are unlikely to be misreadings of the same text. Example (ICIT): `003 390 …` beside `005 390 …` (see results file).
+
+**Interpretation.** The corpus contains texts that repeat the same formula with a different number of strokes in the same slot. This is what record-like texts with a variable quantity would look like (claim C31b, administrative records). It is a structural (L1) result: it shows a variable numeral slot within otherwise fixed formulae, without identifying what is counted. It strengthens the numeral reading of the stroke signs more directly than H3.8, which looked only at shared contexts and failed.

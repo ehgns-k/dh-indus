@@ -1,0 +1,313 @@
+{
+ "icit": {
+  "by_class": {
+   "difference 1": 42,
+   "difference 2": 26,
+   "difference 3": 13,
+   "same count, other series": 6,
+   "difference 4": 6,
+   "difference 5": 1
+  },
+  "same_site_and_type": {
+   "difference 1|False": 17,
+   "difference 1|True": 25,
+   "difference 2|False": 13,
+   "difference 2|True": 13,
+   "difference 3|False": 7,
+   "difference 3|True": 6,
+   "difference 4|False": 3,
+   "difference 4|True": 3,
+   "difference 5|False": 1,
+   "same count, other series|False": 4,
+   "same count, other series|True": 2
+  },
+  "examples": {
+   "same count, other series": [
+    [
+     "001 520",
+     "031 520"
+    ],
+    [
+     "004 390",
+     "034 390"
+    ],
+    [
+     "005 390",
+     "035 390"
+    ],
+    [
+     "003 550 617",
+     "033 550 617"
+    ]
+   ],
+   "difference 2": [
+    [
+     "003 001 435",
+     "031 001 435"
+    ],
+    [
+     "003 154",
+     "005 154"
+    ],
+    [
+     "003 156",
+     "005 156"
+    ],
+    [
+     "003 156",
+     "031 156"
+    ]
+   ],
+   "difference 1": [
+    [
+     "003 154",
+     "004 154"
+    ],
+    [
+     "004 154",
+     "005 154"
+    ],
+    [
+     "003 156",
+     "004 156"
+    ],
+    [
+     "004 156",
+     "005 156"
+    ]
+   ],
+   "difference 3": [
+    [
+     "004 156",
+     "031 156"
+    ],
+    [
+     "003 220 520",
+     "016 220 520"
+    ],
+    [
+     "003 390",
+     "016 390"
+    ],
+    [
+     "004 390",
+     "017 390"
+    ]
+   ],
+   "difference 4": [
+    [
+     "005 156",
+     "031 156"
+    ],
+    [
+     "003 390",
+     "017 390"
+    ],
+    [
+     "003 405",
+     "017 405"
+    ],
+    [
+     "016 220",
+     "032 220"
+    ]
+   ],
+   "difference 5": [
+    [
+     "017 220",
+     "032 220"
+    ]
+   ]
+  }
+ },
+ "kp1979": {
+  "by_class": {
+   "same count, other series": 49,
+   "difference 1": 42,
+   "difference 2": 37,
+   "difference 3": 20,
+   "difference 4": 17,
+   "difference 5": 8,
+   "difference 6": 4,
+   "difference 9": 2,
+   "difference 8": 2,
+   "difference 7": 2
+  },
+  "same_site_and_type": {
+   "difference 1|False": 15,
+   "difference 1|True": 27,
+   "difference 2|False": 14,
+   "difference 2|True": 23,
+   "difference 3|False": 9,
+   "difference 3|True": 11,
+   "difference 4|False": 10,
+   "difference 4|True": 7,
+   "difference 5|False": 4,
+   "difference 5|True": 4,
+   "difference 6|False": 4,
+   "difference 7|False": 2,
+   "difference 8|False": 2,
+   "difference 9|False": 2,
+   "same count, other series|False": 8,
+   "same count, other series|True": 41
+  },
+  "examples": {
+   "difference 2": [
+    [
+     "121 4",
+     "123 4"
+    ],
+    [
+     "123 4",
+     "125 4"
+    ],
+    [
+     "123 4",
+     "144 4"
+    ],
+    [
+     "122 86",
+     "124 86"
+    ]
+   ],
+   "difference 3": [
+    [
+     "121 4",
+     "124 4"
+    ],
+    [
+     "124 4",
+     "144 4"
+    ],
+    [
+     "122 86",
+     "125 86"
+    ],
+    [
+     "123 86",
+     "126 86"
+    ]
+   ],
+   "difference 4": [
+    [
+     "121 4",
+     "125 4"
+    ],
+    [
+     "125 4",
+     "144 4"
+    ],
+    [
+     "122 86",
+     "126 86"
+    ],
+    [
+     "123 86",
+     "127 86"
+    ]
+   ],
+   "same count, other series": [
+    [
+     "121 4",
+     "144 4"
+    ],
+    [
+     "121",
+     "144"
+    ],
+    [
+     "122",
+     "145"
+    ],
+    [
+     "123",
+     "147"
+    ]
+   ],
+   "difference 1": [
+    [
+     "123 4",
+     "124 4"
+    ],
+    [
+     "124 4",
+     "125 4"
+    ],
+    [
+     "122 86",
+     "123 86"
+    ],
+    [
+     "123 86",
+     "124 86"
+    ]
+   ],
+   "difference 5": [
+    [
+     "122 86",
+     "127 86"
+    ],
+    [
+     "123 86",
+     "128 86"
+    ],
+    [
+     "121",
+     "126"
+    ],
+    [
+     "122",
+     "127"
+    ]
+   ],
+   "difference 6": [
+    [
+     "122 86",
+     "128 86"
+    ],
+    [
+     "121",
+     "127"
+    ],
+    [
+     "124",
+     "130"
+    ],
+    [
+     "127",
+     "144"
+    ]
+   ],
+   "difference 9": [
+    [
+     "121",
+     "130"
+    ],
+    [
+     "130",
+     "144"
+    ]
+   ],
+   "difference 8": [
+    [
+     "122",
+     "130"
+    ],
+    [
+     "130",
+     "145"
+    ]
+   ],
+   "difference 7": [
+    [
+     "123",
+     "130"
+    ],
+    [
+     "130",
+     "147"
+    ]
+   ]
+  }
+ }
+}
