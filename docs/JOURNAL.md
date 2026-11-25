@@ -2004,3 +2004,11 @@ Script: `scripts/phase8_g3_mirror_pairs.py`; results: `results/phase8_g3_mirror_
 Among 103 frequent signs, only two pairs meet the mirror criterion: 920/921 (mirror similarity 0.997, direct 0.14) and 900/921 (0.92 vs 0.08). With fewer than five pairs the test is **insufficient data**.
 
 Descriptive (all unique lines): 920 (103 occurrences) is mostly line-initial (0.65) and followed by 060 in 52 cases; its mirror image 921 (13 occurrences) is followed by 070 (5), 072, 690. The one clear mirror pair is therefore not used like an allograph pair, which does not fit claim C3 for this pair; the evidence is too thin for a general verdict.
+
+### Pre-registration of CT18 (claim C18: recursive segmentation; before running)
+
+- **Splitting rule:** pointwise mutual information (PMI) of adjacent sign pairs from the training split (add-0.5 smoothing); a line is split at the adjacent pair with the lowest PMI, and each part of length ≥ 3 is split again, recursively.
+- **Units:** all parts of length 2 and 3 produced by the recursion.
+- **Statistic:** share of these parts that occur as complete texts in the training split.
+- **Data:** strict held-out lines of length ≥ 4 in each corpus; controls: rule-preserving reorderings of the same lines (`src/indus/controls.py`), 1,000 control sets, split by the same rule.
+- **Prediction:** the share is higher for real lines than for controls, p < 0.01, in both corpora.
