@@ -429,3 +429,7 @@ Possible readings, none of which is tested yet:
 These readings make different predictions. Reading 1 predicts that a following sign which takes several counts (KP 86) is a general counted item, and that the distribution of counts before it resembles the frequency pattern of quantities. Reading 2 predicts that the pairs recur as whole fixed strings in different texts with the same neighbours. These predictions can be tested and will be pre-registered next.
 
 The L1 status of this result is the same as for H3.3/H3.4: reproduced in two transcriptions and significant on held-out data, with the same limitation about the transcriptions not being independent samples.
+
+### Claims register
+
+Wrote `docs/CLAIMS_REGISTER.md`: 35 published claims (C1–C35), each with its source and a testable form. 15 are testable with the current data, 20 only partly. The full texts of the sources could not be opened from the working environment, so the entries rest on abstracts and search-engine excerpts. This is stated in each entry, and every quotation must be checked against the original before it is cited in a report.
