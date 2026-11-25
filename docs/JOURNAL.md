@@ -237,3 +237,30 @@ This links to H3.3. The terminal cluster has two common forms, 740 > 400 and 740
 - Replication: the same test in KP1979 is not possible, because that source carries no object-type field in a form decoded here; this is recorded as a limitation.
 - Prediction: seal share higher for 090-final lines, p < 0.01.
 - Refutation condition: p ≥ 0.01, or seal share not higher for 090-final lines.
+
+### H3.7 result: not supported
+
+Script: `scripts/phase3_h37_terminal_objecttype.py`; results: `results/phase3_h37_terminal_objecttype.json`.
+
+| Final sign | Seal | Tablet | Seal share |
+|---|---:|---:|---:|
+| 090 | 6 | 3 | 0.67 |
+| 400 | 9 | 30 | 0.23 |
+
+One-sided Fisher exact test: odds ratio 6.7, p = 0.018. The direction is the predicted one, but p ≥ 0.01, so by the pre-registered rule H3.7 is not supported. The held-out set contains only 48 qualifying strings, so the test has little power.
+
+The table is also confounded by site: 27 of the 30 tablets ending in 400 are from Harappa, while all 9 seals ending in 400 are from Mohenjo-daro. The test cannot separate an object-type effect from a site effect.
+
+The held-out set has now been used for this question. A further test of the same question would need new data (for example a third corpus or newly published inscriptions), not a re-use of these strings.
+
+### Summary of day 1 tests
+
+| Hypothesis | Pre-registered | Result |
+|---|---|---|
+| H3.1 terminal signs mark unit boundaries | yes | not supported |
+| H3.2 distributional classes agree across transcriptions | yes (k not fixed) | partly supported |
+| H3.3 fixed order in the terminal cluster | yes | supported |
+| H3.4 the same order at different sites | yes | supported |
+| H3.5 seal vs tablet texts transfer across sites | yes | not supported |
+| H3.6 seal vs `TAB:B` transfers across sites | yes (formed after H3.5) | supported, narrowly |
+| H3.7 090-final vs 400-final tied to object type | yes | not supported (p = 0.018) |

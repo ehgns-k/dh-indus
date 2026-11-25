@@ -1,0 +1,27 @@
+{
+ "table_rows_final_090_400_cols_SEAL_TAB": [
+  [
+   6,
+   3
+  ],
+  [
+   9,
+   30
+  ]
+ ],
+ "seal_share_090": 0.6666666666666666,
+ "seal_share_400": 0.23076923076923078,
+ "odds_ratio": 6.666666666666667,
+ "p_value": 0.018437897306279823,
+ "by_site": {
+  "Harappa|090|SEAL": 1,
+  "Harappa|090|TAB": 2,
+  "Harappa|400|TAB": 27,
+  "Kalibangan|400|TAB": 1,
+  "Mohenjo-daro|090|SEAL": 5,
+  "Mohenjo-daro|090|TAB": 1,
+  "Mohenjo-daro|400|SEAL": 9,
+  "Mohenjo-daro|400|TAB": 1,
+  "Rupar|400|TAB": 1
+ }
+}
