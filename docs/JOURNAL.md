@@ -1776,3 +1776,20 @@ Compared with H3.2 (classes from contexts; agreement 0.05–0.24 depending on th
 - **Values:** ICIT object subtypes with ≥ 30 training strings (as in C2).
 - **Test:** site-stratified Cochran–Mantel–Haenszel; discovery on the training split with false-discovery rate q = 0.05; confirmation on the **strict** held-out split, one-sided in the discovered direction, Bonferroni 0.01 / number discovered.
 - **L2 rule:** a confirmed association counts as L2 if the class has a structural interpretation established before this test (numeral class; closing / counted-item class; fish-shaped class). Otherwise it is an L2 candidate.
+
+### H9.4 result: one association confirmed; an L2 candidate, not L2
+
+Script: `scripts/phase9_h94_classes_objects.py`; results: `results/phase9_h94_classes_objects.json`.
+
+Seven substitution classes with ≥ 10 signs × 6 object subtypes = 42 tests; 6 discovered; threshold 0.01/6 = 0.0017.
+
+| Class (members, first ones) | Subtype | OR train | OR strict held-out | p | Confirmed |
+|---|---|---:|---:|---:|---|
+| class 4 (002, 090, 096, 097, 098, 104, …; 33 signs) | TAB:C | 0.12 | 0.00 | 3.9 × 10⁻⁴ | yes |
+| class 4 | SEAL:S | 2.55 | 1.85 | 0.019 | no |
+| class 3 (001, 007, 013, 031, 033, …, fish-shaped 220–240) | TAB:I | 0.44 | – | 0.99 | no |
+| class 3 | SEAL:R | 1.75 | 1.05 | 0.45 | no |
+| class 6 (042, 048, 152, 222, …) | TAB:B | 3.25 | 0.73 | 0.63 | no |
+| class 4 | SEAL:R | 0.60 | 2.44 | 0.98 | no |
+
+The confirmed association: texts on copper tablets (`TAB:C`) almost never contain a member of class 4, which includes the frequent medial sign 002 and the closing sign 090. The class is not one of the three classes with a structural interpretation fixed before the test (numerals; closing / counted-item signs; fish-shaped signs), so by the registered rule it is an **L2 candidate**, not an L2 result. Note that 090 is a terminal sign: the observation agrees with C2, where copper tablets favoured 407 as the closing sign.
