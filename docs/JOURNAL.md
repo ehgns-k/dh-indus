@@ -2768,3 +2768,13 @@ Mean density (20 resamples of about 9,000 tokens):
 - KP1979 writes more distinctions as separate signs than the ICIT source. Its frequent signs then combine more freely, and its density falls between the proto-administrative corpora and the literary corpus.
 - The administrative corpora are sparser than the literary and letter corpora. A non-linguistic system lies at each end (weather icons very sparse, emoticons dense).
 - The density measure therefore depends on the transcription, as the repetition measure did. It does not separate writing from non-writing.
+
+### End of the twenty-sixth session
+
+- Pre-registered analyses:
+  - Supported: CT22k, F5k.
+  - Not supported: FACE4k, FACE5, D7.
+  - Descriptive: NUM3.
+- The new scripts were re-run without changes in their results.
+- Interim report 5 was written.
+- The level assessment is unchanged.
