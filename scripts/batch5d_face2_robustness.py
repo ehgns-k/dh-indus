@@ -71,3 +71,29 @@ for name in ("icit", "kp"):
                                     "p_greater": (sum(x >= obs for x in null) + 1) / 10001}
 (ROOT / "results" / "batch5d_face2_robustness.json").write_text(json.dumps(res, indent=1))
 for k, v in res.items(): print(k, v)
+
+# KP with the count normalised (descriptive): 121/144 = 1, 122/145 = 2, 123/147 = 3, 124/150 = 4, 125/151 = 5; strokes summed
+VAL = {"121": 1, "144": 1, "122": 2, "145": 2, "123": 3, "147": 3, "124": 4, "150": 4, "125": 5, "151": 5}
+rows = faces("kp")
+counts = [sum(VAL.get(t, 0) for t in num[:-1]) for _, _, num in rows]
+by_txt = collections.defaultdict(list)
+for i, (_, t, _) in enumerate(rows):
+    by_txt[t].append(i)
+pr = [(i, j) for v in by_txt.values() if len(v) >= 2 for i, j in itertools.combinations(v, 2)]
+stat = lambda c: sum(c[i] == c[j] for i, j in pr) / len(pr)
+obs = stat(counts)
+bytype = collections.defaultdict(list)
+for i, (g, _, _) in enumerate(rows):
+    bytype[g].append(i)
+rng = random.Random(20261125); null = []
+for _ in range(10000):
+    c = counts[:]
+    for g in sorted(bytype):
+        idx = bytype[g]; vals = [counts[i] for i in idx]; rng.shuffle(vals)
+        for i, v in zip(idx, vals):
+            c[i] = v
+    null.append(stat(c))
+res["kp_count_normalised"] = {"count_distribution": dict(collections.Counter(counts)), "observed": obs,
+                              "null_mean": sum(null) / len(null), "p_greater": (sum(x >= obs for x in null) + 1) / 10001}
+(ROOT / "results" / "batch5d_face2_robustness.json").write_text(json.dumps(res, indent=1))
+print(res["kp_count_normalised"])

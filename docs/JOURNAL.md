@@ -2533,3 +2533,5 @@ Script: `scripts/batch5f_sz4_identical_seals.py`; results: `results/batch5f_sz4_
 - 49 legends occur on more than one square seal, giving 131 pairs. 80 of the pairs are from different sites, and only 3 have equal dimensions.
 - The mean absolute difference of log area is 0.515, against 0.530 for random partners of the same site and length (p = 0.33).
 - Seals that share a legend are no more alike in size than other seals. Shared legends are mostly short (for example `910 740`, `061 740`) and found at different sites. They look like common short legends rather than matching sets.
+
+**FACE2, KP with normalised counts (post hoc, descriptive).** When the KP numeral faces are reduced to stroke counts (121/144 = 1, 122/145 = 2, 123/147 = 3, 124/150 = 4, summed), the counts are 2 (76), 3 (116), 4 (48) and 1 (2). Tablets with identical text share the count in 47.7 % of pairs, against 37.5 % under permutation (p = 0.0049). The KP result of FACE2 is therefore not an artefact of KP's several spellings of one count.
