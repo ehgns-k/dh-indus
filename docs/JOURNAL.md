@@ -264,3 +264,23 @@ The held-out set has now been used for this question. A further test of the same
 | H3.5 seal vs tablet texts transfer across sites | yes | not supported |
 | H3.6 seal vs `TAB:B` transfers across sites | yes (formed after H3.5) | supported, narrowly |
 | H3.7 090-final vs 400-final tied to object type | yes | not supported (p = 0.018) |
+
+### Stroke signs: identification from the printed sign list
+
+The sign list of Koskenniemi & Parpola (1979), printed page [19] (page 20 of the scanned PDF in the upstream repository), shows each sign's glyph. Counting the strokes in the printed glyphs (my own reading of the scan, not a statement of the authors):
+- Signs 121–130 are short vertical strokes, written in one row or in two stacked rows. The stroke counts read from the glyphs are 1 (121), 2 (122), 3 (123), 4 (124), 5 (125), 6 (126), 7 (127), 8 (128), 9 (129) and 10 (130, five over five).
+- Signs 144–151 are long vertical strokes. The counts read from the glyphs are 1 (144), 2 (145), 3 (147), 4 (150) and 5 (151); 146, 148 and 149 carry additional marks.
+
+Frequencies in KP1979 (all lines): 121: 605, 122: 49, 123: 322, 124: 127, 125: 60, 126: 45, 127: 98, 128: 5, 129: 3, 130: 1; 144: 446, 145: 102, 147: 231, 150: 24, 151: 31.
+
+Concordance images in the ICIT-style numbering (support ≥ 3, purity ≥ 0.8): 121 → 001, 123 → 003, 124 → 004 and 034, 125 → 005, 126 → 016, 127 → 017, 151 → 035. The low ICIT numbers for the short-stroke signs agree with the stroke counts for 1, 3, 4 and 5, which is independent support for reading these glyphs as a counted series.
+
+### Pre-registration of H3.8 (before running)
+
+**H3.8 (short-stroke signs form one distributional paradigm).** If the short-stroke signs are numerals, they should occupy the same slots and be followed by the same kinds of signs, so their context distributions should be more similar to each other than those of random sign sets.
+- Sets: KP1979 {121, 122, 123, 124, 125, 126, 127}; ICIT {001, 003, 004, 034, 005, 016, 017} (the concordance images, fixed above).
+- Data: training split only.
+- Statistic: mean pairwise Jensen–Shannon divergence between right-neighbour distributions (including the line end), and separately between left-neighbour distributions (including the line start).
+- Control: 1,000 random sets of the same size drawn from signs with training frequency between 10 and 700 that are not in the set.
+- Prediction: for right-neighbour distributions, observed mean divergence lower than in the control sets, p < 0.01, in both corpora. The left-neighbour result is reported but is not part of the decision.
+- Refutation condition: p ≥ 0.01 in either corpus for right-neighbour distributions.
