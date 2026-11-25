@@ -1643,3 +1643,11 @@ Close-shape pairs with the most similar usage include the initial signs 817 / 86
 - **Statistic:** mean log-loss per token (including line end). One-sided Mann–Whitney test, abroad > home.
 - **Prediction:** p < 0.01. Fewer than 8 abroad lines → "insufficient data".
 - **Also reported (descriptive):** the abroad lines, their sites, and the share of their signs that are rare (< 5 training occurrences).
+
+### H8.1 result: not supported (p = 0.011)
+
+Script: `scripts/phase8_h81_abroad.py`; results: `results/phase8_h81_abroad.json`.
+
+15 abroad lines (Gulf, Mesopotamia, Central Asia) vs 228 strict held-out home lines. Mean log-loss per token: abroad 5.09, home 4.31; one-sided Mann–Whitney p = 0.011. The direction is the predicted one, but p ≥ 0.01, so **H8.1 is not supported**.
+
+Descriptive observation (seen after the test; not tested): only 2 of the 15 abroad lines end in a sign of the terminal set (Kish: `… 590 390 740`; Gonur Depe: `… 590 390 740`), and those two have low log-loss (3.3, 3.8). The lines from Gulf sites (Saar, Janabiyah, Karzakan, Qala'at al-Bahrain, Hajar, Salut) all lack the terminal cluster and have the highest log-loss (5.2–7.0). If tested on new material, the prediction would be that Gulf finds lack the closing cluster that marks home-site seals. No unused abroad material is available here to test this.

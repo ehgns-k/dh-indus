@@ -1,0 +1,131 @@
+{
+ "abroad_lines": 15,
+ "home_lines": 228,
+ "status": "tested",
+ "mean_logloss_abroad": 5.092309393382044,
+ "mean_logloss_home": 4.306999585556987,
+ "U": 2314.0,
+ "p_value": 0.011052828563860813,
+ "abroad_detail": [
+  {
+   "text": "003 426",
+   "sites": [
+    "Shortughai"
+   ],
+   "logloss": 3.61,
+   "rare_share": 0.5
+  },
+  {
+   "text": "004 405",
+   "sites": [
+    "Ra's al-Junayz"
+   ],
+   "logloss": 3.05,
+   "rare_share": 0.0
+  },
+  {
+   "text": "055 220 091 001 093 031",
+   "sites": [
+    "Saar"
+   ],
+   "logloss": 5.82,
+   "rare_share": 0.33
+  },
+  {
+   "text": "071 031 831 055 121 099 055",
+   "sites": [
+    "Janabiyah"
+   ],
+   "logloss": 7.01,
+   "rare_share": 0.43
+  },
+  {
+   "text": "091 031 455 220",
+   "sites": [
+    "Karzakan"
+   ],
+   "logloss": 5.21,
+   "rare_share": 0.25
+  },
+  {
+   "text": "091 032 001 033",
+   "sites": [
+    "Karzakan"
+   ],
+   "logloss": 5.55,
+   "rare_share": 0.25
+  },
+  {
+   "text": "117 617",
+   "sites": [
+    "Hajar"
+   ],
+   "logloss": 5.89,
+   "rare_share": 0.5
+  },
+  {
+   "text": "127 705 002 004 390",
+   "sites": [
+    "Tell Umma"
+   ],
+   "logloss": 4.54,
+   "rare_share": 0.2
+  },
+  {
+   "text": "190 060 055 090 160",
+   "sites": [
+    "Qala'at al-Bahrain"
+   ],
+   "logloss": 6.74,
+   "rare_share": 0.2
+  },
+  {
+   "text": "285 002 235 220 125 590 390 740",
+   "sites": [
+    "Gonur Depe"
+   ],
+   "logloss": 3.76,
+   "rare_share": 0.12
+  },
+  {
+   "text": "415 390",
+   "sites": [
+    "Altyn Depe"
+   ],
+   "logloss": 3.59,
+   "rare_share": 0.0
+  },
+  {
+   "text": "415 803 001 328 004 002",
+   "sites": [
+    "Ur"
+   ],
+   "logloss": 6.21,
+   "rare_share": 0.17
+  },
+  {
+   "text": "416 840 060 003 220 590 390 740",
+   "sites": [
+    "Kish"
+   ],
+   "logloss": 3.3,
+   "rare_share": 0.0
+  },
+  {
+   "text": "528 220 924 340 093",
+   "sites": [
+    "Ur"
+   ],
+   "logloss": 6.37,
+   "rare_share": 0.8
+  },
+  {
+   "text": "595 278 002 004 392",
+   "sites": [
+    "Salut"
+   ],
+   "logloss": 5.74,
+   "rare_share": 0.4
+  }
+ ]
+}
