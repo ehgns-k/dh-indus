@@ -1793,3 +1793,16 @@ Seven substitution classes with ≥ 10 signs × 6 object subtypes = 42 tests; 6 
 | class 4 | SEAL:R | 0.60 | 2.44 | 0.98 | no |
 
 The confirmed association: texts on copper tablets (`TAB:C`) almost never contain a member of class 4, which includes the frequent medial sign 002 and the closing sign 090. The class is not one of the three classes with a structural interpretation fixed before the test (numerals; closing / counted-item signs; fish-shaped signs), so by the registered rule it is an **L2 candidate**, not an L2 result. Note that 090 is a terminal sign: the observation agrees with C2, where copper tablets favoured 407 as the closing sign.
+
+### Formulae with a variable slot (descriptive)
+
+Script: `scripts/phase9_formulae.py`; results: `results/phase9_formulae.json`; table: `docs/FORMULAE.md`.
+
+131 templates in the ICIT corpus take at least three different signs in one slot (slot initial 65, medial 34, final 32). Examples:
+- `_ 390` (14 fillers): 7 stroke signs and 6 other members of the numeral class 2 — the numeral slot before the counted-item sign.
+- `003 _`, `004 _`, `005 _` (10, 9, 9 fillers): almost all from class 1 (closing and counted-item signs) — the item slot after a numeral.
+- `_ 400` (15 fillers): all from class 4.
+- `_ 740` (57 fillers): mostly class 0.
+16 templates take two or more stroke signs in the same slot.
+
+The formula table is the most direct description so far of how the inscriptions are built: short formulae whose slots are filled from particular sign classes, with numerals and counted items in fixed positions relative to each other.
