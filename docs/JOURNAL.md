@@ -653,3 +653,16 @@ Copper objects in the ICIT-style source are almost all of type `TAB:C` (176 of 1
 - Prediction: difference > 0, p < 0.01.
 - Data: all copper-tablet strings (the set is too small to split). This is a new question, decided on data not used for any earlier motif test, but it is not held-out in the formal sense and is recorded as such in the ledger.
 - If supported, the signs shared within motif groups are listed as candidates for an L2 hypothesis (a sign naming or referring to the depicted animal), to be tested on seals or other objects with the same motif.
+
+### C1 result: not supported
+
+Script: `scripts/phase6_c1_copper_motif.py`; results: `results/phase6_c1_copper_motif.json`.
+
+After merging near-copies, 43 text groups remain, of which only 17 have exactly one specific motif code. Observed difference in mean Jaccard similarity (same motif minus different motif) 0.018; permutation mean 0.000 (SD 0.027); p = 0.24. Distinct copper-tablet texts that share a motif do not share more signs than texts with different motifs.
+
+Descriptive observations (not tests):
+- Most copper-tablet text groups are dominated by one motif code, because the same text recurs on several tablets with the same motif (for example `503 615 752 740` on 33 lines, mostly `Gaur`; `235 705 033 845 407 321 407` on 14 lines, all `Hare`; `706 033 923 740` on 12 lines, mostly `Elep`). The association between text and motif on copper tablets is therefore largely an association between copies of the same object type, not evidence that particular signs refer to animals.
+- The motif field is not coded consistently for these objects: several lines carry two codes (for example `Gaur` and `Othr`), and one text group carries `Goat` and `Buff` in equal numbers. Motif-based tests on copper tablets need the original photographs or a primary catalogue.
+- Several copper-tablet texts end in 407, a member of the group that follows the 4–9 stroke signs (H3.10), often after 845 (`… 845 407`, `… 845 061 407`). Noted for WP-C3; not tested here.
+
+Ledger: C1 decided on all copper-tablet strings (not held-out).
