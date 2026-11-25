@@ -309,3 +309,20 @@ The left-context result was not the pre-registered criterion, so it is tested on
 - Prediction: observed mean JS lower than the control, p < 0.01, in both corpora.
 - Refutation condition: p ≥ 0.01 in either corpus.
 - Note: the held-out set is small, so a failure may reflect low power rather than absence of the effect. It is still recorded as a failure.
+
+### H3.9 result: not supported (fails in KP1979)
+
+Script: `scripts/phase3_h39_strokes_heldout.py`; results: `results/phase3_h39_strokes_heldout.json`. Held-out strings only.
+
+| Corpus | Observed mean JS | Control mean (SD) | p |
+|---|---:|---:|---:|
+| KP1979 | 0.641 | 0.765 (0.056) | 0.031 |
+| ICIT | 0.583 | 0.757 (0.044) | 0.003 |
+
+ICIT meets the criterion; KP1979 does not. By the pre-registered rule (both corpora required), H3.9 is not supported. In both corpora the observed value lies on the predicted side of the control distribution, and in the held-out set several stroke signs occur fewer than 10 times (KP 125: 5, 126: 3, 127: 8), so the test has low power. The shared-preceding-context pattern of the stroke signs therefore remains a suggestion, not a result.
+
+### Assessment of the numeral question so far
+
+- Glyph evidence (sign list) and the agreement of the two numbering systems support treating KP 121–130 / ICIT 001, 003, 004, 005, 016, 017 as a series of signs that differ by stroke count.
+- Distributional tests (H3.8, H3.9) did not reach the pre-registered thresholds. The stroke signs do not yet form a demonstrated paradigm.
+- Next approaches: (a) test whether stroke count interacts with the following sign (for example, whether certain following signs take only small counts); (b) compare the short-stroke and long-stroke series (KP 121–130 vs 144–151) to see whether they are positional variants or distinct functions; (c) frequency by stroke count (does frequency fall as the count rises?), after verifying the relevant literature on frequencies of number words.
