@@ -34,6 +34,10 @@ Estimated total number of sign types (Chao1, 9,000 tokens): ICIT 830 (95 % inter
 
 Sound-sequence models of four natural languages all gain from the real Indus sign order, while a pseudo-language does not. The same holds for cuneiform texts hidden as ciphers. The order of the Indus signs therefore has local regularities of a kind that natural-language sound models can exploit; this does not identify a language and does not decide G3.
 
+### 2.5 Order of numeral and counted sign (NUM1, descriptive)
+
+In the Indus texts the stroke numeral comes before the sign it goes with in 71 % of cases (ICIT). In proto-Elamite entries the sign comes before the numeral (99.6 %), while the CDLI transliterations of proto-cuneiform put the numeral first (98 %; partly an editorial order). On this point the Indus texts differ from proto-Elamite, the reference system they are otherwise closest to.
+
 ## 3. Conclusion
 
 Statistically the Indus inscriptions resemble proto-Elamite most closely, in both transcriptions; an administrative corpus is nearer than the full-writing corpora in 20/20 (ICIT) and 19/20 (KP1979) resamples, although proto-cuneiform itself is the farthest corpus for KP1979. Whether the signs record a spoken language cannot be decided with these methods.
