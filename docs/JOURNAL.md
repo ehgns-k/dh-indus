@@ -2936,3 +2936,7 @@ Script: `scripts/batch9c_pt3_count_pairs.py`; results: `results/batch9c_pt3_coun
   - Partly supported: PT1 (units yes, template undecided).
   - Not supported: D2b.
 - The L1 structure (template, units, count–item pairing) holds on every class of inscribed object. Gate G3 (writing or not) remains undecided.
+
+### Reproducibility check (R9)
+
+`scripts/run_all.py --skip-heavy` re-ran every analysis in the repository, including all those added since R8, with no failures and no changed result files.
