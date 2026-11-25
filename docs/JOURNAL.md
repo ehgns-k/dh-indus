@@ -433,3 +433,22 @@ The L1 status of this result is the same as for H3.3/H3.4: reproduced in two tra
 ### Claims register
 
 Wrote `docs/CLAIMS_REGISTER.md`: 35 published claims (C1–C35), each with its source and a testable form. 15 are testable with the current data, 20 only partly. The full texts of the sources could not be opened from the working environment, so the entries rest on abstracts and search-engine excerpts. This is stated in each entry, and every quotation must be checked against the original before it is cited in a report.
+
+### Fish-shaped signs: identification from the printed sign list
+
+In the KP1979 sign list (printed page [19]), signs 48–63 are drawn as variants of one vertical outline with a forked tail: plain (49, 50), hatched (48), with small marks above (51, 57, 59, 61, 63), with an inner stroke (56, 57), with a chevron or "roof" above (58–61), crossed (62, 63), or enclosed in brackets or combined with other signs (52–55). That these are "fish" signs is the published identification (claims register C22); the list of numbers 48–63 is my own reading of the drawings. The KP signs 288 and 289, which follow the seven-stroke sign (H3.12a), are not fish-shaped: 288 is a square frame on legs, 289 a frame open at the bottom.
+
+KP frequencies: 50: 157, 56: 366, 58: 264, 60: 246, 62: 283; the others are below 31.
+
+ICIT images (concordance support ≥ 3, purity ≥ 0.6): 53 → 222, 56 → 220 and 231, 57 → 226, 58 → 233, 60 → 235, 61 → 236, 62 → 240, 63 → 241. ICIT fish set fixed as {220, 222, 226, 231, 233, 235, 236, 240, 241}.
+
+### Pre-registration of H3.13 and H3.14 (claims register C23), held-out data
+
+The claim (C23, secondary sources): sequences "numeral + fish" are names of star groups, in particular 3, 6 and 7 + fish.
+
+**H3.13 (fish signs are preceded by stroke signs more often than other signs are).** Held-out within-line bigrams; 2 × 2 table (preceding sign is a short-stroke sign KP 121–130 / ICIT {001, 003, 004, 034, 005, 016, 017} vs not) × (sign is in the fish set vs not). One-sided Fisher exact test.
+
+**H3.14 (counts before fish signs concentrate on 3, 6, 7).** Among bigrams "short-stroke sign → next sign", the table (count ∈ {3, 6, 7} vs other count) × (next sign is fish vs not). Prediction: counts 3, 6 and 7 are over-represented before fish signs. One-sided Fisher exact test. KP counts read from glyphs (121 = 1 … 130 = 10); ICIT counts via the concordance (001 = 1, 003 = 3, 004 and 034 = 4, 005 = 5, 016 = 6, 017 = 7).
+
+- Two hypotheses, so the threshold is p < 0.005 each; each must pass in both corpora.
+- Disclosure: I have already seen, in the training split, that KP count 3 is often followed by 56 (a fish sign). The held-out set has not been examined for these bigrams.
