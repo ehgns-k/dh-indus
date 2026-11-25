@@ -43,6 +43,19 @@ The estimated total number of sign types (Chao1) is about 830 in the ICIT transc
 - Texts that are identical except for the number of strokes in one slot are six to eight times more frequent than chance in both transcriptions (ICIT 94 vs 15.2 expected; KP1979 183 vs 23.0); about half differ by two or more strokes (H9.1). The KP1979 result holds after short/long variants and split strokes are normalised (R4: 84 vs 12.4 expected).
 - Signs that replace one another in otherwise identical texts form classes (numerals; closing and counted-item signs; fish-shaped signs with single strokes; others) that agree between the transcriptions (ARI 0.169, p = 0.0001; H9.3).
 
+### 2.8 Lines, faces, directions and object classes (added later, twenty-fourth to twenty-eighth sessions)
+
+| Test | Result |
+|---|---|
+| ML1, ML1k | The two lines of a two-line inscription form one text, closed once (ICIT p = 0.0001; KP p = 0.0023) |
+| ML2 | Line breaks are not at segment boundaries (p = 0.43, 0.46) |
+| FACE1, FACE4 | The faces of a two- or three-face object form one text, closed once (p = 0.0001); not replicated for three-face objects in KP1979 (FACE4k, p = 0.33) |
+| FACE2 | Tablets with the same text tend to carry the same count on their numeral face (ICIT p = 0.0001; KP p = 0.0093) |
+| KF1, F5, F5k | Formulae recur across transcriptions and in later finds |
+| DIR1, DIR2 | Lines written left to right, and lines of unknown direction, follow the normalised order (105/122; 84/127) |
+| SX1 | Order regularities learned at other sites predict Harappa and Mohenjo-daro forward |
+| PT1–PT3 | Template, units and count–item pairing carry over from seals and tablets to other objects; for pottery only the units and the pairing are shown |
+
 ## 3. Results that were not supported
 
 | Hypothesis | Test |
