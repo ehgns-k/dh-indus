@@ -1175,3 +1175,5 @@ Each corpus is limited to 2,000 unique lines and split 80/20 at random (Indus: t
 3. Even a favoured language is not an L3 result: L3 needs sign values that predict held-out texts under a criterion with a random-assignment pass rate below 0.1 (gate G4). A favoured language would be recorded as conditional evidence, on the assumption that the signs record sounds.
 
 **Untested hypothesis.** No usable Munda text corpus was found, so a Munda hypothesis is not tested.
+
+**Amendment to E3 (before any result was computed).** The Neo-Assyrian letters in the CDLI dump yield only 643 Akkadian words after filtering, too few for a language model. The Akkadian model is instead trained on **Old Assyrian letters** (23,032 words): a different dialect and period from the Old Babylonian letters used as positive control 1, so the control remains a related-language decipherment, not an identity match. Word counts of the other models: Sanskrit 175,177 headwords; Old Tamil 79,353 word tokens; Sumerian (OB literary) 174,781 word tokens.
