@@ -2940,3 +2940,35 @@ Script: `scripts/batch9c_pt3_count_pairs.py`; results: `results/batch9c_pt3_coun
 ### Reproducibility check (R9)
 
 `scripts/run_all.py --skip-heavy` re-ran every analysis in the repository, including all those added since R8, with no failures and no changed result files.
+
+---
+
+## 2026-11-25 (day 1, twenty-ninth working session, 21:18 UTC): replications in KP1979 and rare signs by object class
+
+### Plan of the run
+
+1. PT2k, PT3k: replication of PT2 (template and units on other objects) and PT3 (count–item pairing on other objects) in KP1979.
+2. CT28h, CT28hk: do seal legends contain more rare signs than tablet texts? This is a further prediction of the individual-legend reading of CT28 (claim C28).
+3. Updates; reproducibility of the new scripts.
+
+### Pre-registrations (before running)
+
+**PT2k.**
+- Training: unique complete KP strings (normalised as in R4; length ≥ 2; no `?`) with type codes {11, 23, 62, 67, 72, 75}. These are the seal and tablet codes used in C2k, CT28k and CT32k.
+- Test: unique strings with any type code whose first digit is not 1, 2, 6 or 7. The assumption that the 1x/2x codes are seals and the 6x/7x codes tablets is inferred from the data, not sourced. Test strings also found in training are dropped.
+- Statistics, KP rule-preserving controls (10,000 draws), decision and insufficient-data rule as in PT2.
+
+**PT3k.**
+- Data: the PT2k test strings.
+- Fisher exact test, one-sided: the share of bigrams ending in 86 after the 4–9-stroke signs {124–129} is compared with that after other signs.
+- Prediction: p < 0.01. Insufficient data: fewer than 5 bigrams after the stroke set.
+
+**CT28h (ICIT).**
+- Data: Harappa and Mohenjo-daro; unique strings per site and object class, seal (`SEAL…`) or tablet (`TAB…`). Strings found in both classes at a site are dropped.
+- Stem: the string without its terminal cluster (ICIT terminal set, maximal final run).
+- Rare sign: a sign occurring in at most 3 unique complete ICIT strings overall.
+- Statistic: the sum over the two sites of (share of rare tokens among seal stem tokens − the same share for tablet stems).
+- Null: class labels permuted among the strings of each site; 10,000 draws.
+- Prediction: seals have more rare signs, one-sided p < 0.01.
+
+**CT28hk (KP1979).** The same with KP codes {11, 23} vs {62, 67, 72, 75}, without site strata (KP has no site field in this source), the KP terminal set, and rarity counted on KP unique strings.
