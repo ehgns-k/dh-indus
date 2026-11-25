@@ -2515,3 +2515,21 @@ The hosts holding the full texts (harappa.com, helda.helsinki.fi, nature.com) co
 Analysis:
 - The excerpts agree with the data: the numeral face is a count of two to four strokes with one sign (FACE2: in ICIT only 032, 033 and 034 with 700, and one 031).
 - Whether the count is constant within a series of identical texts was not found in the excerpts. FACE2 shows that it is partly tied to the series but varies within it. The reading "pots of offerings" is not tested by any analysis here.
+
+### Pre-registration of SZ4 (before running)
+
+**SZ4 (seals with identical legends are similar in size).** Seal legends are mostly individual (CT28). If the few seals that share a legend belong together (made as a set, or for the same holder), they should be closer in size than other seals of the same kind.
+- Data: `SEAL:S` objects with size data, as in SZ1, all of them.
+- Pairs: two objects with identical text from different records. Pairs with the same non-empty `excavation-idno` are dropped (possible double records).
+- Statistic: mean absolute difference of log area over these pairs.
+- Null: for each pair, the second object is replaced by a random `SEAL:S` object of the same site and text length (excluding the first object); 10,000 draws.
+- Prediction: the real mean difference is smaller, one-sided p < 0.01.
+- Insufficient data: fewer than 20 pairs.
+- Descriptive: the number of pairs with exactly equal dimensions.
+
+### Result SZ4: not supported
+
+Script: `scripts/batch5f_sz4_identical_seals.py`; results: `results/batch5f_sz4_identical_seals.json`.
+- 49 legends occur on more than one square seal, giving 131 pairs. 80 of the pairs are from different sites, and only 3 have equal dimensions.
+- The mean absolute difference of log area is 0.515, against 0.530 for random partners of the same site and length (p = 0.33).
+- Seals that share a legend are no more alike in size than other seals. Shared legends are mostly short (for example `910 740`, `061 740`) and found at different sites. They look like common short legends rather than matching sets.
