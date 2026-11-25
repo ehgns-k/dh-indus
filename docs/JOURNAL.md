@@ -348,3 +348,29 @@ Observations:
 - Test: one-sided Fisher exact test on the 2 × 2 table (preceding sign in set vs any other sign) × (next sign in target vs not), over all within-line bigrams.
 - Prediction: odds ratio > 1, p < 0.01, in both corpora.
 - Refutation condition: p ≥ 0.01 in either corpus.
+
+### H3.10 result: supported (held-out data, both corpora)
+
+Script: `scripts/phase3_h310_stroke_followers.py`; results: `results/phase3_h310_stroke_followers.json`.
+
+| Corpus | After a 4–9 stroke sign: target / other | After any other sign: target / other | Share (set) | Share (other) | Odds ratio | p |
+|---|---:|---:|---:|---:|---:|---:|
+| KP1979 | 10 / 16 | 47 / 1,461 | 0.38 | 0.03 | 19.4 | 7.5 × 10⁻⁹ |
+| ICIT | 10 / 20 | 36 / 1,380 | 0.33 | 0.03 | 19.2 | 7.2 × 10⁻⁹ |
+
+Verdict: H3.10 meets its pre-registered criteria in both transcriptions. In held-out texts, a sign of 4 to 9 short strokes is followed by the KP 86 / ICIT 390–407 group about twelve times as often as other signs are.
+
+Limitations:
+- The counts are small (26 and 30 bigrams after the stroke set).
+- The two transcriptions cover largely the same objects, so they are not independent samples (as for H3.3).
+- Held-out strings are unique, but near-identical strings (for example variants of a repeated formula) can still make the bigrams less independent than the test assumes.
+- The control is "all other signs". A stricter control, for example other medial signs of similar frequency, has not been run.
+
+Interpretation: the result fits a pattern in which a counted number of strokes is followed by a particular sign or sign group, as a numeral is followed by what is counted or by a unit. This is a structural result (L1 type). It becomes an L2 (semantic-category) result only if the "counted item" reading predicts information outside the text, for example a link between the KP 86 group and a particular object type or find context. That is the next test to design.
+
+### Next steps
+
+1. H3.11: stricter control for H3.10 (compare with signs matched for frequency and medial share), on data not yet used for this question. Since the held-out set has now been used for this question, the stricter control must be run on the training split and reported as a robustness check only.
+2. Design an L2 test for the KP 86 group: does its presence predict object type or site beyond what H3.5/H3.6 already show?
+3. Check whether count 7 → 288/289 and long count 3 (147) → 217 (ICIT 520) are similar count–item pairs (training split first, then new data if available).
+4. Look for further data sources (for example newly published inscriptions) to serve as a fresh test set, since the held-out set is being used up.

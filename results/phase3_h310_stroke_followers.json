@@ -1,0 +1,34 @@
+{
+ "kp1979": {
+  "table_[[set->target, set->other],[other->target, other->other]]": [
+   [
+    10,
+    16
+   ],
+   [
+    47,
+    1461
+   ]
+  ],
+  "share_after_set": 0.38461538461538464,
+  "share_after_other": 0.03116710875331565,
+  "odds_ratio": 19.4281914893617,
+  "p_value": 7.528232483726405e-09
+ },
+ "icit": {
+  "table_[[set->target, set->other],[other->target, other->other]]": [
+   [
+    10,
+    20
+   ],
+   [
+    36,
+    1380
+   ]
+  ],
+  "share_after_set": 0.3333333333333333,
+  "share_after_other": 0.025423728813559324,
+  "odds_ratio": 19.166666666666668,
+  "p_value": 7.22064110519285e-09
+ }
+}
