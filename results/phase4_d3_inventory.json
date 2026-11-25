@@ -1,0 +1,83 @@
+{
+ "indus_icit": {
+  "tokens": 9000,
+  "observed_types": 601,
+  "singletons": 212,
+  "doubletons": 98,
+  "chao1": 830.3,
+  "ci95_low": 761.7,
+  "ci95_high": 928.2
+ },
+ "indus_kp1979": {
+  "tokens": 9000,
+  "observed_types": 359,
+  "singletons": 100,
+  "doubletons": 33,
+  "chao1": 510.5,
+  "ci95_low": 447.9,
+  "ci95_high": 617.3
+ },
+ "proto_cuneiform": {
+  "tokens": 9000,
+  "observed_types": 859,
+  "singletons": 327,
+  "doubletons": 102,
+  "chao1": 1383.2,
+  "ci95_low": 1246.7,
+  "ci95_high": 1567.6
+ },
+ "proto_elamite": {
+  "tokens": 9000,
+  "observed_types": 554,
+  "singletons": 180,
+  "doubletons": 61,
+  "chao1": 819.6,
+  "ci95_low": 732.1,
+  "ci95_high": 949.9
+ },
+ "akkadian_ob_letters": {
+  "tokens": 9000,
+  "observed_types": 451,
+  "singletons": 138,
+  "doubletons": 59,
+  "chao1": 612.4,
+  "ci95_low": 554.8,
+  "ci95_high": 702.1
+ },
+ "sumerian_ur3_admin": {
+  "tokens": 9000,
+  "observed_types": 680,
+  "singletons": 206,
+  "doubletons": 84,
+  "chao1": 932.6,
+  "ci95_low": 855.4,
+  "ci95_high": 1043.9
+ },
+ "sumerian_ob_literary": {
+  "tokens": 9000,
+  "observed_types": 766,
+  "singletons": 288,
+  "doubletons": 113,
+  "chao1": 1133.0,
+  "ci95_low": 1035.0,
+  "ci95_high": 1266.8
+ },
+ "TotemPoles": {
+  "tokens": 1763,
+  "observed_types": 484,
+  "singletons": 349,
+  "doubletons": 47,
+  "chao1": 1779.8,
+  "ci95_low": 1391.8,
+  "ci95_high": 2333.5
+ },
+ "Pictish": {
+  "tokens": 764,
+  "observed_types": 85,
+  "singletons": 38,
+  "doubletons": 12,
+  "chao1": 145.2,
+  "ci95_low": 110.8,
+  "ci95_high": 225.3
+ }
+}

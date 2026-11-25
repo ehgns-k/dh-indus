@@ -1496,3 +1496,23 @@ Not distinguishable: 50/56, 50/58, 56/58 (fish-shaped variants), 324/326, 325/32
 - The ICIT-style source merges some distinctions that KP1979 makes and that are visible in usage: short vs long strokes (KP 121/144 → ICIT 001 or 031; KP 123/147 → ICIT 033), the jar variants KP 324/325 (→ ICIT 740), and some fish-shaped variants.
 - **Consequence for earlier tests.** ICIT 033 was used as "three long strokes" (H3.12b, H6.1). The concordance shows that ICIT 033 also covers some KP 123 (three short strokes) occurrences. In H6.1 this would, if anything, mix the two series and weaken the separation that was found; it cannot create it. H3.12b was confirmed in KP1979 with the unambiguous KP 147, so its conclusion stands.
 - Neither transcription is uniformly finer: each merges distinctions that the other keeps and that matter in usage. A combined sign inventory that keeps all usage-supported distinctions from both lists would be the best basis for further work (work plan L-3).
+
+### D3 (descriptive): estimated size of the sign inventory
+
+Script: `scripts/phase4_d3_inventory.py`; results: `results/phase4_d3_inventory.json`. Classic Chao1 estimator of the total number of sign types, with the variance of Chao (1987) and a log-normal 95 % interval, all corpora at 9,000 tokens from unique lines (Pictish and totem poles: all their tokens). A first version used a token bootstrap for the interval, which is biased for this estimator (its intervals did not contain the estimate); it was replaced before any result was recorded.
+
+| Corpus | Observed types | Singletons | Chao1 | 95 % interval |
+|---|---:|---:|---:|---|
+| Indus (ICIT) | 601 | 212 | 830 | 762–928 |
+| Indus (KP1979) | 359 | 100 | 511 | 448–617 |
+| proto-Elamite | 554 | 180 | 820 | 732–950 |
+| proto-cuneiform | 859 | 327 | 1,383 | 1,247–1,568 |
+| Sumerian Ur III administrative | 680 | 206 | 933 | 855–1,044 |
+| Sumerian OB literary | 766 | 288 | 1,133 | 1,035–1,267 |
+| Akkadian OB letters | 451 | 138 | 612 | 555–702 |
+| Pictish (764 tokens) | 85 | 38 | 145 | 111–225 |
+
+Observations:
+- The two Indus transcriptions differ in granularity (ICIT about 830 types, KP1979 about 510), as expected from the split/merge differences (L3a, L3b). Either estimate is far above the size of any syllabary or alphabet and in the range of the proto-administrative and logo-syllabic systems here.
+- For the cuneiform corpora the types are transliteration values (one sign can have several readings), so their numbers overstate the sign inventory; the comparison with them is indicative only. The proto-Elamite figure (signs, not readings) is the cleanest comparison and is almost identical to the ICIT figure.
+- An inventory of several hundred signs excludes a purely syllabic or alphabetic system, if the signs are writing at all; it is compatible with a logo-syllabic script and with a proto-administrative system of the proto-Elamite kind.
