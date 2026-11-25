@@ -2864,3 +2864,34 @@ Script: `scripts/batch8b_dir2_unknown.py`; results: `results/batch8b_dir2_unknow
   - Inconclusive: D6 (descriptive), with the post-hoc check D6b.
 - The new scripts reproduce their results.
 - None of these analyses used the strict held-out or fresh data, so the R7 family is unchanged (47).
+
+---
+
+## 2026-11-25 (day 1, twenty-eighth working session, 20:18 UTC): generalisation across object classes; typology with a seventh statistic
+
+### Plan of the run
+
+1. PT1: do the positional template (B1-type) and the recurring units (B4-type) learned from seals and tablets carry over to pottery inscriptions?
+2. PT2: the same for the other inscribed objects (bangles, implements, tags, miscellaneous).
+3. D2b: does adding the combinatorial density (CT27) as a seventh statistic let the D2 method separate writing from non-linguistic systems?
+4. R9: full reproducibility run.
+5. Updates of ledger, README, claims, reports.
+
+### Pre-registrations (before running)
+
+**PT1 and PT2.**
+- Training: all unique complete ICIT strings (length ≥ 2, no `?`) from objects of types `SEAL…` and `TAB…`.
+- Test:
+  - PT1: unique strings from pottery (`POT…`).
+  - PT2: unique strings from all other types.
+  - Test strings that also occur on seals or tablets are removed from the test set, not from training.
+- Primary test set: lines of known direction. Secondary (descriptive): including unknown-direction lines (DIR2).
+- Zones and units are defined on the training strings with the B1 and B4 rules: zone by initial share ≥ 0.5 or final share ≥ 0.5 among signs with ≥ 10 occurrences; units are 2–3-grams in ≥ 5 training lines, excluding built-in pairs.
+- Statistics: inversions (fewer is better) and covered positions (more is better).
+- Controls: ICIT rule-preserving controls, 10,000 draws.
+- Prediction: for each class, B1-type p < 0.01 and B4-type p < 0.01 (one-sided).
+- Insufficient data: fewer than 20 test strings with at least two zoned signs.
+
+**D2b.**
+- The D2 design (300-line samples, 20 resamples, leave-one-corpus-out over the seven known corpora: three full-writing, four non-linguistic), with a seventh statistic S7: the share of the 20 × 20 ordered pairs of the 20 most frequent signs of the sample that occur adjacent in it.
+- Decision: the statistics separate writing from non-writing if all seven known corpora are classified correctly. Only then is the Indus assignment interpreted.
