@@ -483,3 +483,26 @@ Two features stand out and are recorded as observations only:
 - Seven strokes are followed by a fish sign only once in 50 cases in each corpus. In this corpus the seven-stroke sign goes with KP 288/289 (H3.12a), not with fish signs. This does not agree with the reading of 7 + fish as a frequent name.
 
 Both points come from the same data in which the pairing patterns were explored, so a test of "6 + fish" would need inscriptions not in either corpus. The scope of the claim also matters: the source seen was secondary, and the original may define "seven" or "fish" differently (for example including other stroke arrangements). This must be checked against Parpola (1994) before the observation is used in a report.
+
+---
+
+## 2026-11-25 (day 1, second working session, 06:34 UTC)
+
+Plan for this session: test two published claims that bear on meaning (claims register C31 and C30), using the stroke-sign list established above. Both use only the ICIT-style source, because only it has decoded object-type and motif fields.
+
+### Pre-registration of H4.1 (claim C31a; before running)
+
+**H4.1 (tablets carry numerals more often than seals).** The claim (Rao 2018, via claims register C31) predicts that tablet texts contain numeral signs more often than seal texts.
+- Numeral signs: ICIT short-stroke signs with 3 to 9 strokes, {003, 004, 034, 005, 016, 017}. The single stroke (001) is excluded, because it behaves differently (see the stroke-count exploration above).
+- Unit: unique held-out strings with a single coarse object type (`SEAL*` or `TAB*`) and a single site.
+- Primary test: within Harappa, one-sided Fisher exact test on (tablet vs seal) × (contains a numeral sign vs not). Secondary: the same within Mohenjo-daro (reported, not part of the decision).
+- Prediction: numeral share higher on tablets, p < 0.01 (primary).
+- Disclosure: in the H3.5 classifier (training data, all Harappa strings), "sign 003 present" had a weight towards seals (−1.16). This was seen before this pre-registration, and it points against the prediction.
+
+### Pre-registration of H4.2 (claim C30; before running)
+
+**H4.2 (the text predicts the seal motif).** Claim C30 (Mukhopadhyay 2023) treats motifs as emblems of issuing bodies, which suggests that text and motif are largely independent. H4.2 is the alternative: the text carries information about the motif.
+- Unit: unique seal strings with a single motif code. Classes: `Bull1` vs all other animal codes {Gaur, Zebu, Elep, Rhin, Buff, Tigr, Goat}. Other codes and blank motifs are excluded.
+- Model: logistic regression on sign counts, initial sign, final sign and length (as in H3.5); trained on non-held-out strings, tested on held-out strings.
+- Metric: balanced accuracy. Control: 200 permutations of the training labels.
+- Decision: H4.2 is supported if balanced accuracy ≥ 0.6 and p < 0.01. If not, the result is recorded as consistent with the independence claimed in C30, not as proof of independence.
