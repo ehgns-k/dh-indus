@@ -1881,3 +1881,12 @@ Unique complete strings are recomputed after normalisation. Stroke set {121–13
 Script: `scripts/review_r4_h91_normalised_kp.py`; results: `results/review_r4_h91_normalised_kp.json`.
 
 After merging long strokes into short strokes of the same count and `121 121` into `122`: 2,069 unique strings, 5,944 minimal pairs, 84 stroke–stroke substitutions against a null mean of 12.4 (SD 7.6, maximum 54); p = 0.0001. **H9.1 passes again.** The most frequent substitutions are now between different counts (3↔4: 9; 2↔3: 8; 1↔3, 3↔5: 5 each; 2↔4, 3↔6, 3↔7, 4↔5: 4 each). The KP1979 result therefore does not depend on short/long writing variants or on split strokes.
+
+### Pre-registration of H9.6 (do substituted counts lie close together? before running)
+
+**Idea.** If stroke signs denote quantities, then in formulae with a variable count, the substituted counts should tend to be close in value (records of similar quantities), so that 3↔4 is more frequent than 3↔7 beyond what the frequencies of the counts explain. If the strokes were arbitrary symbols, the size of the count difference should not matter.
+
+- **Data:** the stroke–stroke substitutions of the minimal pairs (H9.1 definition) between **different** counts: ICIT (counts from the stroke sets, short and long series pooled by count) and KP1979 normalised as in R4.
+- **Statistic:** mean absolute count difference over the substitutions.
+- **Null:** 10,000 random re-pairings that keep the frequency with which each count takes part in substitutions (the members of all substitution pairs are pooled and randomly re-paired, discarding same-count pairs and re-drawing).
+- **Prediction:** observed mean difference smaller than in the null, p < 0.01, in both corpora.
