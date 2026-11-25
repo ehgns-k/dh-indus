@@ -330,3 +330,21 @@ ICIT meets the criterion; KP1979 does not. By the pre-registered rule (both corp
 ### Correction: reproducibility of the stroke-sign tests (same day)
 
 The first runs of H3.8 and H3.9 drew their random control sets from lists whose order depended on Python's per-process hash seed, so re-running the scripts gave slightly different p-values (H3.9: 0.031 / 0.003, then 0.038 / 0.002). The scripts now sort these lists, and repeated runs give identical output. The tables above show the values of the deterministic version. No conclusion changed: H3.8 and H3.9 remain not supported, for the same reasons. The other scripts were checked: `scripts/phase3_structure.py` reproduces its committed output exactly, and the remaining tests do not draw random samples from unordered collections.
+
+### Exploration: what follows each stroke count (training split, KP1979, not a test)
+
+Next-sign counts after the short-stroke signs, by stroke count (top items): 1 (121): 121 ×42, 144 ×37, line end ×25; 3 (123): 56 ×13, 306 ×12, 86 ×11, 154 ×10; 4 (124): 86 ×16 of 38; 5 (125): 86 ×11 of 35; 6 (126): 86 ×7 of 25; 7 (127): 288 ×17, 289 ×8 of 45; 8 (128): 86 ×3 of 5. After the long-stroke signs: 1 (144): 144 ×61, 121 ×37; 3 (147): 217 ×24 of 79.
+
+Observations:
+- The single-stroke signs 121 and 144 are often adjacent to each other (121 → 144 ×37, 144 → 121 ×37, 144 → 144 ×61) and behave differently from the higher counts.
+- Counts 4 to 8 are followed most often by KP 86. In the concordance KP 86 corresponds to ICIT 390, 405, 406 and 407 (all purity 1.00).
+- Count 7 is followed mainly by 288 and 289; the long three-stroke sign 147 mainly by 217 (ICIT 520).
+
+### Pre-registration of H3.10 (before running)
+
+**H3.10 (higher stroke counts are followed by the KP 86 group).** Short-stroke signs with 4 to 9 strokes are followed by the sign group KP 86 / ICIT {390, 405, 406, 407} more often than other signs are.
+- Sets: KP1979 counts 4–9 = {124, 125, 126, 127, 128, 129}, target {86}. ICIT counts 4–9 = {004, 034, 005, 016, 017} (concordance images; no ICIT image is known for 128 and 129), target {390, 405, 406, 407}.
+- Data: held-out strings only.
+- Test: one-sided Fisher exact test on the 2 × 2 table (preceding sign in set vs any other sign) × (next sign in target vs not), over all within-line bigrams.
+- Prediction: odds ratio > 1, p < 0.01, in both corpora.
+- Refutation condition: p ≥ 0.01 in either corpus.
