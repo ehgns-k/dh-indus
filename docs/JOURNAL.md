@@ -3074,3 +3074,35 @@ Script: `scripts/batch11b_ct15b_bootstrap.py`; results: `results/batch11b_ct15b_
   - Not supported: D8, D9.
   - Descriptive: D10.
 - Review: R10. The level assessment is unchanged.
+
+---
+
+## 2026-11-25 (day 1, thirty-first working session, 23:18 UTC): robustness across sites and object classes
+
+### Plan of the run
+
+1. SX3: leave-one-site-out test of the positional template (B1 type).
+2. SX4: leave-one-site-out test of the recurring units (B4 type).
+3. H3.3c: the fixed order inside the closing cluster, within each object class.
+4. CT22b: stability of the CT22 result (fish-shaped signs as a usage class) under resampling of strings.
+5. Updates; reproducibility.
+
+### Pre-registrations (before running)
+
+**SX3 and SX4.**
+- For Harappa and for Mohenjo-daro in turn, zones and units are learned with the PT1 rules on unique complete ICIT strings (known direction, no `?`, length ≥ 2) of all other sites. Strings found at the test site are removed from training.
+- They are tested on the unique strings of the test site with ICIT rule-preserving controls (10,000 draws).
+- SX3 statistic: inversions. SX4 statistic: covered positions.
+- Prediction: p < 0.005 at each site (Bonferroni over the two sites).
+
+**H3.3c.**
+- For each object class (seals, tablets, other objects), unique complete ICIT strings of known direction.
+- The dominant order of each adjacent pair of terminal-set signs is taken from H3.3's training result (`results/phase3_h33_heldout.json`). If it is not available there, it is recomputed on ICIT training strings of all classes (not `is_heldout`).
+- In each class, the share of adjacent terminal pairs in the dominant order is tested with a binomial test against 0.5.
+- Prediction: agreement ≥ 0.8 and p < 0.01 in each class with at least 10 such pairs. Classes with fewer than 10 pairs are "insufficient data".
+- Data note: these strings include training strings, so this tests whether the fixed order holds within every class, not on unused data.
+
+**CT22b.**
+- The CT22 data (strict held-out + fresh ICIT strings).
+- 1,000 bootstrap resamples of the strings (with replacement). In each, the CT22 statistic is computed: mean pairwise context similarity of the fish-shaped signs with ≥ 5 occurrences in the resample, minus the mean of 200 frequency-matched random sets.
+- Prediction: the difference is positive in at least 99 % of resamples.
