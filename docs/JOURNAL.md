@@ -214,3 +214,26 @@ One possible reason is that "tablet" covers different subtypes at the two sites:
 - Same unit, features, model, metric and control as H3.5, with the tablet class limited to `TAB:B` at both sites.
 - Prediction: balanced accuracy ≥ 0.65 and permutation p < 0.01 on Mohenjo-daro strings not found at Harappa.
 - Refutation condition: either condition fails.
+
+### H3.6 result: supported, narrowly
+
+Script: `scripts/phase3_h36_tabB.py`; results: `results/phase3_h36_tabB.json`.
+
+Training (Harappa, non-held-out): 178 seal, 176 `TAB:B`. Test (Mohenjo-daro strings not found at Harappa): 882 seal, 41 `TAB:B`. Balanced accuracy 0.667; permutation mean 0.503 (SD 0.046); p = 0.005.
+
+Verdict: both pre-registered conditions are met (0.667 ≥ 0.65; p < 0.01). The margin is small, and the following must be recorded:
+- H3.6 was formed after H3.5 failed, so two tests of the same question were run. With a Bonferroni correction for two tests (0.01/2 = 0.005), p = 0.00498 passes only just, and it is the smallest value attainable with 200 permutations.
+- The test set contains only 41 `TAB:B` strings.
+
+The features with the largest weights (descriptive, from the training data) are: for `TAB:B`, final sign 700 (+1.32), final sign 400 (+1.32), sign 700 anywhere (+1.26), final sign 032 (+1.17); for seals, length ≥ 8 (−1.12), sign 003 (−1.04), sign 900 (−0.94), final sign 090 (−0.75).
+
+This links to H3.3. The terminal cluster has two common forms, 740 > 400 and 740 > 090. The weights suggest that lines ending in 400 belong to tablets and lines ending in 090 belong to seals. This is tested on held-out data as H3.7.
+
+### Pre-registration of H3.7 (before running)
+
+**H3.7 (the two forms of the terminal cluster are tied to object type).** Among lines ending in 400 and lines ending in 090, the share of seals is higher for lines ending in 090.
+- Unit: unique strings in the ICIT held-out set (all sites), with a single coarse object type (`SEAL*` vs any `TAB*`), ending in 400 or in 090.
+- Test: one-sided Fisher exact test on the 2 × 2 table (final sign × object type).
+- Replication: the same test in KP1979 is not possible, because that source carries no object-type field in a form decoded here; this is recorded as a limitation.
+- Prediction: seal share higher for 090-final lines, p < 0.01.
+- Refutation condition: p ≥ 0.01, or seal share not higher for 090-final lines.
