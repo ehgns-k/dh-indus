@@ -1,6 +1,6 @@
 """E3c: E3b measure on positive-control ciphers of 8,000 lines.
 Pre-registered in docs/JOURNAL.md (twelfth working session)."""
-import importlib.util, json, pathlib, random
+import importlib.util, json, pathlib, random, sys
 from multiprocessing import Pool
 import numpy as np
 from indus import phonetic as ph
@@ -9,7 +9,7 @@ from indus.corpus import ROOT
 here = pathlib.Path(__file__).parent
 def _load(name, file):
     spec = importlib.util.spec_from_file_location(name, here / file)
-    m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m); return m
+    m = importlib.util.module_from_spec(spec); sys.modules[name] = m; spec.loader.exec_module(m); return m
 e3 = _load("e3", "phase7_e3_phonetic_search.py")
 e3b = _load("e3b", "phase7_e3b_corrected.py")
 N = 8000
