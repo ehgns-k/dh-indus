@@ -146,3 +146,12 @@ The short tests that the current data allow have largely been run. The remaining
 | L-3 | **Allographs** | Use the two transcriptions' disagreements (concordance splits and merges) and shape features (L-2) to propose and test allograph groups; re-run key L1 tests with merged groups | from `docs/SIGN_CONCORDANCE.md` |
 | L-4 | **New data watch** | Search for inscriptions published after the ICIT-style source (excavation reports, open datasets) to obtain unused data for confirming the L2 candidate | sourced list of new finds |
 | L-5 | **Reports** | Phase reports for phases 3–7 and the final report, written so that every claim cites the test and data behind it | from interim report 2 |
+
+### Progress and additions (fourteenth session)
+
+- L-1: split/merge of strokes found (KP 121/144 pairs = ICIT 032); numeral partner results reviewed (R2; H6.1 depends on 033).
+- L-2: glyph images obtained (726 ICIT signs); G1 negative, G2 positive (near-variant shapes share usage).
+- L-3: allograph tests L3a/L3b done.
+- New items:
+  - **L-2b Modifiers.** Using the mayig feature coding (Parpola signs with feature vectors) or shape differences, identify recurring modifications (added strokes above, enclosure, crossing) and test whether a modification shifts usage in the same direction across different base signs (diacritic-like behaviour). Discovery on training data, confirmation on strict held-out and fresh data.
+  - **L-3b Combined inventory.** A sign list that keeps every distinction supported by usage in either transcription (L3a, L3b), with a mapping from both numberings; rerun key L1 tests on it.
