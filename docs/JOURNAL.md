@@ -2397,3 +2397,12 @@ Scripts: `scripts/review_r7_familywise.py`, `scripts/review_r7b_*.py`; results: 
 Script: `scripts/batch5b_ml2_line_breaks.py`; results: `results/batch5b_ml2_line_breaks.json`.
 
 ICIT: 25.7 % of line parts occur as complete single-line texts elsewhere, against 24.9 % for random cuts (p = 0.43). KP: 15.0 % against 14.6 % (p = 0.46). Objects whose joined text has only two signs (ICIT 6, KP 4) keep their real cut in the control, because no other cut exists. The line break of a two-line inscription does not fall at segment boundaries more often than a random cut. This fits the description of signs being moved to the second line when the space runs out, rather than a break at a boundary in the text. ML1 and ML2 together: one text per object, broken where the space ends.
+
+### L-3b combined sign inventory (descriptive)
+
+`docs/COMBINED_INVENTORY.md` (script `scripts/l3b_combined_inventory.py`) combines the allograph decisions of L3a and L3b.
+- Rule: a group is merged only if no pair inside it differs in usage.
+- Merged: ICIT 705/706, 790/850, 817/861 and 154/156; KP 50/56/58 (fish-shaped) and 325/326.
+- Kept separate: ICIT 151/158, 617/741, 803/806 and 390/405/407; KP 324/325/326, 119/122, 123/147 and 62 vs 50/56.
+- Result: 713 ICIT types − 4 + 5 = 714 units. The allograph decisions supported by usage do not change the inventory estimate of D3 in any material way.
+- No key L1 test is re-run on the combined list. Its merges concern rare signs outside the tested sets, and its splits cannot be applied to ICIT tokens without a per-token alignment.

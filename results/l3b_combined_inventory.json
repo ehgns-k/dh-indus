@@ -1,0 +1,257 @@
+{
+ "icit_types": 713,
+ "merges_from_L3a": 4,
+ "splits_from_L3b": 5,
+ "combined_types": 714,
+ "L3a": [
+  {
+   "other_sign": "1",
+   "members": [
+    "151",
+    "158"
+   ],
+   "pairs_tested": 1,
+   "kept_separate": [
+    "151",
+    "158"
+   ],
+   "merged": [],
+   "decision": "keep"
+  },
+  {
+   "other_sign": "316",
+   "members": [
+    "705",
+    "706"
+   ],
+   "pairs_tested": 1,
+   "kept_separate": [],
+   "merged": [
+    "705",
+    "706"
+   ],
+   "decision": "merge"
+  },
+  {
+   "other_sign": "325",
+   "members": [
+    "617",
+    "741"
+   ],
+   "pairs_tested": 1,
+   "kept_separate": [
+    "617",
+    "741"
+   ],
+   "merged": [],
+   "decision": "keep"
+  },
+  {
+   "other_sign": "355",
+   "members": [
+    "790",
+    "850"
+   ],
+   "pairs_tested": 1,
+   "kept_separate": [],
+   "merged": [
+    "790",
+    "850"
+   ],
+   "decision": "merge"
+  },
+  {
+   "other_sign": "364",
+   "members": [
+    "803",
+    "806"
+   ],
+   "pairs_tested": 1,
+   "kept_separate": [
+    "803",
+    "806"
+   ],
+   "merged": [],
+   "decision": "keep"
+  },
+  {
+   "other_sign": "383",
+   "members": [
+    "817",
+    "861"
+   ],
+   "pairs_tested": 1,
+   "kept_separate": [],
+   "merged": [
+    "817",
+    "861"
+   ],
+   "decision": "merge"
+  },
+  {
+   "other_sign": "4",
+   "members": [
+    "154",
+    "156"
+   ],
+   "pairs_tested": 1,
+   "kept_separate": [],
+   "merged": [
+    "154",
+    "156"
+   ],
+   "decision": "merge"
+  },
+  {
+   "other_sign": "86",
+   "members": [
+    "390",
+    "405",
+    "407"
+   ],
+   "pairs_tested": 3,
+   "kept_separate": [
+    "390",
+    "405",
+    "407"
+   ],
+   "merged": [],
+   "decision": "keep"
+  }
+ ],
+ "L3b": [
+  {
+   "other_sign": "001",
+   "members": [
+    "121",
+    "144"
+   ],
+   "pairs_tested": 1,
+   "kept_separate": [
+    "121",
+    "144"
+   ],
+   "merged": [],
+   "decision": "keep"
+  },
+  {
+   "other_sign": "002",
+   "members": [
+    "119",
+    "122"
+   ],
+   "pairs_tested": 1,
+   "kept_separate": [
+    "119",
+    "122"
+   ],
+   "merged": [],
+   "decision": "keep"
+  },
+  {
+   "other_sign": "031",
+   "members": [
+    "121",
+    "144"
+   ],
+   "pairs_tested": 1,
+   "kept_separate": [
+    "121",
+    "144"
+   ],
+   "merged": [],
+   "decision": "keep"
+  },
+  {
+   "other_sign": "033",
+   "members": [
+    "123",
+    "147"
+   ],
+   "pairs_tested": 1,
+   "kept_separate": [
+    "123",
+    "147"
+   ],
+   "merged": [],
+   "decision": "keep"
+  },
+  {
+   "other_sign": "220",
+   "members": [
+    "50",
+    "56",
+    "58"
+   ],
+   "pairs_tested": 3,
+   "kept_separate": [],
+   "merged": [
+    "50",
+    "56",
+    "58"
+   ],
+   "decision": "merge"
+  },
+  {
+   "other_sign": "233",
+   "members": [
+    "56",
+    "58"
+   ],
+   "pairs_tested": 1,
+   "kept_separate": [],
+   "merged": [
+    "56",
+    "58"
+   ],
+   "decision": "merge"
+  },
+  {
+   "other_sign": "240",
+   "members": [
+    "50",
+    "56",
+    "62"
+   ],
+   "pairs_tested": 3,
+   "kept_separate": [
+    "62"
+   ],
+   "merged": [
+    "50",
+    "56"
+   ],
+   "decision": "partly merge"
+  },
+  {
+   "other_sign": "740",
+   "members": [
+    "324",
+    "325",
+    "326"
+   ],
+   "pairs_tested": 3,
+   "kept_separate": [
+    "324",
+    "325",
+    "326"
+   ],
+   "merged": [],
+   "decision": "keep"
+  },
+  {
+   "other_sign": "742",
+   "members": [
+    "325",
+    "326"
+   ],
+   "pairs_tested": 1,
+   "kept_separate": [],
+   "merged": [
+    "325",
+    "326"
+   ],
+   "decision": "merge"
+  }
+ ]
+}
