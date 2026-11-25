@@ -960,3 +960,29 @@ Observations:
 | G4 (L3) | not attempted; under the work plan, WP-E results will be labelled conditional on the linguistic assumption |
 
 The firm finding of phase 4 is comparative: the Indus inscriptions pattern with proto-Elamite (and, less closely, proto-cuneiform), the two proto-administrative systems of the late fourth millennium BCE in the reference set.
+
+---
+
+## 2026-11-25 (day 1, eighth working session): P1, sign × metadata scan
+
+The scheduled task now runs hourly (the user asked for continuous work); a run that starts while another session is working waits for it.
+
+### Pre-registration of C2 (association scan; before running)
+
+**Units.** ICIT unique complete strings with recorded direction. For each metadata variable, a string is used only if all its records share one value.
+
+**Variables and values.** Values with ≥ 30 training strings, for:
+- object subtype (full `type` code, for example `SEAL:S`, `TAB:B`, `TAB:I`, `TAB:C`);
+- material (lower-cased);
+- motif (first part of `symbol`; blank, `-`, `Othr`, `Unknown` excluded);
+- region (`region` field).
+
+**Features.** Presence of each sign occurring in ≥ 15 training strings.
+
+**Test.** For each (sign, value) pair: 2 × 2 table (sign present / absent) × (value / other values). For subtype, material and motif, a Cochran–Mantel–Haenszel test stratified by site (Harappa, Mohenjo-daro, other), so that site differences cannot produce an association by themselves. Region is a property of the site, so it is tested without stratification and its results are described as regional variation, not as meaning.
+
+**Discovery.** Training split; Benjamini–Hochberg false-discovery rate q = 0.05 over all pairs.
+
+**Confirmation.** Held-out split (the 14th question decided on it); each discovered pair is tested one-sided in its discovered direction with the same test; Bonferroni threshold 0.01 / (number of discovered pairs).
+
+**Interpretation rule (fixed now).** A confirmed association counts toward L2 only if the sign involved belongs to a group already defined structurally (the terminal cluster, the stroke signs, the count–item targets) or the association is to an object class in a way that supports a semantic reading named in advance (stroke signs with tablets = "numerals on records", claim C31). Other confirmed associations are recorded as "confirmed sign–context associations" (L2 candidates), not as L2 results.
