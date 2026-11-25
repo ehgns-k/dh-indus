@@ -2107,3 +2107,7 @@ Condition (a2) holds, but (a1) fails in both corpora: the link between B and C i
 | 551 / 550, 622 / 621 | mirror form not in complete lines | – |
 
 None of the four testable pairs is distinct (threshold 0.0017). This is consistent with claim C3 (mirror forms as allographs), but with mirror forms occurring 1–9 times the test has very little power; the result is recorded as "consistent, low power".
+
+### Pre-registration of CT15k (replication of CT15 in KP1979; before running)
+
+KP1979 strict held-out strings have not been used for this question (R1 used them for code 11 × final 98). Among KP strict held-out strings that contain the jar sign (324 or 325) and carry one object code, the share with the jar sign in final position is higher for seal codes {11, 23} than for tablet codes {62, 67, 72, 75} (codes identified in C2k). One-sided Fisher exact test (KP has no decoded site field), p < 0.01.
