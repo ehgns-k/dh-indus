@@ -3061,3 +3061,16 @@ Script: `scripts/batch11b_ct15b_bootstrap.py`; results: `results/batch11b_ct15b_
 - Mantel–Haenszel odds ratio 4.33 (as in CT15); bootstrap median 4.55; 95 % interval 1.49–16.0.
 - 0.5 % of the resamples give an odds ratio ≤ 1, and 0.01 % give an infinite one.
 - The effect is positive in the large majority of resamples. Its size is uncertain: it lies anywhere between about 1.5 and 16.
+
+### Consistency review (R10)
+
+- Every test label cited in `README.md`, `reports/FINAL_REPORT.md` and `docs/CLAIMS_EVALUATION.md` has a row in `docs/DATA_LEDGER.md`. This was checked by script: the labels found in the three files were compared with the ledger's first column, and none was missing.
+- The figures quoted for the main results (CT15, CT15r, CT15b, F5, F5k, CT22, CT22k, R7) were compared with the result files and agree.
+
+### End of the thirtieth session
+
+- Pre-registered analyses:
+  - Supported: CT15b (robustness).
+  - Not supported: D8, D9.
+  - Descriptive: D10.
+- Review: R10. The level assessment is unchanged.
