@@ -47,6 +47,8 @@ for c in J("batch5e_object_size")["SZ2"]["candidates"]:
 b7 = J("batch7_kp_replications")
 fam += [("CT22k", "strict held-out (KP)", b7["CT22k"]["p_value"], 1 / 10001),
         ("F5k", "fresh 1+2 (mapped to KP)", b7["F5k"]["p_value"], 1 / 10001)]
+b21 = J("batch21_unknown_direction_set")
+fam += [("U2", "unknown-direction set U", b21["U2"]["p"], 1 / 10001), ("U3", "unknown-direction set U", b21["U3"]["p"], 1 / 10001)]
 b6 = J("batch6_iconography_faces")
 for key in ("MO2a", "MO2b", "MO1k"):
     for c in b6[key]["candidates"]:

@@ -3614,3 +3614,47 @@ With twenty-four experiments (E3–E3zd), the phonetic route has been tested as 
 ### End of the thirty-ninth session
 
 Pre-registered analyses E3za, E3zb and E3zc fail; E3zd is therefore not interpreted. The level assessment is unchanged.
+
+---
+
+## 2026-11-26 (day 2, fortieth working session, 08:18 UTC): a new unused set from the lines of unknown direction
+
+Almost every decision test so far excluded the lines whose direction is recorded as unknown. DIR2 used them only for the direction question. They form an unused set U:
+- unique complete strings of length ≥ 2, without `?`, recorded only with unknown direction;
+- with no known-direction string within edit distance 1.
+U has 64 strings: seals 29, pottery 14, other objects 15, tablets 6. It is too small for the L2 candidates (6 strings with 740), but it can serve as a further confirmation set for L1.
+
+### Pre-registrations (before running)
+
+Training for all four tests: all unique complete known-direction ICIT strings (no `?`, length ≥ 2). Controls: ICIT rule-preserving controls, 10,000 draws. Strings are taken in the normalised order (DIR2).
+
+**U2 (template).** Inversions of zones (B1 rules) in U against controls. Prediction: fewer inversions, p < 0.01. Insufficient data: fewer than 20 strings with two zoned signs.
+
+**U3 (units).** Covered positions (B4 rules) in U against controls. Prediction: more, p < 0.01.
+
+**U4 (count–item pairing).** One-sided Fisher test of bigrams ending in 390–407 after 4–9-stroke signs, against other signs, in U. Prediction: p < 0.01. Insufficient data: fewer than 5 bigrams after the stroke set.
+
+**U5 (formulae).** Number of U strings of length ≥ 3 fitting a formula template of the training strings (F5 rules), against controls. Prediction: more, p < 0.01. Insufficient data: fewer than 5 real matches.
+
+These four tests are added to the R7 family.
+
+### Results U2–U5
+
+Script: `scripts/batch21_unknown_direction_set.py`; results: `results/batch21_unknown_direction_set.json`.
+
+- **U2 (template): not supported.**
+  - 38 of the 64 strings have two zoned signs. They show 25 inversions, against 22.0 for controls (p = 0.83).
+  - On this set the template does not hold. A possible reason, not tested: the unknown-direction lines include lines whose orientation is in fact reversed. DIR2 found only 66 % of them reading better forward, against 86–95 % for lines of known direction. Reversed lines would invert the template.
+- **U3 (units): supported.** 19 covered positions, against 8.3 for controls (p = 0.0001). The recurring units of the known-direction corpus recur in the unused set.
+- **U4: insufficient data** (3 bigrams after a 4–9-stroke sign).
+- **U5: insufficient data** (no string fits a training formula).
+- R7 recomputed with U2 and U3 (49 tests): Holm at α = 0.01 keeps 14 tests (the earlier 13 and U3).
+- The unknown-direction lines are not a reliable test set for order-dependent questions. Their direction is uncertain, and the result for the template is consistent with that.
+
+### End of the fortieth session
+
+- Pre-registered analyses:
+  - Supported: U3.
+  - Not supported: U2.
+  - Insufficient data: U4, U5.
+- The level assessment is unchanged.

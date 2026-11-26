@@ -168,9 +168,12 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | E3y | raw gain | 80/20 | no power (Akkadian first for both) | bias depends on the measure |
 | E3za–E3zc | four positive-control ciphers (2,000 lines), leave-one-out calibration | 80/20 | no calibration passes (0/4, 0/4, 1/4 ciphers) | |
 | E3zd | Indus strict held-out | – | not interpreted (no calibration passed) | |
+| U2 | ICIT | unused unknown-direction set U (64 strings) | not supported (p = 0.83) | direction of U uncertain |
+| U3 | ICIT | as U2 | supported (19 vs 8.3, p = 0.0001) | |
+| U4, U5 | ICIT | as U2 | insufficient data | |
 | R9 | all | – | review: all analyses re-run, no differences | |
 | R8 | all | – | review: all analyses re-run, no differences | |
-| R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
+| R7 | – | – | review: 14 of 49 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
 
 Count of questions decided on the (full) held-out split before the review R1: 15 (H3.3, H3.7, H3.9, H3.10, H3.12, H3.13, H3.14, H4.1, H4.2, H4.3, the H3.5 secondary set, H5.1, C2, C3; see rows). From R1 on, held-out tests use the strict held-out set; questions decided on it (alone or with the fresh sets) include R1, H8.1, H9.2 (secondary), E3d, G2, H9.4, CT16, CT17, CT18, G3, CT15 and later rows (at least 11 at the time of CT15). Questions decided on fresh data are marked in the table (F2, F3, F2b, F3b, B1, B4, H5.1b, F4, H6.1, H7.1 and the fresh parts of G2, CT16, CT15).
 

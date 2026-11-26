@@ -1,0 +1,38 @@
+{
+ "U_size": 64,
+ "known_training": 2047,
+ "U2": {
+  "with_two_zoned": 38,
+  "inversions": 25,
+  "control_mean": 22.0066,
+  "p": 0.8251174882511749,
+  "verdict": "not supported"
+ },
+ "U3": {
+  "covered": 19,
+  "control_mean": 8.3114,
+  "p": 9.999000099990002e-05,
+  "verdict": "supported"
+ },
+ "U4": {
+  "table": [
+   [
+    0,
+    3
+   ],
+   [
+    5,
+    158
+   ]
+  ],
+  "odds_ratio": 0.0,
+  "p": 1.0,
+  "verdict": "insufficient data"
+ },
+ "U5": {
+  "matches": 0,
+  "control_mean": 0.0,
+  "p": 1.0,
+  "verdict": "insufficient data"
+ }
+}
