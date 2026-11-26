@@ -3509,3 +3509,27 @@ Note on reproduction: the search seed is derived from the cipher name. The ciphe
 ### End of the thirty-seventh session
 
 Four pre-registered analyses (E3n, E3r, E3s, E3u) were run; E3u shows that the E3m thresholds are not robust. The level assessment is unchanged.
+
+---
+
+## 2026-11-26 (day 2, thirty-eighth working session, 06:18 UTC): reliable threshold and design sensitivity of the phonetic search
+
+### Plan of the run
+
+1. E3v: reliable threshold. Five random sets of known signs at f = 0.35 and 0.50 (Old Tamil) and f = 0.25 (Sanskrit), 2,000 lines.
+2. E3w: number of fitted signs. The 50 instead of the 100 most frequent signs are fitted, with no known values.
+3. E3x: two candidates only. Sanskrit and Tamil models (plus pseudo), with no known values.
+4. E3y: raw gain. The gain over random assignments without the reordering correction, with no known values.
+5. Updates.
+
+### Pre-registrations (before running)
+
+Ciphers, models and decision rule are as in E3u. "Success" means the true language is first and clearly ahead.
+
+**E3v.** For each cipher and f, the number of successes out of 5 random sets (seeds 1–5) is reported. The reliable threshold is the smallest f with at least 4 of 5 successes.
+
+**E3w.** E3e with the top 50 signs. Decision: the method has power if both ciphers succeed.
+
+**E3x.** E3e with the models {Sanskrit, Tamil, pseudo}. Decision: both ciphers succeed.
+
+**E3y.** E3e with the uncorrected gain (fitted minus random assignments, per sign, on test lines). Decision: both ciphers succeed.
