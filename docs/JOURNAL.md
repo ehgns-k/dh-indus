@@ -3298,3 +3298,39 @@ Script: `scripts/batch15_power.py`; results: `results/batch15_power.json`.
 - For comparison, the ten post-1979 sites used as fresh data provide 117 unique lines, and the whole ICIT-style source has 5,679 records.
 - Even under the optimistic effect sizes, a confirmation of the L2 candidates needs several hundred to over a thousand new inscriptions of the right kinds. With the effect sizes halved (a likely correction for selection), it needs several thousand, more than the present corpus.
 - This explains, in numbers, why the L2 candidates could not be confirmed and the narrow L2 result is not beyond doubt. It also gives the scale of new material that future work would need.
+
+---
+
+## 2026-11-26 (day 2, thirty-fifth working session, 03:18 UTC): positive controls for the phonetic method, in the languages proposed for the Indus script
+
+The phonetic search (E3–E3d) failed on its positive controls, which were cuneiform texts hidden as ciphers. Those controls have a weakness: cuneiform sign values (for example `lugal`) are not all expressible in the method's value set (V, CV or C syllables), so even the true assignment cannot be represented. This session builds positive controls that the method can represent exactly: Sanskrit (Ṛgveda) and Old Tamil text, split into the method's syllable units and hidden as ciphers. These are also the two languages most often proposed for the Indus script.
+
+### Plan of the run
+
+1. E3e: the search on syllabic ciphers of Sanskrit and Old Tamil of Indus size (2,000 lines).
+2. E3f: the same at 8,000 lines.
+3. E3g: an oracle check. Under the true decipherment of each cipher, does the scoring measure favour the true language? If not, the measure cannot identify a language even with the right assignment.
+4. E3h: the cuneiform ciphers of E3d at 16,000 lines (power curve beyond E3c).
+5. Updates.
+
+### Pre-registrations (before running)
+
+**Cipher construction (E3e–E3g).**
+- For Sanskrit and Old Tamil, the word lists of E3d are divided into blocks of 50 words and shuffled with seed 20261125, as in `phonetic.equalised`.
+- The first blocks, up to 20,000 tokens, form the language model, exactly as in E3d. The following blocks are the cipher source, so model and cipher do not share text.
+- Each word is split greedily into units of the value set: consonant + vowel → CV; a vowel → V; any other consonant → C.
+- A line is two consecutive words of the cipher source, as a sequence of units. Lines of 2–10 units are kept, unique lines only, and N are sampled with seed 20261126.
+- Each unit type is replaced by an arbitrary code, and the lines are split 80/20 into training and test, as in `phonetic.cipher_lines`.
+
+**E3e (N = 2,000) and E3f (N = 8,000).**
+- The E3b/E3d measure (Δ′ = gain under the fitted assignment minus gain on within-line reordered text), with the five E3d models (equalised Sanskrit, Tamil, Sumerian and Akkadian, and a pseudo-language).
+- Decision: the method has power if each cipher ranks its true language first and that language is clearly ahead of every other (bootstrap p < 0.01, as in E3d).
+
+**E3g (oracle).**
+- For the E3e ciphers, the true assignment (each code mapped back to its unit) is scored with the same Δ′ measure under each model, in place of the fitted assignment.
+- Prediction: the true language ranks first for both ciphers.
+- If it does not, the measure itself cannot identify the language, whatever the search finds.
+
+**E3h.**
+- The E3d design with the two cuneiform ciphers at 16,000 lines, or as many unique lines as the corpus provides.
+- Decision as in E3c.
