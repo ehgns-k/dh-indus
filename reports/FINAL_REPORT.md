@@ -34,7 +34,7 @@ Further candidates:
 
 - The closing sign depends on the kind of object (400 avoided on motif seals and favoured on tablets; 407 and 154 on rectangular seals without motif), consistent in both transcriptions and two object classifications (C2, C2k), with unchanged effect sizes but below the strict thresholds after near-duplicate removal (R1).
 - A substitution class containing 002 and 090 is absent from copper tablets (H9.4), but the class has no interpretation fixed in advance.
-- Seal and tablet texts share formula frames less often than chance (KF2: 53 vs 67.1 frames, p = 0.0038), on data used before; this agrees with the class differences of the closing sign and the stems but is not an independent confirmation.
+- Seal and tablet texts share formula frames less often than chance in the ICIT transcription (KF2: 53 vs 67.1 frames, p = 0.0038), on data used before, but not significantly in KP1979 (KF2k: p = 0.23); the difference is therefore weak.
 - Iconographic details of unicorn seals (the object in front of the animal, the variant code of the unicorn) and the KP1979 icon codes were scanned against the signs; no association was confirmed (MO2a, MO2b, MO1k).
 - Object size, recorded in the source and never used before, was tested as an external variable: three signs associated with seal size on training data all pointed the same way on unused data but none reached the corrected threshold (SZ2).
 - Tests of object type, motif, site and period against numerals, motifs, name-like slots and chronological variants were negative (H3.5, H4.1, H4.2, C1, H9.2, H10.1, T1). Unused seal and tablet inscriptions, which a confirmation would need, are not available in accessible form (`docs/NEW_DATA_SURVEY.md`).

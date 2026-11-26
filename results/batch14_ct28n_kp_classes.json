@@ -1,0 +1,80 @@
+{
+ "CT28n": {
+  "records": {
+   "Harappa|TAB": 860,
+   "Harappa|SEAL": 269,
+   "Mohenjo-daro|SEAL": 1003,
+   "Mohenjo-daro|TAB": 266
+  },
+  "excluded_numeral_records": {
+   "Harappa|TAB": 313,
+   "Harappa|SEAL": 5
+  },
+  "subsample_n": {
+   "Harappa": 269,
+   "Mohenjo-daro": 266
+  },
+  "mean_difference": 0.43208921933085503,
+  "share_positive": 1.0,
+  "verdict": "supported"
+ },
+ "KF2k": {
+  "strings": 1528,
+  "seal": 1274,
+  "tablet": 254,
+  "frames": 70,
+  "shared": 28,
+  "null_mean": 33.5839,
+  "p_more": 0.9247075292470753,
+  "p_less": 0.11378862113788621,
+  "p_two_sided": 0.22757724227577242,
+  "verdict": "not supported"
+ },
+ "CT18ck": {
+  "seal": {
+   "lines": 158,
+   "share_real": 0.1830708661417323,
+   "control_mean": 0.06029660057667096,
+   "p": 9.999000099990002e-05,
+   "pass": true
+  },
+  "tablet": {
+   "lines": 8,
+   "status": "insufficient data"
+  },
+  "verdict": "insufficient data"
+ },
+ "H3.10ck": {
+  "seal": {
+   "table": [
+    [
+     33,
+     60
+    ],
+    [
+     148,
+     4976
+    ]
+   ],
+   "odds_ratio": 18.491891891891893,
+   "p": 9.789790293363682e-26,
+   "status": "pass"
+  },
+  "tablet": {
+   "table": [
+    [
+     3,
+     13
+    ],
+    [
+     26,
+     860
+    ]
+   ],
+   "odds_ratio": 7.633136094674557,
+   "p": 0.012635840068105163,
+   "status": "fail"
+  },
+  "verdict": "not supported"
+ }
+}

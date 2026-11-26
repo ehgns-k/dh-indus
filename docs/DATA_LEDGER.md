@@ -145,6 +145,10 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | H3.10c | ICIT | all strings by object class | supported (p < 10⁻⁶ both) | robustness |
 | H3.3ck | KP | all strings by code class | supported (87–96 %) | replication of H3.3c |
 | KF2 | ICIT | seal-only and tablet-only strings | fewer shared formula frames than chance (53 vs 67.1, p = 0.0038) | data used before; not an L2 confirmation |
+| CT28n | ICIT | CT28 records without numeral-only lines | supported (1,000/1,000) | confound check |
+| KF2k | KP | seal-only vs tablet-only strings | not supported (28 vs 33.6, p = 0.23) | KF2 not replicated |
+| CT18ck | KP | strict held-out by class | seals supported; tablets insufficient data (8 lines) | |
+| H3.10ck | KP | all strings by class | not supported (tablets p = 0.013; seals p < 10⁻²⁵) | few tablet cases |
 | R9 | all | – | review: all analyses re-run, no differences | |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |

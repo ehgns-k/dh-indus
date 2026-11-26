@@ -3222,3 +3222,26 @@ All four pre-registered analyses gave the predicted results. Three are robustnes
 - KP unique complete strings by class (seal codes, tablet codes).
 - One-sided Fisher test of bigrams ending in 86 after {124–129} against other signs.
 - Prediction: p < 0.005 in each class. Insufficient data: fewer than 5 bigrams after the stroke set.
+
+### Results CT28n, KF2k, CT18ck, H3.10ck
+
+Script: `scripts/batch14_ct28n_kp_classes.py`; results: `results/batch14_ct28n_kp_classes.json`.
+
+- **CT28n: supported.** Excluding numeral-only records removes 313 Harappa tablet records and 5 seal records. Seal stems remain more diverse in 1,000 of 1,000 subsamples (mean difference 0.43, against 0.49 in CT28). CT28 is not produced by the numeral faces.
+- **KF2k: not supported.**
+  - 70 frames on 1,528 KP strings (1,274 seal-only, 254 tablet-only). 28 shared frames against 33.6 under permutation (two-sided p = 0.23). The direction agrees with KF2, but the difference is not significant.
+  - The ICIT result KF2 is therefore not replicated. Fewer tablet strings and frames in KP1979 give the test less power.
+- **CT18ck: insufficient data.** Seal-only strict held-out lines (158) show the nested structure (18.3 % against 6.0 %, p = 0.0001). Only 8 tablet-only lines remain.
+- **H3.10ck: not supported.**
+  - Seal codes: 33 of 93 bigrams after 124–129 end in 86, against 148 of 5,124 (OR 18.5, p < 10⁻²⁵).
+  - Tablet codes: 3 of 16 against 26 of 886 (OR 7.6, p = 0.013), above the threshold 0.005. The direction agrees, but there are few cases.
+- Consequences:
+  - The class difference in formula sharing (KF2) is weakened. It holds in one transcription only.
+  - The within-class robustness of L1 is shown for seals in both transcriptions. For tablets it is shown in ICIT (CT18c, H3.10c); in KP1979 there are too few tablet texts.
+
+### End of the thirty-third session
+
+- Supported: CT28n.
+- Not supported: KF2k, H3.10ck (tablet part).
+- Insufficient data: CT18ck (tablet part).
+- The level assessment is unchanged.
