@@ -1,0 +1,189 @@
+{
+ "part": "e3u",
+ "by": {
+  "cipher_sanskrit_2000|{\"a\": 1.0, \"f\": 0.1, \"mode\": \"random\", \"set_seed\": 1}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.2590960080205859,
+    "tamil": 0.11022712318414875,
+    "sumerian": 0.09111111398212379,
+    "akkadian": 0.09574589073516362,
+    "pseudo": -0.0049925486434135215
+   },
+   "best": "sanskrit",
+   "p_best_vs_other": {
+    "tamil": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": true,
+   "success": true
+  },
+  "cipher_sanskrit_2000|{\"a\": 1.0, \"f\": 0.1, \"mode\": \"random\", \"set_seed\": 2}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.22444271249663994,
+    "tamil": 0.15663894256969693,
+    "sumerian": 0.06943261899598119,
+    "akkadian": 0.03754658132940223,
+    "pseudo": -0.005484607526443921
+   },
+   "best": "sanskrit",
+   "p_best_vs_other": {
+    "tamil": 0.024975024975024976,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": false,
+   "success": false
+  },
+  "cipher_sanskrit_2000|{\"a\": 1.0, \"f\": 0.1, \"mode\": \"random\", \"set_seed\": 3}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.24290849768424416,
+    "tamil": 0.16001285957192085,
+    "sumerian": 0.06309748387837245,
+    "akkadian": 0.10102623227722642,
+    "pseudo": -0.006565259840424745
+   },
+   "best": "sanskrit",
+   "p_best_vs_other": {
+    "tamil": 0.003996003996003996,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": true,
+   "success": true
+  },
+  "cipher_sanskrit_2000|{\"a\": 1.0, \"f\": 0.1, \"mode\": \"random\", \"set_seed\": 4}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.2680181731445326,
+    "tamil": 0.1987209749555447,
+    "sumerian": 0.08296141386277524,
+    "akkadian": 0.14538460156706703,
+    "pseudo": -0.006133562434694476
+   },
+   "best": "sanskrit",
+   "p_best_vs_other": {
+    "tamil": 0.01898101898101898,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": false,
+   "success": false
+  },
+  "cipher_sanskrit_2000|{\"a\": 1.0, \"f\": 0.1, \"mode\": \"random\", \"set_seed\": 5}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.27621731081201295,
+    "tamil": 0.08342795369850581,
+    "sumerian": 0.08846682234794967,
+    "akkadian": 0.052766788980025014,
+    "pseudo": -0.00416468201586335
+   },
+   "best": "sanskrit",
+   "p_best_vs_other": {
+    "tamil": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": true,
+   "success": true
+  },
+  "cipher_tamil_2000|{\"a\": 1.0, \"f\": 0.25, \"mode\": \"random\", \"set_seed\": 1}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.22772804223003693,
+    "tamil": 0.373458493853483,
+    "sumerian": 0.11126615809828982,
+    "akkadian": 0.12574091972240714,
+    "pseudo": 0.0023381008203460806
+   },
+   "best": "tamil",
+   "p_best_vs_other": {
+    "sanskrit": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": true,
+   "success": true
+  },
+  "cipher_tamil_2000|{\"a\": 1.0, \"f\": 0.25, \"mode\": \"random\", \"set_seed\": 2}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.2305195022924305,
+    "tamil": 0.38293521091111665,
+    "sumerian": 0.13454411485290355,
+    "akkadian": 0.12462874210259706,
+    "pseudo": 0.0017594802352341055
+   },
+   "best": "tamil",
+   "p_best_vs_other": {
+    "sanskrit": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": true,
+   "success": true
+  },
+  "cipher_tamil_2000|{\"a\": 1.0, \"f\": 0.25, \"mode\": \"random\", \"set_seed\": 3}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.23042176997837957,
+    "tamil": 0.2786961597832633,
+    "sumerian": 0.121825985937476,
+    "akkadian": 0.23656489139494014,
+    "pseudo": -0.0021621438821856987
+   },
+   "best": "tamil",
+   "p_best_vs_other": {
+    "sanskrit": 0.061938061938061936,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.08791208791208792,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": false,
+   "success": false
+  },
+  "cipher_tamil_2000|{\"a\": 1.0, \"f\": 0.25, \"mode\": \"random\", \"set_seed\": 4}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.2502420709866134,
+    "tamil": 0.4206378928257368,
+    "sumerian": 0.135072928551257,
+    "akkadian": 0.11282382112223197,
+    "pseudo": 0.005291879593802491
+   },
+   "best": "tamil",
+   "p_best_vs_other": {
+    "sanskrit": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": true,
+   "success": true
+  },
+  "cipher_tamil_2000|{\"a\": 1.0, \"f\": 0.25, \"mode\": \"random\", \"set_seed\": 5}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.17805665977728377,
+    "tamil": 0.23530555846336362,
+    "sumerian": 0.059625713108328045,
+    "akkadian": 0.17304323592360407,
+    "pseudo": 0.0016001197721541283
+   },
+   "best": "tamil",
+   "p_best_vs_other": {
+    "sanskrit": 0.03996003996003996,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.022977022977022976,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": false,
+   "success": false
+  }
+ },
+ "successes_tamil": 3,
+ "robust_tamil": false,
+ "successes_sanskrit": 3,
+ "robust_sanskrit": false
+}

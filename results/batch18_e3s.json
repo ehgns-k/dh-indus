@@ -1,0 +1,77 @@
+{
+ "part": "e3s",
+ "by": {
+  "cipher_sanskrit_2000|{\"a\": 1.0, \"f\": 0.1, \"mode\": \"top\", \"set_seed\": 20261126}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.29979829331175006,
+    "tamil": 0.13649283927189218,
+    "sumerian": 0.0005361081554749658,
+    "akkadian": 0.05374192720223924,
+    "pseudo": -0.007828454186838568
+   },
+   "best": "sanskrit",
+   "p_best_vs_other": {
+    "tamil": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": true,
+   "success": true
+  },
+  "cipher_sanskrit_2000|{\"a\": 1.0, \"f\": 0.25, \"mode\": \"top\", \"set_seed\": 20261126}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.41789244659660724,
+    "tamil": 0.06801775971441788,
+    "sumerian": 0.07313723110677132,
+    "akkadian": 0.029310202387638092,
+    "pseudo": -0.005363846876139888
+   },
+   "best": "sanskrit",
+   "p_best_vs_other": {
+    "tamil": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": true,
+   "success": true
+  },
+  "cipher_tamil_2000|{\"a\": 1.0, \"f\": 0.1, \"mode\": \"top\", \"set_seed\": 20261126}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.2970453925447809,
+    "tamil": 0.29293563104369674,
+    "sumerian": 0.12806621548256097,
+    "akkadian": 0.22443408575531273,
+    "pseudo": 0.0034956719687115312
+   },
+   "best": "sanskrit",
+   "p_best_vs_other": {
+    "tamil": 0.4355644355644356,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.008991008991008992,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": false,
+   "success": false
+  },
+  "cipher_tamil_2000|{\"a\": 1.0, \"f\": 0.25, \"mode\": \"top\", \"set_seed\": 20261126}": {
+   "mean_delta_prime": {
+    "sanskrit": 0.29130649102645,
+    "tamil": 0.4606323295175638,
+    "sumerian": 0.10491665350510004,
+    "akkadian": 0.11449808047037532,
+    "pseudo": 0.0051417152658840785
+   },
+   "best": "tamil",
+   "p_best_vs_other": {
+    "sanskrit": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": true,
+   "success": true
+  }
+ }
+}

@@ -3475,3 +3475,37 @@ E3m found that the search identifies the language once 10 % (Sanskrit) to 25 % (
 - E3m at f = 0.25 (Tamil) and f = 0.10 (Sanskrit), with the fixed set drawn with seeds 1–5.
 - Reported: the number of successes out of 5.
 - Decision stated in advance: the E3m threshold is called robust for a cipher if at least 4 of 5 sets succeed.
+
+### Results E3n, E3r, E3s, E3u
+
+Script: `scripts/batch18_known_values.py`; results: `results/batch18_e3n.json` … `batch18_e3u.json`.
+
+Note on reproduction: the search seed is derived from the cipher name. The ciphers are named with their size here (`cipher_tamil_2000`), so the searches differ from E3m by their seed. The condition a = 1.0 of E3n repeats E3m with a different seed: Tamil 0.428 against 0.450, success in both.
+
+- **E3n (wrong values): success at a = 1.0, 0.75 and 0.5.**
+  - Tamil cipher, f = 0.25: Tamil first and clearly ahead with all, three quarters, or half of the 25 fixed values correct (Δ′ 0.428, 0.358, 0.332; Sanskrit 0.271, 0.234, 0.217).
+  - About 12–13 correct values among 25 fixed ones still suffice in this case.
+- **E3s (most frequent signs fixed):**
+  - Sanskrit: success at f = 0.10 and 0.25.
+  - Tamil: no success at f = 0.10 (Sanskrit 0.297, Tamil 0.293); success at f = 0.25 (Tamil 0.461).
+  - Knowing the most frequent signs does not lower the threshold.
+- **E3u (five random sets): not robust by the stated rule.**
+  - Tamil at f = 0.25: 3 of 5 sets succeed. In the other two, Tamil is first but not clearly ahead.
+  - Sanskrit at f = 0.10: 3 of 5 succeed.
+  - The thresholds of E3m are therefore not robust. At these values success depends on which signs are known, and the true threshold for reliable success lies higher.
+- **E3r (corpus size):**
+  - Tamil at 1,000 lines: no success at f = 0.10 or 0.25 (at f = 0.25 Tamil 0.343 against Sanskrit 0.326, not separated).
+  - Tamil at 8,000 lines: success at f = 0.25 only.
+  - Sanskrit at 1,000 lines: success at f = 0.25 only. Sanskrit at 8,000 lines: success at f = 0.10 and 0.25.
+  - Smaller corpora need more known values.
+
+### Assessment
+
+- Under the most favourable conditions (an alphabetic-syllabic language represented exactly by the value set, and a model of the true language among the candidates), the search needs a substantial share of the frequent sign values to be known in advance.
+- At about 2,000 lines, 25 known values succeed in 3 of 5 cases for Old Tamil, and some of them may be wrong.
+- At 1,000 lines, 25 are not enough. For a corpus of the Indus size (about 2,000 unique lines, of which the strict held-out part is smaller), a reliable identification would need more than 25 correct values of frequent signs.
+- `docs/FUTURE_DATA.md` and the final report are updated accordingly.
+
+### End of the thirty-seventh session
+
+Four pre-registered analyses (E3n, E3r, E3s, E3u) were run; E3u shows that the E3m thresholds are not robust. The level assessment is unchanged.
