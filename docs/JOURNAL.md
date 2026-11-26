@@ -3245,3 +3245,35 @@ Script: `scripts/batch14_ct28n_kp_classes.py`; results: `results/batch14_ct28n_k
 - Not supported: KF2k, H3.10ck (tablet part).
 - Insufficient data: CT18ck (tablet part).
 - The level assessment is unchanged.
+
+---
+
+## 2026-11-26 (day 2, thirty-fourth working session, 02:18 UTC): how much new data would a confirmation need?
+
+The tests that the accessible data allow have largely been run. What remains open are L2 candidates and leads that cannot be decided without unused inscriptions: the C2 associations, H9.4, the MO2b lead (405 on unicorn seals of variant W) and the KP replication of CT15. This session estimates, by simulation, how many new inscriptions a confirmatory test of each would need. This is planning information for the final report and for future work; it is not a test of any hypothesis.
+
+### Plan of the run
+
+1. PW1: power for confirming the six C2 associations.
+2. PW2: power for H9.4 (class 4 avoids copper tablets).
+3. PW3: power for the MO2b lead (405 × Bull1:W).
+4. PW4: power for a replication of CT15 (740 closes seal texts more often than tablet texts).
+5. `docs/FUTURE_DATA.md`: the results as a list of data requirements.
+6. Updates.
+
+### Pre-registration (before running)
+
+**Common design.**
+- Effect sizes are taken from all ICIT unique complete strings, as presence rates p₁ (sign present, given the class value) and p₀ (sign present, otherwise) and the class share q. They are therefore optimistic: the associations were selected for their size (winner's curse).
+- Each scenario is also simulated with the log odds ratio halved, keeping p₀.
+- For N new inscriptions (N in 50, 100, 200, 400, 800, 1,600, 3,200, 6,400), 2,000 simulated datasets are drawn. Each inscription is in the class with probability q and contains the sign with probability p₁ or p₀.
+- A one-sided Fisher test is applied at the threshold of the confirmatory family.
+- Reported: the smallest N in the grid with power ≥ 0.8 for each scenario ("> 6,400" if none).
+
+**PW1.** The six C2 associations (region Inter-Riverine × 400; SEAL:R × 806, 407, 154; SEAL:S × 400 (less), SEAL:S × 741), each at α = 0.01/6, among seals and tablets (subtype) or all strings (region).
+
+**PW2.** Presence of any class 4 sign of H9.4 × TAB:C (less), α = 0.01, among strings with an object subtype.
+
+**PW3.** 405 × `Bull1:W` among unicorn seals with a suffix code, α = 0.01. p₀ = 0 is replaced by (0 + 0.5)/(n + 1).
+
+**PW4.** Among strings containing 740 on a seal or tablet: final position × seal vs tablet, α = 0.01. The rates are taken from the CT15 strata, pooled.
