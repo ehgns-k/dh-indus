@@ -3558,3 +3558,37 @@ Script: `scripts/batch19_design_sensitivity.py`; results: `results/batch19_e3v.j
 ### End of the thirty-eighth session
 
 All four pre-registered analyses were run; the result is recorded above. The level assessment is unchanged.
+
+---
+
+## 2026-11-26 (day 2, thirty-ninth working session, 07:18 UTC): can the bias be calibrated away?
+
+E3e–E3y showed that each version of the measure favours one model whatever the cipher: Δ′ favours Sanskrit and the raw gain favours Akkadian. A standard remedy is calibration: subtract each model's typical score on texts of other languages. This session tests whether a calibrated measure identifies the language of four positive controls by leave-one-out. It applies the measure to the Indus inscriptions only if it passes.
+
+### Plan of the run
+
+1. Recompute per-line scores for five corpora under the five E3d models.
+   - Corpora: the Sanskrit and Old Tamil syllabic ciphers (E3e, 2,000 lines); the Akkadian and Sumerian cuneiform ciphers (E3d, 2,000 lines); the Indus strict held-out set (E3d).
+   - Scores: both Δ′ and the raw gain.
+2. E3za: subtractive calibration of Δ′.
+3. E3zb: ratio calibration of Δ′.
+4. E3zc: subtractive calibration of the raw gain.
+5. E3zd: application to the Indus inscriptions, only for a calibration that passes.
+
+### Pre-registrations (before running)
+
+**Calibration.**
+- For a test cipher c and model L, the calibrated score is Δ′_L(c) − B_L, where B_L is the mean of Δ′_L over the three other positive-control ciphers (leave-one-out).
+- E3zb uses Δ′_L(c) / B_L.
+- E3zc uses raw gain − B_L, with B_L computed from the raw gains.
+- The pseudo-language model is kept as a candidate.
+
+**Decision (E3za–E3zc).**
+- For each of the four ciphers, the true language must have the highest calibrated mean, and must be clearly ahead of every other model.
+- "Clearly ahead" is tested by bootstrap over the test cipher's lines (1,000 resamples; B_L held fixed), with p < 0.01.
+- A calibration passes only if all four ciphers succeed.
+
+**E3zd.**
+- For each calibration that passes, the Indus calibrated scores are computed with B_L as the mean over all four positive controls.
+- A language is reported only if it is first and clearly ahead (p < 0.01); otherwise "no language identified".
+- If no calibration passes, the Indus row is not interpreted.
