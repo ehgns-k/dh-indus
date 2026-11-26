@@ -3592,3 +3592,25 @@ E3e–E3y showed that each version of the measure favours one model whatever the
 - For each calibration that passes, the Indus calibrated scores are computed with B_L as the mean over all four positive controls.
 - A language is reported only if it is first and clearly ahead (p < 0.01); otherwise "no language identified".
 - If no calibration passes, the Indus row is not interpreted.
+
+### Results E3za–E3zd: no calibration passes
+
+Script: `scripts/batch20_calibration.py`; results: `results/batch20_calibration.json`.
+
+- **E3za (subtractive calibration of Δ′): fails.** First places: Sanskrit cipher → Sumerian; Tamil → Sanskrit (0.072 against Tamil 0.069); Akkadian → pseudo; Sumerian → Akkadian. No cipher succeeds.
+- **E3zb (ratio calibration of Δ′): fails.** First places: Sumerian, Sumerian, Sumerian, Akkadian. No cipher succeeds.
+- **E3zc (subtractive calibration of the raw gain): fails.** First places: Sumerian, Sumerian, Akkadian (success), Akkadian. One of four succeeds.
+- **E3zd:** no calibration passes, so the Indus row is not interpreted.
+- Calibrating against the scores on other languages removes the systematic preference for one model but does not reveal the true language. After calibration the differences between models are small (mostly under 0.05) and their order is close to arbitrary. Without prior knowledge of sign values, the fitted assignments carry little information about the language of the cipher.
+
+### Final assessment of work package E (phonetic route)
+
+With twenty-four experiments (E3–E3zd), the phonetic route has been tested as far as these data and methods allow.
+- The scoring works with the true assignment (E3g).
+- Without known values, every variant of the search and measure fails on positive controls in Sanskrit, Old Tamil, Akkadian and Sumerian, at corpus sizes of 1,000 to 16,000 lines. The variants are: raw, reorder-corrected, calibrated by subtraction or ratio; fewer fitted signs; fewer candidates; more search effort; other Sanskrit models.
+- The search succeeds reliably only when 25 (Sanskrit) to 35 (Old Tamil) of the 100 most frequent sign values are known correctly in advance (E3v), or by chance with fewer (E3m, E3u).
+- No sign value of the Indus script is known independently. No statement about the language of the Indus inscriptions can be derived from phonetic fitting. Gate G4 is not met, and this is a firm negative result, not a gap in the testing.
+
+### End of the thirty-ninth session
+
+Pre-registered analyses E3za, E3zb and E3zc fail; E3zd is therefore not interpreted. The level assessment is unchanged.

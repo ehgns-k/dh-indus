@@ -166,6 +166,8 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | E3w | top 50 signs | 80/20 | no power | |
 | E3x | Sanskrit, Tamil, pseudo only | 80/20 | no power | |
 | E3y | raw gain | 80/20 | no power (Akkadian first for both) | bias depends on the measure |
+| E3za–E3zc | four positive-control ciphers (2,000 lines), leave-one-out calibration | 80/20 | no calibration passes (0/4, 0/4, 1/4 ciphers) | |
+| E3zd | Indus strict held-out | – | not interpreted (no calibration passed) | |
 | R9 | all | – | review: all analyses re-run, no differences | |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
