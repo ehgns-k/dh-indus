@@ -3166,3 +3166,25 @@ Pre-registered analyses SX3, SX4, H3.3c and CT22b are all supported (robustness)
 - Statistic: number of shared frames.
 - Null: the seal/tablet labels are permuted among the strings (strings on both classes are dropped first); 10,000 draws.
 - Prediction: none on direction; two-sided p < 0.01.
+
+### Results CT18c, H3.10c, H3.3ck, KF2
+
+Script: `scripts/batch13_within_classes.py`; results: `results/batch13_within_classes.json`.
+
+- **CT18c: supported.** Nested structure on the strict held-out lines:
+  - Seals (159 lines): 21.1 % of recursive parts are complete texts, against 7.5 % for controls (p = 0.0001).
+  - Tablets (37 lines): 19.0 % against 8.9 % (p = 0.0001).
+- **H3.10c: supported.** The count–item pairing holds within each class:
+  - seals: 45 of 111 bigrams after a 4–9-stroke sign end in 390–407, against 164 of 5,264 after other signs (OR 21.2);
+  - tablets: 9 of 34 against 34 of 1,364 (OR 14.1);
+  - both p < 10⁻⁶.
+- **H3.3ck: supported (replication).** In KP1979 the dominant closing order holds for seal codes (46 of 53), tablet codes (50 of 52) and other codes (37 of 42). The "other" codes are a mixture whose meanings are not known.
+- **KF2: difference found (fewer shared frames than chance).**
+  - 98 formula frames on 1,870 strings (1,389 seal-only, 481 tablet-only). 53 frames are filled on both seals and tablets, against 67.1 under permutation of the class labels (two-sided p = 0.0038).
+  - Seals and tablets use partly different formulae.
+  - The tests used all strings, which were used before for other questions (C2, CT31c, H3.5). The result is therefore not an L2 confirmation on unused data. It agrees with the earlier findings that the closing sign (C2, CT15) and the stems (CT31c) differ between the classes.
+- The core L1 results (nested structure, count–item pairing, closing order) hold within each object class.
+
+### End of the thirty-second session
+
+All four pre-registered analyses gave the predicted results. Three are robustness checks of L1 (CT18c, H3.10c, H3.3ck), and one is a descriptive difference between object classes (KF2). The level assessment is unchanged.

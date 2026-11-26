@@ -141,6 +141,10 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | SX4 | ICIT | as SX3 | supported (p = 0.0001 both) | units |
 | H3.3c | ICIT | all strings by object class | supported (88–96 %) | closing order in every class |
 | CT22b | ICIT | CT22 data, 1,000 bootstrap resamples | supported (1,000/1,000 positive) | robustness |
+| CT18c | ICIT | strict held-out by object class | supported (p = 0.0001 both) | robustness |
+| H3.10c | ICIT | all strings by object class | supported (p < 10⁻⁶ both) | robustness |
+| H3.3ck | KP | all strings by code class | supported (87–96 %) | replication of H3.3c |
+| KF2 | ICIT | seal-only and tablet-only strings | fewer shared formula frames than chance (53 vs 67.1, p = 0.0038) | data used before; not an L2 confirmation |
 | R9 | all | – | review: all analyses re-run, no differences | |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |

@@ -1,0 +1,88 @@
+{
+ "CT18c": {
+  "seal": {
+   "lines": 159,
+   "share_real": 0.2106299212598425,
+   "control_mean": 0.075154422630498,
+   "p": 9.999000099990002e-05,
+   "pass": true
+  },
+  "tablet": {
+   "lines": 37,
+   "share_real": 0.19,
+   "control_mean": 0.0891236798914762,
+   "p": 9.999000099990002e-05,
+   "pass": true
+  },
+  "verdict": "supported"
+ },
+ "H3.10c": {
+  "seal": {
+   "table": [
+    [
+     45,
+     66
+    ],
+    [
+     164,
+     5100
+    ]
+   ],
+   "odds_ratio": 21.20288248337029,
+   "p": 8.91945529029584e-36,
+   "status": "pass"
+  },
+  "tablet": {
+   "table": [
+    [
+     9,
+     25
+    ],
+    [
+     34,
+     1330
+    ]
+   ],
+   "odds_ratio": 14.08235294117647,
+   "p": 3.08519935888315e-07,
+   "status": "pass"
+  },
+  "verdict": "supported"
+ },
+ "H3.3ck": {
+  "seal": {
+   "agree": 46,
+   "total": 53,
+   "rate": 0.8679245283018868,
+   "p": 2.0015980872756245e-08,
+   "pass": 1.0
+  },
+  "tablet": {
+   "agree": 50,
+   "total": 52,
+   "rate": 0.9615384615384616,
+   "p": 3.0619951019161817e-13,
+   "pass": 1.0
+  },
+  "other": {
+   "agree": 37,
+   "total": 42,
+   "rate": 0.8809523809523809,
+   "p": 2.2168524083099328e-07,
+   "pass": 1.0
+  },
+  "verdict": "supported"
+ },
+ "KF2": {
+  "strings": 1870,
+  "seal_strings": 1389,
+  "tablet_strings": 481,
+  "frames": 98,
+  "shared": 53,
+  "null_mean": 67.1025,
+  "p_more": 0.9994000599940006,
+  "p_less": 0.0018998100189981002,
+  "p_two_sided": 0.0037996200379962005,
+  "verdict": "supported (difference)"
+ }
+}
