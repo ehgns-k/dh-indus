@@ -46,7 +46,6 @@ Met only in narrow, functional scope (CT15, with the caveats above). The two can
 | E2 | Under the normalisation of a published Sanskrit reading (claim C33), 29 % of random letter strings of the same composition divide into Sanskrit dictionary words (proposed readings: 84 %). |
 | E2b | Random, unfitted sign-value assignments with the same reading freedoms make 84 % of Indus lines readable, as many as the published readings. |
 | E3, E3b, E3c, E3d | A calibrated search for sign-to-sound assignments under Sanskrit, Old Tamil, Sumerian and Akkadian sound models cannot identify the language of known cuneiform texts hidden as ciphers (2,000 and 8,000 lines; unequal and equalised models). No language preference is claimed for the Indus inscriptions. |
-
 | E3e–E3h | With exactly representable syllabic ciphers of Sanskrit and Old Tamil (2,000 and 8,000 lines) and cuneiform ciphers of 16,000 lines, the search ranks Sanskrit first for every cipher; with the true assignment the scoring identifies the true language (E3g). The search, not the scoring, fails. |
 
 Gate G4: not met. Under the standards of this project no calibrated route to a phonetic decipherment is available with the accessible data. Any future attempt needs an independent constraint (bilingual evidence, externally attested names, or pictographic values fixed in advance) and must show, with known scripts hidden as ciphers, that the method can identify the right language.
