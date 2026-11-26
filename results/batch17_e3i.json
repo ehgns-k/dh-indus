@@ -1,0 +1,45 @@
+{
+ "part": "e3i",
+ "models": [
+  "tamil",
+  "sumerian",
+  "akkadian",
+  "pseudo"
+ ],
+ "sweeps": 4,
+ "restarts": 2,
+ "by": {
+  "cipher_sanskrit|f=0.0": {
+   "mean_delta_prime": {
+    "tamil": 0.162615989468193,
+    "sumerian": 0.14406385779376812,
+    "akkadian": 0.12859759167302853,
+    "pseudo": -0.004844210323880622
+   },
+   "best": "tamil",
+   "p_best_vs_other": {
+    "sumerian": 0.2777222777222777,
+    "akkadian": 0.11188811188811189,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": false,
+   "success": false
+  },
+  "cipher_tamil|f=0.0": {
+   "mean_delta_prime": {
+    "tamil": 0.21522749311390554,
+    "sumerian": 0.1737010946514723,
+    "akkadian": 0.1800736522885544,
+    "pseudo": 0.0015448349860588029
+   },
+   "best": "tamil",
+   "p_best_vs_other": {
+    "sumerian": 0.03996003996003996,
+    "akkadian": 0.04695304695304695,
+    "pseudo": 0.000999000999000999
+   },
+   "clearly_ahead": false,
+   "success": false
+  }
+ }
+}

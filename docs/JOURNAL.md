@@ -3412,3 +3412,37 @@ All four use the 2,000-line syllabic ciphers of E3e (same construction and seeds
 - Before fitting, a fraction f ∈ {0.10, 0.25, 0.50} of the 100 most frequent cipher signs is fixed at its true value. The signs are chosen at random with seed 20261126, the same set for all models.
 - The remaining signs are fitted by the same search, and the fixed signs are not changed.
 - Reported: for each cipher, the smallest f with success ("> 0.50" if none). No prediction.
+
+### Results E3i, E3j, E3k, E3m
+
+Script: `scripts/batch17_phonetic_diagnosis.py`; results: `results/batch17_e3i.json` … `batch17_e3m.json`.
+
+- **E3i (without the Sanskrit model): not supported.**
+  - Tamil cipher: Tamil first (0.215), but not clearly ahead of Akkadian (0.180, p = 0.047) or Sumerian (0.174, p = 0.040).
+  - Sanskrit cipher (descriptive): Tamil first (0.163), not clearly ahead.
+  - Without Sanskrit the true language leads for the Tamil cipher, but the margin is too small to decide.
+- **E3j (dictionary Sanskrit model): the bias persists.**
+  - Tamil cipher: Sanskrit (headwords) 0.430 against Tamil 0.215.
+  - Sanskrit cipher: Sanskrit first (0.382).
+  - The bias is not specific to the Ṛgveda text. Sanskrit models from either source absorb fitted assignments best.
+- **E3k (more search effort): not supported.**
+  - Tamil cipher: Sanskrit 0.285 against Tamil 0.270, not separated (p = 0.32).
+  - More search effort narrows the gap but does not remove it. The search depth contributes to the failure, but it is not the whole cause.
+- **E3m (known values): the true language wins once enough values are known.**
+  - Sanskrit cipher: success from f = 0.10, i.e. 10 of the 100 most frequent signs fixed (0.441 at f = 0.50).
+  - Tamil cipher: success from f = 0.25, i.e. 25 signs fixed. Tamil 0.450 against Sanskrit 0.278; at f = 0.10 Sanskrit (0.258) and Tamil (0.253) are still level.
+
+### What E3e–E3m mean for the Indus script
+
+- The method can identify a language once roughly a quarter of the frequent sign values are known correctly in advance. Without that knowledge it falls back on whichever model absorbs arbitrary syllable strings best, here Sanskrit.
+- For the Indus script no sign value is known independently. Route P4e would need about 25 of the 100 most frequent signs to carry correct values fixed in advance, for example from the pictographs, and those values would have to be right.
+- This applies to an alphabetic-syllabic language whose units are those of the value set. A logographic script, which the combinatorial evidence suggests (CT27), would need more.
+- No such set of values exists. The phonetic route stays closed for the Indus inscriptions, and the requirement is now stated in numbers (`docs/FUTURE_DATA.md`).
+
+### End of the thirty-sixth session
+
+- Pre-registered analyses:
+  - Not supported: E3i, E3k.
+  - Bias persists: E3j.
+  - Descriptive threshold: E3m (f = 0.10 for Sanskrit, 0.25 for Tamil).
+- The level assessment is unchanged.

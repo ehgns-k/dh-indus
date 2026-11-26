@@ -154,6 +154,10 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | E3e | as E3g | 80/20 | method has no power (Tamil cipher → Sanskrit) | |
 | E3f | syllabic ciphers, 8,000 lines | 80/20 | method has no power | |
 | E3h | cuneiform ciphers, 16,000 lines | 80/20 | method has no power (both → Sanskrit) | |
+| E3i | syllabic ciphers (2,000 lines), no Sanskrit model | 80/20 | not supported (Tamil first, not clearly ahead) | |
+| E3j | as E3e, dictionary Sanskrit model | 80/20 | bias persists (Tamil cipher → Sanskrit) | |
+| E3k | as E3e, 8 sweeps / 6 restarts | 80/20 | not supported (0.285 vs 0.270) | |
+| E3m | as E3e, fraction of true values fixed | 80/20 | true language wins from f = 0.10 (Sanskrit), 0.25 (Tamil) | known values needed |
 | R9 | all | – | review: all analyses re-run, no differences | |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
