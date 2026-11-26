@@ -3344,3 +3344,12 @@ Script: `scripts/batch16_phonetic_controls.py e3g`; results: `results/batch16_e3
   - Tamil cipher: 0.818 under the Tamil model, against 0.117 at most.
 - Both true languages are clearly ahead.
 - The scoring measure can therefore identify the language once the right assignment is known. Any failure of the search (E3e) lies in finding the assignment, not in scoring it.
+
+### Result E3e: the search has no power at 2,000 lines
+
+Script: `scripts/batch16_phonetic_controls.py e3e`; results: `results/batch16_e3e.json`.
+- Sanskrit cipher: Δ′ is 0.282 under the Sanskrit model, against 0.163 at most for any other. The true language is first and clearly ahead.
+- Tamil cipher: Δ′ is 0.330 under the Sanskrit model and 0.215 under the Tamil model. The wrong language is first and clearly ahead.
+- By the registered rule, the method has no power: a fitted assignment for Old Tamil text is better explained by the Sanskrit model than by the Tamil model.
+- Together with E3g, the failure lies in the search. With the true assignment, the Tamil model wins by a wide margin (0.818 against 0.070). With assignments found by the search, the Sanskrit model wins.
+- The Sanskrit model appears to fit any assignment the search finds better than the other models do. A search result favouring Sanskrit for the Indus signs would therefore mean nothing.
