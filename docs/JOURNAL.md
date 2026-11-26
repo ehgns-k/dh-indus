@@ -3679,3 +3679,13 @@ Following the work-plan revision after the fortieth session, this session carrie
 - Review: R11 (full reproducibility, no differences).
 - The level assessment is unchanged.
 
+
+---
+
+## 2026-11-26 (day 2, forty-second working session, 12:18 UTC): literature retry (F3)
+
+No new hypothesis test was registered (see the forty-first session).
+
+**F3.** The sources on the ICIT field codes, Wells (2011) and CISI 3.1 were tried again. Every page fetch failed, because the hosts (indus.epigraphica.de, www.user.tu-berlin.de, www.oxbowbooks.com, www.harappa.com) are outside the network allowed in this working environment. Search-engine excerpts did not describe the `cult`, `Bull1`, `class` or `area-section` codes. The meanings of these codes therefore remain unknown, and `docs/OBJECT_CODES.md` is unchanged. The bibliography entries for CISI 3.1–3.3 (A7–A9) were checked against the search excerpts, and no correction was needed. The new-data search found no report of newly excavated inscriptions from 2025–2026. The Dholavira signboard, shown again in public communications in July 2026, was found in 1990–91 and is not new material.
+
+- The level assessment is unchanged.
