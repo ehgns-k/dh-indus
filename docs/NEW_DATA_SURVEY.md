@@ -105,3 +105,15 @@ All repositories were cloned on 25 November 2026 at their default-branch HEAD.
 5. **Datasets.** No machine-readable dataset was found that adds more than a handful of objects to the ICIT-style CSV. The current Lipi export adds one object, a Dilmun seal. The k-sandhu inventory is the best finding aid for new objects, but it contains no signs. The other repositories are subsets of ICIT, of Mahadevan 1977 or of CISI.
 
 In total, the unused data realistically within reach is small: a few dozen inscriptions, most of them short, with Surkotada the largest group. That is probably too little for a well-powered confirmatory test. It is enough for a small qualitative check, and for a check of predictions made before transcription.
+
+## Update of 2026-11-26 (forty-first session)
+
+A further search for inscriptions published since about 2015 in a usable, machine-readable form was made. The full texts were not reachable from the working environment (harappa.com, arxiv.org, academia.edu and the-past.com failed), so the statements below rest on search-engine excerpts. They should be checked against the sources.
+
+- **CISI 3.2 (imprint 2019, released January 2020; Parpola, Pande & Koskikallio).** It covers Shahr-i Sokhta, Mundigak, Mehrgarh, Nausharo, Sibri, Dauda-damb, Chanhu-daro, Ahar, Balathal, Gilund, Kalibangan and Rojdi (announcement on the Indology list, <https://list.indology.info/pipermail/indology/attachments/20200116/6fb825d1/attachment.pdf>). It is a printed photographic corpus. No machine-readable transcription was found.
+- **CISI 3.3 (2022, Indo-Iranian borderlands; Parpola & Koskikallio).** Much of it is non-Indus glyptic (for example Desset 2022, <https://orbi.uliege.be/bitstream/2268/333796/1/Desset%20F%202022%20in%20CISI%203.3%201763.pdf>).
+- **Fuls (2022), *Corpus of Indus Inscriptions*.** A printed derivative of the ICIT database, which states that it contains all inscriptions excavated so far (<https://www.harappa.com/content/corpus-indus-inscriptions>). It is therefore not a source of data unused by this project.
+- **Site publications.** Kanmer (Kharakwal et al. 2012) and the Bagasra unicorn seals (Jamison et al.) are known from excerpts, with no transcriptions found. No post-2015 inscription reports were found for Rakhigarhi (a draft report only), Binjor (4MSR), Farmana, Khirsara, Shikarpur, Ganweriwala or recent work at Mohenjo-daro.
+- **Open datasets.** None was found besides the ICIT-derived ones and the KP1979 machine reading. Some Zenodo and GitHub repositories present self-published "decipherments" with their own sign schemes and are unsuitable as test data.
+
+Conclusion: no new, openly licensed, machine-readable corpus of unused Indus inscriptions was found. Unused test data would require hand transcription from CISI 3.2/3.3 plates and site reports, followed by a check against the coverage of ICIT.

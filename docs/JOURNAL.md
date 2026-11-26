@@ -3668,3 +3668,5 @@ Following the work-plan revision after the fortieth session, this session carrie
 - **F1.** `reports/FINAL_REPORT.md` was rewritten as a consolidated report. It has a summary, one section per level, a table of the decisive L1 tests, the L2 result with its limits and candidates, the phonetic route, typology, claims, assessment and errors.
 - **F2.** A full run of `scripts/run_all.py`, including all heavy phonetic experiments, was started. Its result is recorded below when it ends.
 - **F4.** A survey of newly published inscriptions was started in parallel. Its result is recorded below.
+
+**F4 result.** The survey found no new, openly licensed, machine-readable corpus of unused inscriptions (`docs/NEW_DATA_SURVEY.md`, update of 2026-11-26). The quotations are search-engine excerpts; the full texts were not reachable.
