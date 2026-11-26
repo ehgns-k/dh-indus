@@ -48,7 +48,7 @@ The project tested, with pre-registered and reproducible analyses, how far the I
 - Every test was pre-registered in the journal.
 - Controls preserve every rule already established.
 - Permutation counts allow p-values one tenth of the threshold.
-- All scripts are deterministic and re-run by `scripts/run_all.py`; reproducibility checks R3, R5, R8 and R9 found no differences.
+- All scripts are deterministic and re-run by `scripts/run_all.py`; reproducibility checks R3, R5, R8, R9 and R11 (the last including all heavy phonetic experiments) found no differences.
 
 ## 3. L1 — structure (achieved)
 

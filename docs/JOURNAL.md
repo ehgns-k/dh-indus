@@ -3670,3 +3670,12 @@ Following the work-plan revision after the fortieth session, this session carrie
 - **F4.** A survey of newly published inscriptions was started in parallel. Its result is recorded below.
 
 **F4 result.** The survey found no new, openly licensed, machine-readable corpus of unused inscriptions (`docs/NEW_DATA_SURVEY.md`, update of 2026-11-26). The quotations are search-engine excerpts; the full texts were not reachable.
+
+**F2 result (review R11).** The full run of `scripts/run_all.py` completed all 133 items, including the heavy phonetic experiments (E3–E3zd, batch16–batch20), in about 2.1 hours of script time. No item failed, and no committed result file changed. The run was interrupted once and resumed from the last completed item; each item is a separate deterministic script, so resuming does not affect the results. All results cited in the reports are therefore reproducible from the committed code and data.
+
+### End of the forty-first session
+
+- No new hypothesis test was registered.
+- Review: R11 (full reproducibility, no differences).
+- The level assessment is unchanged.
+

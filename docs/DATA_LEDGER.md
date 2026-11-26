@@ -171,6 +171,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | U2 | ICIT | unused unknown-direction set U (64 strings) | not supported (p = 0.83) | direction of U uncertain |
 | U3 | ICIT | as U2 | supported (19 vs 8.3, p = 0.0001) | |
 | U4, U5 | ICIT | as U2 | insufficient data | |
+| R11 | all | – | review: all 133 items re-run, including the heavy phonetic experiments; no differences | |
 | R9 | all | – | review: all analyses re-run, no differences | |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 14 of 49 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
