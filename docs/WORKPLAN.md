@@ -166,3 +166,13 @@ The short tests that the current data allow have largely been run. The remaining
   - **L-6 Chronology at Mohenjo-daro** (first test T2 done in this session: no change detected). The source gives Early / Intermediate / Late levels for about 800 Mohenjo-daro records (`period`) and depths. Use them as an external variable (discovery on training strings, confirmation on strict held-out), after checking how the levels were assigned.
   - **L-7 `cult` codes.** The `cult` column (SAN, Trough, SAF, RAN …; 1,457 records) is undocumented. Survey its meaning before any use.
   - **L-8 Numeral faces.** Check against the CISI 3.1 photographs whether the counts on the numeral faces were read correctly, if the volumes become accessible.
+
+### Revision after the fortieth session (2026-11-26)
+
+- Work package E (phonetic route) is closed (E3–E3zd). The data and methods available here give no information about the language of the inscriptions, and the requirement for any future attempt is stated in `docs/FUTURE_DATA.md`.
+- The external variables of the source have been tried (object type, motif and its details, material, size, level, excavation area), as have all accessible unused sets (strict held-out, fresh sites, unknown-direction lines).
+- Remaining priorities:
+  - **F1. Final report.** Rewrite `reports/FINAL_REPORT.md` as a consolidated text rather than a living draft, with one section per level and a table of every decisive test.
+  - **F2. Full reproducibility.** Run `scripts/run_all.py` without `--skip-heavy`, i.e. all phonetic experiments included, and record differences.
+  - **F3. Literature checks.** Retry the sources that could not be reached (CISI 3.1, Wells 2011, ICIT documentation) if access becomes possible, and correct the code meanings in `docs/OBJECT_CODES.md`.
+  - **F4. New data watch.** Repeat the survey of newly published inscriptions (`docs/NEW_DATA_SURVEY.md`) once a week. Any new, unused inscriptions would allow the confirmatory tests planned in `docs/FUTURE_DATA.md`.
