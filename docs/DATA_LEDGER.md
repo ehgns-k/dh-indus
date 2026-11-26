@@ -149,6 +149,7 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | KF2k | KP | seal-only vs tablet-only strings | not supported (28 vs 33.6, p = 0.23) | KF2 not replicated |
 | CT18ck | KP | strict held-out by class | seals supported; tablets insufficient data (8 lines) | |
 | H3.10ck | KP | all strings by class | not supported (tablets p = 0.013; seals p < 10⁻²⁵) | few tablet cases |
+| PW1–PW4 | ICIT (effect sizes) | simulation | descriptive: 400–1,600 new inscriptions at observed effects, 800 to > 6,400 at halved effects | planning; not tests |
 | R9 | all | – | review: all analyses re-run, no differences | |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |

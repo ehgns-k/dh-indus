@@ -3277,3 +3277,24 @@ The tests that the accessible data allow have largely been run. What remains ope
 **PW3.** 405 × `Bull1:W` among unicorn seals with a suffix code, α = 0.01. p₀ = 0 is replaced by (0 + 0.5)/(n + 1).
 
 **PW4.** Among strings containing 740 on a seal or tablet: final position × seal vs tablet, α = 0.01. The rates are taken from the CT15 strata, pooled.
+
+### Results PW1–PW4
+
+Script: `scripts/batch15_power.py`; results: `results/batch15_power.json`.
+
+| Scenario | p₁ | p₀ | class share | N for 80 % power (observed effect) | N (log odds halved) |
+|---|---:|---:|---:|---:|---:|
+| C2 Inter-Riverine × 400 | 0.205 | 0.049 | 0.34 | 400 | 1,600 |
+| C2 SEAL:R × 806 | 0.163 | 0.025 | 0.11 | 800 | 6,400 |
+| C2 SEAL:R × 407 | 0.110 | 0.014 | 0.11 | 800 | 6,400 |
+| C2 SEAL:R × 154 | 0.081 | 0.009 | 0.11 | 1,600 | > 6,400 |
+| C2 SEAL:S × 400 (less) | 0.042 | 0.198 | 0.62 | 400 | 800 |
+| C2 SEAL:S × 741 | 0.106 | 0.029 | 0.62 | 800 | 6,400 |
+| H9.4 class 4 × TAB:C (less) | 0.111 | 0.476 | 0.03 | 800 | 3,200 |
+| MO2b 405 × Bull1:W | 0.060 | 0.001 | 0.44 | 400 (unicorn seals) | 6,400 |
+| CT15 replication (strings with 740) | 0.787 | 0.545 | 0.74 | 400 | 800 |
+
+- N counts new, distinct inscriptions of the relevant kind: seals and tablets for C2 and H9.4; unicorn seals with a variant code for MO2b; seal and tablet texts containing 740 for CT15.
+- For comparison, the ten post-1979 sites used as fresh data provide 117 unique lines, and the whole ICIT-style source has 5,679 records.
+- Even under the optimistic effect sizes, a confirmation of the L2 candidates needs several hundred to over a thousand new inscriptions of the right kinds. With the effect sizes halved (a likely correction for selection), it needs several thousand, more than the present corpus.
+- This explains, in numbers, why the L2 candidates could not be confirmed and the narrow L2 result is not beyond doubt. It also gives the scale of new material that future work would need.
