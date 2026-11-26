@@ -1,0 +1,56 @@
+{
+ "part": "e3g",
+ "lines": {
+  "cipher_sanskrit": [
+   1600,
+   400
+  ],
+  "cipher_tamil": [
+   1600,
+   400
+  ]
+ },
+ "unit_types": {
+  "cipher_sanskrit": 98,
+  "cipher_tamil": 65
+ },
+ "by_corpus": {
+  "cipher_sanskrit": {
+   "mean_delta_prime": {
+    "sanskrit": 0.7270453657000158,
+    "tamil": 0.03400705971606044,
+    "sumerian": 0.08138386387615025,
+    "akkadian": 0.07710845485049898,
+    "pseudo": -0.0074098238556461245
+   },
+   "best": "sanskrit",
+   "bootstrap_p_best_vs_other": {
+    "tamil": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "best_clearly_ahead": true,
+   "true": "sanskrit"
+  },
+  "cipher_tamil": {
+   "mean_delta_prime": {
+    "sanskrit": 0.07032076415825798,
+    "tamil": 0.81834749876996,
+    "sumerian": 0.11668455587337137,
+    "akkadian": 0.022747022418255165,
+    "pseudo": -0.006263172163631554
+   },
+   "best": "tamil",
+   "bootstrap_p_best_vs_other": {
+    "sanskrit": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "best_clearly_ahead": true,
+   "true": "tamil"
+  }
+ },
+ "true_language_first_both": true
+}

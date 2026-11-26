@@ -3334,3 +3334,13 @@ The phonetic search (E3–E3d) failed on its positive controls, which were cunei
 **E3h.**
 - The E3d design with the two cuneiform ciphers at 16,000 lines, or as many unique lines as the corpus provides.
 - Decision as in E3c.
+
+### Result E3g (oracle): the measure identifies the language under the true assignment
+
+Script: `scripts/batch16_phonetic_controls.py e3g`; results: `results/batch16_e3g.json`.
+- Syllabic ciphers of 2,000 lines: 1,600 training and 400 test lines; 98 unit types (Sanskrit) and 65 (Tamil).
+- With the true assignment, Δ′ is:
+  - Sanskrit cipher: 0.727 under the Sanskrit model, against 0.081 at most for any other.
+  - Tamil cipher: 0.818 under the Tamil model, against 0.117 at most.
+- Both true languages are clearly ahead.
+- The scoring measure can therefore identify the language once the right assignment is known. Any failure of the search (E3e) lies in finding the assignment, not in scoring it.
