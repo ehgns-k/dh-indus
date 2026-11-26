@@ -3382,3 +3382,33 @@ Script: `scripts/batch16_phonetic_controls.py e3f`, `... e3h`; results: `results
   - E3g (oracle): supported.
   - E3e, E3f, E3h: the method has no power.
 - The level assessment is unchanged.
+
+---
+
+## 2026-11-26 (day 2, thirty-sixth working session, 04:18 UTC): why the phonetic search favours Sanskrit, and how many known values would rescue it
+
+E3e–E3h showed that the search ranks the Sanskrit model first for every cipher, while the scoring identifies the true language when the true assignment is given (E3g). This session tests three explanations and measures how much prior knowledge of sign values the method would need. That last measurement is the practical question behind the work-plan route P4e (values fixed in advance from the pictographs).
+
+### Plan of the run
+
+1. E3i: without the Sanskrit model, does the Tamil cipher rank Tamil first?
+2. E3j: with a Sanskrit model from dictionary headwords (Monier-Williams) instead of the Ṛgveda, does the bias persist?
+3. E3k: with more search effort (8 sweeps, 6 restarts instead of 4 and 2), does the Tamil cipher rank Tamil first?
+4. E3m: if a fraction f of the 100 most frequent signs is fixed at its true value before fitting, from what f on does the true language win?
+5. Updates.
+
+### Pre-registrations (before running)
+
+All four use the 2,000-line syllabic ciphers of E3e (same construction and seeds), the E3b/E3d Δ′ measure and the bootstrap decision of E3d. "Success" for a cipher means that its true language is first and clearly ahead of every other model in the set.
+
+**E3i.** Models: Tamil, Sumerian, Akkadian, pseudo (E3d models without Sanskrit). Prediction: success for the Tamil cipher. The Sanskrit cipher is reported descriptively.
+
+**E3j.** Models: the E3d models with Sanskrit replaced by 20,000 tokens of Monier-Williams headwords (`phonetic.sanskrit_words`, equalised with the same function and seed). Prediction, if the bias comes from the Ṛgveda text: the Tamil cipher succeeds. If the Sanskrit model still wins for the Tamil cipher, the bias is not specific to that source.
+
+**E3k.** E3d models; search with 8 sweeps and 6 restarts. Prediction, if the failure is due to search depth: both ciphers succeed.
+
+**E3m.**
+- E3d models.
+- Before fitting, a fraction f ∈ {0.10, 0.25, 0.50} of the 100 most frequent cipher signs is fixed at its true value. The signs are chosen at random with seed 20261126, the same set for all models.
+- The remaining signs are fitted by the same search, and the fixed signs are not changed.
+- Reported: for each cipher, the smallest f with success ("> 0.50" if none). No prediction.
