@@ -3658,3 +3658,13 @@ Script: `scripts/batch21_unknown_direction_set.py`; results: `results/batch21_un
   - Not supported: U2.
   - Insufficient data: U4, U5.
 - The level assessment is unchanged.
+
+---
+
+## 2026-11-26 (day 2, forty-first working session, 09:18 UTC): consolidation
+
+Following the work-plan revision after the fortieth session, this session carries out priorities F1, F2 and F4. No new hypothesis test was registered. The remaining open questions need new data or independent sign values (`docs/FUTURE_DATA.md`). Further tests on the data already used would add to the multiple-testing burden without adding information.
+
+- **F1.** `reports/FINAL_REPORT.md` was rewritten as a consolidated report. It has a summary, one section per level, a table of the decisive L1 tests, the L2 result with its limits and candidates, the phonetic route, typology, claims, assessment and errors.
+- **F2.** A full run of `scripts/run_all.py`, including all heavy phonetic experiments, was started. Its result is recorded below when it ends.
+- **F4.** A survey of newly published inscriptions was started in parallel. Its result is recorded below.

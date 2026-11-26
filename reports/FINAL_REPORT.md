@@ -1,61 +1,175 @@
-# Final report (living draft): an attempt to decipher the Indus script
+# Final report: an attempt to decipher the Indus script
 
-Status of this draft: 2026-11-25. The report is updated as work continues until 2026-12-25. Every result cited here is documented, with its pre-registration, in `docs/JOURNAL.md`; the data used for each decision are listed in `docs/DATA_LEDGER.md`; detailed phase reports are in `reports/`.
+Status: 2026-11-26 (consolidated version; it will be revised if further work changes any result before 2026-12-25). Every result cited here is documented with its pre-registration in `docs/JOURNAL.md`. The data used for each decision are listed in `docs/DATA_LEDGER.md`, and detailed phase reports are in `reports/`.
 
-## 1. Aim and criteria
+## Summary
 
-The project set out to decipher the Indus script as far as verifiable evidence allows. Success was defined before any analysis in four levels (`ROADMAP.md`): L1 structural results; L2 semantic or functional categories that predict information outside the texts; L3 sound values that predict unseen texts better than control languages; L4 full decipherment.
+The project tested, with pre-registered and reproducible analyses, how far the Indus inscriptions can be deciphered from the accessible evidence. Success was defined in advance in four levels.
+
+- **L1 (structure): achieved.** The inscriptions follow a consistent organisation that holds across transcriptions, sites, object classes and later excavations:
+  - a right-to-left reading order;
+  - a positional template with a closing cluster of fixed internal order;
+  - a stroke numeral notation tied to particular counted signs;
+  - recurring units and formulae with variable slots;
+  - a nested structure of longer texts.
+- **L2 (function): achieved only in a narrow form.** The jar sign 740 closes seal legends more often than tablet texts, on data not used for the question (odds ratio 4.3, bootstrap interval 1.5–16). What the sign means is not established. Further associations between signs and objects remain candidates; confirming them would need several hundred to several thousand new inscriptions.
+- **L3 (sound values): not achieved.** Phonetic fitting cannot identify even known languages hidden as ciphers unless 25–35 frequent sign values are known in advance. No Indus sign value is known independently.
+- **Writing or not: undecided.** The Indus corpus is statistically closest to proto-Elamite, but no statistic tried separates writing from non-linguistic symbol systems.
+
+## 1. Aim and success criteria
+
+`ROADMAP.md` defined four levels before any analysis:
+- L1: structural results that hold on data not used to find them.
+- L2: semantic or functional categories that predict information outside the texts.
+- L3: sound values that predict unseen texts better than control languages.
+- L4: full decipherment.
 
 ## 2. Material and method
 
-- Two machine-readable transcriptions of largely the same objects (ICIT-style source, 5,679 records; Koskenniemi & Parpola 1979, 4,066 inscriptions), linked by a sign concordance derived from 929 aligned texts.
-- Test data that were not used to form hypotheses: a strict held-out split without near-duplicate texts; 117 lines from ten sites first excavated after 1979; the second transcription for replication.
-- Reference systems: proto-Elamite, proto-cuneiform, Sumerian and Akkadian texts (CDLI); non-linguistic symbol systems (Sproat 2014); Sanskrit, Old Tamil, Sumerian and Akkadian word data for sound models; sign images keyed to ICIT numbers.
-- Every test was pre-registered in the journal; controls preserve every rule already established; all scripts are deterministic and re-run by `scripts/run_all.py`.
+**Transcriptions.**
+- An ICIT-style secondary transcription (5,679 records), with object type, site, motif, dimensions and other fields.
+- The machine reading of Koskenniemi & Parpola (1979; 4,066 inscriptions).
+- The two are linked by a sign concordance estimated from 929 aligned texts (`docs/SIGN_CONCORDANCE.md`).
 
-## 3. Results
+**Unused test data.**
+- A strict held-out split of the strings, with no training string within edit distance 1.
+- 117 lines from ten sites first excavated after 1979 (fresh sets).
+- The second transcription, for replication.
+- A set of 64 strings of unknown writing direction.
+- All decisions on these sets were reviewed together for multiple testing (R7).
 
-### L1 — structure (achieved)
+**Reference material.**
+- CDLI corpora: proto-Elamite, proto-cuneiform, Sumerian and Akkadian.
+- Non-linguistic symbol systems (Sproat 2014).
+- Word data in Sanskrit (Ṛgveda; Monier-Williams), Old Tamil (Sangam), Sumerian and Akkadian.
+- Sign images keyed to the ICIT numbers.
 
-1. The texts are read right to left; order regularities learned from the 1979 corpus predict inscriptions from later excavations only in that direction (F3, F3b); regularities learned at other sites predict Harappa and Mohenjo-daro forward far better than reversed (SX1); the 216 lines written left to right follow the same order once mirrored (DIR1), so the direction of writing varies but the order of the text does not.
-2. Lines have an initial zone, a medial zone and a closing zone; zones agree between the two transcriptions (Q2a) and predict later finds (B1). The template and the recurring units learned from seals and tablets carry over to tags, bangles, rods and other objects, in both transcriptions (PT2, PT2k); pottery inscriptions share the units, while for the template the short pottery texts give too little power (PT1).
-3. The closing signs form a cluster with a fixed internal order, 740 before 400 or 090 (H3.3, H3.4, R1), in seals, tablets and other objects alike (H3.3c). Template and units learned at the other sites predict both main sites (SX3, SX4).
-4. Stroke signs of one to ten strokes form a numeral notation: particular counts are followed by particular signs (4–9 strokes → 390–407; 7 → 585/575; three long strokes → 520) in both transcriptions and on strict held-out data (H3.10–H3.12, R1, R2), and for 4–9 strokes also on later finds (F2) and on pottery and other objects, in both transcriptions (PT3, PT3k); texts that are identical except for the count are six to eight times more frequent than chance, also after normalisation of writing variants (H9.1, R4).
-5. Recurring multi-sign units and formulae with variable slots: units learned from the 1979 corpus recur in later finds (B4); signs that substitute for one another form classes (numerals; closing and counted-item signs; fish-shaped signs with single strokes; others) that agree between transcriptions for fine-grained classes, robust to the random seed (H9.3, R6); 131 formulae with a variable slot are listed in `docs/FORMULAE.md`. Longer texts have a nested structure: parts obtained by recursive splitting at the weakest link are complete short texts about three times as often as in controls (CT18).
-6. Near-variant sign shapes are used alike on unused data (G2), while shape in general does not predict usage (G1) and added marks do not shift position consistently (M1).
-7. The two lines of a two-line inscription, and the two faces of a two-face object, form one text that is closed once, in both transcriptions (ML1, ML1k, FACE1, FACE4); line breaks fall where the space ends, not at segment boundaries (ML2). On two-face Harappa tablets one face is often a count of two to four strokes with sign 700; tablets with the same text tend to carry the same count, although the count varies within a series (FACE2), and it is not related to tablet size (FACE3); the formulae found in one transcription recur in the other (KF1: 75 % of formula frames vs 7.9 % of control frames), and formulae learned from the training data of either transcription recur in later finds (F5: 9 strings vs 4.8 for rule-preserving controls, p = 0.0008; F5k, with formulae from KP1979: 10 vs 4.7, p = 0.0003). The fish-shaped signs form one usage class in KP1979 as in the ICIT transcription (CT22k); long and short stroke signs do not combine in a fixed order (NUM2).
-8. In a family-wise review over all 49 tests decided on fresh or strict held-out data, the direction test, the closing-cluster order, the count–item pairs, the positional template, the recurring units and the nested structure survive a Holm correction at α = 0.01 (R7, with the permutation tests re-run with 10,000 draws, R7b).
+**Rules.**
+- Every test was pre-registered in the journal.
+- Controls preserve every rule already established.
+- Permutation counts allow p-values one tenth of the threshold.
+- All scripts are deterministic and re-run by `scripts/run_all.py`; reproducibility checks R3, R5, R8 and R9 found no differences.
 
-### L2 — semantic or functional categories (achieved only in narrow, functional scope)
+## 3. L1 — structure (achieved)
 
-- **Confirmed (narrow, functional):** the jar sign 740 closes seal texts more often than tablet texts at Harappa and Mohenjo-daro (site-stratified; the 'other sites' stratum has a single tablet text), in a single pre-registered test on data not used for this question (CT15; odds ratio 4.3, p = 0.0022). What the closing sign means (a genitive, a title, a classifier) is not established. The result passes its own threshold; in the family-wise review over all 49 tests decided on unused data (R7) it survives a Holm correction at α = 0.05 and false-discovery control at q = 0.01, but not a Holm correction at α = 0.01, so it is not beyond doubt. It is not an effect of text length (CT15r: with strata of site × length, OR 5.7, p = 0.0010); a stratified bootstrap gives a 95 % interval of 1.5–16 for the odds ratio (CT15b), so the direction is stable but the size is uncertain. A replication in KP1979 points the same way but has almost no power (three tablet texts; CT15k, p = 0.21). Tags, objects with seal-type legends never used as a class before, follow the seal pattern (740 final in 14 of 16; tablets 54 %; CT15t, p = 0.0068), although tags come mostly from one site. Incised pottery inscriptions that contain 740 also end in it (11 of 12; CT15s, too few stamped pots to test), so the closing function is not confined to seal legends; it is tablets that stand apart.
+| Result | Main tests |
+|---|---|
+| Reading order right to left; order regularities predict later finds, the two main sites when left out, and lines written left to right once mirrored | F3, F3b, SX1, DIR1, DIR2 |
+| Positional template (initial, medial, closing zones), reproduced across transcriptions, on later finds, when each main site is left out, and on tags, bangles and other objects | Q2a, B1, SX3, PT2, PT2k |
+| Closing cluster with fixed internal order (740 before 400 or 090), in every object class and both transcriptions | H3.3, H3.4, R1, H3.3c, H3.3ck |
+| Stroke numerals with count-specific partner signs (4–9 strokes → 390–407; 7 → 585/575; three long strokes → 520), on strict held-out data, later finds and other objects, in both transcriptions | H3.10–H3.12, R1, R2, F2, H6.1, PT3, PT3k, H3.10c |
+| Texts identical except for the count: six to eight times more frequent than chance | H9.1, R4 |
+| Recurring units and formulae with variable slots, reproduced across transcriptions and in later finds | B4, SX4, KF1, F5, F5k, U3; `docs/FORMULAE.md`, `docs/FORMULAE_KP.md` |
+| Substitution classes agreeing between transcriptions; the fish-shaped signs form one usage class | H9.3, R6, CT22, CT22k, CT22b |
+| Nested structure: parts of long texts recur as complete short texts | CT17, CT18, CT18c |
+| Near-variant sign shapes used alike | G2 |
+| Lines and faces of one object form one text, closed once; line breaks fall where space ends | ML1, ML1k, FACE1, FACE4, ML2 |
+| Numeral faces of Harappa tablets (two to four strokes with sign 700); identical texts tend to share the count, which still varies within a series | FACE2, NUM3 |
 
-Further candidates:
+In the family-wise review over 49 tests decided on unused data, 14 survive a Holm correction at α = 0.01 (R7). They cover:
+- the direction test;
+- the closing-cluster order;
+- the count–item pairs;
+- the positional template;
+- the recurring units;
+- the nested structure.
 
-- The closing sign depends on the kind of object (400 avoided on motif seals and favoured on tablets; 407 and 154 on rectangular seals without motif), consistent in both transcriptions and two object classifications (C2, C2k), with unchanged effect sizes but below the strict thresholds after near-duplicate removal (R1).
-- A substitution class containing 002 and 090 is absent from copper tablets (H9.4), but the class has no interpretation fixed in advance.
-- Seal and tablet texts share formula frames less often than chance in the ICIT transcription (KF2: 53 vs 67.1 frames, p = 0.0038), on data used before, but not significantly in KP1979 (KF2k: p = 0.23); the difference is therefore weak.
-- Iconographic details of unicorn seals (the object in front of the animal, the variant code of the unicorn) and the KP1979 icon codes were scanned against the signs; no association was confirmed (MO2a, MO2b, MO1k).
-- Object size, recorded in the source and never used before, was tested as an external variable: three signs associated with seal size on training data all pointed the same way on unused data but none reached the corrected threshold (SZ2).
-- Tests of object type, motif, site and period against numerals, motifs, name-like slots and chronological variants were negative (H3.5, H4.1, H4.2, C1, H9.2, H10.1, T1). Unused seal and tablet inscriptions, which a confirmation would need, are not available in accessible form (`docs/NEW_DATA_SURVEY.md`).
+Not supported or undecided:
+- a fixed order of long and short strokes (NUM2);
+- the template on the unknown-direction set, whose direction is uncertain (U2);
+- the three-face result in KP1979 (FACE4k).
 
-### L3 — sound values (not achieved; no calibrated route found)
+## 4. L2 — functional categories (narrow)
 
-- Under the reading rules of a published Sanskrit decipherment, random sign-value assignments make as many Indus lines readable (84 %) as the published readings (E2, E2b).
-- A calibrated search for sign-to-sound assignments under Sanskrit, Old Tamil, Sumerian and Akkadian sound models could not identify the language even of known cuneiform texts hidden as ciphers, in four variants and with up to 8,000 lines (E3–E3d, R3). No language preference is claimed. Further positive controls (E3e–E3h) hid Sanskrit and Old Tamil text as syllabic ciphers that the method can represent exactly, and cuneiform texts at 16,000 lines. The scoring identifies the true language when the true assignment is given (E3g), but the assignments found by the search favour the Sanskrit model for every cipher, including the Old Tamil one. Search-based phonetic fitting of this kind is biased towards one language regardless of the input, so it cannot support any language identification for the Indus script. The bias persists with a Sanskrit model from dictionary headwords and with more search effort (E3j, E3k). The true language wins only when about 10 % (Sanskrit) to 25 % (Old Tamil) of the frequent sign values are fixed in advance (E3m), and even then only in 3 of 5 random choices of the known signs and not at all at 1,000 lines (E3u, E3r). Reliable success at the size of the Indus corpus needs 25 (Sanskrit) to 35 (Old Tamil) correct values among the 100 most frequent signs (E3v); none is known. Without such values the measure is biased towards one language (corrected gain: Sanskrit; raw gain: Akkadian; E3y), and calibrating each model against its scores on other languages removes the bias but does not reveal the true language (E3za–E3zc: 1 of 12 cipher cases correct). Across twenty-four experiments the phonetic route gives no information about the language of the Indus inscriptions.
+**Confirmed (narrow).** The jar sign 740 closes seal texts more often than tablet texts at Harappa and Mohenjo-daro, on strict held-out and fresh data not used for this question (CT15: Mantel–Haenszel odds ratio 4.3, p = 0.0022).
+- Robustness:
+  - not a length effect (CT15r);
+  - bootstrap 95 % interval 1.5–16 (CT15b);
+  - tags follow the seal pattern (CT15t);
+  - incised pottery that contains 740 also ends in it (CT15s).
+- Limits:
+  - it survives Holm at α = 0.05 but not at α = 0.01 over 49 tests (R7);
+  - the KP1979 replication has almost no power (CT15k).
+- What the closing sign means (a genitive, a title, a classifier) cannot be tested with these data.
 
-### Typology
+**Related functional findings.**
+- Seal legends are individual, while tablet texts repeat in series. This holds in both transcriptions and without the numeral faces (CT28, CT28k, CT28n, CT32a, CT32k).
+- The individuality of seals lies in combinations of common signs, not in rare signs (CT28h, CT28hk).
 
-The Indus corpus is statistically closest to proto-Elamite in both transcriptions (D1, D1-KP); proto-cuneiform is second for the ICIT transcription but farthest for KP1979; its estimated inventory of 510–830 signs is comparable to proto-Elamite (D3). The statistics used cannot separate writing from non-linguistic symbol systems (D2; also with a seventh statistic, D2b), so whether the signs record a language remains open. One descriptive difference from proto-Elamite is clear: Indus numerals precede the sign they go with (71 % of cases), whereas proto-Elamite entries put the sign before the numeral (NUM1). Frequent Indus signs combine less freely than syllabic graphemes (CT27); in the ICIT transcription the degree of sparsity matches proto-Elamite and proto-cuneiform, but in KP1979 it lies nearer literary Sumerian (D7), so this measure, like repetition, depends on the transcription.
+**Candidates not confirmed.**
+- The closing sign varies with the kind of object (C2, C2k).
+- A sign class is absent from copper tablets (H9.4).
+- Seals and tablets share fewer formula frames than chance in ICIT only (KF2, KF2k).
+- The lead "405 on unicorn seals of variant W" (MO2b).
 
-### Published claims
+**External variables with no confirmed association** on unused data: motif and its details (H4.2, MO2a, MO2b, MO1k); object size (SZ2, SZ4); chronological level (T1, T2); excavation area (AR1, AR1h); manufacture technique of tablets (FACE5); site (SX2, H10.1).
 
-All 35 claims of the claims register are evaluated in `docs/CLAIMS_EVALUATION.md`. Among others: the low repetition of signs is a property of the transcription, not of the inscriptions (C9), and repetition rises with text length (C10, CT10); the jar sign is the most frequent sign (C13), has the most diverse left context of all frequent signs in both transcriptions (C14, CT14, CT14k), closes seal legends more than tablet texts (C15, CT15) and does not behave like a unit of measure (C16, CT16); longer texts have a nested structure (C17, C18; CT17, CT18); conditional entropy does not separate writing from non-linguistic systems (C19, CT19); the fish-shaped signs form one usage class (C22, CT22), but numeral + fish star names are not supported (C23); frequent signs combine less freely than in a syllabic script (C27, CT27); stroke counts drop sharply after seven, also without the fixed pairing 7 + 288/289, but the base remains undecided (C25, CT25, CT25b); Mahadevan's "trader" sequence behaves as a fixed three-sign unit plus the jar sign, not as two pairs (C26, CT26); Harappa tablets were made in series while seals are individual, in both transcriptions (C32, CT32a; CT28, CT28k); the published Sanskrit readings are not evidence for the proposed values (C33).
+**Data requirement.** Power simulations show that confirming the candidates would need 400–1,600 new inscriptions of the right kinds at the observed effect sizes, and up to several thousand at halved effects (PW1–PW4; `docs/FUTURE_DATA.md`). No such unused material is accessible (`docs/NEW_DATA_SURVEY.md`).
 
-## 4. Assessment
+## 5. L3 — sound values (not achieved)
 
-The project achieved L1 in broad scope: the Indus inscriptions follow a consistent, reproducible organisation of short formulae with a right-to-left order, fixed closing signs and a numeral notation tied to particular signs, which holds across sites, transcriptions and later finds. It achieved L2 only in a narrow, functional form (the jar sign as the characteristic closing sign of seal legends) and did not achieve L3. With about two thousand short texts, no bilingual and no unused inscriptions of the relevant kinds, the main obstacle to further progress is the evidence, not the methods. Power simulations show that confirming the L2 candidates would need roughly 400 to 1,600 new inscriptions of the right kinds even at the observed effect sizes, and several thousand if the effects are smaller (PW1–PW4; `docs/FUTURE_DATA.md`). In addition, calibrated tests showed that the phonetic methods available cannot identify a language from data of this size, and the meaning candidates could not be confirmed for lack of unused material.
+- **Published reading.** Under the reading freedoms of a published Sanskrit decipherment, random sign-value assignments make 84 % of Indus lines readable, as many as the published readings (E2, E2b).
+- **Phonetic search.** Twenty-four experiments (E3–E3zd) tested a calibrated search for sign-to-sound assignments, using positive controls in which known texts were hidden as ciphers. Results:
+  - The scoring identifies the true language when the true assignment is given (E3g).
+  - Without known values, the search fails for every cipher tried: Akkadian, Sumerian, Sanskrit and Old Tamil, from 1,000 to 16,000 lines. It favours one model whatever the input: Sanskrit under the reorder-corrected measure, Akkadian under the raw measure (E3–E3h, E3y).
+  - The bias persists with other Sanskrit models, fewer candidates, fewer fitted signs and more search effort (E3i–E3x).
+  - Calibration against other languages removes the bias but does not reveal the true language (E3za–E3zc).
+  - Reliable identification at the size of the Indus corpus needs 25 (Sanskrit) to 35 (Old Tamil) correct values among the 100 most frequent signs, known in advance (E3m–E3v).
+- **Consequence.** No Indus sign value is known independently. No statement about the language of the inscriptions can be derived from phonetic fitting. This applies equally to published decipherments that rely on unconstrained fitting.
 
-## 5. Errors found and corrected
+## 6. Typology and the question of writing
 
-The journal records every error found during the work, among them: near-duplicate texts across the held-out split (R1), non-deterministic control sets and seeds (R3), a too lenient control (H4.3), an inconsistent sign set (H5.1), insufficient permutation resolution (L3b), a shape measure dominated by outline (G2 robustness), a biased confidence interval (D3), and the withdrawal of an observation that depended on the transcription (repetition).
+- **Nearest reference system.** The Indus corpus is statistically nearest to proto-Elamite in both transcriptions (D1, D1-KP). Its estimated inventory of 510–830 signs is comparable (D3).
+- **A difference from proto-Elamite.** The numeral precedes the sign it goes with (71 %), the reverse of the proto-Elamite order (NUM1).
+- **Combination and order measures.**
+  - Frequent signs combine less freely than syllabic graphemes (CT27).
+  - Where this places the corpus among the reference systems depends on the transcription (D7).
+  - In order rigidity, positional rigidity and rank–frequency shape the corpus lies within the reference range (D8–D10).
+- **Writing or not.** No statistic tried separates writing from non-linguistic systems (D2, D2b, CT19), so whether the signs record a language remains open.
+- **Transcription-dependent measures.** The repetition measure depends on the transcription (C9). The low repetition reported for the ICIT transcription is not a property of the inscriptions.
+
+## 7. Published claims
+
+All 35 claims of the claims register are evaluated in `docs/CLAIMS_EVALUATION.md`.
+- Supported, or supported in their distributional part, among others:
+  - direction from initial/final asymmetry and positional zones (C2, C12), with the right-to-left crowding claim consistent but not measured (C1);
+  - the jar sign as the most frequent sign with the most diverse left context (C13, C14);
+  - nested structure (C17, C18);
+  - the fish signs as one class (C22);
+  - stroke numerals (C24);
+  - sparse combination (C27);
+  - tablets made in series (C32).
+- Not supported, among others:
+  - the sign repetition argument (C9);
+  - the jar sign as a unit of measure (C16);
+  - the conditional-entropy argument for language (C19);
+  - numeral + fish star names (C23);
+  - Mahadevan's "trader" sequence as two pairs (C26);
+  - published Sanskrit readings as evidence (C33).
+- Readings of individual signs (C14, C15, C22) cannot be tested.
+
+## 8. Assessment
+
+The Indus inscriptions have a rich, consistent and reproducible structure. They are short formulae read right to left, closed by a small set of signs in fixed order, often containing counts tied to particular signs, and built from recurring units. This structure holds across the two transcriptions, the sites, the object classes and the finds made after 1979.
+
+Beyond structure, the evidence supports one narrow functional result: the jar sign as the characteristic closing sign of seal legends. It does not support sound values. The obstacle is the evidence, not the methods:
+- about two thousand short texts;
+- no bilingual;
+- no independently known sign value;
+- no accessible unused inscriptions of the kinds needed.
+
+Calibrated tests showed that the phonetic methods available cannot identify a language under these conditions. Confirming the functional candidates would need more inscriptions than the present corpus contains.
+
+## 9. Errors found and corrected
+
+The journal records every error found during the work, among them:
+- near-duplicate texts across the held-out split (R1);
+- non-deterministic control sets and seeds (R3);
+- a too lenient control (H4.3);
+- an inconsistent sign set (H5.1);
+- insufficient permutation resolution (L3b, R7b);
+- a shape measure dominated by outline (G2 robustness);
+- a biased confidence interval (D3);
+- the withdrawal of observations that depended on the transcription (repetition) or on the size of a vocabulary (D6);
+- an ambiguous registration (AR1);
+- an overstatement about H9.4 corrected when the review family grew (R7).
