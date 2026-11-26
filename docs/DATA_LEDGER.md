@@ -162,6 +162,10 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | E3r | ciphers of 1,000 and 8,000 lines | 80/20 | Tamil: no success at 1,000 lines; success at 8,000 with f = 0.25 | |
 | E3s | most frequent signs fixed | 80/20 | no lower threshold than random sets | |
 | E3u | five random fixed sets | 80/20 | not robust (3/5 Tamil, 3/5 Sanskrit) | E3m thresholds not robust |
+| E3v | syllabic ciphers, 5 random known sets | 80/20 | reliable threshold f = 0.35 (Tamil), 0.25 (Sanskrit) | |
+| E3w | top 50 signs | 80/20 | no power | |
+| E3x | Sanskrit, Tamil, pseudo only | 80/20 | no power | |
+| E3y | raw gain | 80/20 | no power (Akkadian first for both) | bias depends on the measure |
 | R9 | all | – | review: all analyses re-run, no differences | |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |

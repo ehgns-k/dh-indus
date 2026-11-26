@@ -3533,3 +3533,28 @@ Ciphers, models and decision rule are as in E3u. "Success" means the true langua
 **E3x.** E3e with the models {Sanskrit, Tamil, pseudo}. Decision: both ciphers succeed.
 
 **E3y.** E3e with the uncorrected gain (fitted minus random assignments, per sign, on test lines). Decision: both ciphers succeed.
+
+### Results E3v, E3w, E3x, E3y
+
+Script: `scripts/batch19_design_sensitivity.py`; results: `results/batch19_e3v.json` … `batch19_e3y.json`.
+
+- **E3v (reliable threshold).**
+  - Old Tamil: 4 of 5 random sets succeed at f = 0.35, and 5 of 5 at f = 0.50.
+  - Sanskrit: 5 of 5 at f = 0.25.
+  - By the stated rule, the reliable threshold at 2,000 lines is f = 0.35 for Old Tamil (35 of the 100 most frequent sign values known correctly in advance) and f = 0.25 for Sanskrit. Lower values succeed only sometimes (E3u).
+- **E3w (top 50 signs): no power.** The Tamil cipher again ranks Sanskrit first (0.369 against Tamil 0.259).
+- **E3x (Sanskrit, Tamil and pseudo only): no power.** The Tamil cipher ranks Sanskrit first (0.330 against 0.215). The bias does not depend on the other candidates.
+- **E3y (raw gain without the reordering correction): no power.**
+  - Both ciphers rank Akkadian first (raw gains 5.17 and 5.23), and Sanskrit has the lowest raw gain (3.78 and 3.90).
+  - The uncorrected measure fails differently. It favours models that make any fitted string likely.
+  - Observation, not tested: Sanskrit has the lowest raw gain but the highest corrected gain. Its advantage under Δ′ comes from a low gain on reordered text, i.e. the Sanskrit model is sensitive to sign order in a way the others are not. The bias found in E3e–E3k thus arises in the reordering correction, which E3b introduced to remove the model-size artefact of E3. A measure that is free of both artefacts was not found.
+
+### Assessment of the phonetic route after E3–E3y
+
+- The search identifies a language from a corpus of Indus size only under three conditions: the language is among the candidates, its units are represented exactly, and about a quarter (Sanskrit) to a third (Old Tamil) of the 100 most frequent sign values are known correctly beforehand.
+- Without such knowledge, both versions of the measure are biased: raw gain towards Akkadian, corrected gain towards Sanskrit.
+- For the Indus inscriptions none of the three conditions can be checked, and no sign value is known. The phonetic route is closed under the standards of this project (gate G4). This conclusion now rests on positive controls in the two languages most often proposed for the script.
+
+### End of the thirty-eighth session
+
+All four pre-registered analyses were run; the result is recorded above. The level assessment is unchanged.
