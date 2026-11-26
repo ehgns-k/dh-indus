@@ -3127,3 +3127,42 @@ Script: `scripts/batch12_sites_classes.py`; results: `results/batch12_sites_clas
 ### End of the thirty-first session
 
 Pre-registered analyses SX3, SX4, H3.3c and CT22b are all supported (robustness). The level assessment is unchanged.
+
+---
+
+## 2026-11-26 (day 2, thirty-second working session, 00:18 UTC): structure within object classes
+
+### Plan of the run
+
+1. CT18c: nested structure (CT18) within seals and within tablets separately.
+2. H3.10c: count–item pairing (H3.10) within seals and within tablets separately.
+3. H3.3ck: closing-cluster order by object class in KP1979 (replication of H3.3c).
+4. KF2: are formula frames shared between seal and tablet texts more or less often than chance?
+5. Updates; reproducibility.
+
+### Pre-registrations (before running)
+
+**CT18c.**
+- The CT18 procedure (PMI model from ICIT training strings; recursive splitting; parts compared with complete training texts) is applied to the strict held-out lines of length ≥ 4.
+- The lines are split by object class: lines occurring only on seals, or only on tablets.
+- Controls: 10,000 rule-preserving controls per class.
+- Prediction: one-sided p < 0.005 in each class (Bonferroni over two classes).
+- Insufficient data: fewer than 30 lines in a class.
+
+**H3.10c.**
+- ICIT unique complete strings occurring only on seals, or only on tablets.
+- In each class, a one-sided Fisher test compares the share of bigrams ending in {390, 405, 406, 407} after the 4–9-stroke signs {004, 034, 005, 016, 017} with that after other signs.
+- Prediction: p < 0.005 in each class.
+- Insufficient data: fewer than 5 bigrams after the stroke set.
+- Data note: these strings include training strings, so this checks the rule within classes, not on unused data.
+
+**H3.3ck.**
+- KP unique complete strings by class: seal codes {11, 23}, tablet codes {62, 67, 72, 75}, other codes.
+- Dominant orders come from the KP training pairs of H3.3 (`results/phase3_h33_heldout.json`). Decision as in H3.3c.
+
+**KF2.**
+- ICIT formula frames as in `docs/FORMULAE.md`: frames with at least three fillers, computed on unique complete strings of seals and tablets only.
+- A frame is shared if at least one of its filled strings occurs on a seal and at least one on a tablet.
+- Statistic: number of shared frames.
+- Null: the seal/tablet labels are permuted among the strings (strings on both classes are dropped first); 10,000 draws.
+- Prediction: none on direction; two-sided p < 0.01.
