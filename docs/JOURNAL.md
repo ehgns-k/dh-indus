@@ -3188,3 +3188,37 @@ Script: `scripts/batch13_within_classes.py`; results: `results/batch13_within_cl
 ### End of the thirty-second session
 
 All four pre-registered analyses gave the predicted results. Three are robustness checks of L1 (CT18c, H3.10c, H3.3ck), and one is a descriptive difference between object classes (KF2). The level assessment is unchanged.
+
+---
+
+## 2026-11-26 (day 2, thirty-third working session, 01:18 UTC): replications in KP1979 and a confound check of CT28
+
+### Plan of the run
+
+1. CT28n: CT28 without numeral faces. In the ICIT-style source the numeral faces of Harappa tablets (for example `033 700`) are separate lines that repeat very often. They alone could make tablet texts look less diverse.
+2. KF2k: replication of KF2 (formula frames shared between seals and tablets) in KP1979.
+3. CT18ck: replication of CT18c (nested structure within each object class) in KP1979.
+4. H3.10ck: replication of H3.10c (count–item pairing within each object class) in KP1979.
+5. Updates; reproducibility.
+
+### Pre-registrations (before running)
+
+**CT28n.**
+- The CT28 design (records at Harappa and Mohenjo-daro; stems without the terminal cluster; 1,000 subsamples of equal size per site), but excluding records whose text consists only of stroke signs, or of stroke signs followed by 700.
+- Prediction: seal stems are more diverse in at least 99 % of subsamples.
+- A failure would mean that CT28 was produced by the numeral faces.
+
+**KF2k.**
+- KP unique complete strings (normalised as in R4) occurring only with seal codes {11, 23} or only with tablet codes {62, 67, 72, 75}.
+- Frames, statistic, null and decision as in KF2 (two-sided p < 0.01).
+- If significant, the direction is reported.
+
+**CT18ck.**
+- The CT18 procedure in KP1979 (PMI from KP training strings; strict held-out lines of length ≥ 4), split by class (strings occurring only with seal codes, or only with tablet codes).
+- 10,000 controls per class; one-sided p < 0.005 in each class.
+- Insufficient data: fewer than 30 lines in a class.
+
+**H3.10ck.**
+- KP unique complete strings by class (seal codes, tablet codes).
+- One-sided Fisher test of bigrams ending in 86 after {124–129} against other signs.
+- Prediction: p < 0.005 in each class. Insufficient data: fewer than 5 bigrams after the stroke set.
