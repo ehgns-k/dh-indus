@@ -3446,3 +3446,32 @@ Script: `scripts/batch17_phonetic_diagnosis.py`; results: `results/batch17_e3i.j
   - Bias persists: E3j.
   - Descriptive threshold: E3m (f = 0.10 for Sanskrit, 0.25 for Tamil).
 - The level assessment is unchanged.
+
+---
+
+## 2026-11-26 (day 2, thirty-seventh working session, 05:18 UTC): how robust is the known-values threshold?
+
+E3m found that the search identifies the language once 10 % (Sanskrit) to 25 % (Old Tamil) of the 100 most frequent sign values are fixed correctly in advance. For an Indus application such values would come from pictographic guesses, which may be wrong. Which signs are known would also not be random, and the Indus corpus is small. This session tests the threshold against these conditions. All analyses use the Tamil cipher as the hard case, plus the Sanskrit cipher where stated, with the E3e construction and the E3d models.
+
+### Plan of the run
+
+1. E3n: wrong values. f = 0.25 fixed, of which only a share a ∈ {1.0, 0.75, 0.5} is correct; the others get a random wrong value.
+2. E3r: corpus size. f ∈ {0.10, 0.25} at 1,000 and 8,000 lines.
+3. E3s: which signs are known. The most frequent signs are fixed instead of random ones, f ∈ {0.10, 0.25}.
+4. E3u: seed robustness of E3m. Five different random sets of fixed signs at f = 0.25 (Tamil) and f = 0.10 (Sanskrit).
+5. Updates.
+
+### Pre-registrations (before running)
+
+"Success" is defined as in E3m: the true language is first and clearly ahead (bootstrap p < 0.01) of every other model.
+
+**E3n.** Tamil cipher, 2,000 lines, f = 0.25 (25 signs fixed, the same random set as in E3m). Of these, a share a is fixed at the true value. The others get a value drawn uniformly from the wrong values (seed 20261127). Reported: success for each a. No prediction.
+
+**E3r.** Tamil and Sanskrit ciphers at N = 1,000 and N = 8,000 lines, f ∈ {0.10, 0.25}, random sets as in E3m. Reported: success for each N, f and cipher. No prediction.
+
+**E3s.** Tamil and Sanskrit ciphers, 2,000 lines. The fixed signs are the most frequent 10 or 25 of the top 100. Reported: success for each f and cipher. No prediction.
+
+**E3u.**
+- E3m at f = 0.25 (Tamil) and f = 0.10 (Sanskrit), with the fixed set drawn with seeds 1–5.
+- Reported: the number of successes out of 5.
+- Decision stated in advance: the E3m threshold is called robust for a cipher if at least 4 of 5 sets succeed.
