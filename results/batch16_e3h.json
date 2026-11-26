@@ -1,0 +1,56 @@
+{
+ "part": "e3h",
+ "lines": {
+  "cipher_akkadian_ob_letters": [
+   12800,
+   3200
+  ],
+  "cipher_sumerian_ur3_admin": [
+   12800,
+   3200
+  ]
+ },
+ "unit_types": {
+  "cipher_akkadian_ob_letters": 988,
+  "cipher_sumerian_ur3_admin": 1277
+ },
+ "by_corpus": {
+  "cipher_akkadian_ob_letters": {
+   "mean_delta_prime": {
+    "sanskrit": 0.2577950170843152,
+    "tamil": 0.19271988990393465,
+    "sumerian": 0.13671934427503055,
+    "akkadian": 0.136879118823254,
+    "pseudo": 0.019212016043071323
+   },
+   "best": "sanskrit",
+   "bootstrap_p_best_vs_other": {
+    "tamil": 0.000999000999000999,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "best_clearly_ahead": true,
+   "true": "akkadian"
+  },
+  "cipher_sumerian_ur3_admin": {
+   "mean_delta_prime": {
+    "sanskrit": 0.20673795750853036,
+    "tamil": 0.18199210476925012,
+    "sumerian": 0.08446390807544482,
+    "akkadian": 0.11901808920943617,
+    "pseudo": 0.012791628003622222
+   },
+   "best": "sanskrit",
+   "bootstrap_p_best_vs_other": {
+    "tamil": 0.03296703296703297,
+    "sumerian": 0.000999000999000999,
+    "akkadian": 0.000999000999000999,
+    "pseudo": 0.000999000999000999
+   },
+   "best_clearly_ahead": false,
+   "true": "sumerian"
+  }
+ },
+ "method_has_power": false
+}

@@ -42,7 +42,7 @@ Further candidates:
 ### L3 — sound values (not achieved; no calibrated route found)
 
 - Under the reading rules of a published Sanskrit decipherment, random sign-value assignments make as many Indus lines readable (84 %) as the published readings (E2, E2b).
-- A calibrated search for sign-to-sound assignments under Sanskrit, Old Tamil, Sumerian and Akkadian sound models could not identify the language even of known cuneiform texts hidden as ciphers, in four variants and with up to 8,000 lines (E3–E3d, R3). No language preference is claimed.
+- A calibrated search for sign-to-sound assignments under Sanskrit, Old Tamil, Sumerian and Akkadian sound models could not identify the language even of known cuneiform texts hidden as ciphers, in four variants and with up to 8,000 lines (E3–E3d, R3). No language preference is claimed. Further positive controls (E3e–E3h) hid Sanskrit and Old Tamil text as syllabic ciphers that the method can represent exactly, and cuneiform texts at 16,000 lines. The scoring identifies the true language when the true assignment is given (E3g), but the assignments found by the search favour the Sanskrit model for every cipher, including the Old Tamil one. Search-based phonetic fitting of this kind is biased towards one language regardless of the input, so it cannot support any language identification for the Indus script.
 
 ### Typology
 

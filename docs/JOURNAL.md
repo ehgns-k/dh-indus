@@ -3353,3 +3353,32 @@ Script: `scripts/batch16_phonetic_controls.py e3e`; results: `results/batch16_e3
 - By the registered rule, the method has no power: a fitted assignment for Old Tamil text is better explained by the Sanskrit model than by the Tamil model.
 - Together with E3g, the failure lies in the search. With the true assignment, the Tamil model wins by a wide margin (0.818 against 0.070). With assignments found by the search, the Sanskrit model wins.
 - The Sanskrit model appears to fit any assignment the search finds better than the other models do. A search result favouring Sanskrit for the Indus signs would therefore mean nothing.
+
+### Results E3f, E3h: no power at 8,000 and 16,000 lines either
+
+Script: `scripts/batch16_phonetic_controls.py e3f`, `... e3h`; results: `results/batch16_e3f.json`, `results/batch16_e3h.json`.
+
+| Cipher | Lines | Sanskrit | Tamil | Sumerian | Akkadian | Pseudo | First | True |
+|---|---:|---:|---:|---:|---:|---:|---|---|
+| Sanskrit (E3f) | 8,000 | 0.295 | 0.168 | 0.115 | 0.099 | 0.000 | Sanskrit | Sanskrit |
+| Old Tamil (E3f) | 8,000 | 0.333 | 0.156 | 0.102 | 0.150 | −0.004 | Sanskrit | Tamil |
+| Akkadian letters (E3h) | 16,000 | 0.258 | 0.193 | 0.137 | 0.137 | 0.019 | Sanskrit | Akkadian |
+| Sumerian Ur III (E3h) | 16,000 | 0.207 | 0.182 | 0.084 | 0.119 | 0.013 | Sanskrit | Sumerian |
+
+- In all four ciphers the Sanskrit model comes first. By the registered rule the method has no power at either size.
+- More data does not help. From 2,000 to 8,000 lines the Tamil cipher's margin in favour of the wrong language stays the same.
+
+### Assessment of the phonetic route (E3–E3h)
+
+- The scoring measure works when the true assignment is given (E3g).
+- The search does not find assignments that favour the true language. For every cipher tried (two cuneiform and two syllabic, from 2,000 to 16,000 lines), the assignments it finds are best explained by the Sanskrit model.
+- The likely cause is that the Ṛgveda model, even when equalised in size, assigns high probability to the kind of short, vowel-rich syllable sequences that any fitted assignment produces. This was not tested further.
+- The consequence for the Indus inscriptions is clear. Search-based phonetic fitting of this kind is biased towards one language whatever the input. No language preference for the Indus script can be drawn from it, and claims based on similar unconstrained fitting should be read with this in mind.
+- Gate G4 (L3) remains unmet. The conclusion of E3c and E3d is strengthened: the failure is not a matter of corpus size (2,000–16,000 lines) or of representability (the syllabic ciphers are exactly representable).
+
+### End of the thirty-fifth session
+
+- Pre-registered analyses:
+  - E3g (oracle): supported.
+  - E3e, E3f, E3h: the method has no power.
+- The level assessment is unchanged.

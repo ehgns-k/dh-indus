@@ -150,6 +150,10 @@ Every hypothesis test is listed with the data it was decided on. "Train" = non-h
 | CT18ck | KP | strict held-out by class | seals supported; tablets insufficient data (8 lines) | |
 | H3.10ck | KP | all strings by class | not supported (tablets p = 0.013; seals p < 10⁻²⁵) | few tablet cases |
 | PW1–PW4 | ICIT (effect sizes) | simulation | descriptive: 400–1,600 new inscriptions at observed effects, 800 to > 6,400 at halved effects | planning; not tests |
+| E3g | syllabic ciphers (Sanskrit, Old Tamil; 2,000 lines) | 80/20 | oracle: true language first under true assignment | measure works |
+| E3e | as E3g | 80/20 | method has no power (Tamil cipher → Sanskrit) | |
+| E3f | syllabic ciphers, 8,000 lines | 80/20 | method has no power | |
+| E3h | cuneiform ciphers, 16,000 lines | 80/20 | method has no power (both → Sanskrit) | |
 | R9 | all | – | review: all analyses re-run, no differences | |
 | R8 | all | – | review: all analyses re-run, no differences | |
 | R7 | – | – | review: 13 of 47 fresh/strict tests survive Holm 0.01 (recomputed in the twenty-fifth session); CT15 survives Holm 0.05 and BH 0.01 | family-wise review |
