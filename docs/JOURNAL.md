@@ -3689,3 +3689,20 @@ No new hypothesis test was registered (see the forty-first session).
 **F3.** The sources on the ICIT field codes, Wells (2011) and CISI 3.1 were tried again. Every page fetch failed, because the hosts (indus.epigraphica.de, www.user.tu-berlin.de, www.oxbowbooks.com, www.harappa.com) are outside the network allowed in this working environment. Search-engine excerpts did not describe the `cult`, `Bull1`, `class` or `area-section` codes. The meanings of these codes therefore remain unknown, and `docs/OBJECT_CODES.md` is unchanged. The bibliography entries for CISI 3.1–3.3 (A7–A9) were checked against the search excerpts, and no correction was needed. The new-data search found no report of newly excavated inscriptions from 2025–2026. The Dholavira signboard, shown again in public communications in July 2026, was found in 1990–91 and is not new material.
 
 - The level assessment is unchanged.
+
+---
+
+## 2026-11-28 (day 4): change to maintenance mode
+
+The prospects of further progress with the accessible evidence were reviewed:
+- L3 would require 25–35 independently known values among the 100 most frequent signs (E3m–E3v). No such values, and no bilingual text, are known.
+- The L2 candidates would require 400–1,600 new inscriptions of the right kinds, and more at smaller effects (PW1–PW4). No such unused material is accessible (`docs/NEW_DATA_SURVEY.md`).
+- Further tests on the data already used would add to the multiple-testing burden without adding information.
+
+A breakthrough with the present data was judged unlikely. The project therefore changes to maintenance mode:
+- one run per week;
+- the new-data watch (F4) and the literature retry (F3) continue;
+- the reports are kept consistent with any change;
+- the confirmatory tests of `docs/FUTURE_DATA.md` are run only if new, unused inscriptions become accessible.
+
+The final report is completed after 2026-12-25.

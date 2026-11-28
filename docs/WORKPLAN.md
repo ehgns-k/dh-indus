@@ -176,3 +176,7 @@ The short tests that the current data allow have largely been run. The remaining
   - **F2. Full reproducibility.** Run `scripts/run_all.py` without `--skip-heavy`, i.e. all phonetic experiments included, and record differences.
   - **F3. Literature checks.** Retry the sources that could not be reached (CISI 3.1, Wells 2011, ICIT documentation) if access becomes possible, and correct the code meanings in `docs/OBJECT_CODES.md`.
   - **F4. New data watch.** Repeat the survey of newly published inscriptions (`docs/NEW_DATA_SURVEY.md`) once a week. Any new, unused inscriptions would allow the confirmatory tests planned in `docs/FUTURE_DATA.md`.
+
+## Revision of 2026-11-28: maintenance mode
+
+From 2026-11-28 the work runs once a week and covers only F3 (literature retry), F4 (new-data watch) and the upkeep of the reports. No new hypothesis test is registered on the data already used. If new, unused inscriptions become accessible, the confirmatory tests in `docs/FUTURE_DATA.md` are registered and run. The final report is completed after 2026-12-25.
